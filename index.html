@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TSA Hard Mode</title>
+  <meta name="theme-color" content="#111827" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">QBank pessoal de anestesia</p>
+      <h1>TSA Hard Mode</h1>
+    </div>
+    <button id="resetBtn" class="ghost">Resetar progresso</button>
+  </header>
+
+  <main class="layout">
+    <section class="card hero">
+      <div>
+        <h2>Estudo por questões comentadas</h2>
+        <p>Escolha capítulo, responda, revise seus erros e treine em modo simulado. Versão inicial, simples e offline-friendly.</p>
+      </div>
+      <div class="stats">
+        <div><strong id="answeredCount">0</strong><span>respondidas</span></div>
+        <div><strong id="correctRate">0%</strong><span>acerto</span></div>
+        <div><strong id="wrongCount">0</strong><span>erros</span></div>
+      </div>
+    </section>
+
+    <section class="card controls">
+      <label>
+        Capítulo
+        <select id="chapterFilter">
+          <option value="all">Todos</option>
+        </select>
+      </label>
+      <label>
+        Tema
+        <select id="tagFilter">
+          <option value="all">Todos</option>
+        </select>
+      </label>
+      <label>
+        Modo
+        <select id="modeSelect">
+          <option value="study">Estudo</option>
+          <option value="exam10">Simulado 10</option>
+          <option value="errors">Revisar erros</option>
+        </select>
+      </label>
+      <button id="startBtn">Iniciar</button>
+    </section>
+
+    <section id="questionSection" class="card question-card hidden">
+      <div class="question-meta">
+        <span id="qSource"></span>
+        <span id="qDifficulty"></span>
+        <span id="qProgress"></span>
+      </div>
+      <h2 id="qTitle"></h2>
+      <p id="qText" class="question-text"></p>
+      <div id="options" class="options"></div>
+      <div id="feedback" class="feedback hidden"></div>
+      <div class="question-actions">
+        <button id="prevBtn" class="ghost">Anterior</button>
+        <button id="markBtn" class="ghost">Marcar revisão</button>
+        <button id="nextBtn">Próxima</button>
+      </div>
+    </section>
+
+    <section id="emptyState" class="card empty">
+      <h2>Pronto para começar?</h2>
+      <p>Clique em <strong>Iniciar</strong>. Depois dá para trocar filtros e gerar simulados. Café opcional, catecolamina nem tanto.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Protótipo local. Conteúdo educacional, não substitui julgamento clínico.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
