@@ -4,7 +4,7 @@ Site/PWA simples para questões comentadas de anestesiologia.
 
 ## O que tem nesta versão
 
-- Questões A–E comentadas
+- 101 questões A–E comentadas (11 iniciais + 90 novas)
 - Filtro por capítulo e tema
 - Modo estudo
 - Simulado de 10 questões
@@ -41,3 +41,9 @@ Abra o arquivo `index.html` no navegador.
 ## Como adicionar novas questões
 
 No arquivo `app.js`, adicione novos objetos dentro da lista `QUESTIONS`, seguindo o modelo existente.
+
+
+## Atualização
+
+Esta versão inclui 90 questões adicionais baseadas nos capítulos cardiovasculares do Yao estudados no projeto.
+
