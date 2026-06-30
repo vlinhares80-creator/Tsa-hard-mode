@@ -1438,5 +1438,1031 @@ const QUESTIONS = [
     resposta: "B",
     comentario: "Hipotermia pode piorar coagulação, aumentar sangramento, causar tremor, desconforto e prolongar recuperação anestésica.",
     frase_ouro: "Paciente frio sangra, treme e acorda devagar."
+  },
+  {
+    id: "yao-026-001",
+    fonte: "Yao",
+    capitulo: "Farmacologia",
+    tema: "Agentes inalatórios",
+    dificuldade: "média",
+    pergunta: "Qual característica dos anestésicos inalatórios favorece indução e despertar mais rápidos?",
+    alternativas: {
+      A: "Alta solubilidade sangue-gás.",
+      B: "Baixa solubilidade sangue-gás.",
+      C: "Alta ligação irreversível ao receptor nicotínico.",
+      D: "Metabolismo renal predominante.",
+      E: "Ausência de eliminação pulmonar."
+    },
+    resposta: "B",
+    comentario: "Quanto menor a solubilidade sangue-gás, mais rapidamente a pressão alveolar se aproxima da pressão inspirada, favorecendo indução e despertar mais rápidos.",
+    frase_ouro: "Anestésico pouco solúvel entra e sai rápido: o sangue não o sequestra."
+  },
+  {
+    id: "yao-026-002",
+    fonte: "Yao",
+    capitulo: "Farmacologia",
+    tema: "CAM",
+    dificuldade: "média",
+    pergunta: "A concentração alveolar mínima, ou CAM, representa classicamente:",
+    alternativas: {
+      A: "A concentração que bloqueia resposta motora à incisão em 50% dos pacientes.",
+      B: "A dose necessária para produzir amnésia em 100% dos pacientes.",
+      C: "A concentração plasmática máxima tolerada sem hipotensão.",
+      D: "A quantidade de anestésico metabolizada pelo fígado por hora.",
+      E: "A concentração que impede náusea pós-operatória."
+    },
+    resposta: "A",
+    comentario: "A CAM é uma medida de potência dos anestésicos inalatórios e corresponde à concentração que impede movimento à incisão em 50% dos pacientes.",
+    frase_ouro: "CAM mede imobilidade, não profundidade perfeita para tudo."
+  },
+  {
+    id: "yao-026-003",
+    fonte: "Yao",
+    capitulo: "Farmacologia",
+    tema: "Propofol",
+    dificuldade: "fácil",
+    pergunta: "Qual efeito hemodinâmico é esperado após bolus de propofol em paciente suscetível?",
+    alternativas: {
+      A: "Aumento intenso da resistência vascular sistêmica.",
+      B: "Hipertensão pulmonar aguda obrigatória.",
+      C: "Vasodilatação, redução de pré-carga/pós-carga e possível hipotensão.",
+      D: "Broncoconstrição inevitável.",
+      E: "Aumento sustentado da pressão arterial média."
+    },
+    resposta: "C",
+    comentario: "Propofol pode causar vasodilatação, redução da resistência vascular sistêmica e depressão miocárdica discreta, levando à hipotensão.",
+    frase_ouro: "Propofol é elegante para dormir, mas pode tirar o chão vascular."
+  },
+  {
+    id: "yao-026-004",
+    fonte: "Yao",
+    capitulo: "Farmacologia",
+    tema: "Etomidato",
+    dificuldade: "média",
+    pergunta: "Qual é uma razão para considerar etomidato na indução de pacientes com reserva cardiovascular limitada?",
+    alternativas: {
+      A: "Produz vasodilatação mais intensa que propofol.",
+      B: "Tende a preservar melhor a estabilidade hemodinâmica.",
+      C: "É potente analgésico isolado.",
+      D: "Elimina risco de mioclonia.",
+      E: "Não tem qualquer efeito endócrino."
+    },
+    resposta: "B",
+    comentario: "Etomidato costuma causar menor depressão cardiovascular que propofol, sendo útil em pacientes com instabilidade ou reserva cardíaca limitada.",
+    frase_ouro: "Etomidato não é mágico, mas costuma mexer menos na hemodinâmica."
+  },
+  {
+    id: "yao-026-005",
+    fonte: "Yao",
+    capitulo: "Farmacologia",
+    tema: "Cetamina",
+    dificuldade: "média",
+    pergunta: "Qual efeito torna a cetamina útil em alguns pacientes hipovolêmicos, mas potencialmente problemática em coronariopatas ou hipertensos?",
+    alternativas: {
+      A: "Bloqueio alfa irreversível.",
+      B: "Supressão simpática completa.",
+      C: "Estimulação simpática com aumento de frequência cardíaca e pressão arterial.",
+      D: "Ausência de qualquer efeito cardiovascular.",
+      E: "Antagonismo direto da heparina."
+    },
+    resposta: "C",
+    comentario: "A cetamina frequentemente aumenta tônus simpático, frequência cardíaca e pressão arterial, o que pode ajudar em alguns contextos, mas aumentar consumo miocárdico.",
+    frase_ouro: "Cetamina pode sustentar pressão, mas cobra em catecolamina."
+  },
+  {
+    id: "yao-026-006",
+    fonte: "Yao",
+    capitulo: "Farmacologia",
+    tema: "Opioides",
+    dificuldade: "média",
+    pergunta: "Qual efeito adverso é central no uso perioperatório de opioides, especialmente em pacientes com apneia do sono ou DPOC?",
+    alternativas: {
+      A: "Hiperventilação obrigatória.",
+      B: "Depressão respiratória.",
+      C: "Aumento da depuração renal.",
+      D: "Bloqueio neuromuscular profundo.",
+      E: "Hipertensão intracraniana inevitável."
+    },
+    resposta: "B",
+    comentario: "Opioides podem causar depressão ventilatória, hipercapnia e obstrução respiratória, especialmente em pacientes vulneráveis.",
+    frase_ouro: "Opioide trata dor, mas pode cobrar ventilação."
+  },
+  {
+    id: "yao-026-007",
+    fonte: "Yao",
+    capitulo: "Farmacologia",
+    tema: "Remifentanil",
+    dificuldade: "média",
+    pergunta: "Qual característica torna o remifentanil altamente titulável durante anestesia?",
+    alternativas: {
+      A: "Metabolismo por esterases plasmáticas e teciduais, com duração ultracurta.",
+      B: "Eliminação renal exclusiva e lenta.",
+      C: "Ligação irreversível ao receptor opioide.",
+      D: "Ausência completa de depressão respiratória.",
+      E: "Meia-vida prolongada por acúmulo adiposo."
+    },
+    resposta: "A",
+    comentario: "Remifentanil é metabolizado rapidamente por esterases inespecíficas, permitindo ajuste fino e recuperação rápida após interrupção.",
+    frase_ouro: "Remifentanil é opioide de controle fino: liga e desliga rápido."
+  },
+  {
+    id: "yao-027-001",
+    fonte: "Yao",
+    capitulo: "Bloqueadores neuromusculares",
+    tema: "Succinilcolina",
+    dificuldade: "média",
+    pergunta: "Qual situação é contraindicação clássica ao uso de succinilcolina pelo risco de hipercalemia grave?",
+    alternativas: {
+      A: "Jejum adequado.",
+      B: "Miopia leve.",
+      C: "Grande queimado após fase inicial ou doença neuromuscular desnervante.",
+      D: "Hipertensão controlada.",
+      E: "Rinite alérgica."
+    },
+    resposta: "C",
+    comentario: "Queimaduras extensas após upregulation de receptores extrajuncionais e doenças desnervantes aumentam risco de hipercalemia grave com succinilcolina.",
+    frase_ouro: "Succinilcolina em desnervação pode transformar receptor extra em potássio extra."
+  },
+  {
+    id: "yao-027-002",
+    fonte: "Yao",
+    capitulo: "Bloqueadores neuromusculares",
+    tema: "Rocurônio",
+    dificuldade: "fácil",
+    pergunta: "Qual droga pode reverter bloqueio neuromuscular profundo por rocurônio de forma específica?",
+    alternativas: {
+      A: "Protamina.",
+      B: "Sugamadex.",
+      C: "Dantrolene.",
+      D: "Naloxona.",
+      E: "Flumazenil."
+    },
+    resposta: "B",
+    comentario: "Sugamadex encapsula rocurônio e vecurônio, reduzindo sua disponibilidade na junção neuromuscular.",
+    frase_ouro: "Sugamadex não estimula músculo: ele sequestra rocurônio."
+  },
+  {
+    id: "yao-027-003",
+    fonte: "Yao",
+    capitulo: "Bloqueadores neuromusculares",
+    tema: "Miastenia gravis",
+    dificuldade: "alta",
+    pergunta: "Em miastenia gravis, qual afirmação sobre bloqueadores neuromusculares é mais adequada?",
+    alternativas: {
+      A: "Há resistência universal a bloqueadores não despolarizantes.",
+      B: "Há sensibilidade aumentada a bloqueadores não despolarizantes.",
+      C: "Succinilcolina é sempre proibida e não sofre variação de resposta.",
+      D: "Não há risco de ventilação prolongada.",
+      E: "Monitorização neuromuscular é desnecessária."
+    },
+    resposta: "B",
+    comentario: "Pacientes com miastenia gravis costumam ser sensíveis a bloqueadores neuromusculares não despolarizantes e podem ter ventilação prolongada.",
+    frase_ouro: "Na miastenia, pouco bloqueador pode ser muito bloqueio."
+  },
+  {
+    id: "yao-027-004",
+    fonte: "Yao",
+    capitulo: "Bloqueadores neuromusculares",
+    tema: "TOF",
+    dificuldade: "média",
+    pergunta: "Qual é o objetivo da monitorização com TOF no contexto de bloqueio neuromuscular?",
+    alternativas: {
+      A: "Medir profundidade hipnótica cortical.",
+      B: "Avaliar grau de bloqueio neuromuscular e recuperação antes da extubação.",
+      C: "Estimar pressão intracraniana.",
+      D: "Medir débito cardíaco contínuo.",
+      E: "Diagnosticar pneumotórax."
+    },
+    resposta: "B",
+    comentario: "O TOF ajuda a guiar doses e recuperação do bloqueio neuromuscular, reduzindo risco de curarização residual.",
+    frase_ouro: "TOF é o velocímetro do bloqueio: sem ele, você dirige no escuro."
+  },
+  {
+    id: "yao-028-001",
+    fonte: "Yao",
+    capitulo: "Anestesia regional",
+    tema: "Raquianestesia",
+    dificuldade: "média",
+    pergunta: "A hipotensão após raquianestesia ocorre principalmente por:",
+    alternativas: {
+      A: "Bloqueio simpático com vasodilatação venosa e arterial.",
+      B: "Aumento súbito de catecolaminas.",
+      C: "Broncoconstrição severa obrigatória.",
+      D: "Aumento da resistência vascular sistêmica.",
+      E: "Hipervolemia imediata."
+    },
+    resposta: "A",
+    comentario: "A raquianestesia bloqueia fibras simpáticas, causando vasodilatação, redução de retorno venoso e queda da resistência vascular sistêmica.",
+    frase_ouro: "Neuraxial alto derruba pressão porque desliga simpático."
+  },
+  {
+    id: "yao-028-002",
+    fonte: "Yao",
+    capitulo: "Anestesia regional",
+    tema: "Toxicidade sistêmica por anestésico local",
+    dificuldade: "alta",
+    pergunta: "Qual tratamento específico deve estar disponível para toxicidade sistêmica grave por anestésico local?",
+    alternativas: {
+      A: "Protamina.",
+      B: "Emulsão lipídica intravenosa.",
+      C: "Dantrolene.",
+      D: "Vitamina K.",
+      E: "Flumazenil."
+    },
+    resposta: "B",
+    comentario: "A emulsão lipídica intravenosa é tratamento específico para toxicidade sistêmica por anestésico local, além de suporte avançado.",
+    frase_ouro: "Na toxicidade por anestésico local, lipídio é antídoto e suporte é ponte."
+  },
+  {
+    id: "yao-028-003",
+    fonte: "Yao",
+    capitulo: "Anestesia regional",
+    tema: "Bloqueio peridural",
+    dificuldade: "média",
+    pergunta: "Qual vantagem do bloqueio peridural em relação à raquianestesia de dose única?",
+    alternativas: {
+      A: "Impossibilidade de hipotensão.",
+      B: "Permite titulação incremental e analgesia contínua.",
+      C: "Nunca causa bloqueio motor.",
+      D: "Dispensa avaliação de anticoagulação.",
+      E: "Não pode ser usado para analgesia pós-operatória."
+    },
+    resposta: "B",
+    comentario: "A peridural permite administração fracionada e manutenção por cateter, favorecendo titulação e analgesia prolongada.",
+    frase_ouro: "Peridural é neuraxial com botão de volume."
+  },
+  {
+    id: "yao-028-004",
+    fonte: "Yao",
+    capitulo: "Anestesia regional",
+    tema: "Anticoagulação",
+    dificuldade: "alta",
+    pergunta: "Antes de realizar bloqueio neuraxial em paciente anticoagulado, qual princípio é essencial?",
+    alternativas: {
+      A: "Ignorar horário da última dose se a punção for única.",
+      B: "Respeitar intervalos seguros conforme droga, dose, função renal e risco de sangramento.",
+      C: "Realizar punção mesmo com coagulopatia grave.",
+      D: "Retirar cateter peridural durante anticoagulação plena sem avaliar risco.",
+      E: "Usar apenas agulha menor para eliminar risco de hematoma."
+    },
+    resposta: "B",
+    comentario: "Bloqueios neuraxiais em pacientes anticoagulados exigem respeito a intervalos e avaliação de coagulação para reduzir risco de hematoma neuraxial.",
+    frase_ouro: "Neuroeixo e anticoagulação só combinam com relógio, protocolo e respeito."
+  },
+  {
+    id: "yao-029-001",
+    fonte: "Yao",
+    capitulo: "Respiratório",
+    tema: "DPOC",
+    dificuldade: "média",
+    pergunta: "Durante ventilação mecânica em paciente com DPOC, qual ajuste ajuda a reduzir hiperinsuflação dinâmica?",
+    alternativas: {
+      A: "Aumentar muito a frequência respiratória sem tempo expiratório.",
+      B: "Permitir tempo expiratório adequado e evitar volume/minuto excessivo.",
+      C: "Eliminar completamente a expiração.",
+      D: "Usar PEEP extrema em todos os casos.",
+      E: "Aumentar pressão de platô sem limite."
+    },
+    resposta: "B",
+    comentario: "Pacientes com DPOC precisam de tempo expiratório suficiente para evitar aprisionamento aéreo e auto-PEEP.",
+    frase_ouro: "No DPOC, dar tempo para sair o ar é tão importante quanto colocar ar."
+  },
+  {
+    id: "yao-029-002",
+    fonte: "Yao",
+    capitulo: "Respiratório",
+    tema: "Asma",
+    dificuldade: "média",
+    pergunta: "Durante broncoespasmo intraoperatório, qual conduta é adequada?",
+    alternativas: {
+      A: "Aprofundar anestesia, administrar broncodilatador e avaliar causas como intubação seletiva ou anafilaxia.",
+      B: "Reduzir oxigênio imediatamente.",
+      C: "Aumentar estímulo cirúrgico.",
+      D: "Diminuir tempo expiratório.",
+      E: "Administrar beta-bloqueador como primeira linha."
+    },
+    resposta: "A",
+    comentario: "Broncoespasmo exige aumento de oxigênio, aprofundamento anestésico, broncodilatadores e busca de causas associadas.",
+    frase_ouro: "Broncoespasmo não é só chiado: é ventilação difícil até prova em contrário."
+  },
+  {
+    id: "yao-029-003",
+    fonte: "Yao",
+    capitulo: "Respiratório",
+    tema: "SDRA",
+    dificuldade: "média",
+    pergunta: "Qual estratégia ventilatória é central na síndrome do desconforto respiratório agudo?",
+    alternativas: {
+      A: "Volumes correntes altos para normalizar completamente CO2.",
+      B: "Ventilação protetora com baixo volume corrente e limitação de pressões.",
+      C: "Ausência de PEEP em todos os pacientes.",
+      D: "Hipóxia permissiva sem limite.",
+      E: "Desconexão frequente do ventilador."
+    },
+    resposta: "B",
+    comentario: "A ventilação protetora com baixo volume corrente e limitação de pressão reduz lesão pulmonar induzida pelo ventilador.",
+    frase_ouro: "Na SDRA, ventilar demais também machuca."
+  },
+  {
+    id: "yao-029-004",
+    fonte: "Yao",
+    capitulo: "Respiratório",
+    tema: "Embolia pulmonar",
+    dificuldade: "alta",
+    pergunta: "Em embolia pulmonar maciça, qual padrão hemodinâmico é esperado?",
+    alternativas: {
+      A: "Redução da pós-carga do ventrículo direito.",
+      B: "Aumento agudo da resistência vascular pulmonar com sobrecarga de ventrículo direito.",
+      C: "Melhora imediata do débito cardíaco.",
+      D: "Redução da pressão de artéria pulmonar.",
+      E: "Ausência de hipoxemia."
+    },
+    resposta: "B",
+    comentario: "A embolia pulmonar maciça aumenta a resistência vascular pulmonar, causando dilatação/falência de ventrículo direito e baixo débito.",
+    frase_ouro: "Na embolia maciça, o VD encontra uma parede no pulmão."
+  },
+  {
+    id: "yao-030-001",
+    fonte: "Yao",
+    capitulo: "Neuroanestesia",
+    tema: "TCE",
+    dificuldade: "média",
+    pergunta: "No traumatismo cranioencefálico grave, qual objetivo anestésico é apropriado?",
+    alternativas: {
+      A: "Evitar hipotensão e hipoxemia, mantendo perfusão cerebral adequada.",
+      B: "Permitir hipoxemia para reduzir edema.",
+      C: "Induzir hipotensão profunda rotineiramente.",
+      D: "Aumentar PaCO2 sem limite.",
+      E: "Evitar completamente analgesia."
+    },
+    resposta: "A",
+    comentario: "Hipotensão e hipoxemia pioram lesão cerebral secundária. A anestesia deve preservar oxigenação e pressão de perfusão cerebral.",
+    frase_ouro: "No TCE, segunda agressão é a que a anestesia precisa impedir."
+  },
+  {
+    id: "yao-030-002",
+    fonte: "Yao",
+    capitulo: "Neuroanestesia",
+    tema: "Tumor cerebral",
+    dificuldade: "média",
+    pergunta: "Em paciente com massa intracraniana e hipertensão intracraniana, qual escolha anestésica é geralmente desejável?",
+    alternativas: {
+      A: "Evitar grandes aumentos de pressão intracraniana e manter estabilidade hemodinâmica.",
+      B: "Induzir hipercapnia severa.",
+      C: "Usar doses altas de vasodilatadores sem monitorização.",
+      D: "Evitar qualquer controle de via aérea.",
+      E: "Manter tosse intensa na intubação."
+    },
+    resposta: "A",
+    comentario: "Evita-se tosse, hipertensão, hipercapnia e hipóxia, mantendo pressão de perfusão cerebral adequada.",
+    frase_ouro: "No crânio apertado, tosse e CO2 ocupam espaço."
+  },
+  {
+    id: "yao-030-003",
+    fonte: "Yao",
+    capitulo: "Neuroanestesia",
+    tema: "Aneurisma cerebral",
+    dificuldade: "alta",
+    pergunta: "Durante clipagem de aneurisma cerebral não roto, qual princípio hemodinâmico é adequado antes do controle vascular?",
+    alternativas: {
+      A: "Evitar hipertensão brusca que aumente risco de ruptura.",
+      B: "Manter pressão sistólica extremamente alta sem limite.",
+      C: "Induzir tosse vigorosa antes da abertura dural.",
+      D: "Evitar monitorização arterial.",
+      E: "Manter hipercapnia grave."
+    },
+    resposta: "A",
+    comentario: "Antes do controle do aneurisma, hipertensão súbita pode aumentar risco de ruptura. Também se evita hipotensão que comprometa perfusão cerebral.",
+    frase_ouro: "Antes do clip, pressão demais ameaça ruptura; pressão de menos ameaça cérebro."
+  },
+  {
+    id: "yao-031-001",
+    fonte: "Yao",
+    capitulo: "Obstetrícia",
+    tema: "Hemorragia pós-parto",
+    dificuldade: "média",
+    pergunta: "Qual é causa comum de hemorragia pós-parto imediata?",
+    alternativas: {
+      A: "Atonia uterina.",
+      B: "Hiperventilação materna leve.",
+      C: "Anestesia local em pele.",
+      D: "Baixa pressão de cuff.",
+      E: "Uso de oxigênio suplementar."
+    },
+    resposta: "A",
+    comentario: "Atonia uterina é uma das causas mais frequentes de hemorragia pós-parto e exige uterotônicos, massagem e controle cirúrgico quando necessário.",
+    frase_ouro: "Útero que não contrai vira torneira."
+  },
+  {
+    id: "yao-031-002",
+    fonte: "Yao",
+    capitulo: "Obstetrícia",
+    tema: "Toxicidade por magnésio",
+    dificuldade: "média",
+    pergunta: "Em gestante recebendo sulfato de magnésio, qual sinal sugere toxicidade?",
+    alternativas: {
+      A: "Hiperreflexia progressiva.",
+      B: "Perda de reflexos, depressão respiratória e fraqueza.",
+      C: "Aumento obrigatório de contrações uterinas.",
+      D: "Hipertensão severa por efeito direto.",
+      E: "Broncoespasmo alérgico inevitável."
+    },
+    resposta: "B",
+    comentario: "Toxicidade por magnésio pode causar perda de reflexos, depressão respiratória, fraqueza muscular e bloqueio neuromuscular aumentado.",
+    frase_ouro: "Magnésio protege do eclampsia, mas em excesso apaga reflexo e respiração."
+  },
+  {
+    id: "yao-031-003",
+    fonte: "Yao",
+    capitulo: "Obstetrícia",
+    tema: "Via aérea obstétrica",
+    dificuldade: "média",
+    pergunta: "Por que a gestante tem risco aumentado de via aérea difícil e aspiração?",
+    alternativas: {
+      A: "Edema de via aérea, menor reserva respiratória e maior risco de refluxo/estômago cheio.",
+      B: "Aumento importante da capacidade residual funcional.",
+      C: "Ausência de alterações anatômicas.",
+      D: "Esvaziamento gástrico sempre acelerado em trabalho de parto.",
+      E: "Menor consumo de oxigênio."
+    },
+    resposta: "A",
+    comentario: "Gestação associa edema de via aérea, redução de reserva pulmonar, aumento de consumo de oxigênio e maior risco de aspiração.",
+    frase_ouro: "Na gestante, via aérea e estômago exigem respeito dobrado."
+  },
+  {
+    id: "yao-032-001",
+    fonte: "Yao",
+    capitulo: "Pediatria",
+    tema: "Laringoespasmo",
+    dificuldade: "média",
+    pergunta: "Em laringoespasmo pós-extubação em criança, qual conduta inicial é adequada?",
+    alternativas: {
+      A: "Estimular mais a via aérea com aspiração profunda repetida.",
+      B: "Oxigênio 100%, pressão positiva contínua, remover estímulo e aprofundar anestesia se necessário.",
+      C: "Aguardar cianose prolongada antes de agir.",
+      D: "Administrar diurético como primeira linha.",
+      E: "Extubar novamente."
+    },
+    resposta: "B",
+    comentario: "Laringoespasmo exige remoção do estímulo, oxigênio, pressão positiva, aprofundamento anestésico e, se persistente, bloqueador neuromuscular.",
+    frase_ouro: "Laringoespasmo se trata abrindo caminho para oxigênio, não esperando ficar roxo."
+  },
+  {
+    id: "yao-032-002",
+    fonte: "Yao",
+    capitulo: "Pediatria",
+    tema: "Reposição volêmica",
+    dificuldade: "média",
+    pergunta: "Em criança anestesiada, qual sinal pode sugerir hipovolemia significativa?",
+    alternativas: {
+      A: "Taquicardia persistente, enchimento capilar lento e queda de pressão em fase tardia.",
+      B: "Hipertensão isolada com bradicardia sempre.",
+      C: "Aumento de diurese com pele quente.",
+      D: "Saturação sempre acima de 100%.",
+      E: "Ausência de qualquer alteração até parada cardíaca."
+    },
+    resposta: "A",
+    comentario: "Crianças compensam perda volêmica com taquicardia e vasoconstrição; hipotensão pode ser achado tardio.",
+    frase_ouro: "Na criança, pressão cai tarde; taquicardia avisa antes."
+  },
+  {
+    id: "yao-032-003",
+    fonte: "Yao",
+    capitulo: "Pediatria",
+    tema: "Termorregulação",
+    dificuldade: "fácil",
+    pergunta: "Por que crianças pequenas têm maior risco de hipotermia perioperatória?",
+    alternativas: {
+      A: "Maior relação superfície corporal/peso e menor reserva térmica.",
+      B: "Menor perda de calor por evaporação.",
+      C: "Ausência de exposição cirúrgica.",
+      D: "Metabolismo basal zero.",
+      E: "Capacidade plena de tremor desde o nascimento."
+    },
+    resposta: "A",
+    comentario: "Crianças pequenas perdem calor rapidamente pela maior relação superfície/peso e menor reserva térmica.",
+    frase_ouro: "Criança pequena perde calor grande."
+  },
+  {
+    id: "yao-033-001",
+    fonte: "Yao",
+    capitulo: "Geriatria",
+    tema: "Farmacologia no idoso",
+    dificuldade: "média",
+    pergunta: "No paciente idoso, qual princípio farmacológico é geralmente adequado?",
+    alternativas: {
+      A: "Doses sempre maiores por resistência universal.",
+      B: "Titular doses cuidadosamente, pois há maior sensibilidade e menor reserva fisiológica.",
+      C: "Ignorar função renal.",
+      D: "Evitar monitorização hemodinâmica.",
+      E: "Assumir ausência de doença cardiovascular."
+    },
+    resposta: "B",
+    comentario: "Idosos costumam ter menor reserva fisiológica, alterações farmacocinéticas/farmacodinâmicas e maior risco de hipotensão e delirium.",
+    frase_ouro: "No idoso, dose pequena pode ter efeito grande."
+  },
+  {
+    id: "yao-033-002",
+    fonte: "Yao",
+    capitulo: "Geriatria",
+    tema: "Delirium",
+    dificuldade: "média",
+    pergunta: "Qual fator aumenta risco de delirium pós-operatório em idosos?",
+    alternativas: {
+      A: "Dor mal controlada, hipoxemia, infecção, distúrbios metabólicos e fármacos sedativos.",
+      B: "Orientação adequada e sono preservado.",
+      C: "Correção de hipoxemia.",
+      D: "Controle de dor multimodal.",
+      E: "Mobilização precoce."
+    },
+    resposta: "A",
+    comentario: "Delirium é multifatorial e pode ser precipitado por dor, hipóxia, infecção, distúrbios hidroeletrolíticos, privação de sono e sedativos.",
+    frase_ouro: "Delirium no idoso raramente tem uma causa só; é síndrome de soma."
+  },
+  {
+    id: "yao-034-001",
+    fonte: "Yao",
+    capitulo: "Dor aguda",
+    tema: "Analgesia multimodal",
+    dificuldade: "fácil",
+    pergunta: "Qual é o objetivo da analgesia multimodal?",
+    alternativas: {
+      A: "Usar apenas opioide em doses máximas.",
+      B: "Combinar mecanismos analgésicos para melhorar controle da dor e reduzir efeitos adversos.",
+      C: "Evitar qualquer bloqueio regional.",
+      D: "Impedir mobilização precoce.",
+      E: "Produzir sedação profunda como objetivo principal."
+    },
+    resposta: "B",
+    comentario: "Analgesia multimodal usa diferentes classes e técnicas para melhorar analgesia e reduzir dose/efeitos adversos de cada intervenção.",
+    frase_ouro: "Dor boa de tratar é dor atacada por mais de um caminho."
+  },
+  {
+    id: "yao-034-002",
+    fonte: "Yao",
+    capitulo: "Dor aguda",
+    tema: "Opioides",
+    dificuldade: "média",
+    pergunta: "Qual efeito adverso comum de opioides pode atrasar alta e recuperação pós-operatória?",
+    alternativas: {
+      A: "Náusea, vômito, sedação, íleo e depressão respiratória.",
+      B: "Aumento da motilidade intestinal.",
+      C: "Broncodilatação obrigatória.",
+      D: "Hiperventilação sustentada.",
+      E: "Aumento de reflexos protetores."
+    },
+    resposta: "A",
+    comentario: "Opioides podem causar náusea, vômito, prurido, sedação, íleo, retenção urinária e depressão respiratória.",
+    frase_ouro: "Opioide demais troca dor por efeitos colaterais."
+  },
+  {
+    id: "yao-035-001",
+    fonte: "Yao",
+    capitulo: "Náuseas e vômitos",
+    tema: "PONV",
+    dificuldade: "média",
+    pergunta: "Qual fator aumenta risco de náuseas e vômitos pós-operatórios?",
+    alternativas: {
+      A: "Sexo feminino, história prévia de PONV/cinetose, não tabagismo e uso de opioides.",
+      B: "Anestesia local sem sedação em todos os pacientes.",
+      C: "Ausência de opioides e cirurgia curta.",
+      D: "Jejum adequado isoladamente.",
+      E: "Tabagismo ativo como fator de alto risco clássico."
+    },
+    resposta: "A",
+    comentario: "Fatores clássicos incluem sexo feminino, história de PONV ou cinetose, não tabagismo e opioides no pós-operatório.",
+    frase_ouro: "PONV gosta de perfil, anestésico e opioide."
+  },
+  {
+    id: "yao-035-002",
+    fonte: "Yao",
+    capitulo: "Náuseas e vômitos",
+    tema: "Profilaxia",
+    dificuldade: "média",
+    pergunta: "Em paciente com alto risco de náuseas e vômitos pós-operatórios, qual estratégia é adequada?",
+    alternativas: {
+      A: "Não fazer profilaxia e tratar apenas após vômitos repetidos.",
+      B: "Usar profilaxia multimodal com antieméticos de mecanismos diferentes e reduzir fatores de risco quando possível.",
+      C: "Aumentar opioide como antiemético.",
+      D: "Evitar hidratação sempre.",
+      E: "Usar apenas um fármaco em dose subterapêutica."
+    },
+    resposta: "B",
+    comentario: "Profilaxia multimodal é indicada em alto risco, combinando fármacos e reduzindo fatores eméticos como opioides e anestésicos voláteis quando possível.",
+    frase_ouro: "PONV de alto risco pede profilaxia em camadas."
+  },
+  {
+    id: "yao-036-001",
+    fonte: "Yao",
+    capitulo: "Cuidados críticos",
+    tema: "Sepse",
+    dificuldade: "média",
+    pergunta: "Em paciente séptico, qual alteração hemodinâmica é comum na fase vasodilatada?",
+    alternativas: {
+      A: "Resistência vascular sistêmica baixa e necessidade de vasopressor para manter perfusão.",
+      B: "Vasoconstrição arterial extrema em todos os casos.",
+      C: "Ausência de alteração microcirculatória.",
+      D: "Débito cardíaco sempre zero.",
+      E: "Hipertensão intracraniana como manifestação obrigatória."
+    },
+    resposta: "A",
+    comentario: "Sepse pode causar vasodilatação, má distribuição de fluxo e hipotensão, exigindo fluidos e vasopressores conforme resposta.",
+    frase_ouro: "Na sepse, pressão baixa muitas vezes é vaso aberto demais."
+  },
+  {
+    id: "yao-036-002",
+    fonte: "Yao",
+    capitulo: "Cuidados críticos",
+    tema: "Noradrenalina",
+    dificuldade: "média",
+    pergunta: "Qual é o papel típico da noradrenalina no choque distributivo?",
+    alternativas: {
+      A: "Reduzir resistência vascular sistêmica.",
+      B: "Aumentar tônus vascular e pressão arterial média.",
+      C: "Produzir bloqueio neuromuscular.",
+      D: "Reverter heparina.",
+      E: "Tratar hipertermia maligna especificamente."
+    },
+    resposta: "B",
+    comentario: "Noradrenalina é vasopressor de primeira linha em muitos choques distributivos, aumentando tônus vascular e pressão de perfusão.",
+    frase_ouro: "Noradrenalina fecha o vaso para devolver pressão perfusora."
+  },
+  {
+    id: "yao-036-003",
+    fonte: "Yao",
+    capitulo: "Cuidados críticos",
+    tema: "Lactato",
+    dificuldade: "média",
+    pergunta: "Lactato elevado em paciente crítico sugere principalmente:",
+    alternativas: {
+      A: "Possível desequilíbrio entre oferta e demanda de oxigênio, hipoperfusão ou estresse metabólico.",
+      B: "Função mitocondrial sempre normal.",
+      C: "Ausência de gravidade.",
+      D: "Hipervolemia obrigatória.",
+      E: "Correção automática de choque."
+    },
+    resposta: "A",
+    comentario: "Lactato pode elevar por hipoperfusão, hipóxia tecidual, catecolaminas, disfunção mitocondrial e metabolismo acelerado.",
+    frase_ouro: "Lactato alto é alarme metabólico; não é diagnóstico único."
+  },
+  {
+    id: "yao-037-001",
+    fonte: "Yao",
+    capitulo: "Hematologia",
+    tema: "Anemia",
+    dificuldade: "média",
+    pergunta: "Qual fator deve influenciar decisão transfusional além do valor isolado de hemoglobina?",
+    alternativas: {
+      A: "Sinais de isquemia, sangramento ativo, reserva cardiopulmonar e oxigenação.",
+      B: "Cor da parede da sala.",
+      C: "Altura do anestesista.",
+      D: "Tipo de monitor de temperatura.",
+      E: "Marca do laringoscópio."
+    },
+    resposta: "A",
+    comentario: "A decisão transfusional deve considerar contexto clínico, sangramento, isquemia, reserva cardíaca/pulmonar e oferta de oxigênio.",
+    frase_ouro: "Transfusão não trata número; trata oferta de oxigênio no paciente real."
+  },
+  {
+    id: "yao-037-002",
+    fonte: "Yao",
+    capitulo: "Hematologia",
+    tema: "Coagulopatia",
+    dificuldade: "média",
+    pergunta: "Em sangramento difuso com fibrinogênio baixo, qual hemoderivado ou concentrado pode ser indicado?",
+    alternativas: {
+      A: "Crioprecipitado ou concentrado de fibrinogênio.",
+      B: "Concentrado de hemácias isolado sempre.",
+      C: "Naloxona.",
+      D: "Atropina.",
+      E: "Sugamadex."
+    },
+    resposta: "A",
+    comentario: "Fibrinogênio baixo prejudica formação de coágulo; pode ser reposto com crioprecipitado ou concentrado de fibrinogênio conforme disponibilidade.",
+    frase_ouro: "Sem fibrinogênio, o coágulo não ganha estrutura."
+  },
+  {
+    id: "yao-038-001",
+    fonte: "Yao",
+    capitulo: "Anafilaxia",
+    tema: "Reconhecimento",
+    dificuldade: "média",
+    pergunta: "Durante anestesia geral, qual combinação sugere anafilaxia?",
+    alternativas: {
+      A: "Hipotensão, broncoespasmo, rash/edema e dificuldade ventilatória após exposição a agente desencadeante.",
+      B: "Hipertensão isolada sem outros sinais.",
+      C: "Bradicardia fisiológica durante sono.",
+      D: "Diurese aumentada isolada.",
+      E: "Miose por opioide sem instabilidade."
+    },
+    resposta: "A",
+    comentario: "Anafilaxia perioperatória pode manifestar-se com colapso cardiovascular, broncoespasmo, alterações cutâneas e edema, embora sinais cutâneos possam estar ocultos.",
+    frase_ouro: "Anafilaxia anestésica pode aparecer primeiro como pressão que some e pulmão que fecha."
+  },
+  {
+    id: "yao-038-002",
+    fonte: "Yao",
+    capitulo: "Anafilaxia",
+    tema: "Tratamento",
+    dificuldade: "média",
+    pergunta: "Qual fármaco é central no tratamento da anafilaxia grave perioperatória?",
+    alternativas: {
+      A: "Adrenalina.",
+      B: "Furosemida.",
+      C: "Protamina em todos os casos.",
+      D: "Dantrolene.",
+      E: "Flumazenil."
+    },
+    resposta: "A",
+    comentario: "Adrenalina trata vasodilatação, broncoespasmo e edema na anafilaxia grave, junto com oxigênio, fluidos e suporte.",
+    frase_ouro: "Anafilaxia grave pede adrenalina cedo, não timidez."
+  },
+  {
+    id: "yao-039-001",
+    fonte: "Yao",
+    capitulo: "Ambulatorial",
+    tema: "Alta segura",
+    dificuldade: "fácil",
+    pergunta: "Qual critério é importante antes da alta após anestesia ambulatorial?",
+    alternativas: {
+      A: "Estabilidade hemodinâmica, controle de dor/náusea e recuperação adequada da consciência e mobilidade.",
+      B: "Sonolência profunda persistente.",
+      C: "Sangramento ativo sem avaliação.",
+      D: "Hipoxemia em ar ambiente sem plano.",
+      E: "Ausência de acompanhante quando necessário."
+    },
+    resposta: "A",
+    comentario: "Alta ambulatorial exige recuperação adequada, estabilidade, dor e náuseas controladas, além de orientações e suporte após saída.",
+    frase_ouro: "Alta segura é fisiologia estável, não pressa de liberar leito."
+  },
+  {
+    id: "yao-039-002",
+    fonte: "Yao",
+    capitulo: "Ambulatorial",
+    tema: "Seleção de pacientes",
+    dificuldade: "média",
+    pergunta: "Qual paciente exige cautela especial para cirurgia ambulatorial?",
+    alternativas: {
+      A: "Paciente com comorbidade descompensada ou risco elevado de complicação pós-operatória.",
+      B: "Paciente hígido para procedimento curto.",
+      C: "Paciente com acompanhante e boa recuperação esperada.",
+      D: "Paciente com dor controlável por via oral.",
+      E: "Paciente sem risco respiratório."
+    },
+    resposta: "A",
+    comentario: "Comorbidades descompensadas, risco respiratório/cardiovascular e necessidade de monitorização prolongada podem contraindicar ambiente ambulatorial.",
+    frase_ouro: "Ambulatorial bom é aquele em que a alta já é segura antes da incisão."
+  },
+  {
+    id: "yao-040-001",
+    fonte: "Yao",
+    capitulo: "Queimaduras",
+    tema: "Via aérea",
+    dificuldade: "média",
+    pergunta: "Em paciente queimado com suspeita de lesão inalatória, qual preocupação é prioritária?",
+    alternativas: {
+      A: "Edema progressivo de via aérea e necessidade precoce de controle da via aérea.",
+      B: "Ausência de risco respiratório se saturação inicial for normal.",
+      C: "Contraindicação absoluta de oxigênio.",
+      D: "Extubação imediata obrigatória.",
+      E: "Hipotermia impossível."
+    },
+    resposta: "A",
+    comentario: "Lesão inalatória pode evoluir com edema progressivo, tornando intubação tardia mais difícil ou impossível.",
+    frase_ouro: "Na queimadura de via aérea, esperar edema é perder janela."
+  },
+  {
+    id: "yao-040-002",
+    fonte: "Yao",
+    capitulo: "Queimaduras",
+    tema: "Succinilcolina",
+    dificuldade: "alta",
+    pergunta: "Após queimadura extensa, por que a succinilcolina passa a ser perigosa após o período inicial?",
+    alternativas: {
+      A: "Por risco de hipercalemia devido à proliferação de receptores acetilcolínicos extrajuncionais.",
+      B: "Por causar hipocalcemia obrigatória.",
+      C: "Por bloquear receptores alfa.",
+      D: "Por não produzir fasciculações.",
+      E: "Por reverter analgesia."
+    },
+    resposta: "A",
+    comentario: "Após queimaduras extensas, upregulation de receptores extrajuncionais aumenta liberação de potássio com succinilcolina.",
+    frase_ouro: "Queimadura extensa transforma succinilcolina em risco de potássio."
+  },
+  {
+    id: "yao-041-001",
+    fonte: "Yao",
+    capitulo: "Cirurgia laparoscópica",
+    tema: "Pneumoperitônio",
+    dificuldade: "média",
+    pergunta: "Qual efeito fisiológico pode ocorrer com pneumoperitônio por CO2?",
+    alternativas: {
+      A: "Aumento de CO2 absorvido, elevação de pressão intra-abdominal e alterações hemodinâmicas.",
+      B: "Ausência de efeito ventilatório.",
+      C: "Redução obrigatória da pressão intra-abdominal.",
+      D: "Diminuição de PaCO2 sem ajuste ventilatório.",
+      E: "Eliminação de risco de embolia gasosa."
+    },
+    resposta: "A",
+    comentario: "O pneumoperitônio pode aumentar PaCO2, reduzir retorno venoso em alguns contextos, elevar resistência vascular sistêmica e modificar ventilação.",
+    frase_ouro: "Pneumoperitônio é gás, pressão e CO2 entrando na conta."
+  },
+  {
+    id: "yao-041-002",
+    fonte: "Yao",
+    capitulo: "Cirurgia laparoscópica",
+    tema: "Embolia gasosa",
+    dificuldade: "alta",
+    pergunta: "Durante laparoscopia, queda abrupta de EtCO2, hipotensão e sopro em roda de moinho sugerem:",
+    alternativas: {
+      A: "Embolia gasosa venosa.",
+      B: "Hipoglicemia leve.",
+      C: "Bloqueio neuromuscular residual.",
+      D: "Hipertensão essencial.",
+      E: "Retenção urinária."
+    },
+    resposta: "A",
+    comentario: "Embolia gasosa venosa pode causar queda abrupta do EtCO2 por redução de débito pulmonar, hipotensão e colapso cardiovascular.",
+    frase_ouro: "EtCO2 que despenca de repente pode ser débito que sumiu."
+  },
+  {
+    id: "yao-042-001",
+    fonte: "Yao",
+    capitulo: "Urologia",
+    tema: "Síndrome pós-RTU",
+    dificuldade: "média",
+    pergunta: "Na síndrome pós-ressecção transuretral da próstata, qual distúrbio pode ocorrer por absorção de solução hipotônica?",
+    alternativas: {
+      A: "Hipernatremia grave.",
+      B: "Hiponatremia e sintomas neurológicos.",
+      C: "Hipercalcemia isolada.",
+      D: "Hiperglicemia obrigatória.",
+      E: "Hipertermia maligna."
+    },
+    resposta: "B",
+    comentario: "Absorção de solução hipotônica pode causar hiponatremia dilucional, confusão, convulsões e instabilidade hemodinâmica.",
+    frase_ouro: "Na RTU, irrigação absorvida pode virar sódio baixo e cérebro irritado."
+  },
+  {
+    id: "yao-042-002",
+    fonte: "Yao",
+    capitulo: "Urologia",
+    tema: "Litotomia",
+    dificuldade: "média",
+    pergunta: "Qual complicação deve ser considerada em cirurgias prolongadas em posição de litotomia?",
+    alternativas: {
+      A: "Lesão nervosa periférica, síndrome compartimental e alterações hemodinâmicas ao reposicionar.",
+      B: "Ausência de risco neurológico.",
+      C: "Proteção completa contra trombose.",
+      D: "Eliminação de compressão de membros.",
+      E: "Hiperventilação obrigatória."
+    },
+    resposta: "A",
+    comentario: "Litotomia prolongada pode causar compressões nervosas, lesão muscular, síndrome compartimental e mudanças de retorno venoso ao descer as pernas.",
+    frase_ouro: "Posição cirúrgica também é intervenção anestésica."
+  },
+  {
+    id: "yao-043-001",
+    fonte: "Yao",
+    capitulo: "Ortopedia",
+    tema: "Cimento ósseo",
+    dificuldade: "alta",
+    pergunta: "Durante artroplastia cimentada, hipotensão, hipóxia e aumento de pressão pulmonar após cimentação sugerem:",
+    alternativas: {
+      A: "Síndrome de implantação do cimento ósseo.",
+      B: "Hipertermia maligna obrigatória.",
+      C: "Toxicidade por anestésico local.",
+      D: "Hipoglicemia pura.",
+      E: "Pneumotórax espontâneo bilateral inevitável."
+    },
+    resposta: "A",
+    comentario: "A síndrome de implantação do cimento ósseo pode causar hipóxia, hipotensão, hipertensão pulmonar, disfunção de VD e colapso.",
+    frase_ouro: "Cimento em osso pode virar embolia e VD em apuros."
+  },
+  {
+    id: "yao-043-002",
+    fonte: "Yao",
+    capitulo: "Ortopedia",
+    tema: "Embolia gordurosa",
+    dificuldade: "média",
+    pergunta: "Após fratura de ossos longos, hipoxemia, alteração neurológica e petéquias sugerem:",
+    alternativas: {
+      A: "Síndrome da embolia gordurosa.",
+      B: "Crise tireotóxica obrigatória.",
+      C: "Hipercalcemia anestésica.",
+      D: "Síndrome pós-RTU.",
+      E: "Reação ao sugamadex isolada."
+    },
+    resposta: "A",
+    comentario: "Embolia gordurosa pode ocorrer após fraturas de ossos longos, com hipoxemia, alterações neurológicas e rash petequial.",
+    frase_ouro: "Fratura longa pode jogar gordura no pulmão e confundir o cérebro."
+  },
+  {
+    id: "yao-044-001",
+    fonte: "Yao",
+    capitulo: "Otorrinolaringologia",
+    tema: "Cirurgia de via aérea compartilhada",
+    dificuldade: "média",
+    pergunta: "Em cirurgia de via aérea compartilhada, qual princípio é essencial?",
+    alternativas: {
+      A: "Comunicação contínua com cirurgião sobre acesso à via aérea, ventilação e plano de emergência.",
+      B: "Dispensar plano de via aérea alternativa.",
+      C: "Evitar monitorização de oxigenação.",
+      D: "Assumir que sangramento nunca ocorre.",
+      E: "Retirar o tubo sem combinar com a equipe."
+    },
+    resposta: "A",
+    comentario: "Cirurgias de via aérea compartilhada exigem planejamento conjunto, estratégia de ventilação, acesso emergencial e comunicação contínua.",
+    frase_ouro: "Via aérea compartilhada exige ego pequeno e plano grande."
+  },
+  {
+    id: "yao-044-002",
+    fonte: "Yao",
+    capitulo: "Otorrinolaringologia",
+    tema: "Laser de via aérea",
+    dificuldade: "alta",
+    pergunta: "Em cirurgia com laser de via aérea, qual medida reduz risco de incêndio?",
+    alternativas: {
+      A: "Reduzir FiO2 ao menor valor seguro, evitar óxido nitroso e usar tubo adequado/protegido.",
+      B: "Usar FiO2 100% sempre com óxido nitroso.",
+      C: "Aumentar vazamento de oxigênio ao redor do tubo.",
+      D: "Ignorar comunicação com o cirurgião.",
+      E: "Usar tubo comum desprotegido obrigatoriamente."
+    },
+    resposta: "A",
+    comentario: "Laser em via aérea exige redução de oxidantes, tubo apropriado e comunicação para evitar incêndio de via aérea.",
+    frase_ouro: "Laser, oxigênio e tubo comum formam triângulo que ninguém quer acender."
+  },
+  {
+    id: "yao-045-001",
+    fonte: "Yao",
+    capitulo: "Oftalmologia",
+    tema: "Reflexo óculo-cardíaco",
+    dificuldade: "média",
+    pergunta: "Tração de músculos extraoculares causa bradicardia súbita. Qual reflexo explica esse achado?",
+    alternativas: {
+      A: "Reflexo óculo-cardíaco.",
+      B: "Reflexo de Bezold-Jarisch obrigatório.",
+      C: "Reflexo de Bainbridge.",
+      D: "Reflexo de tosse.",
+      E: "Reflexo barorreceptor aórtico isolado."
+    },
+    resposta: "A",
+    comentario: "O reflexo óculo-cardíaco é mediado por aferência trigeminal e eferência vagal, podendo causar bradicardia com tração ocular.",
+    frase_ouro: "No olho, puxou e bradicardizou: pense no vago pelo trigêmeo."
+  },
+  {
+    id: "yao-045-002",
+    fonte: "Yao",
+    capitulo: "Oftalmologia",
+    tema: "Pressão intraocular",
+    dificuldade: "média",
+    pergunta: "Qual fator pode aumentar pressão intraocular durante anestesia?",
+    alternativas: {
+      A: "Tosse, laringoscopia intensa e hipercapnia.",
+      B: "Plano anestésico adequado e relaxamento.",
+      C: "Evitar estímulo de via aérea.",
+      D: "Normocapnia.",
+      E: "Controle suave da emergência."
+    },
+    resposta: "A",
+    comentario: "Tosse, náusea, vômito, laringoscopia, hipercapnia e aumento de pressão venosa podem elevar pressão intraocular.",
+    frase_ouro: "Olho aberto não gosta de tosse, pressão e CO2."
+  },
+  {
+    id: "yao-046-001",
+    fonte: "Yao",
+    capitulo: "Cirurgia plástica",
+    tema: "Lipoaspiração",
+    dificuldade: "média",
+    pergunta: "Em lipoaspiração de grande volume, qual preocupação anestésica é relevante?",
+    alternativas: {
+      A: "Deslocamento de fluidos, toxicidade por lidocaína, hipotermia e tromboembolismo.",
+      B: "Ausência de perda térmica.",
+      C: "Impossibilidade de absorção de anestésico local.",
+      D: "Risco zero de embolia.",
+      E: "Contraindicação absoluta de monitorização."
+    },
+    resposta: "A",
+    comentario: "Lipoaspiração extensa envolve infiltração tumescente, absorção de lidocaína, perda de calor, alterações volêmicas e risco tromboembólico.",
+    frase_ouro: "Lipo grande é cirurgia de fluido, temperatura e anestésico local."
+  },
+  {
+    id: "yao-046-002",
+    fonte: "Yao",
+    capitulo: "Cirurgia plástica",
+    tema: "Toxicidade por lidocaína",
+    dificuldade: "média",
+    pergunta: "Qual manifestação pode ocorrer na toxicidade sistêmica por lidocaína?",
+    alternativas: {
+      A: "Sintomas neurológicos como zumbido, gosto metálico, convulsões e, em casos graves, colapso cardiovascular.",
+      B: "Hipertrofia muscular imediata.",
+      C: "Coagulação intravascular obrigatória.",
+      D: "Hipoglicemia isolada.",
+      E: "Bloqueio alfa irreversível."
+    },
+    resposta: "A",
+    comentario: "Toxicidade por anestésico local pode causar sintomas neurológicos precoces e toxicidade cardiovascular grave.",
+    frase_ouro: "Anestésico local no sangue demais começa no cérebro e pode terminar no coração."
   }
 ];
