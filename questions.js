@@ -3004,5 +3004,977 @@ const QUESTIONS = [
     resposta: "B",
     comentario: "Incêndio de via aérea exige parada imediata de gases e laser, remoção do material em chamas, extinção do fogo, reestabelecimento seguro da ventilação e avaliação de lesão.",
     frase_ouro: "Fogo em via aérea: pare oxidante, tire combustível e só depois volte a ventilar."
+  },
+  {
+    id: "yao-050-001",
+    fonte: "Yao",
+    capitulo: "Transplante hepático",
+    tema: "Síndrome pós-reperfusão",
+    dificuldade: "alta",
+    pergunta: "Paciente cirrótico Child-Pugh C está em transplante hepático. Logo após reperfusão do enxerto, apresenta queda abrupta da PAM, bradicardia, aumento de potássio, acidose e redução do débito cardíaco. Qual interpretação é mais adequada?",
+    alternativas: {
+      A: "Síndrome pós-reperfusão, relacionada ao retorno de metabólitos, potássio, mediadores inflamatórios e alterações hemodinâmicas após reperfusão do enxerto.",
+      B: "Reação normal sem repercussão, que nunca exige tratamento.",
+      C: "Hipertermia maligna obrigatória por reperfusão hepática.",
+      D: "Toxicidade por anestésico local.",
+      E: "Reflexo óculo-cardíaco."
+    },
+    resposta: "A",
+    comentario: "A síndrome pós-reperfusão pode ocorrer após liberação do fluxo para o enxerto hepático, com hipotensão, bradicardia, hipercalemia, acidose e instabilidade cardiovascular.",
+    frase_ouro: "Na reperfusão hepática, o enxerto devolve para a circulação tudo que ficou represado."
+  },
+  {
+    id: "yao-050-002",
+    fonte: "Yao",
+    capitulo: "Transplante hepático",
+    tema: "Coagulopatia",
+    dificuldade: "alta",
+    pergunta: "Durante transplante hepático, paciente apresenta sangramento difuso, fibrinogênio baixo no ROTEM e plaquetopenia. Qual conduta é mais coerente?",
+    alternativas: {
+      A: "Administrar apenas cristaloide até normalizar pressão.",
+      B: "Repor componentes guiados por mecanismo, incluindo fibrinogênio/crioprecipitado e plaquetas conforme testes e sangramento.",
+      C: "Evitar aquecimento para melhorar coagulação.",
+      D: "Administrar protamina obrigatoriamente mesmo sem heparina.",
+      E: "Ignorar cálcio ionizado durante transfusão."
+    },
+    resposta: "B",
+    comentario: "No transplante hepático, a coagulopatia é dinâmica e multifatorial. Testes viscoelásticos ajudam a direcionar fibrinogênio, plaquetas, plasma e antifibrinolítico quando indicado.",
+    frase_ouro: "No transplante hepático, sangramento se trata com fisiologia do coágulo, não com hemoderivado no escuro."
+  },
+  {
+    id: "yao-050-003",
+    fonte: "Yao",
+    capitulo: "Transplante hepático",
+    tema: "Fase anepática",
+    dificuldade: "alta",
+    pergunta: "Durante a fase anepática do transplante hepático, qual alteração metabólica deve ser antecipada?",
+    alternativas: {
+      A: "Metabolismo hepático normal de lactato e citrato.",
+      B: "Maior risco de acidose, hipocalcemia por citrato e alteração da depuração de fármacos/metabólitos.",
+      C: "Eliminação completa do risco de sangramento.",
+      D: "Hipernatremia obrigatória por excesso de aldosterona.",
+      E: "Impossibilidade de hipoglicemia."
+    },
+    resposta: "B",
+    comentario: "Na fase anepática, há ausência temporária de função hepática, comprometendo metabolismo de lactato, citrato e fármacos, além de contribuir para distúrbios ácido-base e eletrolíticos.",
+    frase_ouro: "Sem fígado no circuito, citrato, lactato e fármacos ficam sem alfândega."
+  },
+  {
+    id: "yao-051-001",
+    fonte: "Yao",
+    capitulo: "Transplante renal",
+    tema: "Reperfusão do enxerto",
+    dificuldade: "alta",
+    pergunta: "Paciente renal crônico em transplante renal recebe o enxerto. Antes da reperfusão, qual meta anestésica é desejável para favorecer perfusão inicial do rim transplantado?",
+    alternativas: {
+      A: "Hipotensão permissiva prolongada.",
+      B: "Manter volemia e pressão arterial adequadas, evitando hipoperfusão do enxerto.",
+      C: "Usar diurético como substituto de pressão perfusora.",
+      D: "Manter hipovolemia para evitar edema renal.",
+      E: "Reduzir oxigenação para diminuir radicais livres."
+    },
+    resposta: "B",
+    comentario: "O enxerto renal depende de pressão de perfusão e volemia adequadas na reperfusão. Hipotensão prolongada pode comprometer função inicial do enxerto.",
+    frase_ouro: "Rim transplantado chega pedindo fluxo, não hipotensão."
+  },
+  {
+    id: "yao-051-002",
+    fonte: "Yao",
+    capitulo: "Transplante renal",
+    tema: "Hipercalemia",
+    dificuldade: "média",
+    pergunta: "Paciente em diálise crônica chega para transplante renal com potássio elevado. Qual droga deve ser evitada se houver risco de hipercalemia relevante?",
+    alternativas: {
+      A: "Succinilcolina.",
+      B: "Propofol titulado.",
+      C: "Fentanil.",
+      D: "Cisatracúrio.",
+      E: "Sevoflurano."
+    },
+    resposta: "A",
+    comentario: "A succinilcolina pode elevar potássio sérico. Em paciente renal crônico com hipercalemia significativa, seu uso pode ser perigoso.",
+    frase_ouro: "Em renal crônico hipercalêmico, succinilcolina pode ser fósforo no barril de potássio."
+  },
+  {
+    id: "yao-051-003",
+    fonte: "Yao",
+    capitulo: "Transplante renal",
+    tema: "Fármacos",
+    dificuldade: "média",
+    pergunta: "Em paciente com insuficiência renal terminal, qual bloqueador neuromuscular tem vantagem por metabolismo predominantemente por degradação de Hofmann e esterases plasmáticas?",
+    alternativas: {
+      A: "Pancurônio.",
+      B: "Cisatracúrio.",
+      C: "Vecurônio em dose alta repetida.",
+      D: "Succinilcolina em infusão contínua.",
+      E: "Doxacúrio."
+    },
+    resposta: "B",
+    comentario: "Cisatracúrio sofre degradação de Hofmann e tem menor dependência renal, sendo útil em pacientes com insuficiência renal.",
+    frase_ouro: "No rim ruim, cisatracúrio evita depender da saída renal."
+  },
+  {
+    id: "yao-052-001",
+    fonte: "Yao",
+    capitulo: "Cirurgia endócrina",
+    tema: "Tireoidectomia",
+    dificuldade: "alta",
+    pergunta: "Após tireoidectomia total, paciente evolui na sala de recuperação com estridor, agitação e aumento de volume cervical. Qual conduta é mais adequada?",
+    alternativas: {
+      A: "Observar por 2 horas, pois hematoma cervical nunca comprime via aérea.",
+      B: "Suspeitar de hematoma cervical compressivo, chamar cirurgião e preparar abertura da ferida/controle urgente da via aérea.",
+      C: "Administrar diurético e liberar alta.",
+      D: "Fazer apenas antiemético.",
+      E: "Administrar beta-bloqueador como primeira medida."
+    },
+    resposta: "B",
+    comentario: "Hematoma cervical pós-tireoidectomia pode comprimir rapidamente a via aérea. A ferida pode precisar ser aberta emergencialmente enquanto se prepara controle definitivo da via aérea.",
+    frase_ouro: "Hematoma cervical não espera tomografia; espera tesoura e via aérea pronta."
+  },
+  {
+    id: "yao-052-002",
+    fonte: "Yao",
+    capitulo: "Cirurgia endócrina",
+    tema: "Lesão de nervo laríngeo recorrente",
+    dificuldade: "média",
+    pergunta: "Após tireoidectomia, rouquidão persistente sugere lesão de qual estrutura?",
+    alternativas: {
+      A: "Nervo frênico bilateral sempre.",
+      B: "Nervo laríngeo recorrente.",
+      C: "Nervo radial.",
+      D: "Nervo femoral.",
+      E: "Nervo óptico."
+    },
+    resposta: "B",
+    comentario: "O nervo laríngeo recorrente inerva a maioria dos músculos intrínsecos da laringe. Sua lesão pode causar rouquidão e, se bilateral, obstrução de via aérea.",
+    frase_ouro: "Depois da tireoide, voz rouca lembra nervo recorrente."
+  },
+  {
+    id: "yao-052-003",
+    fonte: "Yao",
+    capitulo: "Cirurgia endócrina",
+    tema: "Hipocalcemia pós-tireoidectomia",
+    dificuldade: "média",
+    pergunta: "Paciente apresenta parestesias, câimbras e sinal de Chvostek após tireoidectomia total. Qual distúrbio deve ser suspeitado?",
+    alternativas: {
+      A: "Hipercalemia.",
+      B: "Hipocalcemia por hipoparatireoidismo pós-operatório.",
+      C: "Hipernatremia.",
+      D: "Hiperglicemia por insulina.",
+      E: "Acidose respiratória isolada."
+    },
+    resposta: "B",
+    comentario: "Manipulação ou lesão das paratireoides pode causar hipocalcemia após tireoidectomia, com parestesias, tetania, câimbras e sinais neuromusculares.",
+    frase_ouro: "Depois da tireoide, formigamento pode ser paratireoide pedindo cálcio."
+  },
+  {
+    id: "yao-053-001",
+    fonte: "Yao",
+    capitulo: "Neurocirurgia",
+    tema: "Craniotomia sentada",
+    dificuldade: "alta",
+    pergunta: "Durante craniotomia em posição sentada, ocorre queda abrupta de EtCO2, hipotensão e sopro cardíaco sugestivo. Qual complicação deve ser considerada?",
+    alternativas: {
+      A: "Embolia aérea venosa.",
+      B: "Hipoglicemia simples.",
+      C: "Síndrome pós-RTU.",
+      D: "Bloqueio neuromuscular residual.",
+      E: "Hiperaldosteronismo primário."
+    },
+    resposta: "A",
+    comentario: "Posição sentada em neurocirurgia aumenta risco de entrada de ar venoso. Queda de EtCO2 e instabilidade podem indicar embolia aérea venosa.",
+    frase_ouro: "Na posição sentada, veia acima do coração pode aspirar ar."
+  },
+  {
+    id: "yao-053-002",
+    fonte: "Yao",
+    capitulo: "Neurocirurgia",
+    tema: "Embolia aérea venosa",
+    dificuldade: "alta",
+    pergunta: "Na suspeita de embolia aérea venosa durante neurocirurgia, qual conduta inicial é apropriada?",
+    alternativas: {
+      A: "Avisar cirurgião para inundar campo/interromper entrada de ar, administrar oxigênio 100%, suporte hemodinâmico e aspirar ar por cateter venoso central se posicionado.",
+      B: "Aumentar óxido nitroso.",
+      C: "Reduzir FiO2 para 21%.",
+      D: "Manter campo seco e elevado.",
+      E: "Administrar diurético como tratamento principal."
+    },
+    resposta: "A",
+    comentario: "O tratamento inclui impedir nova entrada de ar, oxigênio 100%, suporte cardiovascular, posicionamento conforme contexto e aspiração por cateter se possível.",
+    frase_ouro: "Embolia aérea: feche a entrada, dê oxigênio e sustente o débito."
+  },
+  {
+    id: "yao-053-003",
+    fonte: "Yao",
+    capitulo: "Neurocirurgia",
+    tema: "Potenciais evocados",
+    dificuldade: "alta",
+    pergunta: "Durante cirurgia de coluna com monitorização de potenciais evocados motores, qual técnica anestésica tende a preservar melhor o sinal?",
+    alternativas: {
+      A: "Alta concentração de halogenado e bloqueio neuromuscular profundo contínuo.",
+      B: "Técnica intravenosa titulada, evitando bloqueio neuromuscular significativo após intubação.",
+      C: "Ausência de qualquer anestesia.",
+      D: "Uso obrigatório de succinilcolina em infusão.",
+      E: "Hipotensão profunda mantida."
+    },
+    resposta: "B",
+    comentario: "MEP é sensível a agentes inalatórios e bloqueio neuromuscular. Técnica intravenosa e mínimo relaxante após intubação ajudam a preservar monitorização.",
+    frase_ouro: "MEP precisa de músculo respondendo e anestesia que não apague o sinal."
+  },
+  {
+    id: "yao-054-001",
+    fonte: "Yao",
+    capitulo: "Cirurgia vascular periférica",
+    tema: "Isquemia de membro",
+    dificuldade: "média",
+    pergunta: "Após revascularização de membro inferior, paciente apresenta dor intensa, parestesia, palidez, ausência de pulso e déficit motor. Qual diagnóstico deve ser considerado urgentemente?",
+    alternativas: {
+      A: "Isquemia aguda de membro ou falha/trombose do enxerto.",
+      B: "Náusea pós-operatória simples.",
+      C: "Hipoglicemia leve.",
+      D: "Síndrome pós-RTU.",
+      E: "Bloqueio residual isolado."
+    },
+    resposta: "A",
+    comentario: "Dor, palidez, parestesia, paralisia e ausência de pulso sugerem isquemia aguda, exigindo avaliação vascular imediata.",
+    frase_ouro: "Depois de revascularizar, pulso sumido é urgência, não detalhe."
+  },
+  {
+    id: "yao-054-002",
+    fonte: "Yao",
+    capitulo: "Cirurgia vascular periférica",
+    tema: "Reperfusão",
+    dificuldade: "alta",
+    pergunta: "Após reperfusão de membro isquêmico por horas, qual alteração metabólica pode ocorrer?",
+    alternativas: {
+      A: "Hipercalemia, acidose, mioglobinúria e instabilidade hemodinâmica.",
+      B: "Hipocalemia obrigatória e alcalose intensa.",
+      C: "Redução de lactato por ausência de metabolismo anaeróbio.",
+      D: "Impossibilidade de lesão renal.",
+      E: "Correção automática de choque."
+    },
+    resposta: "A",
+    comentario: "Reperfusão de tecido isquêmico pode liberar potássio, ácido, mioglobina e mediadores inflamatórios, com risco de arritmia, acidose, hipotensão e lesão renal.",
+    frase_ouro: "Reperfusão salva membro, mas devolve potássio, ácido e mioglobina."
+  },
+  {
+    id: "yao-055-001",
+    fonte: "Yao",
+    capitulo: "Cirurgia carotídea",
+    tema: "Endarterectomia",
+    dificuldade: "alta",
+    pergunta: "Durante endarterectomia de carótida sob anestesia geral, após clampeamento carotídeo ocorre queda de amplitude em monitorização neurológica. Qual conduta é mais coerente?",
+    alternativas: {
+      A: "Reduzir pressão arterial para diminuir fluxo cerebral.",
+      B: "Aumentar pressão arterial, otimizar oxigenação/hemoglobina e discutir shunt com cirurgião.",
+      C: "Administrar diurético imediatamente.",
+      D: "Ignorar, pois clamp carotídeo nunca reduz perfusão.",
+      E: "Induzir hipocapnia extrema por tempo prolongado."
+    },
+    resposta: "B",
+    comentario: "Alteração neurológica durante clampeamento sugere hipoperfusão cerebral. Aumentar pressão perfusora, otimizar oferta de oxigênio e considerar shunt são medidas adequadas.",
+    frase_ouro: "Clamp carotídeo que muda monitor pede mais fluxo ou caminho alternativo."
+  },
+  {
+    id: "yao-055-002",
+    fonte: "Yao",
+    capitulo: "Cirurgia carotídea",
+    tema: "Pressão arterial pós-operatória",
+    dificuldade: "média",
+    pergunta: "Após endarterectomia de carótida, por que hipertensão deve ser tratada com cuidado?",
+    alternativas: {
+      A: "Pode aumentar risco de sangramento cervical e síndrome de hiperperfusão cerebral.",
+      B: "Sempre melhora cicatrização sem risco.",
+      C: "Impede hematoma.",
+      D: "É obrigatória para todos os pacientes por 48 horas.",
+      E: "Não tem relação com complicações neurológicas."
+    },
+    resposta: "A",
+    comentario: "Hipertensão após endarterectomia pode contribuir para hematoma cervical, sangramento e hiperperfusão cerebral, especialmente em pacientes com autorregulação alterada.",
+    frase_ouro: "Depois da carótida, pressão demais pode sangrar o pescoço e inundar o cérebro."
+  },
+  {
+    id: "yao-056-001",
+    fonte: "Yao",
+    capitulo: "Cirurgia cardíaca",
+    tema: "NIRS cerebral",
+    dificuldade: "alta",
+    pergunta: "Durante cirurgia cardíaca, NIRS cerebral cai bilateralmente após início da CEC. Qual conduta é mais adequada?",
+    alternativas: {
+      A: "Ignorar, pois NIRS não se altera com perfusão.",
+      B: "Avaliar fluxo de bomba, pressão arterial, hemoglobina, oxigenação, PaCO2, posição de cânulas e profundidade anestésica.",
+      C: "Reduzir FiO2 imediatamente.",
+      D: "Diminuir fluxo de bomba como primeira medida.",
+      E: "Administrar protamina antes da saída da CEC."
+    },
+    resposta: "B",
+    comentario: "Queda bilateral de NIRS pode refletir redução global de oferta cerebral por fluxo, pressão, anemia, hipoxemia, hipocapnia ou problemas de perfusão.",
+    frase_ouro: "NIRS baixo é oferta cerebral pedindo auditoria: fluxo, pressão, sangue, oxigênio e CO2."
+  },
+  {
+    id: "yao-056-002",
+    fonte: "Yao",
+    capitulo: "Cirurgia cardíaca",
+    tema: "Fluxo de CEC",
+    dificuldade: "alta",
+    pergunta: "Durante CEC, paciente apresenta SvO2 baixa, lactato subindo e pressão arterial limítrofe. Qual interpretação é mais provável?",
+    alternativas: {
+      A: "Oferta sistêmica de oxigênio inadequada em relação ao consumo, exigindo avaliação de fluxo de bomba, hemoglobina, oxigenação e perfusão.",
+      B: "Perfusão tecidual necessariamente ótima.",
+      C: "Erro impossível se a bomba estiver ligada.",
+      D: "Necessidade de reduzir fluxo de bomba.",
+      E: "Excesso de oxigênio tecidual."
+    },
+    resposta: "A",
+    comentario: "SvO2 baixa e lactato crescente durante CEC sugerem entrega de oxigênio inadequada. Deve-se avaliar fluxo, pressão, hemoglobina, saturação, temperatura e consumo.",
+    frase_ouro: "Na CEC, fluxo adequado é aquele que entrega oxigênio, não apenas o que aparece no visor."
+  },
+  {
+    id: "yao-057-001",
+    fonte: "Yao",
+    capitulo: "Cirurgia robótica",
+    tema: "Trendelenburg extremo",
+    dificuldade: "média",
+    pergunta: "Em prostatectomia robótica com Trendelenburg acentuado e pneumoperitônio prolongado, qual preocupação anestésica é relevante?",
+    alternativas: {
+      A: "Edema de face/via aérea, aumento de pressão intraocular, alterações ventilatórias e acesso limitado ao paciente.",
+      B: "Melhora obrigatória da complacência pulmonar.",
+      C: "Ausência de risco de hipercapnia.",
+      D: "Facilidade de acesso à via aérea durante todo o caso.",
+      E: "Eliminação da necessidade de monitorização."
+    },
+    resposta: "A",
+    comentario: "Trendelenburg extremo e pneumoperitônio podem reduzir complacência, aumentar pressão venosa/ocular, causar edema de via aérea e dificultar acesso ao paciente.",
+    frase_ouro: "Na robótica, depois que o robô acopla, a prevenção vale mais que o improviso."
+  },
+  {
+    id: "yao-057-002",
+    fonte: "Yao",
+    capitulo: "Cirurgia robótica",
+    tema: "Extubação",
+    dificuldade: "alta",
+    pergunta: "Após cirurgia robótica prolongada em Trendelenburg extremo, paciente apresenta edema facial importante. Qual preocupação deve orientar a extubação?",
+    alternativas: {
+      A: "Possível edema de via aérea; avaliar segurança de extubação e considerar teste de vazamento/estratégia de reintubação.",
+      B: "Edema facial garante via aérea fácil.",
+      C: "Extubação obrigatória sem avaliação.",
+      D: "Reduzir oxigênio para testar reserva.",
+      E: "Administrar beta-bloqueador para reduzir edema."
+    },
+    resposta: "A",
+    comentario: "Trendelenburg prolongado pode causar edema de via aérea. Extubação deve ser planejada considerando risco de obstrução e dificuldade de reintubação.",
+    frase_ouro: "Edema de face depois da robótica pode ser só a ponta visível da via aérea."
+  },
+  {
+    id: "yao-058-001",
+    fonte: "Yao",
+    capitulo: "Cirurgia bariátrica",
+    tema: "Aspiração e via aérea",
+    dificuldade: "alta",
+    pergunta: "Paciente com obesidade mórbida, refluxo e apneia do sono vai para bypass gástrico. Qual plano de indução é mais apropriado?",
+    alternativas: {
+      A: "Rampa, pré-oxigenação prolongada, plano de via aérea difícil, considerar sequência rápida e limitar opioides quando possível.",
+      B: "Sedação profunda sem acesso à via aérea.",
+      C: "Decúbito horizontal obrigatório sem pré-oxigenação.",
+      D: "Evitar capnografia.",
+      E: "Usar opioide em dose alta como única estratégia."
+    },
+    resposta: "A",
+    comentario: "Obesidade mórbida aumenta risco de dessaturação rápida, aspiração e via aérea difícil. Rampa, pré-oxigenação e plano de resgate são essenciais.",
+    frase_ouro: "Na bariátrica, a indução começa antes do hipnótico: começa na posição."
+  },
+  {
+    id: "yao-058-002",
+    fonte: "Yao",
+    capitulo: "Cirurgia bariátrica",
+    tema: "Ventilação",
+    dificuldade: "média",
+    pergunta: "Durante cirurgia bariátrica laparoscópica, qual ajuste pode melhorar oxigenação e mecânica respiratória?",
+    alternativas: {
+      A: "PEEP e recrutamento cuidadosamente titulados, evitando pressões excessivas.",
+      B: "Desconectar ventilador durante pneumoperitônio.",
+      C: "Evitar monitorar pressão de platô.",
+      D: "Manter volume corrente extremamente alto sem limite.",
+      E: "Reduzir FiO2 para 21% durante indução."
+    },
+    resposta: "A",
+    comentario: "Pacientes obesos têm atelectasia e complacência reduzida. PEEP e recrutamento podem ajudar, desde que balanceados com hemodinâmica e pressões.",
+    frase_ouro: "Na obesidade, pulmão precisa de abertura — mas pressão demais também cobra."
+  },
+  {
+    id: "yao-059-001",
+    fonte: "Yao",
+    capitulo: "Doença neuromuscular",
+    tema: "Distrofias musculares",
+    dificuldade: "alta",
+    pergunta: "Criança com distrofia muscular não diagnosticada recebe succinilcolina e evolui com hipercalemia grave, arritmia e rabdomiólise. Qual mecanismo é mais provável?",
+    alternativas: {
+      A: "Resposta hipercalêmica exagerada por doença muscular com instabilidade de membrana.",
+      B: "Reação esperada e benigna.",
+      C: "Hipocalcemia por citrato.",
+      D: "Toxicidade por opioide.",
+      E: "Reflexo óculo-cardíaco."
+    },
+    resposta: "A",
+    comentario: "Em algumas doenças musculares, succinilcolina pode precipitar hipercalemia grave, rabdomiólise e parada cardíaca.",
+    frase_ouro: "Doença muscular e succinilcolina podem transformar fasciculação em potássio fatal."
+  },
+  {
+    id: "yao-059-002",
+    fonte: "Yao",
+    capitulo: "Doença neuromuscular",
+    tema: "Esclerose lateral amiotrófica",
+    dificuldade: "alta",
+    pergunta: "Paciente com ELA avançada será submetido a gastrostomia. Qual preocupação anestésica é central?",
+    alternativas: {
+      A: "Fraqueza respiratória, sensibilidade a sedativos e bloqueadores, risco de aspiração e ventilação pós-operatória.",
+      B: "Ausência de risco respiratório.",
+      C: "Necessidade obrigatória de succinilcolina.",
+      D: "Melhora da tosse após opioide.",
+      E: "Impossibilidade de retenção de CO2."
+    },
+    resposta: "A",
+    comentario: "ELA pode comprometer musculatura respiratória e bulbar, aumentando risco de aspiração, hipoventilação e necessidade de suporte ventilatório.",
+    frase_ouro: "Na ELA, a anestesia deve respeitar músculo respiratório e proteção de via aérea."
+  },
+  {
+    id: "yao-060-001",
+    fonte: "Yao",
+    capitulo: "Psiquiatria e anestesia",
+    tema: "Lítio",
+    dificuldade: "média",
+    pergunta: "Paciente em uso crônico de lítio será operado. Qual consideração anestésica é relevante?",
+    alternativas: {
+      A: "Lítio pode prolongar bloqueio neuromuscular e sua toxicidade aumenta com alteração renal/desidratação.",
+      B: "Lítio reverte rocurônio.",
+      C: "Lítio elimina necessidade de monitorização renal.",
+      D: "Lítio é antídoto de anestésico local.",
+      E: "Lítio impede hipotensão."
+    },
+    resposta: "A",
+    comentario: "Lítio pode interagir com bloqueadores neuromusculares e tem margem terapêutica estreita, sendo afetado por função renal, volume e eletrólitos.",
+    frase_ouro: "Lítio no perioperatório pede olho no rim, no volume e no bloqueio."
+  },
+  {
+    id: "yao-060-002",
+    fonte: "Yao",
+    capitulo: "Psiquiatria e anestesia",
+    tema: "IMAO",
+    dificuldade: "alta",
+    pergunta: "Paciente em uso de inibidor da monoamina oxidase necessita anestesia. Qual fármaco/situação exige cautela por risco de resposta hipertensiva ou serotoninérgica?",
+    alternativas: {
+      A: "Simpaticomiméticos indiretos e combinações serotoninérgicas.",
+      B: "Oxigênio.",
+      C: "Soro fisiológico em dose pequena.",
+      D: "Monitorização padrão.",
+      E: "Capnografia."
+    },
+    resposta: "A",
+    comentario: "IMAO pode interagir com simpaticomiméticos indiretos e fármacos serotoninérgicos, causando instabilidade hemodinâmica ou síndrome serotoninérgica.",
+    frase_ouro: "IMAO não gosta de catecolamina indireta nem serotonina em excesso."
+  },
+  {
+    id: "yao-061-001",
+    fonte: "Yao",
+    capitulo: "Dependência química",
+    tema: "Cocaína",
+    dificuldade: "alta",
+    pergunta: "Paciente usuário recente de cocaína chega para cirurgia eletiva com PA 190/110, FC 130 e dor torácica. Qual conduta é mais adequada?",
+    alternativas: {
+      A: "Prosseguir normalmente, pois cocaína reduz risco cardiovascular.",
+      B: "Adiar cirurgia eletiva e tratar síndrome simpaticomimética/isquemia conforme necessidade.",
+      C: "Administrar beta-bloqueador não seletivo isolado como primeira medida obrigatória.",
+      D: "Induzir anestesia sem monitorização.",
+      E: "Reduzir oxigênio para evitar vasoespasmo."
+    },
+    resposta: "B",
+    comentario: "Uso recente de cocaína com hipertensão, taquicardia e dor torácica sugere alto risco de isquemia, arritmia e instabilidade. Cirurgia eletiva deve ser adiada.",
+    frase_ouro: "Cocaína recente e dor torácica não combinam com cirurgia eletiva."
+  },
+  {
+    id: "yao-061-002",
+    fonte: "Yao",
+    capitulo: "Dependência química",
+    tema: "Álcool",
+    dificuldade: "média",
+    pergunta: "Paciente etilista pesado no pós-operatório apresenta tremores, agitação, hipertensão, taquicardia e alucinações. Qual diagnóstico deve ser considerado?",
+    alternativas: {
+      A: "Abstinência alcoólica ou delirium tremens.",
+      B: "Bloqueio neuromuscular residual isolado.",
+      C: "Síndrome pós-RTU obrigatória.",
+      D: "Hipertermia maligna apenas se normotérmico.",
+      E: "Hipocalcemia por tireoidectomia."
+    },
+    resposta: "A",
+    comentario: "Abstinência alcoólica pode causar hiperatividade autonômica, tremores, agitação, convulsões e delirium tremens no perioperatório.",
+    frase_ouro: "Etilista pesado pode trazer abstinência para a recuperação anestésica."
+  },
+  {
+    id: "yao-062-001",
+    fonte: "Yao",
+    capitulo: "Cirurgia de emergência",
+    tema: "Estômago cheio",
+    dificuldade: "alta",
+    pergunta: "Paciente com abdome agudo obstrutivo, vômitos fecaloides e distensão importante necessita laparotomia. Qual estratégia de via aérea é mais apropriada?",
+    alternativas: {
+      A: "Tratar como estômago cheio, com aspiração por sonda se apropriado, pré-oxigenação e indução de sequência rápida planejada.",
+      B: "Sedação profunda sem proteção da via aérea.",
+      C: "Evitar intubação porque o risco de aspiração desaparece com opioide.",
+      D: "Ventilação sob máscara prolongada obrigatória com alta pressão.",
+      E: "Liberar dieta antes da cirurgia."
+    },
+    resposta: "A",
+    comentario: "Obstrução intestinal e vômitos aumentam muito risco de aspiração. Estratégia de via aérea deve minimizar tempo desprotegido e considerar descompressão gástrica.",
+    frase_ouro: "Obstrução intestinal é estômago cheio até prova em contrário — e geralmente há prova demais."
+  },
+  {
+    id: "yao-062-002",
+    fonte: "Yao",
+    capitulo: "Cirurgia de emergência",
+    tema: "Sepse abdominal",
+    dificuldade: "alta",
+    pergunta: "Paciente com peritonite séptica chega hipotenso, taquicárdico, lactato 5 mmol/L e oligúrico. Qual plano anestésico é mais adequado?",
+    alternativas: {
+      A: "Indução titulada com preparo para colapso, acesso calibroso, antibiótico/controle de foco, vasopressores e ressuscitação guiada por perfusão.",
+      B: "Indução com dose plena fixa de propofol sem vasopressor disponível.",
+      C: "Evitar monitorização invasiva independentemente da gravidade.",
+      D: "Aguardar normalização completa do lactato antes de operar o foco.",
+      E: "Restringir oxigênio para reduzir radicais livres."
+    },
+    resposta: "A",
+    comentario: "Sepse abdominal combina vasodilatação, hipovolemia relativa, disfunção miocárdica possível e necessidade de controle de foco. A indução deve ser titulada e preparada.",
+    frase_ouro: "Na sepse, anestesia sem vasopressor pronto é salto sem rede."
+  },
+  {
+    id: "yao-063-001",
+    fonte: "Yao",
+    capitulo: "Recuperação pós-anestésica",
+    tema: "Hipoventilação",
+    dificuldade: "média",
+    pergunta: "Paciente na recuperação apresenta sonolência, FR 6 irpm, miose e hipercapnia após opioide. Qual conduta é adequada?",
+    alternativas: {
+      A: "Estimular, ventilar/oxigenar e titular naloxona se depressão respiratória clinicamente relevante.",
+      B: "Administrar mais opioide.",
+      C: "Reduzir oxigênio.",
+      D: "Dar protamina.",
+      E: "Ignorar se pressão estiver normal."
+    },
+    resposta: "A",
+    comentario: "Depressão respiratória por opioide exige suporte ventilatório e reversão titulada com naloxona quando necessário, evitando dor/rebote intenso.",
+    frase_ouro: "Naloxona se titula para respirar, não para punir a analgesia."
+  },
+  {
+    id: "yao-063-002",
+    fonte: "Yao",
+    capitulo: "Recuperação pós-anestésica",
+    tema: "Curarização residual",
+    dificuldade: "média",
+    pergunta: "Paciente extubado apresenta fraqueza, hipoventilação, dificuldade de manter via aérea e TOF ratio baixo. Qual diagnóstico é provável?",
+    alternativas: {
+      A: "Curarização residual.",
+      B: "Hipertensão essencial.",
+      C: "Síndrome tireotóxica.",
+      D: "Hipercalemia tratada.",
+      E: "Analgesia perfeita."
+    },
+    resposta: "A",
+    comentario: "Bloqueio neuromuscular residual pode causar fraqueza respiratória, obstrução, aspiração e hipoventilação no pós-operatório.",
+    frase_ouro: "Extubação segura precisa de músculo acordado, não só olho aberto."
+  },
+  {
+    id: "yao-064-001",
+    fonte: "Yao",
+    capitulo: "Monitorização",
+    tema: "Capnografia",
+    dificuldade: "média",
+    pergunta: "Após intubação, ausência persistente de onda de capnografia deve levar à suspeita imediata de:",
+    alternativas: {
+      A: "Intubação esofágica, desconexão, parada circulatória ou ausência de ventilação efetiva.",
+      B: "Analgesia adequada.",
+      C: "Hipertensão essencial.",
+      D: "Bloqueio simpático isolado.",
+      E: "Temperatura normal."
+    },
+    resposta: "A",
+    comentario: "Capnografia é fundamental para confirmar ventilação traqueal e detectar problemas como intubação esofágica, desconexão e baixo débito extremo.",
+    frase_ouro: "Sem capnograma depois do tubo, a via aérea ainda não está provada."
+  },
+  {
+    id: "yao-064-002",
+    fonte: "Yao",
+    capitulo: "Monitorização",
+    tema: "Pressão arterial invasiva",
+    dificuldade: "média",
+    pergunta: "Qual é uma indicação comum para pressão arterial invasiva?",
+    alternativas: {
+      A: "Cirurgia de grande porte com instabilidade esperada ou necessidade de gasometrias seriadas.",
+      B: "Procedimento mínimo em paciente hígido sempre.",
+      C: "Ausência de pulso periférico por esmalte.",
+      D: "Monitorar temperatura exclusivamente.",
+      E: "Substituir capnografia."
+    },
+    resposta: "A",
+    comentario: "Linha arterial permite monitorização contínua da pressão e coleta de gasometrias, sendo útil em cirurgias maiores ou pacientes instáveis.",
+    frase_ouro: "Quando pressão muda rápido, manguito chega atrasado."
+  },
+  {
+    id: "yao-065-001",
+    fonte: "Yao",
+    capitulo: "Equilíbrio ácido-base",
+    tema: "Acidose metabólica",
+    dificuldade: "alta",
+    pergunta: "Paciente em choque hemorrágico apresenta pH 7,12, lactato 8 mmol/L e hipotensão persistente. Qual é o tratamento fundamental da acidose?",
+    alternativas: {
+      A: "Restaurar perfusão e oxigenação tecidual por controle de sangramento e ressuscitação adequada.",
+      B: "Administrar bicarbonato como única medida definitiva.",
+      C: "Reduzir fluxo sanguíneo para diminuir lactato.",
+      D: "Evitar transfusão.",
+      E: "Induzir hipoxemia."
+    },
+    resposta: "A",
+    comentario: "Acidose láctica por choque é tratada principalmente corrigindo hipoperfusão. Bicarbonato pode ser considerado em situações selecionadas, mas não substitui perfusão.",
+    frase_ouro: "Acidose de choque se corrige fechando sangramento e devolvendo fluxo."
+  },
+  {
+    id: "yao-065-002",
+    fonte: "Yao",
+    capitulo: "Equilíbrio ácido-base",
+    tema: "Alcalose respiratória",
+    dificuldade: "média",
+    pergunta: "Hiperventilação excessiva em paciente neurocrítico pode ser deletéria porque:",
+    alternativas: {
+      A: "Reduz PaCO2, causa vasoconstrição cerebral e pode reduzir fluxo cerebral excessivamente.",
+      B: "Aumenta obrigatoriamente fluxo cerebral.",
+      C: "Não altera vasos cerebrais.",
+      D: "Causa hipercapnia.",
+      E: "Aumenta pressão intracraniana por vasodilatação."
+    },
+    resposta: "A",
+    comentario: "Hipocapnia causa vasoconstrição cerebral. Pode reduzir PIC temporariamente, mas hiperventilação excessiva/prolongada pode causar isquemia.",
+    frase_ouro: "CO2 baixo esvazia sangue do cérebro; útil por minutos, perigoso em excesso."
+  },
+  {
+    id: "yao-066-001",
+    fonte: "Yao",
+    capitulo: "Eletrólitos",
+    tema: "Hiponatremia",
+    dificuldade: "alta",
+    pergunta: "Paciente apresenta Na 116 mEq/L, confusão e convulsão no pós-operatório. Qual princípio de correção é adequado?",
+    alternativas: {
+      A: "Corrigir sintoma grave com solução hipertônica cuidadosamente, evitando correção rápida excessiva.",
+      B: "Dar água livre em grande volume.",
+      C: "Corrigir todo sódio para 145 em uma hora.",
+      D: "Ignorar convulsão se pressão estiver normal.",
+      E: "Administrar potássio como único tratamento."
+    },
+    resposta: "A",
+    comentario: "Hiponatremia sintomática grave exige tratamento urgente com solução hipertônica, mas a correção excessivamente rápida aumenta risco de desmielinização osmótica.",
+    frase_ouro: "Na hiponatremia grave, corrija o cérebro sem machucar a ponte."
+  },
+  {
+    id: "yao-066-002",
+    fonte: "Yao",
+    capitulo: "Eletrólitos",
+    tema: "Hipocalcemia",
+    dificuldade: "média",
+    pergunta: "Durante transfusão maciça, paciente desenvolve hipotensão, QT prolongado e cálcio ionizado baixo. Qual conduta é apropriada?",
+    alternativas: {
+      A: "Repor cálcio intravenoso conforme monitorização.",
+      B: "Administrar succinilcolina.",
+      C: "Suspender transfusão sempre, mesmo em choque.",
+      D: "Administrar naloxona.",
+      E: "Fazer hiperventilação como única medida."
+    },
+    resposta: "A",
+    comentario: "Hipocalcemia por citrato pode piorar contratilidade, pressão arterial e coagulação. Deve ser monitorada e corrigida durante transfusão maciça.",
+    frase_ouro: "Cálcio baixo na transfusão derruba coração e coágulo."
+  },
+  {
+    id: "yao-067-001",
+    fonte: "Yao",
+    capitulo: "Oxigenação",
+    tema: "Meta de saturação",
+    dificuldade: "média",
+    pergunta: "Paciente com DPOC grave e retenção crônica de CO2 está no pós-operatório. Qual raciocínio sobre oxigenoterapia é adequado?",
+    alternativas: {
+      A: "Oxigênio deve ser titulado para corrigir hipoxemia evitando hiperóxia excessiva e monitorando CO2.",
+      B: "Oxigênio é absolutamente contraindicado.",
+      C: "Saturação de 70% é sempre aceitável.",
+      D: "CO2 nunca muda com oxigênio.",
+      E: "Ventilação não invasiva nunca tem papel."
+    },
+    resposta: "A",
+    comentario: "Em retentores crônicos, oxigênio deve tratar hipoxemia, mas com vigilância de hipercapnia. Ventilação não invasiva pode ser útil se houver exacerbação/hipoventilação.",
+    frase_ouro: "No DPOC retentor, oxigênio é remédio: dose certa e monitorização."
+  },
+  {
+    id: "yao-067-002",
+    fonte: "Yao",
+    capitulo: "Oxigenação",
+    tema: "Shunt",
+    dificuldade: "média",
+    pergunta: "Hipoxemia por shunt intrapulmonar importante responde pouco ao aumento de FiO2 porque:",
+    alternativas: {
+      A: "Parte do sangue passa por áreas não ventiladas e não entra em contato efetivo com gás alveolar.",
+      B: "O sangue arterial não contém hemoglobina.",
+      C: "A FiO2 sempre piora shunt.",
+      D: "O shunt aumenta a ventilação alveolar.",
+      E: "Oxigênio não difunde no pulmão normal."
+    },
+    resposta: "A",
+    comentario: "No shunt, sangue venoso atravessa unidades não ventiladas, misturando-se ao sangue oxigenado. Por isso, aumentar FiO2 tem efeito limitado.",
+    frase_ouro: "Shunt é sangue que foge do ar."
+  },
+  {
+    id: "yao-068-001",
+    fonte: "Yao",
+    capitulo: "Cirurgia torácica",
+    tema: "Pneumonectomia",
+    dificuldade: "alta",
+    pergunta: "Após pneumonectomia, qual estratégia volêmica é apropriada para reduzir risco de edema pulmonar no pulmão remanescente?",
+    alternativas: {
+      A: "Evitar sobrecarga volêmica, mantendo perfusão adequada com estratégia restritiva guiada por hemodinâmica.",
+      B: "Administrar cristaloide ilimitado para preencher o espaço vazio.",
+      C: "Induzir hipertensão pulmonar.",
+      D: "Evitar oxigenação.",
+      E: "Manter balanço extremamente positivo obrigatoriamente."
+    },
+    resposta: "A",
+    comentario: "Após pneumonectomia, sobrecarga hídrica pode contribuir para edema do pulmão remanescente. Deve-se equilibrar perfusão e restrição de excesso.",
+    frase_ouro: "Depois da pneumonectomia, um pulmão só não merece carregar água por dois."
+  },
+  {
+    id: "yao-068-002",
+    fonte: "Yao",
+    capitulo: "Cirurgia torácica",
+    tema: "Fístula broncopleural",
+    dificuldade: "alta",
+    pergunta: "Paciente com suspeita de fístula broncopleural apresenta grande vazamento aéreo e ventilação ineficaz. Qual princípio ventilatório é adequado?",
+    alternativas: {
+      A: "Reduzir pressões de via aérea quando possível, isolar pulmão se indicado e evitar ventilação que aumente vazamento.",
+      B: "Aumentar pressão inspiratória sem limite.",
+      C: "Usar PEEP extrema como única medida.",
+      D: "Ignorar capnografia.",
+      E: "Evitar comunicação com cirurgião."
+    },
+    resposta: "A",
+    comentario: "Fístula broncopleural pode piorar com altas pressões. Isolamento pulmonar e ventilação de baixa pressão podem ser necessários.",
+    frase_ouro: "Na fístula broncopleural, pressão demais ventila o dreno, não o paciente."
+  },
+  {
+    id: "yao-069-001",
+    fonte: "Yao",
+    capitulo: "Cirurgia de coluna",
+    tema: "Perda visual pós-operatória",
+    dificuldade: "alta",
+    pergunta: "Em cirurgia de coluna prolongada em prona, qual fator está associado a risco de perda visual pós-operatória?",
+    alternativas: {
+      A: "Duração prolongada, sangramento, anemia, hipotensão, edema e pressão direta sobre os olhos.",
+      B: "Proteção adequada dos olhos.",
+      C: "Tempo cirúrgico curto.",
+      D: "Hemoglobina normal e pressão estável.",
+      E: "Cabeça neutra sem compressão ocular."
+    },
+    resposta: "A",
+    comentario: "Cirurgias longas em prona podem associar-se a neuropatia óptica isquêmica ou oclusão vascular, especialmente com anemia, hipotensão, edema e compressão ocular.",
+    frase_ouro: "Em prona longa, olho protegido é monitor invisível obrigatório."
+  },
+  {
+    id: "yao-069-002",
+    fonte: "Yao",
+    capitulo: "Cirurgia de coluna",
+    tema: "Prona",
+    dificuldade: "média",
+    pergunta: "Após posicionar paciente em prona, qual checagem é essencial?",
+    alternativas: {
+      A: "Via aérea segura, ausência de compressão ocular, abdome livre e pontos de pressão protegidos.",
+      B: "Retirar todos os monitores.",
+      C: "Comprimir abdome para reduzir sangramento sempre.",
+      D: "Flexionar pescoço ao máximo.",
+      E: "Desconectar ventilador para facilitar campo."
+    },
+    resposta: "A",
+    comentario: "Posição prona exige checagem de via aérea, olhos, abdome livre, pressão em nervos/pele e ventilação/hemodinâmica.",
+    frase_ouro: "Depois de virar para prona, confira tudo que ficou longe da sua mão."
+  },
+  {
+    id: "yao-070-001",
+    fonte: "Yao",
+    capitulo: "Cirurgia maxilofacial",
+    tema: "Trauma de face",
+    dificuldade: "alta",
+    pergunta: "Paciente com trauma facial grave, sangramento oral, fratura mandibular e dificuldade de abrir a boca precisa de cirurgia urgente. Qual preocupação domina o plano anestésico?",
+    alternativas: {
+      A: "Via aérea difícil com risco de sangramento, aspiração e perda de acesso após indução.",
+      B: "Ausência de risco de aspiração.",
+      C: "Facilidade garantida de ventilação sob máscara.",
+      D: "Dispensa de plano cirúrgico de via aérea.",
+      E: "Sedação profunda sem monitorização."
+    },
+    resposta: "A",
+    comentario: "Trauma facial pode dificultar ventilação, laringoscopia, aspiração de sangue e acesso cirúrgico. O plano deve preservar segurança da via aérea.",
+    frase_ouro: "Trauma de face é via aérea difícil com sangue tentando atrapalhar."
+  },
+  {
+    id: "yao-070-002",
+    fonte: "Yao",
+    capitulo: "Cirurgia maxilofacial",
+    tema: "Fixação mandibular",
+    dificuldade: "média",
+    pergunta: "Após cirurgia com bloqueio maxilomandibular, qual cuidado é importante no pós-operatório?",
+    alternativas: {
+      A: "Disponibilidade de ferramenta para liberar fixação em emergência e controle rigoroso de náuseas/vômitos.",
+      B: "Evitar qualquer aspiração de secreções.",
+      C: "Induzir vômitos para testar fixação.",
+      D: "Dispensar orientação à equipe.",
+      E: "Administrar dieta sólida imediatamente."
+    },
+    resposta: "A",
+    comentario: "Com mandíbula bloqueada, vômito ou obstrução podem ser perigosos. Deve haver cortador/ferramenta disponível e equipe orientada.",
+    frase_ouro: "Mandíbula bloqueada exige plano para vômito e via aérea, não só fio bonito."
+  },
+  {
+    id: "yao-071-001",
+    fonte: "Yao",
+    capitulo: "Anestesia fora do centro cirúrgico",
+    tema: "RM",
+    dificuldade: "média",
+    pergunta: "Em anestesia para ressonância magnética, qual preocupação é essencial?",
+    alternativas: {
+      A: "Compatibilidade de equipamentos com RM, acesso limitado ao paciente e plano de emergência fora da sala.",
+      B: "Uso de qualquer cilindro metálico comum ao lado do aparelho.",
+      C: "Ausência de necessidade de monitorização.",
+      D: "Facilidade de acesso imediato à via aérea durante todo o exame.",
+      E: "Impossibilidade de hipóxia."
+    },
+    resposta: "A",
+    comentario: "Ressonância exige equipamentos compatíveis, monitorização apropriada e planejamento, pois o acesso ao paciente é limitado e o ambiente tem risco magnético.",
+    frase_ouro: "Na RM, o ímã também é parte da anestesia."
+  },
+  {
+    id: "yao-071-002",
+    fonte: "Yao",
+    capitulo: "Anestesia fora do centro cirúrgico",
+    tema: "Endoscopia",
+    dificuldade: "média",
+    pergunta: "Durante sedação para endoscopia alta, qual complicação deve ser antecipada?",
+    alternativas: {
+      A: "Obstrução de via aérea, hipoventilação, aspiração e dificuldade de acesso à boca compartilhada.",
+      B: "Impossibilidade de dessaturação.",
+      C: "Ausência de estímulo vagal.",
+      D: "Garantia de estômago vazio em todos os pacientes.",
+      E: "Dispensa de capnografia em sedação profunda."
+    },
+    resposta: "A",
+    comentario: "Endoscopia alta compartilha via aérea e pode causar obstrução, hipoventilação, aspiração e necessidade de intervenção rápida.",
+    frase_ouro: "Sedação para endoscopia é via aérea compartilhada com pouco espaço para orgulho."
+  },
+  {
+    id: "yao-072-001",
+    fonte: "Yao",
+    capitulo: "Cirurgia ambulatorial",
+    tema: "Apneia do sono",
+    dificuldade: "alta",
+    pergunta: "Paciente com apneia obstrutiva do sono grave, uso domiciliar de CPAP e necessidade prevista de opioide alto será submetido a procedimento ambulatorial. Qual raciocínio é mais seguro?",
+    alternativas: {
+      A: "Avaliar se o ambiente ambulatorial é apropriado, planejar analgesia poupadora de opioide e monitorização pós-operatória adequada.",
+      B: "Alta imediata obrigatória após qualquer sedação.",
+      C: "Suspender CPAP para reduzir risco.",
+      D: "Usar opioide alto sem monitorização.",
+      E: "Ignorar histórico de apneia."
+    },
+    resposta: "A",
+    comentario: "AOS grave aumenta risco de obstrução e depressão respiratória, especialmente com opioides. Seleção do local e plano pós-operatório são fundamentais.",
+    frase_ouro: "AOS grave não termina na extubação; ela começa a cobrar no pós-operatório."
+  },
+  {
+    id: "yao-072-002",
+    fonte: "Yao",
+    capitulo: "Cirurgia ambulatorial",
+    tema: "Dor pós-operatória",
+    dificuldade: "média",
+    pergunta: "Qual fator pode impedir alta segura após cirurgia ambulatorial?",
+    alternativas: {
+      A: "Dor intensa não controlada, náuseas persistentes ou instabilidade hemodinâmica.",
+      B: "Orientação adequada ao paciente.",
+      C: "Dor leve controlada com analgésico oral.",
+      D: "Saturação estável em ar ambiente.",
+      E: "Marcha compatível com o procedimento."
+    },
+    resposta: "A",
+    comentario: "Alta ambulatorial requer controle de sintomas, estabilidade e segurança funcional. Dor e náusea refratárias aumentam risco após saída.",
+    frase_ouro: "Alta ambulatorial segura não é pressa: é estabilidade com plano."
+  },
+  {
+    id: "yao-073-001",
+    fonte: "Yao",
+    capitulo: "Dor crônica",
+    tema: "Paciente usuário crônico de opioide",
+    dificuldade: "alta",
+    pergunta: "Paciente em uso crônico de opioide será submetido a artrodese lombar. Qual plano analgésico é mais adequado?",
+    alternativas: {
+      A: "Assumir que precisará de menos analgesia por já usar opioide.",
+      B: "Planejar analgesia multimodal, manter necessidades basais e antecipar tolerância/hiperalgesia.",
+      C: "Suspender todos os opioides abruptamente no dia da cirurgia.",
+      D: "Evitar qualquer técnica regional.",
+      E: "Usar apenas dipirona independentemente do porte."
+    },
+    resposta: "B",
+    comentario: "Usuários crônicos de opioide podem ter tolerância e hiperalgesia, exigindo plano multimodal, prevenção de abstinência e expectativas realistas.",
+    frase_ouro: "Opioide crônico não simplifica analgesia; ele aumenta a engenharia do plano."
+  },
+  {
+    id: "yao-073-002",
+    fonte: "Yao",
+    capitulo: "Dor crônica",
+    tema: "Hiperalgesia induzida por opioide",
+    dificuldade: "média",
+    pergunta: "Hiperalgesia induzida por opioide é melhor descrita como:",
+    alternativas: {
+      A: "Aumento paradoxal da sensibilidade dolorosa associado ao uso de opioides.",
+      B: "Analgesia perfeita por dose baixa.",
+      C: "Bloqueio motor por opioide.",
+      D: "Alergia obrigatória a morfina.",
+      E: "Ausência de dor crônica."
+    },
+    resposta: "A",
+    comentario: "Hiperalgesia induzida por opioide ocorre quando a exposição a opioides se associa a maior sensibilidade à dor, diferente de tolerância simples.",
+    frase_ouro: "Às vezes mais opioide não trata dor: alimenta sensibilidade."
+  },
+  {
+    id: "yao-074-001",
+    fonte: "Yao",
+    capitulo: "Cuidados paliativos",
+    tema: "Objetivos de cuidado",
+    dificuldade: "média",
+    pergunta: "Paciente terminal com obstrução intestinal maligna necessita procedimento paliativo. Qual princípio deve orientar a anestesia?",
+    alternativas: {
+      A: "Alinhar técnica e agressividade do cuidado aos objetivos do paciente, alívio de sintomas e proporcionalidade.",
+      B: "Ignorar prognóstico e preferências.",
+      C: "Garantir UTI prolongada em todos os casos.",
+      D: "Evitar analgesia por risco teórico.",
+      E: "Prometer cura cirúrgica."
+    },
+    resposta: "A",
+    comentario: "Em cuidados paliativos, a anestesia deve respeitar objetivos, conforto, autonomia, risco proporcional e comunicação clara.",
+    frase_ouro: "Anestesia paliativa mede sucesso por conforto e coerência, não por heroísmo."
+  },
+  {
+    id: "yao-074-002",
+    fonte: "Yao",
+    capitulo: "Cuidados paliativos",
+    tema: "Ordem de não reanimar",
+    dificuldade: "alta",
+    pergunta: "Paciente com ordem de não reanimar será submetido a procedimento paliativo sob anestesia. Qual conduta ética é adequada?",
+    alternativas: {
+      A: "Suspender automaticamente a ordem sem discutir.",
+      B: "Revisar a ordem com paciente/família/equipe, definindo quais intervenções são aceitáveis no contexto anestésico.",
+      C: "Cancelar toda anestesia obrigatoriamente.",
+      D: "Ignorar a documentação.",
+      E: "Realizar reanimação completa sempre, independentemente da vontade expressa."
+    },
+    resposta: "B",
+    comentario: "Ordens de limitação terapêutica devem ser revisadas no perioperatório, pois algumas intervenções anestésicas podem se confundir com reanimação. É preciso decisão compartilhada.",
+    frase_ouro: "DNR no centro cirúrgico não se apaga nem se aplica no automático: conversa-se."
   }
 ];
