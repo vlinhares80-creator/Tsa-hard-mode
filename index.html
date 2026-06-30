@@ -1,87 +1,169 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TSA Hard Mode</title>
+
   <meta name="theme-color" content="#111827" />
-  <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="QBank TSA/EDAIC para anestesiologia." />
+
+  <link rel="manifest" href="manifest.json?v=250" />
+  <link rel="stylesheet" href="style.css?v=250" />
 </head>
+
 <body>
-  <header class="topbar">
+  <header class="app-header">
     <div>
-      <p class="eyebrow">QBank pessoal de anestesia</p>
       <h1>TSA Hard Mode</h1>
+      <p>QBank de anestesiologia — modo bruto, mas com carinho.</p>
     </div>
-    <button id="resetBtn" class="ghost">Resetar progresso</button>
   </header>
 
-  <main class="layout">
-    <section class="card hero">
-      <div>
-        <h2>Estudo por questões comentadas</h2>
-        <p>Escolha capítulo, responda, revise seus erros e treine em modo simulado. Versão inicial, simples e offline-friendly.</p>
+  <main class="container">
+
+    <section id="home-screen" class="screen active">
+      <div class="card">
+        <h2>Dashboard</h2>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <span class="stat-label">Total de questões</span>
+            <strong id="total-questions">0</strong>
+          </div>
+
+          <div class="stat-box">
+            <span class="stat-label">Já acertadas</span>
+            <strong id="correct-count">0</strong>
+          </div>
+
+          <div class="stat-box">
+            <span class="stat-label">Na revisão</span>
+            <strong id="review-count">0</strong>
+          </div>
+
+          <div class="stat-box">
+            <span class="stat-label">Disponíveis</span>
+            <strong id="available-count">0</strong>
+          </div>
+        </div>
       </div>
-      <div class="stats">
-        <div><strong id="totalQuestions">0</strong><span>questões</span></div>
-        <div><strong id="answeredCount">0</strong><span>respondidas</span></div>
-        <div><strong id="correctRate">0%</strong><span>acerto</span></div>
-        <div><strong id="wrongCount">0</strong><span>erros</span></div>
+
+      <div class="card">
+        <h2>Modo de estudo</h2>
+        <p class="muted">
+          O simulado sorteia apenas questões que você ainda não acertou.
+          Questões erradas ficam disponíveis no modo revisão.
+        </p>
+
+        <div class="button-grid">
+          <button class="primary-btn" id="start-10-btn">
+            Simulado 10 questões
+          </button>
+
+          <button class="primary-btn" id="start-20-btn">
+            Simulado 20 questões
+          </button>
+
+          <button class="secondary-btn" id="review-btn">
+            Revisar erros
+          </button>
+
+          <button class="danger-btn" id="reset-btn">
+            Resetar progresso
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Como funciona</h2>
+        <ul class="info-list">
+          <li>Acertou uma questão: ela sai dos simulados comuns.</li>
+          <li>Errou uma questão: ela entra na revisão.</li>
+          <li>Acertou na revisão: ela sai da lista de erros.</li>
+          <li>Resetar progresso libera todas as questões novamente.</li>
+        </ul>
       </div>
     </section>
 
-    <section class="card controls">
-      <label>
-        Capítulo
-        <select id="chapterFilter">
-          <option value="all">Todos</option>
-        </select>
-      </label>
-      <label>
-        Tema
-        <select id="tagFilter">
-          <option value="all">Todos</option>
-        </select>
-      </label>
-      <label>
-        Modo
-        <select id="modeSelect">
-          <option value="study">Estudo</option>
-          <option value="exam10">Simulado 10</option>
-          <option value="errors">Revisar erros</option>
-        </select>
-      </label>
-      <button id="startBtn">Iniciar</button>
-    </section>
+    <section id="quiz-screen" class="screen">
+      <div class="card">
+        <div class="quiz-topbar">
+          <button class="ghost-btn" id="back-home-btn">← Início</button>
+          <span id="quiz-progress">Questão 1 de 10</span>
+        </div>
 
-    <section id="questionSection" class="card question-card hidden">
-      <div class="question-meta">
-        <span id="qSource"></span>
-        <span id="qDifficulty"></span>
-        <span id="qProgress"></span>
-      </div>
-      <h2 id="qTitle"></h2>
-      <p id="qText" class="question-text"></p>
-      <div id="options" class="options"></div>
-      <div id="feedback" class="feedback hidden"></div>
-      <div class="question-actions">
-        <button id="prevBtn" class="ghost">Anterior</button>
-        <button id="markBtn" class="ghost">Marcar revisão</button>
-        <button id="nextBtn">Próxima</button>
+        <div class="question-meta">
+          <span id="question-source">Yao</span>
+          <span id="question-chapter">Capítulo</span>
+          <span id="question-theme">Tema</span>
+          <span id="question-difficulty">Dificuldade</span>
+        </div>
+
+        <h2 id="question-text">Pergunta</h2>
+
+        <div id="answers" class="answers"></div>
+
+        <div id="feedback" class="feedback hidden">
+          <h3 id="feedback-title">Resposta</h3>
+          <p id="feedback-comment"></p>
+          <div class="gold-box">
+            <strong>Frase de ouro:</strong>
+            <p id="gold-phrase"></p>
+          </div>
+        </div>
+
+        <div class="quiz-actions">
+          <button class="secondary-btn hidden" id="next-btn">
+            Próxima questão
+          </button>
+
+          <button class="primary-btn hidden" id="finish-btn">
+            Finalizar
+          </button>
+        </div>
       </div>
     </section>
 
-    <section id="emptyState" class="card empty">
-      <h2>Pronto para começar?</h2>
-      <p>Clique em <strong>Iniciar</strong>. Depois dá para trocar filtros e gerar simulados. Café opcional, catecolamina nem tanto.</p>
+    <section id="result-screen" class="screen">
+      <div class="card">
+        <h2>Resultado</h2>
+
+        <div class="result-score">
+          <strong id="result-score">0/0</strong>
+          <span id="result-percent">0%</span>
+        </div>
+
+        <p id="result-message" class="muted"></p>
+
+        <div class="button-grid">
+          <button class="primary-btn" id="new-10-btn">
+            Novo simulado 10
+          </button>
+
+          <button class="primary-btn" id="new-20-btn">
+            Novo simulado 20
+          </button>
+
+          <button class="secondary-btn" id="result-review-btn">
+            Revisar erros
+          </button>
+
+          <button class="secondary-btn" id="result-home-btn">
+            Voltar ao início
+          </button>
+        </div>
+      </div>
     </section>
+
   </main>
 
-  <footer>
-    <p>Protótipo local. Conteúdo educacional, não substitui julgamento clínico.</p>
+  <footer class="app-footer">
+    <span>TSA Hard Mode</span>
+    <span>v250</span>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="questions.js?v=250"></script>
+  <script src="app.js?v=250"></script>
 </body>
 </html>
