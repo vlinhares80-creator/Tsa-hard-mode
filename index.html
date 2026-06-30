@@ -8,8 +8,8 @@
   <meta name="theme-color" content="#111827" />
   <meta name="description" content="QBank TSA/EDAIC para anestesiologia." />
 
-  <link rel="manifest" href="manifest.json?v=250" />
-  <link rel="stylesheet" href="style.css?v=250" />
+  <link rel="manifest" href="manifest.json?v=310" />
+  <link rel="stylesheet" href="style.css?v=310" />
 </head>
 
 <body>
@@ -69,6 +69,10 @@
             Revisar erros
           </button>
 
+          <button class="secondary-btn" id="stats-btn">
+            Ver estatísticas
+          </button>
+
           <button class="danger-btn" id="reset-btn">
             Resetar progresso
           </button>
@@ -81,6 +85,7 @@
           <li>Acertou uma questão: ela sai dos simulados comuns.</li>
           <li>Errou uma questão: ela entra na revisão.</li>
           <li>Acertou na revisão: ela sai da lista de erros.</li>
+          <li>As estatísticas usam a última resposta registrada de cada questão.</li>
           <li>Resetar progresso libera todas as questões novamente.</li>
         </ul>
       </div>
@@ -149,6 +154,10 @@
             Revisar erros
           </button>
 
+          <button class="secondary-btn" id="result-stats-btn">
+            Ver estatísticas
+          </button>
+
           <button class="secondary-btn" id="result-home-btn">
             Voltar ao início
           </button>
@@ -156,14 +165,45 @@
       </div>
     </section>
 
+    <section id="stats-screen" class="screen">
+      <div class="card">
+        <div class="quiz-topbar">
+          <button class="ghost-btn" id="stats-back-btn">← Início</button>
+          <span>Estatísticas</span>
+        </div>
+
+        <h2>Seu desempenho</h2>
+        <p class="muted">
+          As porcentagens consideram a última resposta registrada de cada questão respondida.
+        </p>
+
+        <div id="overall-stats" class="stats-summary"></div>
+      </div>
+
+      <div class="card">
+        <h2>Grandes áreas</h2>
+        <div id="area-stats" class="stats-list"></div>
+      </div>
+
+      <div class="card">
+        <h2>Dificuldade</h2>
+        <div id="difficulty-stats" class="stats-list"></div>
+      </div>
+
+      <div class="card">
+        <h2>Pontos de atenção</h2>
+        <div id="weak-area-stats" class="stats-list"></div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="app-footer">
     <span>TSA Hard Mode</span>
-    <span>v250</span>
+    <span>v310</span>
   </footer>
 
-  <script src="questions.js?v=250"></script>
-  <script src="app.js?v=250"></script>
+  <script src="questions.js?v=310"></script>
+  <script src="app.js?v=310"></script>
 </body>
 </html>
