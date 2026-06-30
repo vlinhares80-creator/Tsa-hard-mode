@@ -5506,5 +5506,527 @@ const QUESTIONS = [
     resposta: "E",
     comentario: "Tosse, vômito, dor e hipertensão elevam pressão intraocular. Extubação deve ser planejada para minimizar esses estímulos.",
     frase_ouro: "Extubação ocular boa é aquela que o olho nem percebe."
+  },
+  {
+    id: "yao-092-001",
+    fonte: "Yao",
+    capitulo: "Emergências anestésicas",
+    tema: "Parada em atividade elétrica sem pulso",
+    dificuldade: "alta",
+    pergunta: "Durante laparotomia por abdome agudo, paciente séptico evolui subitamente com ausência de pulso, ritmo organizado no monitor, EtCO2 muito baixo e hipotensão prévia importante. Qual raciocínio inicial é mais adequado?",
+    alternativas: {
+      A: "Tratar como atividade elétrica sem pulso, iniciar RCP de alta qualidade, adrenalina e procurar causas reversíveis como hipovolemia, hipóxia, acidose, hipercalemia, tamponamento, pneumotórax e tromboembolismo.",
+      B: "Aguardar porque ritmo organizado exclui parada cardíaca.",
+      C: "Administrar apenas antiemético.",
+      D: "Reduzir oxigênio para evitar hiperóxia.",
+      E: "Fazer extubação imediata."
+    },
+    resposta: "A",
+    comentario: "Atividade elétrica sem pulso é ritmo organizado sem pulso efetivo. O tratamento exige RCP imediata, adrenalina e busca ativa das causas reversíveis.",
+    frase_ouro: "Ritmo bonito sem pulso é parada até prova em contrário."
+  },
+  {
+    id: "yao-092-002",
+    fonte: "Yao",
+    capitulo: "Emergências anestésicas",
+    tema: "Hipotensão pós-indução",
+    dificuldade: "alta",
+    pergunta: "Paciente idoso, séptico, em uso de losartana, chega para laparotomia. Após indução titulada, apresenta PA 55/30 mmHg, pele quente, eco sem hipovolemia importante e resposta ruim a fenilefrina. Qual hipótese e conduta fazem mais sentido?",
+    alternativas: {
+      A: "Hipertensão paradoxal; tratar com nitroprussiato.",
+      B: "Vasoplegia pós-indução potencializada por sepse e bloqueio do sistema renina-angiotensina; usar noradrenalina e considerar vasopressina se refratário.",
+      C: "Broncoespasmo como única causa.",
+      D: "Hipertermia maligna obrigatória.",
+      E: "Síndrome pós-RTU."
+    },
+    resposta: "B",
+    comentario: "Sepse e uso de IECA/BRA podem favorecer vasodilatação importante e hipotensão refratária a catecolaminas. Vasopressina pode ser útil quando há vasoplegia resistente.",
+    frase_ouro: "Sepse com BRA pode transformar a indução em prova de vasoplegia."
+  },
+  {
+    id: "yao-092-003",
+    fonte: "Yao",
+    capitulo: "Emergências anestésicas",
+    tema: "Hipoxemia após intubação",
+    dificuldade: "alta",
+    pergunta: "Após intubação orotraqueal, paciente apresenta saturação 78%, capnografia presente, murmúrio vesicular apenas à direita e pressão de via aérea elevada. Qual é a causa mais provável?",
+    alternativas: {
+      A: "Intubação esofágica confirmada.",
+      B: "Hipoglicemia.",
+      C: "Intubação seletiva direita ou obstrução/alteração ventilatória unilateral.",
+      D: "Analgesia adequada.",
+      E: "Hipotermia leve."
+    },
+    resposta: "C",
+    comentario: "Capnografia presente confirma ventilação com CO2 exalado, mas murmúrio unilateral e pressão elevada sugerem intubação seletiva, obstrução ou pneumotórax. A posição do tubo deve ser checada imediatamente.",
+    frase_ouro: "Capnograma confirma ventilação; ausculta mostra para qual pulmão."
+  },
+  {
+    id: "yao-092-004",
+    fonte: "Yao",
+    capitulo: "Emergências anestésicas",
+    tema: "Pneumotórax hipertensivo",
+    dificuldade: "alta",
+    pergunta: "Paciente politraumatizado sob ventilação mecânica desenvolve hipotensão súbita, dessaturação, aumento de pressão de vias aéreas, desvio traqueal e murmúrio abolido à esquerda. Qual conduta é mais adequada?",
+    alternativas: {
+      A: "Aguardar radiografia antes de qualquer intervenção.",
+      B: "Administrar beta-bloqueador.",
+      C: "Reduzir FiO2.",
+      D: "Descompressão imediata do pneumotórax hipertensivo, seguida de drenagem torácica definitiva.",
+      E: "Administrar diurético."
+    },
+    resposta: "D",
+    comentario: "Pneumotórax hipertensivo em paciente instável é diagnóstico clínico e deve ser tratado imediatamente, sem aguardar imagem.",
+    frase_ouro: "Pneumotórax hipertensivo não espera raio-X; espera agulha ou dreno."
+  },
+  {
+    id: "yao-092-005",
+    fonte: "Yao",
+    capitulo: "Emergências anestésicas",
+    tema: "Broncoespasmo",
+    dificuldade: "alta",
+    pergunta: "Logo após intubação, paciente asmático apresenta sibilos difusos, pressão de pico elevada, platô pouco alterado e capnograma com subida lenta em 'barbatana'. Qual conduta é adequada?",
+    alternativas: {
+      A: "Reduzir oxigênio para 21%.",
+      B: "Administrar protamina.",
+      C: "Extubar imediatamente sem avaliar.",
+      D: "Fazer diurético.",
+      E: "Aprofundar anestesia, administrar broncodilatador, aumentar tempo expiratório e excluir causas como intubação seletiva, tubo dobrado ou anafilaxia."
+    },
+    resposta: "E",
+    comentario: "Broncoespasmo aumenta resistência de vias aéreas, elevando pico e gerando capnograma típico. Tratamento inclui oxigênio, broncodilatador, anestesia adequada e ajuste ventilatório.",
+    frase_ouro: "Broncoespasmo é cano estreito: trate o brônquio e dê tempo para expirar."
+  },
+  {
+    id: "yao-093-001",
+    fonte: "Yao",
+    capitulo: "Via aérea difícil",
+    tema: "Não intuba, não oxigena",
+    dificuldade: "alta",
+    pergunta: "Após indução em paciente com via aérea difícil não prevista, múltiplas tentativas de intubação falham, ventilação sob máscara é impossível e saturação cai rapidamente. Qual é a prioridade?",
+    alternativas: {
+      A: "Reconhecer cenário não intuba/não oxigena e realizar acesso cirúrgico/front-of-neck airway emergencial conforme protocolo.",
+      B: "Continuar tentando laringoscopia indefinidamente.",
+      C: "Administrar mais sedativo e esperar.",
+      D: "Reduzir FiO2 para evitar atelectasia.",
+      E: "Aguardar parada cardíaca para agir."
+    },
+    resposta: "A",
+    comentario: "No cenário não intuba/não oxigena, a prioridade é restabelecer oxigenação por acesso emergencial à via aérea, evitando tentativas repetidas e traumáticas.",
+    frase_ouro: "Na via aérea perdida, oxigênio vem antes do orgulho da intubação."
+  },
+  {
+    id: "yao-093-002",
+    fonte: "Yao",
+    capitulo: "Via aérea difícil",
+    tema: "Extubação de risco",
+    dificuldade: "alta",
+    pergunta: "Paciente com edema de via aérea após cirurgia cervical extensa, intubação difícil inicial e sangramento local será extubado. Qual estratégia é mais segura?",
+    alternativas: {
+      A: "Extubação imediata sem plano, pois a cirurgia terminou.",
+      B: "Planejar extubação de via aérea difícil, considerar troca por guia/trocador, equipe e material de reintubação prontos e possibilidade de manter intubado.",
+      C: "Retirar tubo e sedar profundamente.",
+      D: "Desligar monitorização para reduzir ansiedade.",
+      E: "Extubar em local sem cirurgião disponível."
+    },
+    resposta: "B",
+    comentario: "Extubação de risco deve ser planejada como parte do manejo da via aérea difícil. Pode ser mais seguro postergar extubação ou usar estratégias que facilitem reintubação.",
+    frase_ouro: "Extubar via aérea difícil sem plano é transformar final de caso em começo de desastre."
+  },
+  {
+    id: "yao-093-003",
+    fonte: "Yao",
+    capitulo: "Via aérea difícil",
+    tema: "Intubação acordada",
+    dificuldade: "alta",
+    pergunta: "Paciente com tumor de base de língua, estridor leve, abertura oral limitada e piora respiratória ao deitar precisa de biópsia. Qual técnica é mais coerente?",
+    alternativas: {
+      A: "Indução rápida com bloqueio neuromuscular profundo antes de avaliar ventilação.",
+      B: "Sedação profunda em decúbito dorsal sem plano cirúrgico.",
+      C: "Intubação acordada ou técnica que preserve ventilação espontânea, com equipe cirúrgica pronta para via aérea emergencial.",
+      D: "Máscara laríngea como única estratégia obrigatória.",
+      E: "Evitar oxigênio."
+    },
+    resposta: "C",
+    comentario: "Massa obstrutiva de via aérea pode colapsar após indução. Preservar ventilação espontânea e preparar resgate cirúrgico é mais seguro.",
+    frase_ouro: "Tumor de via aérea pede plano antes do sono."
+  },
+  {
+    id: "yao-093-004",
+    fonte: "Yao",
+    capitulo: "Via aérea difícil",
+    tema: "Aspiração pulmonar",
+    dificuldade: "alta",
+    pergunta: "Durante indução de paciente com obstrução intestinal, ocorre regurgitação volumosa de conteúdo gástrico. Qual conduta inicial é apropriada?",
+    alternativas: {
+      A: "Colocar em Trendelenburg extremo sempre e extubar.",
+      B: "Ignorar se a saturação estiver normal no primeiro minuto.",
+      C: "Administrar antiemético e prosseguir sem aspiração.",
+      D: "Aspirar orofaringe/traqueia conforme necessidade, proteger via aérea, oxigenar, ventilar e avaliar repercussão pulmonar.",
+      E: "Reduzir FiO2."
+    },
+    resposta: "D",
+    comentario: "Aspiração exige controle de via aérea, aspiração, oxigenação e suporte ventilatório. A evolução depende do volume, conteúdo e resposta clínica.",
+    frase_ouro: "Aspiração na indução muda o caso: primeiro via aérea e oxigênio, depois o resto."
+  },
+  {
+    id: "yao-093-005",
+    fonte: "Yao",
+    capitulo: "Via aérea difícil",
+    tema: "Máscara laríngea",
+    dificuldade: "média",
+    pergunta: "Em qual cenário a máscara laríngea deve ser usada com maior cautela como via aérea principal?",
+    alternativas: {
+      A: "Paciente em jejum, cirurgia periférica curta.",
+      B: "Paciente hígido, sem refluxo.",
+      C: "Procedimento ambulatorial curto.",
+      D: "Paciente sem risco de aspiração.",
+      E: "Paciente com estômago cheio, obstrução intestinal ou alto risco de aspiração."
+    },
+    resposta: "E",
+    comentario: "Máscara laríngea não protege a via aérea contra aspiração como um tubo com cuff traqueal. Em estômago cheio, seu uso como via aérea principal é arriscado.",
+    frase_ouro: "Máscara laríngea ventila bem, mas não faz milagre contra estômago cheio."
+  },
+  {
+    id: "yao-094-001",
+    fonte: "Yao",
+    capitulo: "Farmacologia",
+    tema: "Benzodiazepínicos",
+    dificuldade: "média",
+    pergunta: "Paciente idoso recebe midazolam para sedação e evolui com sonolência prolongada e hipoventilação leve. Qual consideração é correta?",
+    alternativas: {
+      A: "Idosos podem ter maior sensibilidade e recuperação prolongada com benzodiazepínicos; titulação cuidadosa é necessária.",
+      B: "Benzodiazepínicos nunca deprimem ventilação.",
+      C: "Midazolam não causa sedação.",
+      D: "Flumazenil é proibido em qualquer circunstância.",
+      E: "Idade não altera resposta farmacodinâmica."
+    },
+    resposta: "A",
+    comentario: "Idosos têm maior sensibilidade a sedativos e menor reserva respiratória/cognitiva. Benzodiazepínicos devem ser titulados com cautela.",
+    frase_ouro: "No idoso, sedativo pequeno pode virar sono grande."
+  },
+  {
+    id: "yao-094-002",
+    fonte: "Yao",
+    capitulo: "Farmacologia",
+    tema: "Dexmedetomidina",
+    dificuldade: "alta",
+    pergunta: "Paciente em sedação com dexmedetomidina apresenta bradicardia importante e hipotensão. Qual mecanismo é compatível?",
+    alternativas: {
+      A: "Liberação maciça de catecolamina.",
+      B: "Agonismo alfa-2 reduzindo descarga simpática e frequência cardíaca.",
+      C: "Bloqueio neuromuscular despolarizante.",
+      D: "Reversão de opioide.",
+      E: "Antagonismo muscarínico."
+    },
+    resposta: "B",
+    comentario: "Dexmedetomidina reduz tônus simpático por agonismo alfa-2, podendo causar sedação, bradicardia e hipotensão.",
+    frase_ouro: "Dexmedetomidina seda reduzindo simpático; às vezes reduz até demais."
+  },
+  {
+    id: "yao-094-003",
+    fonte: "Yao",
+    capitulo: "Farmacologia",
+    tema: "Óxido nitroso",
+    dificuldade: "média",
+    pergunta: "Em qual situação o óxido nitroso deve ser evitado por expandir espaços gasosos fechados?",
+    alternativas: {
+      A: "Cirurgia de pele pequena.",
+      B: "Paciente sem cavidades gasosas.",
+      C: "Pneumotórax não drenado ou bolha intracraniana/pneumoencéfalo.",
+      D: "Uso de máscara facial simples.",
+      E: "Jejum adequado."
+    },
+    resposta: "C",
+    comentario: "Óxido nitroso difunde para cavidades gasosas fechadas mais rapidamente que o nitrogênio sai, podendo expandir pneumotórax, pneumoencéfalo ou bolhas.",
+    frase_ouro: "Óxido nitroso entra em bolha e faz a bolha virar problema."
+  },
+  {
+    id: "yao-094-004",
+    fonte: "Yao",
+    capitulo: "Farmacologia",
+    tema: "Halogenados",
+    dificuldade: "média",
+    pergunta: "Paciente com pressão intracraniana elevada recebe altas concentrações de anestésico volátil. Qual efeito deve ser lembrado?",
+    alternativas: {
+      A: "Voláteis nunca afetam fluxo cerebral.",
+      B: "Voláteis reduzem sempre a pressão intracraniana em qualquer dose.",
+      C: "Voláteis eliminam necessidade de controlar PaCO2.",
+      D: "Em doses maiores, vasodilatação cerebral pode aumentar volume sanguíneo cerebral e PIC.",
+      E: "Voláteis são antagonistas de succinilcolina."
+    },
+    resposta: "D",
+    comentario: "Anestésicos voláteis reduzem metabolismo cerebral, mas também podem causar vasodilatação cerebral dose-dependente, elevando PIC em pacientes suscetíveis.",
+    frase_ouro: "No crânio apertado, volátil demais pode ocupar espaço por vasodilatação."
+  },
+  {
+    id: "yao-094-005",
+    fonte: "Yao",
+    capitulo: "Farmacologia",
+    tema: "Opioide e rigidez torácica",
+    dificuldade: "alta",
+    pergunta: "Após bolus rápido de opioide potente, paciente apresenta dificuldade ventilatória, parede torácica rígida e ventilação manual difícil. Qual conduta é adequada?",
+    alternativas: {
+      A: "Administrar diurético.",
+      B: "Reduzir oxigênio.",
+      C: "Aguardar sem ventilar.",
+      D: "Fazer protamina.",
+      E: "Reconhecer rigidez induzida por opioide, ventilar com suporte, considerar bloqueador neuromuscular e antagonismo se necessário."
+    },
+    resposta: "E",
+    comentario: "Opioides potentes em bolus rápido podem causar rigidez muscular torácica, dificultando ventilação. Tratamento inclui suporte ventilatório, relaxante e, em alguns casos, naloxona.",
+    frase_ouro: "Opioide rápido demais pode fechar a mecânica antes de abrir a analgesia."
+  },
+  {
+    id: "yao-095-001",
+    fonte: "Yao",
+    capitulo: "Anestesia regional",
+    tema: "Raquianestesia total",
+    dificuldade: "alta",
+    pergunta: "Após injeção acidental de grande dose de anestésico local no espaço subaracnoideo, paciente apresenta hipotensão, bradicardia, apneia e perda de consciência. Qual é a prioridade?",
+    alternativas: {
+      A: "Suporte ventilatório e hemodinâmico imediato até regressão do bloqueio.",
+      B: "Alta para observação domiciliar.",
+      C: "Administrar apenas antiemético.",
+      D: "Aguardar sem oxigênio.",
+      E: "Fazer diurético."
+    },
+    resposta: "A",
+    comentario: "Raquianestesia total pode causar bloqueio simpático profundo, apneia e inconsciência. O tratamento é suporte de via aérea, ventilação, vasopressores e fluidos conforme necessário.",
+    frase_ouro: "Raqui total se trata sustentando vida até o bloqueio descer."
+  },
+  {
+    id: "yao-095-002",
+    fonte: "Yao",
+    capitulo: "Anestesia regional",
+    tema: "Bloqueio interescalênico",
+    dificuldade: "média",
+    pergunta: "Paciente com DPOC grave será submetido a cirurgia de ombro. Qual efeito do bloqueio interescalênico exige cautela?",
+    alternativas: {
+      A: "Aumento garantido da função diafragmática.",
+      B: "Paresia do nervo frênico e redução da função diafragmática ipsilateral.",
+      C: "Bloqueio obrigatório dos dois nervos frênicos.",
+      D: "Aumento da capacidade vital em todos os pacientes.",
+      E: "Ausência de efeito respiratório."
+    },
+    resposta: "B",
+    comentario: "Bloqueio interescalênico frequentemente bloqueia o nervo frênico ipsilateral, podendo ser mal tolerado em pacientes com reserva pulmonar limitada.",
+    frase_ouro: "Interescalênico bom para ombro pode ser caro para diafragma."
+  },
+  {
+    id: "yao-095-003",
+    fonte: "Yao",
+    capitulo: "Anestesia regional",
+    tema: "Bloqueio femoral",
+    dificuldade: "média",
+    pergunta: "Após bloqueio femoral para analgesia, qual orientação pós-operatória é importante?",
+    alternativas: {
+      A: "Deambular sem auxílio imediatamente.",
+      B: "Ignorar fraqueza do quadríceps.",
+      C: "Prevenir quedas devido à fraqueza do quadríceps.",
+      D: "Suspender toda fisioterapia permanentemente.",
+      E: "Evitar avaliação motora."
+    },
+    resposta: "C",
+    comentario: "Bloqueio femoral pode enfraquecer quadríceps, aumentando risco de queda. Mobilização deve ser assistida até recuperação.",
+    frase_ouro: "Analgesia femoral pode tirar dor e joelho firme ao mesmo tempo."
+  },
+  {
+    id: "yao-095-004",
+    fonte: "Yao",
+    capitulo: "Anestesia regional",
+    tema: "Bloqueio de nervo periférico e anticoagulação",
+    dificuldade: "alta",
+    pergunta: "Paciente anticoagulado precisa de bloqueio profundo de plexo lombar. Qual princípio é correto?",
+    alternativas: {
+      A: "Bloqueios profundos não sangram.",
+      B: "Anticoagulação nunca importa fora do neuroeixo.",
+      C: "Usar agulha fina elimina risco.",
+      D: "Considerar risco de sangramento em local não compressível e respeitar recomendações semelhantes às neuraxiais quando aplicável.",
+      E: "Realizar sempre sem ultrassom."
+    },
+    resposta: "D",
+    comentario: "Bloqueios profundos em áreas não compressíveis podem causar sangramento grave. Anticoagulação deve ser avaliada cuidadosamente.",
+    frase_ouro: "Bloqueio profundo anticoagulado pode sangrar onde ninguém comprime."
+  },
+  {
+    id: "yao-095-005",
+    fonte: "Yao",
+    capitulo: "Anestesia regional",
+    tema: "Adjuvantes",
+    dificuldade: "média",
+    pergunta: "Ao adicionar adjuvantes a bloqueios periféricos, qual raciocínio é adequado?",
+    alternativas: {
+      A: "Todos os adjuvantes são isentos de efeito sistêmico.",
+      B: "Adjuvantes eliminam risco de toxicidade por anestésico local.",
+      C: "Adjuvantes substituem dose segura.",
+      D: "Não há necessidade de consentimento.",
+      E: "Avaliar benefício analgésico, duração, efeitos adversos e evidência de segurança."
+    },
+    resposta: "E",
+    comentario: "Adjuvantes podem prolongar analgesia, mas têm efeitos sistêmicos e risco de neurotoxicidade ou eventos adversos conforme fármaco/dose.",
+    frase_ouro: "Adjuvante não é tempero livre: dose, efeito e segurança contam."
+  },
+  {
+    id: "yao-096-001",
+    fonte: "Yao",
+    capitulo: "Medicina perioperatória",
+    tema: "Anticoagulante e cirurgia urgente",
+    dificuldade: "alta",
+    pergunta: "Paciente em apixabana tomou última dose há 4 horas e apresenta abdome agudo hemorrágico com necessidade cirúrgica imediata. Qual conduta é mais apropriada?",
+    alternativas: {
+      A: "Avaliar gravidade, função renal, tempo da última dose e considerar reversão/hemostasia específica ou inespecífica conforme disponibilidade, sem atrasar controle cirúrgico da fonte.",
+      B: "Aguardar sempre 7 dias antes de operar.",
+      C: "Realizar raquianestesia imediatamente.",
+      D: "Administrar heparina para reverter apixabana.",
+      E: "Ignorar anticoagulante."
+    },
+    resposta: "A",
+    comentario: "Em cirurgia urgente com DOAC recente, deve-se equilibrar reversão, suporte transfusional e controle da fonte de sangramento. Neuroeixo geralmente é contraindicado nesse contexto.",
+    frase_ouro: "DOAC recente em sangramento urgente pede relógio, rim, antídoto e bisturi no tempo certo."
+  },
+  {
+    id: "yao-096-002",
+    fonte: "Yao",
+    capitulo: "Medicina perioperatória",
+    tema: "Stent coronário",
+    dificuldade: "alta",
+    pergunta: "Paciente com stent coronário recente necessita cirurgia eletiva. Qual preocupação é central ao suspender antiagregantes?",
+    alternativas: {
+      A: "Redução do risco de trombose de stent.",
+      B: "Trombose de stent e infarto perioperatório, devendo-se balancear risco de sangramento e risco isquêmico com equipe assistente.",
+      C: "Eliminação completa do risco cardíaco.",
+      D: "Antiagregantes não interferem em nada.",
+      E: "Suspensão sempre segura no primeiro mês."
+    },
+    resposta: "B",
+    comentario: "Interrupção precoce de antiagregação após stent aumenta risco de trombose de stent. Decisão deve integrar cardiologia, cirurgia e anestesia.",
+    frase_ouro: "Stent recente não gosta de antiagregante suspenso no automático."
+  },
+  {
+    id: "yao-096-003",
+    fonte: "Yao",
+    capitulo: "Medicina perioperatória",
+    tema: "Risco pulmonar",
+    dificuldade: "média",
+    pergunta: "Qual fator aumenta risco de complicação pulmonar pós-operatória?",
+    alternativas: {
+      A: "Cirurgia curta periférica em paciente hígido.",
+      B: "Boa capacidade funcional.",
+      C: "DPOC, tabagismo, cirurgia toracoabdominal alta, idade avançada e dor mal controlada.",
+      D: "Mobilização precoce.",
+      E: "Analgesia eficaz."
+    },
+    resposta: "C",
+    comentario: "Complicações pulmonares são favorecidas por doença pulmonar, tabagismo, cirurgia próxima ao diafragma, dor, idade e imobilidade.",
+    frase_ouro: "Pulmão pós-operatório sofre com incisão alta, dor e reserva baixa."
+  },
+  {
+    id: "yao-096-004",
+    fonte: "Yao",
+    capitulo: "Medicina perioperatória",
+    tema: "Capacidade funcional",
+    dificuldade: "média",
+    pergunta: "Paciente não consegue subir um lance de escadas sem dispneia importante. Em cirurgia eletiva de grande porte, isso sugere:",
+    alternativas: {
+      A: "Excelente reserva cardiopulmonar.",
+      B: "Risco pulmonar inexistente.",
+      C: "Ausência de necessidade de avaliação adicional.",
+      D: "Baixa capacidade funcional, associada a maior risco perioperatório.",
+      E: "Contraindicação absoluta de qualquer anestesia."
+    },
+    resposta: "D",
+    comentario: "Baixa capacidade funcional é marcador de maior risco cardiovascular e pulmonar, podendo justificar investigação ou otimização conforme cirurgia.",
+    frase_ouro: "Escada que o paciente não sobe pode prever problema que a cirurgia revela."
+  },
+  {
+    id: "yao-096-005",
+    fonte: "Yao",
+    capitulo: "Medicina perioperatória",
+    tema: "Anemia pré-operatória",
+    dificuldade: "média",
+    pergunta: "Paciente com câncer de cólon e Hb 7,8 g/dL fará colectomia eletiva em 3 semanas. Qual conduta perioperatória é mais adequada?",
+    alternativas: {
+      A: "Ignorar anemia até a indução.",
+      B: "Transfundir todos os pacientes automaticamente sem avaliação.",
+      C: "Cancelar definitivamente a cirurgia.",
+      D: "Evitar investigação.",
+      E: "Investigar e otimizar anemia antes da cirurgia quando possível, considerando ferro, causa e estratégia transfusional."
+    },
+    resposta: "E",
+    comentario: "Anemia pré-operatória aumenta risco de transfusão e complicações. Quando há tempo, deve ser investigada e tratada conforme causa.",
+    frase_ouro: "Anemia eletiva é oportunidade de otimização, não surpresa no centro cirúrgico."
+  },
+  {
+    id: "yao-097-001",
+    fonte: "Yao",
+    capitulo: "Ambiente remoto",
+    tema: "Radiologia intervencionista",
+    dificuldade: "alta",
+    pergunta: "Paciente instável será anestesiado em radiologia intervencionista para embolização. Qual princípio de segurança é essencial?",
+    alternativas: {
+      A: "Levar o padrão de segurança do centro cirúrgico: monitorização, via aérea, drogas, bombas, acesso ao paciente e plano de emergência.",
+      B: "Aceitar ausência de oxigênio porque não é centro cirúrgico.",
+      C: "Dispensar capnografia em anestesia geral.",
+      D: "Evitar checar equipamentos.",
+      E: "Não planejar transporte."
+    },
+    resposta: "A",
+    comentario: "Anestesia fora do centro cirúrgico exige os mesmos padrões de monitorização e resgate, com atenção extra ao acesso limitado e logística.",
+    frase_ouro: "Fora do centro cirúrgico, o risco não diminui; o suporte costuma diminuir."
+  },
+  {
+    id: "yao-097-002",
+    fonte: "Yao",
+    capitulo: "Ambiente remoto",
+    tema: "Tomografia",
+    dificuldade: "média",
+    pergunta: "Durante anestesia em tomografia, qual problema logístico deve ser antecipado?",
+    alternativas: {
+      A: "Acesso ilimitado à cabeça do paciente durante aquisição.",
+      B: "Acesso físico limitado ao paciente durante o exame, exigindo linhas longas, monitorização visível e plano para emergências.",
+      C: "Ausência de radiação.",
+      D: "Impossibilidade de desconexão.",
+      E: "Não há necessidade de ventilador."
+    },
+    resposta: "B",
+    comentario: "Na tomografia, o paciente pode ficar distante ou dentro do gantry, dificultando acesso imediato. Equipamentos e cabos precisam ser planejados.",
+    frase_ouro: "Na tomografia, pense no que você fará quando o paciente estiver longe da sua mão."
+  },
+  {
+    id: "yao-097-003",
+    fonte: "Yao",
+    capitulo: "Ambiente remoto",
+    tema: "Sedação",
+    dificuldade: "média",
+    pergunta: "Durante sedação fora do centro cirúrgico, capnografia é especialmente útil porque:",
+    alternativas: {
+      A: "Substitui oxigênio.",
+      B: "Mede glicemia.",
+      C: "Detecta hipoventilação e apneia antes da queda tardia da saturação.",
+      D: "Reverte opioide.",
+      E: "Impede aspiração."
+    },
+    resposta: "C",
+    comentario: "Oxigênio suplementar pode mascarar hipoventilação por algum tempo. Capnografia permite detecção precoce de apneia ou ventilação inadequada.",
+    frase_ouro: "Na sedação, saturação pode demorar a contar que o paciente parou de ventilar."
+  },
+  {
+    id: "yao-097-004",
+    fonte: "Yao",
+    capitulo: "Ambiente remoto",
+    tema: "Transporte intra-hospitalar",
+    dificuldade: "alta",
+    pergunta: "Paciente intubado em noradrenalina será transportado para exame. Qual preparo é adequado?",
+    alternativas: {
+      A: "Levar apenas o prontuário.",
+      B: "Desconectar monitor para facilitar deslocamento.",
+      C: "Suspender vasopressor durante trajeto.",
+      D: "Garantir oxigênio, ventilação, bombas, drogas de emergência, monitorização e equipe capaz de intervir no trajeto.",
+      E: "Transportar sem acesso venoso."
+    },
+    resposta: "D",
+    comentario: "Transporte de paciente crítico é momento de risco. Deve-se antecipar falhas de oxigênio, bateria, drogas, via aérea e hemodinâmica.",
+    frase_ouro: "Transporte de crítico é anestesia em movimento."
   }
 ];
