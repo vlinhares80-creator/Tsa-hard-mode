@@ -1,4 +1,4 @@
-const STORAGE_KEY = "tsa-hard-mode-progress-v250";
+const STORAGE_KEY = "tsa-hard-mode-progress-v310";
 
 let state = {
   answeredCorrect: [],
@@ -14,7 +14,8 @@ let sessionResults = [];
 const screens = {
   home: document.getElementById("home-screen"),
   quiz: document.getElementById("quiz-screen"),
-  result: document.getElementById("result-screen")
+  result: document.getElementById("result-screen"),
+  stats: document.getElementById("stats-screen")
 };
 
 const els = {
@@ -26,6 +27,7 @@ const els = {
   start10Btn: document.getElementById("start-10-btn"),
   start20Btn: document.getElementById("start-20-btn"),
   reviewBtn: document.getElementById("review-btn"),
+  statsBtn: document.getElementById("stats-btn"),
   resetBtn: document.getElementById("reset-btn"),
 
   backHomeBtn: document.getElementById("back-home-btn"),
@@ -51,7 +53,14 @@ const els = {
   new10Btn: document.getElementById("new-10-btn"),
   new20Btn: document.getElementById("new-20-btn"),
   resultReviewBtn: document.getElementById("result-review-btn"),
-  resultHomeBtn: document.getElementById("result-home-btn")
+  resultStatsBtn: document.getElementById("result-stats-btn"),
+  resultHomeBtn: document.getElementById("result-home-btn"),
+
+  statsBackBtn: document.getElementById("stats-back-btn"),
+  overallStats: document.getElementById("overall-stats"),
+  areaStats: document.getElementById("area-stats"),
+  difficultyStats: document.getElementById("difficulty-stats"),
+  weakAreaStats: document.getElementById("weak-area-stats")
 };
 
 function ensureQuestions() {
@@ -108,6 +117,13 @@ function shuffle(array) {
   return copy;
 }
 
+function normalizeText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
 function getAvailableQuestions() {
   const questions = ensureQuestions();
 
@@ -150,6 +166,10 @@ function showScreen(name) {
 
   if (name === "home") {
     updateDashboard();
+  }
+
+  if (name === "stats") {
+    renderStats();
   }
 }
 
@@ -327,10 +347,439 @@ function resetProgress() {
   showScreen("home");
 }
 
+/* =========================
+   ESTATÍSTICAS
+========================= */
+
+function getQuestionByIdMap() {
+  const questions = ensureQuestions();
+  const map = {};
+
+  questions.forEach((q) => {
+    map[q.id] = q;
+  });
+
+  return map;
+}
+
+function getLatestAnswers() {
+  const latest = {};
+
+  state.history.forEach((entry) => {
+    latest[entry.id] = entry;
+  });
+
+  return latest;
+}
+
+function getDifficultyGroup(question) {
+  const diff = normalizeText(question.dificuldade);
+
+  if (diff.includes("facil")) return "Fácil";
+  if (diff.includes("alta") || diff.includes("dificil")) return "Alta";
+  return "Média";
+}
+
+function getAreaGroup(question) {
+  const text = normalizeText(`${question.capitulo || ""} ${question.tema || ""} ${question.pergunta || ""}`);
+
+  if (
+    text.includes("coronaria") ||
+    text.includes("cardi") ||
+    text.includes("valvar") ||
+    text.includes("aort") ||
+    text.includes("cec") ||
+    text.includes("balao") ||
+    text.includes("tamponamento") ||
+    text.includes("marcapasso") ||
+    text.includes("cdi") ||
+    text.includes("transplante cardiaco") ||
+    text.includes("hipertensao pulmonar") ||
+    text.includes("ventriculo direito") ||
+    text.includes("vasoplegia") ||
+    text.includes("nirs")
+  ) {
+    return "Cardiovascular";
+  }
+
+  if (
+    text.includes("via aerea") ||
+    text.includes("intubacao") ||
+    text.includes("laring") ||
+    text.includes("aspiracao") ||
+    text.includes("mascara laringea") ||
+    text.includes("traqueostomia") ||
+    text.includes("epiglotite") ||
+    text.includes("tumor laringeo") ||
+    text.includes("broncoscopia")
+  ) {
+    return "Via aérea";
+  }
+
+  if (
+    text.includes("respiratorio") ||
+    text.includes("torac") ||
+    text.includes("pulmon") ||
+    text.includes("dpoc") ||
+    text.includes("asma") ||
+    text.includes("sdra") ||
+    text.includes("ventilacao") ||
+    text.includes("pneumotorax") ||
+    text.includes("peep") ||
+    text.includes("shunt") ||
+    text.includes("olV".toLowerCase()) ||
+    text.includes("monopulmonar") ||
+    text.includes("capnografia") ||
+    text.includes("etco2")
+  ) {
+    return "Respiratório / Torácica";
+  }
+
+  if (
+    text.includes("neuro") ||
+    text.includes("cranio") ||
+    text.includes("cerebral") ||
+    text.includes("tce") ||
+    text.includes("aneurisma cerebral") ||
+    text.includes("pressao intracraniana") ||
+    text.includes("pic") ||
+    text.includes("medular") ||
+    text.includes("coluna") ||
+    text.includes("potenciais evocados") ||
+    text.includes("diabetes insipidus") ||
+    text.includes("siadh")
+  ) {
+    return "Neuroanestesia";
+  }
+
+  if (
+    text.includes("obstetric") ||
+    text.includes("gestante") ||
+    text.includes("cesarea") ||
+    text.includes("parto") ||
+    text.includes("pre-eclampsia") ||
+    text.includes("eclampsia") ||
+    text.includes("placenta") ||
+    text.includes("amnio") ||
+    text.includes("magnesio")
+  ) {
+    return "Obstetrícia";
+  }
+
+  if (
+    text.includes("pediatr") ||
+    text.includes("crianca") ||
+    text.includes("lactente") ||
+    text.includes("neonato") ||
+    text.includes("prematuro") ||
+    text.includes("tetralogia") ||
+    text.includes("fallot") ||
+    text.includes("cardiopatias congenitas")
+  ) {
+    return "Pediatria";
+  }
+
+  if (
+    text.includes("regional") ||
+    text.includes("raqui") ||
+    text.includes("peridural") ||
+    text.includes("bloqueio") ||
+    text.includes("anestesico local") ||
+    text.includes("toxicidade sistemica") ||
+    text.includes("last") ||
+    text.includes("dor aguda") ||
+    text.includes("dor cronica") ||
+    text.includes("analgesia") ||
+    text.includes("pca")
+  ) {
+    return "Regional / Dor";
+  }
+
+  if (
+    text.includes("farmacologia") ||
+    text.includes("propofol") ||
+    text.includes("etomidato") ||
+    text.includes("cetamina") ||
+    text.includes("opioide") ||
+    text.includes("remifentanil") ||
+    text.includes("succinilcolina") ||
+    text.includes("rocuronio") ||
+    text.includes("sugamadex") ||
+    text.includes("milrinona") ||
+    text.includes("dobutamina") ||
+    text.includes("noradrenalina") ||
+    text.includes("vasopressina") ||
+    text.includes("nitroglicerina") ||
+    text.includes("dexmedetomidina") ||
+    text.includes("benzodiazep")
+  ) {
+    return "Farmacologia";
+  }
+
+  if (
+    text.includes("renal") ||
+    text.includes("rim") ||
+    text.includes("hipercalemia") ||
+    text.includes("hipocalcemia") ||
+    text.includes("hiponatremia") ||
+    text.includes("diabetes") ||
+    text.includes("endocrino") ||
+    text.includes("tireo") ||
+    text.includes("adrenal") ||
+    text.includes("feocromocitoma") ||
+    text.includes("crise tireotoxica") ||
+    text.includes("acido-base") ||
+    text.includes("eletrolitos")
+  ) {
+    return "Renal / Endócrino / Metabólico";
+  }
+
+  if (
+    text.includes("hematologia") ||
+    text.includes("transfus") ||
+    text.includes("coagul") ||
+    text.includes("plaqueta") ||
+    text.includes("fibrinogenio") ||
+    text.includes("rotem") ||
+    text.includes("teg") ||
+    text.includes("heparina") ||
+    text.includes("protamina") ||
+    text.includes("anticoagul") ||
+    text.includes("anemia") ||
+    text.includes("sangramento")
+  ) {
+    return "Hematologia / Coagulação";
+  }
+
+  if (
+    text.includes("trauma") ||
+    text.includes("emergencia") ||
+    text.includes("choque") ||
+    text.includes("sepse") ||
+    text.includes("critico") ||
+    text.includes("parada") ||
+    text.includes("anafilaxia") ||
+    text.includes("hipertermia maligna") ||
+    text.includes("queimadura") ||
+    text.includes("lactato") ||
+    text.includes("svO2".toLowerCase()) ||
+    text.includes("delta pco2")
+  ) {
+    return "Emergências / Crítico";
+  }
+
+  if (
+    text.includes("hepatico") ||
+    text.includes("hepat") ||
+    text.includes("figado") ||
+    text.includes("cirrotico") ||
+    text.includes("gastro") ||
+    text.includes("transplante hepatico") ||
+    text.includes("transplante renal") ||
+    text.includes("abdome") ||
+    text.includes("obstrutivo")
+  ) {
+    return "Gastro / Hepato / Transplantes";
+  }
+
+  if (
+    text.includes("ambulatorial") ||
+    text.includes("remoto") ||
+    text.includes("ressonancia") ||
+    text.includes("tomografia") ||
+    text.includes("radiologia") ||
+    text.includes("endoscopia") ||
+    text.includes("oftalmo") ||
+    text.includes("otorrino") ||
+    text.includes("urologia") ||
+    text.includes("ortopedia") ||
+    text.includes("robotica") ||
+    text.includes("bariatrica") ||
+    text.includes("laparoscopica") ||
+    text.includes("laparoscopia")
+  ) {
+    return "Ambulatorial / Remoto / Especialidades";
+  }
+
+  if (
+    text.includes("geriatria") ||
+    text.includes("idoso") ||
+    text.includes("fragilidade") ||
+    text.includes("delirium")
+  ) {
+    return "Geriatria";
+  }
+
+  return "Outros";
+}
+
+function createEmptyStats() {
+  return {
+    total: 0,
+    answered: 0,
+    correct: 0,
+    wrong: 0
+  };
+}
+
+function addToStats(statsObj, groupName, question, latestAnswer) {
+  if (!statsObj[groupName]) {
+    statsObj[groupName] = createEmptyStats();
+  }
+
+  statsObj[groupName].total += 1;
+
+  if (latestAnswer) {
+    statsObj[groupName].answered += 1;
+
+    if (latestAnswer.correct) {
+      statsObj[groupName].correct += 1;
+    } else {
+      statsObj[groupName].wrong += 1;
+    }
+  }
+}
+
+function percent(correct, answered) {
+  if (!answered) return 0;
+  return Math.round((correct / answered) * 100);
+}
+
+function renderStatsRow(name, data) {
+  const pct = percent(data.correct, data.answered);
+  const answeredText = `${data.answered}/${data.total}`;
+  const barWidth = data.answered > 0 ? pct : 0;
+
+  return `
+    <div class="stats-row">
+      <div class="stats-row-header">
+        <strong>${name}</strong>
+        <span>${data.answered > 0 ? pct + "%" : "—"}</span>
+      </div>
+
+      <div class="stats-row-sub">
+        <span>Respondidas: ${answeredText}</span>
+        <span>Acertos: ${data.correct}</span>
+        <span>Erros: ${data.wrong}</span>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: ${barWidth}%"></div>
+      </div>
+    </div>
+  `;
+}
+
+function renderStatsList(container, statsObj, options = {}) {
+  const minAnswered = options.minAnswered || 0;
+  const sortMode = options.sortMode || "name";
+
+  let entries = Object.entries(statsObj);
+
+  entries = entries.filter(([, data]) => data.total > 0);
+
+  if (minAnswered > 0) {
+    entries = entries.filter(([, data]) => data.answered >= minAnswered);
+  }
+
+  if (sortMode === "weak") {
+    entries.sort((a, b) => {
+      const pctA = percent(a[1].correct, a[1].answered);
+      const pctB = percent(b[1].correct, b[1].answered);
+
+      if (pctA !== pctB) return pctA - pctB;
+      return b[1].answered - a[1].answered;
+    });
+  } else if (sortMode === "answered") {
+    entries.sort((a, b) => b[1].answered - a[1].answered);
+  } else {
+    entries.sort((a, b) => a[0].localeCompare(b[0], "pt-BR"));
+  }
+
+  if (entries.length === 0) {
+    container.innerHTML = `<p class="muted">Ainda não há respostas suficientes para mostrar aqui.</p>`;
+    return;
+  }
+
+  container.innerHTML = entries
+    .map(([name, data]) => renderStatsRow(name, data))
+    .join("");
+}
+
+function renderStats() {
+  const questions = ensureQuestions();
+  const latest = getLatestAnswers();
+
+  const areaStats = {};
+  const difficultyStats = {
+    "Fácil": createEmptyStats(),
+    "Média": createEmptyStats(),
+    "Alta": createEmptyStats()
+  };
+
+  let overall = createEmptyStats();
+  overall.total = questions.length;
+
+  questions.forEach((question) => {
+    const latestAnswer = latest[question.id];
+
+    if (latestAnswer) {
+      overall.answered += 1;
+
+      if (latestAnswer.correct) {
+        overall.correct += 1;
+      } else {
+        overall.wrong += 1;
+      }
+    }
+
+    const area = getAreaGroup(question);
+    const difficulty = getDifficultyGroup(question);
+
+    addToStats(areaStats, area, question, latestAnswer);
+    addToStats(difficultyStats, difficulty, question, latestAnswer);
+  });
+
+  const overallPct = percent(overall.correct, overall.answered);
+
+  els.overallStats.innerHTML = `
+    <div class="stats-grid">
+      <div class="stat-box">
+        <span class="stat-label">Respondidas</span>
+        <strong>${overall.answered}/${overall.total}</strong>
+      </div>
+
+      <div class="stat-box">
+        <span class="stat-label">Acertos</span>
+        <strong>${overall.correct}</strong>
+      </div>
+
+      <div class="stat-box">
+        <span class="stat-label">Erros</span>
+        <strong>${overall.wrong}</strong>
+      </div>
+
+      <div class="stat-box">
+        <span class="stat-label">Aproveitamento</span>
+        <strong>${overall.answered > 0 ? overallPct + "%" : "—"}</strong>
+      </div>
+    </div>
+  `;
+
+  renderStatsList(els.areaStats, areaStats, { sortMode: "answered" });
+  renderStatsList(els.difficultyStats, difficultyStats, { sortMode: "name" });
+  renderStatsList(els.weakAreaStats, areaStats, { minAnswered: 3, sortMode: "weak" });
+}
+
+/* =========================
+   EVENTOS
+========================= */
+
 function registerEvents() {
   els.start10Btn.addEventListener("click", () => startQuiz(10));
   els.start20Btn.addEventListener("click", () => startQuiz(20));
   els.reviewBtn.addEventListener("click", startReview);
+  els.statsBtn.addEventListener("click", () => showScreen("stats"));
   els.resetBtn.addEventListener("click", resetProgress);
 
   els.backHomeBtn.addEventListener("click", () => showScreen("home"));
@@ -340,12 +789,15 @@ function registerEvents() {
   els.new10Btn.addEventListener("click", () => startQuiz(10));
   els.new20Btn.addEventListener("click", () => startQuiz(20));
   els.resultReviewBtn.addEventListener("click", startReview);
+  els.resultStatsBtn.addEventListener("click", () => showScreen("stats"));
   els.resultHomeBtn.addEventListener("click", () => showScreen("home"));
+
+  els.statsBackBtn.addEventListener("click", () => showScreen("home"));
 }
 
 function registerServiceWorker() {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js?v=250").catch((error) => {
+    navigator.serviceWorker.register("sw.js?v=310").catch((error) => {
       console.warn("Service worker não registrado:", error);
     });
   }
