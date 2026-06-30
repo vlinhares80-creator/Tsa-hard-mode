@@ -2464,5 +2464,545 @@ const QUESTIONS = [
     resposta: "A",
     comentario: "Toxicidade por anestésico local pode causar sintomas neurológicos precoces e toxicidade cardiovascular grave.",
     frase_ouro: "Anestésico local no sangue demais começa no cérebro e pode terminar no coração."
+  },
+  {
+    id: "yao-047-001",
+    fonte: "Yao",
+    capitulo: "Doença coronariana",
+    tema: "Isquemia durante indução",
+    dificuldade: "alta",
+    pergunta: "Homem de 72 anos, doença triarterial conhecida, vai para laparotomia urgente por obstrução intestinal. Após indução com queda da pressão arterial para 78/42 mmHg e FC 118 bpm, surge infradesnivelamento de ST em DII e V5. Saturação 97%, hemoglobina 11 g/dL. Qual é a conduta fisiologicamente mais adequada?",
+    alternativas: {
+      A: "Aumentar a pressão arterial diastólica, reduzir taquicardia, otimizar profundidade anestésica e corrigir fatores que reduzam oferta de oxigênio.",
+      B: "Aguardar espontaneamente, pois a saturação normal exclui isquemia.",
+      C: "Administrar vasodilatador arterial puro para reduzir ainda mais a pressão.",
+      D: "Reduzir a fração inspirada de oxigênio para evitar vasoconstrição coronariana.",
+      E: "Induzir taquicardia para aumentar o débito cardíaco."
+    },
+    resposta: "A",
+    comentario: "O quadro sugere isquemia por desequilíbrio oferta/consumo. Taquicardia aumenta consumo e reduz tempo diastólico; hipotensão diastólica reduz perfusão coronariana. A conduta é restaurar pressão perfusora, controlar frequência, otimizar anestesia, oxigenação e hemoglobina.",
+    frase_ouro: "No coronariopata, ST baixo durante hipotensão e taquicardia é pedido de socorro da oferta de oxigênio."
+  },
+  {
+    id: "yao-047-002",
+    fonte: "Yao",
+    capitulo: "Doença coronariana",
+    tema: "Pós-CEC",
+    dificuldade: "alta",
+    pergunta: "Paciente após revascularização miocárdica sai da circulação extracorpórea com PAM 48 mmHg, PVC 14 mmHg, SvO2 58%, lactato subindo e ecocardiografia mostrando hipocinesia global de VE. Qual interpretação é mais provável?",
+    alternativas: {
+      A: "Vasoplegia isolada com débito cardíaco alto.",
+      B: "Baixo débito por disfunção ventricular esquerda após CEC, exigindo otimização de pré-carga, inotropismo e exclusão de isquemia mecânica/coronária.",
+      C: "Hipervolemia pura com função ventricular normal.",
+      D: "Anafilaxia obrigatória à protamina, independentemente do momento.",
+      E: "Erro de oximetria, pois lactato não se altera em baixo débito."
+    },
+    resposta: "B",
+    comentario: "SvO2 baixa, lactato subindo e hipocinesia global sugerem oferta sistêmica inadequada por baixo débito. Após CEC, causas incluem stunning miocárdico, isquemia, proteção miocárdica inadequada, distúrbios eletrolíticos e alterações mecânicas.",
+    frase_ouro: "Depois da CEC, pressão baixa com SvO2 baixa pede pensar em bomba, não só em vaso."
+  },
+  {
+    id: "yao-047-003",
+    fonte: "Yao",
+    capitulo: "Doença valvar",
+    tema: "Estenose aórtica",
+    dificuldade: "alta",
+    pergunta: "Mulher de 81 anos, estenose aórtica grave sintomática, é submetida a correção de fratura de fêmur. Após raquianestesia inadvertidamente extensa, PA cai para 70/35 mmHg e FC 52 bpm. Qual mecanismo explica a gravidade do quadro?",
+    alternativas: {
+      A: "A estenose aórtica melhora com redução intensa da pós-carga.",
+      B: "A bradicardia sempre aumenta o débito cardíaco nesses pacientes.",
+      C: "A queda de resistência vascular sistêmica e da pressão diastólica reduz perfusão coronariana em ventrículo hipertrofiado e dependente de pré-carga.",
+      D: "O bloqueio simpático aumenta a pressão arterial diastólica.",
+      E: "A valva estreita protege contra hipotensão."
+    },
+    resposta: "C",
+    comentario: "Na estenose aórtica grave, o VE hipertrofiado depende de pré-carga, ritmo adequado e pressão diastólica para perfusão coronariana. Vasodilatação abrupta e bradicardia podem causar colapso hemodinâmico.",
+    frase_ouro: "Estenose aórtica grave não tolera vasodilatação brusca: a coronária depende da diástole."
+  },
+  {
+    id: "yao-047-004",
+    fonte: "Yao",
+    capitulo: "Doença valvar",
+    tema: "Insuficiência mitral aguda",
+    dificuldade: "alta",
+    pergunta: "Paciente pós-infarto evolui com edema agudo de pulmão, hipotensão e novo sopro sistólico. Eco sugere insuficiência mitral aguda por disfunção de músculo papilar. Qual meta anestésica é mais adequada até correção definitiva?",
+    alternativas: {
+      A: "Aumentar resistência vascular sistêmica ao máximo para reduzir regurgitação.",
+      B: "Induzir bradicardia profunda para aumentar enchimento.",
+      C: "Evitar qualquer suporte inotrópico.",
+      D: "Reduzir pós-carga quando possível, sustentar perfusão sistêmica e tratar congestão/baixo débito.",
+      E: "Manter hipovolemia severa como estratégia primária."
+    },
+    resposta: "D",
+    comentario: "Na insuficiência mitral aguda, o átrio esquerdo não tem complacência adaptada, causando congestão pulmonar e baixo débito. Redução de pós-carga favorece fluxo anterógrado, mas é preciso sustentar pressão e perfusão.",
+    frase_ouro: "Na insuficiência mitral aguda, o pulmão paga rápido pelo refluxo que o átrio não consegue acomodar."
+  },
+  {
+    id: "yao-047-005",
+    fonte: "Yao",
+    capitulo: "Marca-passos e CDI",
+    tema: "Interferência eletromagnética",
+    dificuldade: "alta",
+    pergunta: "Paciente com CRT-D, dependente de pacing, será submetido a colectomia aberta com cautério monopolar. O cirurgião pergunta se basta colocar magneto. Qual resposta é mais correta?",
+    alternativas: {
+      A: "Sim, porque magneto sempre muda qualquer CRT-D para modo DOO.",
+      B: "Sim, porque magneto corrige falha de captura ventricular.",
+      C: "Não, porque magneto em CRT-D geralmente suspende terapias antitaquicardia, mas pode não tornar o pacing assíncrono; se dependente, idealmente deve haver reprogramação.",
+      D: "Não há risco de interferência em cirurgia abdominal.",
+      E: "Deve-se desligar definitivamente o dispositivo e operar sem monitorização."
+    },
+    resposta: "C",
+    comentario: "Em dispositivos com desfibrilador, magneto geralmente suspende terapias antitaquicardia, mas não garante pacing assíncrono. Paciente dependente exige plano para evitar inibição por EMI e desfibrilação externa disponível.",
+    frase_ouro: "Magneto no CDI cala o choque; não necessariamente protege o pacing."
+  },
+  {
+    id: "yao-047-006",
+    fonte: "Yao",
+    capitulo: "Aneurisma toracoabdominal",
+    tema: "Proteção medular",
+    dificuldade: "alta",
+    pergunta: "Durante correção aberta de aneurisma toracoabdominal tipo extenso, após clampeamento prolongado, há perda dos potenciais evocados motores dos membros inferiores. A PAM proximal é 72 mmHg, hemoglobina 8 g/dL, pressão do líquor 18 mmHg. Qual conjunto de medidas é mais adequado?",
+    alternativas: {
+      A: "Reduzir PAM para diminuir sangramento e manter líquor elevado.",
+      B: "Aumentar anestésico volátil e administrar bloqueador neuromuscular para melhorar MEP.",
+      C: "Ignorar a alteração se a saturação periférica estiver normal.",
+      D: "Aumentar pressão de perfusão medular com maior PAM, reduzir pressão do líquor, otimizar hemoglobina/oxigenação e comunicar o cirurgião.",
+      E: "Fazer diurético para reduzir retorno venoso."
+    },
+    resposta: "D",
+    comentario: "A queda de MEP sugere isquemia medular. A pressão de perfusão medular depende da PAM efetiva menos a pressão do LCR. Deve-se subir PAM, drenar LCR conforme protocolo, corrigir anemia/hipoxemia e revisar fluxo distal/reimplante.",
+    frase_ouro: "MEP caiu: suba pressão, drene líquor e entregue oxigênio à medula."
+  },
+  {
+    id: "yao-047-007",
+    fonte: "Yao",
+    capitulo: "Aneurisma de aorta abdominal",
+    tema: "Desclampeamento",
+    dificuldade: "alta",
+    pergunta: "Homem de 76 anos, DRC e IAM prévio, está em correção aberta de AAA infrarrenal. Após desclampeamento, PA cai para 60/35 mmHg, EtCO2 cai, lactato sobe e cálcio ionizado está baixo após transfusão. Qual abordagem é mais apropriada?",
+    alternativas: {
+      A: "Administrar apenas vasodilatador, pois a queda de pressão significa hipertensão oculta.",
+      B: "Tratar como reperfusão/vasodilatação e hipovolemia relativa: volume/hemoderivados conforme perda, vasopressor, correção de cálcio, acidose e sangramento.",
+      C: "Ignorar cálcio, pois citrato não interfere na hemodinâmica.",
+      D: "Induzir taquicardia extrema como única estratégia.",
+      E: "Suspender oxigênio para reduzir radicais livres."
+    },
+    resposta: "B",
+    comentario: "O desclampeamento pode causar queda de RVS, retorno de metabólitos ácidos, hipovolemia relativa e sangramento. Transfusão maciça pode gerar hipocalcemia por citrato, piorando contratilidade e coagulação.",
+    frase_ouro: "No desclamp, o território isquêmico devolve volume, ácido e problema."
+  },
+  {
+    id: "yao-047-008",
+    fonte: "Yao",
+    capitulo: "Hipertensão",
+    tema: "Feocromocitoma",
+    dificuldade: "alta",
+    pergunta: "Paciente com feocromocitoma em adrenalectomia laparoscópica faz PA 260/140 mmHg e FC 135 durante manipulação tumoral. Minutos depois, após ligadura da veia adrenal, PA cai para 58/32 mmHg. Qual sequência explica melhor esses eventos?",
+    alternativas: {
+      A: "Antes da ligadura há liberação de catecolaminas; após a ligadura há queda abrupta de catecolaminas, alfa-bloqueio residual e hipovolemia relativa.",
+      B: "Antes da ligadura há falência vagal; depois há hipertensão mascarada.",
+      C: "Antes há hipoglicemia; depois há excesso de aldosterona.",
+      D: "Antes há broncoespasmo; depois há laringoespasmo.",
+      E: "Os eventos são incompatíveis com feocromocitoma."
+    },
+    resposta: "A",
+    comentario: "A manipulação tumoral libera catecolaminas, gerando vasoconstrição, hipertensão e taquicardia. Após remover a fonte, predominam vasodilatação, alfa-bloqueio residual e hipovolemia relativa.",
+    frase_ouro: "Feocromocitoma é anestesia em duas metades: catecolamina demais antes, catecolamina de menos depois."
+  },
+  {
+    id: "yao-047-009",
+    fonte: "Yao",
+    capitulo: "Tamponamento cardíaco",
+    tema: "Pós-operatório cardíaco",
+    dificuldade: "alta",
+    pergunta: "Paciente 4 dias após CABG e troca valvar mitral apresenta dispneia, oligúria, pele fria, FC 120, PA 110/65, PVC 24 mmHg, PAOP 13 mmHg e débito cardíaco 2,5 L/min. Qual diagnóstico deve ser fortemente considerado?",
+    alternativas: {
+      A: "Hipovolemia pura por jejum.",
+      B: "Vasoplegia isolada com alto débito.",
+      C: "Tamponamento regional por coágulo comprimindo câmaras direitas.",
+      D: "Recuperação normal pós-operatória.",
+      E: "Hipoglicemia como causa principal dos dados hemodinâmicos."
+    },
+    resposta: "C",
+    comentario: "No pós-operatório cardíaco, coágulos podem causar tamponamento regional, especialmente comprimindo átrio/ventrículo direitos. PVC muito elevada, PAOP menos elevada e baixo débito são sugestivos.",
+    frase_ouro: "No pós-cardíaco, coágulo localizado pode tamponar sem fazer o clássico perfeito."
+  },
+  {
+    id: "yao-047-010",
+    fonte: "Yao",
+    capitulo: "Tamponamento cardíaco",
+    tema: "Indução anestésica",
+    dificuldade: "alta",
+    pergunta: "Paciente com tamponamento significativo será levado à reexploração. Está sentado, ansioso, taquicárdico e dependente de catecolaminas endógenas. Qual estratégia de indução é mais segura?",
+    alternativas: {
+      A: "Sedação profunda na UTI antes de equipe cirúrgica pronta.",
+      B: "Bloqueio beta para reduzir FC antes da drenagem.",
+      C: "Diurético e vasodilatador antes do transporte.",
+      D: "Indução titulada com manutenção de pré-carga e tônus simpático, drogas vasoativas prontas e cirurgião preparado para descompressão imediata.",
+      E: "PEEP alta obrigatória antes da indução."
+    },
+    resposta: "D",
+    comentario: "No tamponamento, o paciente depende de pré-carga, frequência e tônus simpático. Sedação profunda, vasodilatação e pressão positiva podem precipitar colapso. A descompressão precisa estar imediatamente disponível.",
+    frase_ouro: "Tamponamento não perdoa indução bonita sem cirurgião pronto."
+  },
+  {
+    id: "yao-048-001",
+    fonte: "Yao",
+    capitulo: "Hipertensão pulmonar",
+    tema: "Falência de VD",
+    dificuldade: "alta",
+    pergunta: "Paciente com hipertensão pulmonar grave durante laparotomia desenvolve hipotensão, aumento de PVC, queda de EtCO2 e dilatação aguda de VD no eco. PaCO2 58 mmHg, pH 7,21, SpO2 88%. Qual conduta inicial é mais apropriada?",
+    alternativas: {
+      A: "Reduzir oxigênio para evitar vasoconstrição pulmonar.",
+      B: "Aumentar hipercapnia permissiva.",
+      C: "Corrigir hipóxia, hipercapnia e acidose, sustentar pressão sistêmica, otimizar VD e considerar vasodilatador pulmonar seletivo.",
+      D: "Fazer beta-bloqueador em bolus como primeira medida.",
+      E: "Reduzir PAM para diminuir trabalho cardíaco."
+    },
+    resposta: "C",
+    comentario: "Hipóxia, hipercapnia e acidose aumentam RVP e podem precipitar falência de VD. É necessário reduzir RVP, manter perfusão coronariana do VD e usar suporte vasoativo/inotrópico conforme necessidade.",
+    frase_ouro: "VD em crise precisa de pulmão aberto, pressão sistêmica e menos resistência pulmonar."
+  },
+  {
+    id: "yao-048-002",
+    fonte: "Yao",
+    capitulo: "Transplante cardíaco",
+    tema: "Fisiologia do transplantado",
+    dificuldade: "alta",
+    pergunta: "Paciente transplantado cardíaco apresenta bradicardia sintomática após anestesia. A equipe sugere atropina. Qual consideração é correta?",
+    alternativas: {
+      A: "Atropina sempre corrige prontamente porque o vago está hiperativo.",
+      B: "Atropina pode não funcionar de forma confiável no coração denervado; pode ser necessário usar drogas cronotrópicas diretas ou pacing.",
+      C: "Beta-bloqueador é primeira linha para bradicardia.",
+      D: "A denervação impede qualquer resposta a catecolaminas circulantes.",
+      E: "Bradicardia no transplantado nunca tem repercussão."
+    },
+    resposta: "B",
+    comentario: "O coração transplantado é denervado, então drogas dependentes de bloqueio vagal, como atropina, podem ter pouca resposta. Agonistas diretos ou pacing podem ser necessários.",
+    frase_ouro: "No transplantado, atropina pode tocar uma campainha sem fio ligado."
+  },
+  {
+    id: "yao-048-003",
+    fonte: "Yao",
+    capitulo: "Cardiopatias congênitas",
+    tema: "Tetralogia de Fallot",
+    dificuldade: "alta",
+    pergunta: "Criança com Tetralogia de Fallot não corrigida chora na indução, dessatura para 62%, fica taquicárdica e cianótica. Qual combinação de medidas é fisiologicamente coerente?",
+    alternativas: {
+      A: "Reduzir RVS com vasodilatador e manter choro.",
+      B: "Aumentar RVP com hipercapnia e acidose.",
+      C: "Aprofundar anestesia, administrar oxigênio, corrigir acidose/hipovolemia, aumentar RVS com vasopressor e considerar beta-bloqueio para espasmo infundibular.",
+      D: "Suspender oxigênio para evitar fechamento do canal arterial.",
+      E: "Induzir hipotensão para reduzir trabalho cardíaco."
+    },
+    resposta: "C",
+    comentario: "Na crise hipercianótica, há aumento de shunt direita-esquerda. Aumentar RVS reduz shunt sistêmico, enquanto oxigênio, correção de acidose e redução de estímulo simpático ajudam a restaurar fluxo pulmonar.",
+    frase_ouro: "Na crise hipercianótica, aumente RVS e convença o sangue a ir ao pulmão."
+  },
+  {
+    id: "yao-048-004",
+    fonte: "Yao",
+    capitulo: "Obstetrícia",
+    tema: "Pré-eclâmpsia grave",
+    dificuldade: "alta",
+    pergunta: "Gestante com pré-eclâmpsia grave chega para cesárea urgente. PA 180/115, cefaleia intensa, plaquetas 78.000, edema importante e epigastralgia. Qual raciocínio anestésico é mais adequado?",
+    alternativas: {
+      A: "Realizar neuraxial sem avaliar coagulação, pois pré-eclâmpsia sempre protege contra sangramento.",
+      B: "Ignorar PA, pois hipertensão materna melhora fluxo uteroplacentário.",
+      C: "Planejar controle pressórico, prevenção de eclâmpsia, avaliar plaquetas/coagulação para neuraxial e preparar via aérea difícil se anestesia geral for necessária.",
+      D: "Administrar grandes volumes para todos os casos, independentemente de edema pulmonar.",
+      E: "Evitar sulfato de magnésio por ser sempre contraindicado."
+    },
+    resposta: "C",
+    comentario: "Pré-eclâmpsia grave exige controle pressórico, magnésio quando indicado, avaliação de plaquetas/coagulação, cuidado com fluidos e planejamento de via aérea, pois edema pode dificultar intubação.",
+    frase_ouro: "Pré-eclâmpsia grave é cérebro, coagulação, pulmão e via aérea no mesmo caso."
+  },
+  {
+    id: "yao-048-005",
+    fonte: "Yao",
+    capitulo: "Pediatria",
+    tema: "Laringoespasmo",
+    dificuldade: "alta",
+    pergunta: "Criança de 4 anos, após amigdalectomia, apresenta esforço inspiratório sem fluxo, dessaturação rápida e ausência de capnografia efetiva após extubação. Qual conduta sequencial é adequada?",
+    alternativas: {
+      A: "Aguardar fadiga para confirmar diagnóstico.",
+      B: "Aplicar oxigênio 100%, pressão positiva contínua, remover estímulo, aprofundar anestesia e usar bloqueador neuromuscular se persistente.",
+      C: "Fazer diurético e observar.",
+      D: "Administrar beta-bloqueador para reduzir consumo de oxigênio.",
+      E: "Reduzir FiO2 para evitar absorção de atelectasia."
+    },
+    resposta: "B",
+    comentario: "Laringoespasmo é emergência de oxigenação. A sequência inclui remover estímulo, oxigênio, pressão positiva, aprofundamento e, se necessário, succinilcolina ou outro relaxante com ventilação/intubação.",
+    frase_ouro: "Laringoespasmo pediátrico não espera: oxigênio e abertura de via aérea vêm primeiro."
+  },
+  {
+    id: "yao-048-006",
+    fonte: "Yao",
+    capitulo: "Neuroanestesia",
+    tema: "TCE grave",
+    dificuldade: "alta",
+    pergunta: "Paciente vítima de TCE grave chega para craniotomia. PA 85/50, SpO2 89%, pupila anisocórica e sinais de hipertensão intracraniana. Qual conduta anestésica inicial protege melhor contra lesão secundária?",
+    alternativas: {
+      A: "Priorizar oxigenação, corrigir hipotensão, evitar hipercapnia importante e manter pressão de perfusão cerebral.",
+      B: "Induzir hipotensão profunda para reduzir sangramento.",
+      C: "Permitir hipoxemia para reduzir radicais livres.",
+      D: "Administrar vasodilatador cerebral antes de proteger via aérea.",
+      E: "Evitar monitorização arterial em todos os casos."
+    },
+    resposta: "A",
+    comentario: "Hipotensão e hipoxemia são importantes causas de lesão cerebral secundária. A prioridade é oxigenação, ventilação, pressão arterial adequada e controle de PIC conforme necessidade.",
+    frase_ouro: "No TCE, hipotensão e hipóxia são a segunda pancada."
+  },
+  {
+    id: "yao-048-007",
+    fonte: "Yao",
+    capitulo: "Cirurgia torácica",
+    tema: "Ventilação monopulmonar",
+    dificuldade: "alta",
+    pergunta: "Durante lobectomia em ventilação monopulmonar, a SpO2 cai para 82%. A pressão de vias aéreas aumentou e a ausculta sugere ventilação inadequada. Qual primeira linha de raciocínio é mais correta?",
+    alternativas: {
+      A: "Assumir que é inevitável e não intervir.",
+      B: "Checar posição do tubo de duplo lúmen/bloqueador, ventilação do pulmão dependente, secreções e causas reversíveis antes de medidas avançadas.",
+      C: "Reduzir FiO2 para 21%.",
+      D: "Desconectar o ventilador por vários minutos.",
+      E: "Administrar protamina."
+    },
+    resposta: "B",
+    comentario: "Hipoxemia na ventilação monopulmonar exige verificar posicionamento do dispositivo, ventilação do pulmão dependente, secreções, broncoespasmo, hemodinâmica e aplicação de PEEP/CPAP se indicado.",
+    frase_ouro: "Na OLV, antes de culpar a fisiologia, confira se o tubo está onde deveria."
+  },
+  {
+    id: "yao-048-008",
+    fonte: "Yao",
+    capitulo: "Hepatobiliar",
+    tema: "Cirrótico para cirurgia",
+    dificuldade: "alta",
+    pergunta: "Paciente cirrótico com ascite volumosa, INR elevado, plaquetas 58.000 e encefalopatia leve será submetido a laparotomia. Qual preocupação anestésica é mais apropriada?",
+    alternativas: {
+      A: "Coagulopatia, sangramento, aspiração, alteração de metabolismo de fármacos, instabilidade hemodinâmica e risco de piora neurológica.",
+      B: "Função hepática normal desde que creatinina seja normal.",
+      C: "Ausência de risco de hipoglicemia.",
+      D: "Necessidade obrigatória de anti-inflamatório não esteroidal.",
+      E: "Contraindicação absoluta de qualquer anestesia."
+    },
+    resposta: "A",
+    comentario: "Doença hepática avançada altera coagulação, volume, metabolismo, glicose, função renal e sistema nervoso central. Ascite aumenta risco respiratório e aspiração.",
+    frase_ouro: "Cirrótico grave traz para a sala coagulação frágil, volume difícil e fármaco imprevisível."
+  },
+  {
+    id: "yao-048-009",
+    fonte: "Yao",
+    capitulo: "Endócrino",
+    tema: "Crise tireotóxica",
+    dificuldade: "alta",
+    pergunta: "Paciente com hipertireoidismo não controlado evolui no intraoperatório com hipertermia, taquicardia extrema, hipertensão, agitação e arritmia. Qual diagnóstico e conduta são mais coerentes?",
+    alternativas: {
+      A: "Crise tireotóxica; suporte, controle adrenérgico, antitireoidianos, iodo após antitireoidiano, corticoide e tratamento de hipertermia.",
+      B: "Hipotireoidismo; administrar apenas levotiroxina em bolus.",
+      C: "Toxicidade por anestésico local; tratar apenas com lipídio.",
+      D: "Bloqueio neuromuscular residual; administrar sugamadex e ignorar temperatura.",
+      E: "Hipoglicemia simples; administrar glicose e encerrar avaliação."
+    },
+    resposta: "A",
+    comentario: "Crise tireotóxica é emergência hipermetabólica com instabilidade cardiovascular e hipertermia. O tratamento é multimodal e inclui controle simpático e redução de produção/liberação hormonal.",
+    frase_ouro: "Crise tireotóxica é metabolismo em incêndio com coração pagando a conta."
+  },
+  {
+    id: "yao-048-010",
+    fonte: "Yao",
+    capitulo: "Renal",
+    tema: "Hipercalemia perioperatória",
+    dificuldade: "alta",
+    pergunta: "Paciente renal crônico chega para cirurgia urgente com K 6,8 mEq/L e ECG com ondas T apiculadas e alargamento de QRS. Qual sequência inicial é mais segura?",
+    alternativas: {
+      A: "Cálcio intravenoso para estabilizar membrana, seguido de medidas para deslocar potássio para o intracelular e remover potássio do corpo.",
+      B: "Administrar potássio para estabilizar gradiente.",
+      C: "Fazer apenas furosemida e iniciar indução imediatamente.",
+      D: "Ignorar o ECG se o paciente estiver acordado.",
+      E: "Administrar succinilcolina como tratamento da hipercalemia."
+    },
+    resposta: "A",
+    comentario: "Com ECG alterado, cálcio IV é prioridade para estabilizar o miocárdio. Depois entram insulina/glicose, beta-agonista, bicarbonato quando indicado e remoção por diálise/resinas/diurese conforme contexto.",
+    frase_ouro: "Hipercalemia com QRS largo: primeiro proteja o coração, depois tire o potássio."
+  },
+  {
+    id: "yao-049-001",
+    fonte: "Yao",
+    capitulo: "Trauma",
+    tema: "Choque hemorrágico",
+    dificuldade: "alta",
+    pergunta: "Vítima de trauma chega hipotensa, fria, confusa, com FAST positivo e suspeita de hemorragia abdominal. Antes do controle cirúrgico, qual estratégia é mais adequada?",
+    alternativas: {
+      A: "Ressuscitação hemostática, aquecimento, cálcio, acesso calibroso e controle rápido do sangramento.",
+      B: "Cristaloide ilimitado até normalizar completamente a pressão.",
+      C: "Aguardar todos os exames laboratoriais antes de acionar cirurgia.",
+      D: "Hipotermia terapêutica profunda não monitorizada.",
+      E: "Evitar transfusão apesar de choque."
+    },
+    resposta: "A",
+    comentario: "Choque hemorrágico exige controle de fonte, transfusão balanceada, correção de hipotermia, acidose, hipocalcemia e coagulopatia, evitando excesso de cristaloide.",
+    frase_ouro: "No trauma sangrando, o tratamento definitivo é fechar a torneira."
+  },
+  {
+    id: "yao-049-002",
+    fonte: "Yao",
+    capitulo: "Obesidade",
+    tema: "Indução anestésica",
+    dificuldade: "alta",
+    pergunta: "Paciente obeso mórbido, apneia obstrutiva do sono e refluxo será submetido a colecistectomia. Qual estratégia reduz risco de dessaturação e aspiração na indução?",
+    alternativas: {
+      A: "Evitar pré-oxigenação para reduzir atelectasia.",
+      B: "Posicionamento em rampa, pré-oxigenação adequada, plano de via aérea, considerar sequência rápida conforme risco e equipe preparada.",
+      C: "Induzir em decúbito horizontal obrigatório sem material alternativo.",
+      D: "Administrar opioide em dose alta antes de monitorizar.",
+      E: "Usar sedação profunda sem controle de via aérea em todos os casos."
+    },
+    resposta: "B",
+    comentario: "Obesidade reduz reserva respiratória e aumenta risco de via aérea difícil/aspiração. Rampa, pré-oxigenação e estratégia de via aérea são essenciais.",
+    frase_ouro: "No obeso, posição e oxigênio antes da indução compram tempo precioso."
+  },
+  {
+    id: "yao-049-003",
+    fonte: "Yao",
+    capitulo: "Hipertermia maligna",
+    tema: "Crise intraoperatória",
+    dificuldade: "alta",
+    pergunta: "Durante anestesia com sevoflurano e succinilcolina, paciente apresenta aumento rápido de EtCO2, rigidez, taquicardia, acidose e hipertermia tardia. Qual conduta é mais adequada?",
+    alternativas: {
+      A: "Suspender gatilhos, administrar dantrolene, hiperventilar com oxigênio 100%, resfriar e tratar acidose/hipercalemia.",
+      B: "Aumentar sevoflurano para aprofundar anestesia.",
+      C: "Administrar succinilcolina adicional.",
+      D: "Tratar apenas com antitérmico comum.",
+      E: "Aguardar confirmação laboratorial antes de agir."
+    },
+    resposta: "A",
+    comentario: "Hipertermia maligna é emergência. Suspende-se agentes desencadeantes, administra-se dantrolene e faz-se suporte agressivo para hipercapnia, acidose, hipertermia, hipercalemia e rabdomiólise.",
+    frase_ouro: "Na hipertermia maligna, EtCO2 sobe antes da temperatura avisar."
+  },
+  {
+    id: "yao-049-004",
+    fonte: "Yao",
+    capitulo: "Anestesia regional",
+    tema: "Toxicidade sistêmica por anestésico local",
+    dificuldade: "alta",
+    pergunta: "Durante bloqueio interescalênico, paciente refere gosto metálico, zumbido, evolui com convulsão e depois taquiarritmia. Qual diagnóstico e conduta são mais adequados?",
+    alternativas: {
+      A: "Toxicidade sistêmica por anestésico local; interromper injeção, suporte de via aérea/convulsão e iniciar emulsão lipídica conforme protocolo.",
+      B: "Hipoglicemia isolada; administrar apenas glicose.",
+      C: "Reação vagal simples; observar sem monitorização.",
+      D: "Hipertermia maligna; administrar dantrolene como única medida.",
+      E: "Bloqueio neuromuscular residual; administrar sugamadex."
+    },
+    resposta: "A",
+    comentario: "Sinais neurológicos seguidos de toxicidade cardiovascular após anestésico local sugerem LAST. Tratamento inclui suporte avançado e emulsão lipídica.",
+    frase_ouro: "LAST começa no cérebro e pode terminar no coração; lipídio precisa estar perto."
+  },
+  {
+    id: "yao-049-005",
+    fonte: "Yao",
+    capitulo: "Anafilaxia",
+    tema: "Colapso após indução",
+    dificuldade: "alta",
+    pergunta: "Logo após rocurônio, paciente apresenta hipotensão profunda, broncoespasmo, dificuldade ventilatória e rash discreto sob campos. Qual é a conduta inicial mais adequada?",
+    alternativas: {
+      A: "Aguardar porque rash discreto exclui anafilaxia.",
+      B: "Tratar como anafilaxia: adrenalina, oxigênio 100%, fluidos, suspender agente suspeito e suporte avançado.",
+      C: "Administrar beta-bloqueador para broncoespasmo.",
+      D: "Fazer diurético e reduzir FiO2.",
+      E: "Prosseguir sem avisar equipe cirúrgica."
+    },
+    resposta: "B",
+    comentario: "Anafilaxia perioperatória pode manifestar-se principalmente por colapso cardiovascular e broncoespasmo; sinais cutâneos podem ser ocultos. Adrenalina é central.",
+    frase_ouro: "Anafilaxia grave não espera urticária bonita para receber adrenalina."
+  },
+  {
+    id: "yao-049-006",
+    fonte: "Yao",
+    capitulo: "Cirurgia laparoscópica",
+    tema: "Embolia gasosa",
+    dificuldade: "alta",
+    pergunta: "Durante insuflação laparoscópica, ocorre queda abrupta de EtCO2 de 35 para 12 mmHg, hipotensão severa e dessaturação. Qual hipótese e conduta inicial são mais adequadas?",
+    alternativas: {
+      A: "Hipoglicemia; administrar glicose e manter insuflação.",
+      B: "Embolia gasosa venosa; interromper insuflação, desinsuflar, oxigênio 100%, suporte hemodinâmico e posicionamento/aspiração por CVC se disponível.",
+      C: "Plano anestésico superficial; aumentar apenas opioide.",
+      D: "Curarização residual; administrar sugamadex.",
+      E: "Retenção urinária; sondar e observar."
+    },
+    resposta: "B",
+    comentario: "Queda abrupta de EtCO2 com colapso durante insuflação sugere embolia gasosa. Deve-se interromper fonte de gás, oxigenar, suportar circulação e considerar aspiração se cateter adequado.",
+    frase_ouro: "EtCO2 despencou na insuflação: pense em gás onde não devia."
+  },
+  {
+    id: "yao-049-007",
+    fonte: "Yao",
+    capitulo: "Ortopedia",
+    tema: "Síndrome do cimento ósseo",
+    dificuldade: "alta",
+    pergunta: "Idoso com fratura de quadril, hipertensão pulmonar leve e reserva cardíaca limitada faz hipotensão, hipoxemia e aumento de pressão pulmonar após cimentação da prótese. Qual fisiologia é mais provável?",
+    alternativas: {
+      A: "Síndrome de implantação do cimento ósseo com embolização/vasoconstrição pulmonar e sobrecarga de VD.",
+      B: "Efeito analgésico esperado.",
+      C: "Hipervolemia benigna sem risco.",
+      D: "Bloqueio espinhal tardio sempre.",
+      E: "Intoxicação por glicose."
+    },
+    resposta: "A",
+    comentario: "A síndrome do cimento ósseo pode causar embolização medular/gordurosa, aumento de resistência pulmonar, hipóxia, hipotensão e falência de VD.",
+    frase_ouro: "Cimento pode transformar um quadril em crise de ventrículo direito."
+  },
+  {
+    id: "yao-049-008",
+    fonte: "Yao",
+    capitulo: "Urologia",
+    tema: "Síndrome pós-RTU",
+    dificuldade: "alta",
+    pergunta: "Durante RTU de próstata prolongada, paciente sob raquianestesia evolui com confusão, hipertensão, bradicardia, náuseas e sódio 118 mEq/L. Qual diagnóstico e conduta são mais prováveis?",
+    alternativas: {
+      A: "Síndrome pós-RTU por absorção de irrigação hipotônica; interromper procedimento, tratar hiponatremia conforme gravidade e dar suporte.",
+      B: "Hipernatremia por desidratação.",
+      C: "Anafilaxia a látex como única hipótese.",
+      D: "Hipertermia maligna desencadeada por raquianestesia.",
+      E: "Toxicidade por sugamadex."
+    },
+    resposta: "A",
+    comentario: "Absorção de irrigação hipotônica pode causar hiponatremia dilucional e sintomas neurológicos/cardiovasculares, especialmente em procedimentos prolongados.",
+    frase_ouro: "Na RTU prolongada, irrigação absorvida pode afogar o sódio."
+  },
+  {
+    id: "yao-049-009",
+    fonte: "Yao",
+    capitulo: "Oftalmologia",
+    tema: "Reflexo óculo-cardíaco",
+    dificuldade: "média",
+    pergunta: "Durante correção de estrabismo em criança, tração muscular causa FC cair de 110 para 45 bpm. Qual conduta inicial é adequada?",
+    alternativas: {
+      A: "Solicitar interrupção da tração, garantir oxigenação/profundidade e tratar bradicardia se persistente.",
+      B: "Aumentar imediatamente a tração.",
+      C: "Ignorar porque nunca causa repercussão.",
+      D: "Administrar nitroprussiato.",
+      E: "Reduzir oxigênio."
+    },
+    resposta: "A",
+    comentario: "O reflexo óculo-cardíaco é vagal. A primeira medida é parar estímulo, otimizar oxigenação e profundidade; anticolinérgico pode ser necessário.",
+    frase_ouro: "No reflexo óculo-cardíaco, soltar o olho muitas vezes solta o vago."
+  },
+  {
+    id: "yao-049-010",
+    fonte: "Yao",
+    capitulo: "Cirurgia de via aérea",
+    tema: "Incêndio de via aérea",
+    dificuldade: "alta",
+    pergunta: "Durante cirurgia laríngea com laser, ocorre fogo na via aérea. Qual sequência inicial é mais correta?",
+    alternativas: {
+      A: "Manter laser ligado e aumentar FiO2.",
+      B: "Interromper ventilação e gases, remover tubo em chamas, apagar fogo, ventilar com oxigênio/ar após controle e broncoscopar para avaliar lesão.",
+      C: "Administrar apenas broncodilatador e continuar cirurgia.",
+      D: "Ignorar se saturação ainda estiver boa.",
+      E: "Injetar anestésico local no cuff."
+    },
+    resposta: "B",
+    comentario: "Incêndio de via aérea exige parada imediata de gases e laser, remoção do material em chamas, extinção do fogo, reestabelecimento seguro da ventilação e avaliação de lesão.",
+    frase_ouro: "Fogo em via aérea: pare oxidante, tire combustível e só depois volte a ventilar."
   }
 ];
