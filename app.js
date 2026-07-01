@@ -375,14 +375,16 @@ function getLatestAnswers() {
 function getDifficultyGroup(question) {
   const diff = normalizeText(question.dificuldade);
 
+  if (diff.includes("muito") && (diff.includes("dificil") || diff.includes("alta"))) return "Muito difícil";
   if (diff.includes("facil")) return "Fácil";
   if (diff.includes("alta") || diff.includes("dificil")) return "Alta";
   return "Média";
 }
 
 function getAreaGroup(question) {
-  const text = normalizeText(`${question.capitulo || ""} ${question.tema || ""} ${question.pergunta || ""}`);
+  if (question.area) return question.area;
 
+  const text = normalizeText(`${question.capitulo || ""} ${question.tema || ""} ${question.pergunta || ""}`);
   if (
     text.includes("coronaria") ||
     text.includes("cardi") ||
@@ -712,10 +714,11 @@ function renderStats() {
 
   const areaStats = {};
   const difficultyStats = {
-    "Fácil": createEmptyStats(),
-    "Média": createEmptyStats(),
-    "Alta": createEmptyStats()
-  };
+  "Fácil": createEmptyStats(),
+  "Média": createEmptyStats(),
+  "Alta": createEmptyStats(),
+  "Muito difícil": createEmptyStats()
+};
 
   let overall = createEmptyStats();
   overall.total = questions.length;
