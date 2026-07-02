@@ -8498,5 +8498,366 @@ const QUESTIONS = [
   resposta: "D",
   comentario: "No centro cirúrgico, intervenções rotineiras da anestesia podem se parecer com reanimação. A abordagem ética recomendada é revisar a ordem previamente, esclarecendo quais medidas são aceitáveis, quais não são e quais se alinham aos objetivos do paciente.",
   frase_ouro: "DNR no centro cirúrgico não se apaga no automático; traduz-se para o contexto anestésico."
+},
+{
+  id: "tsa-elite-001",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Raquianestesia",
+  tema: "Bradicardia e PCR",
+  area: "Regional / Dor",
+  dificuldade: "muito difícil",
+  pergunta: "Homem jovem, ASA I, submetido à artroscopia de joelho sob raquianestesia, evolui 20 minutos após o bloqueio com náusea, sudorese, sensação de mal-estar, bradicardia progressiva e hipotensão discreta. O nível sensitivo estava em T8. Qual mecanismo melhor explica o risco de deterioração rápida?",
+  alternativas: {
+    A: "Reflexo vagal por redução abrupta do retorno venoso, podendo evoluir para bradicardia extrema e assistolia.",
+    B: "Toxicidade sistêmica por anestésico local, obrigatoriamente precedida por convulsão.",
+    C: "Hipóxia por bloqueio frênico bilateral.",
+    D: "Bloqueio motor lombar isolado com repercussão cardiovascular mínima."
+  },
+  resposta: "A",
+  comentario: "Após raquianestesia, a simpatectomia pode reduzir retorno venoso. Em pacientes jovens e vagotônicos, reflexos como Bezold-Jarisch podem gerar bradicardia intensa antes de hipotensão dramática. Náusea, sudorese e mal-estar podem ser sinais precoces.",
+  frase_ouro: "Na raqui, bradicardia não é detalhe: pode ser o primeiro aviso de colapso circulatório."
+},
+{
+  id: "tsa-elite-002",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Cirurgia de coluna",
+  tema: "Perda visual pós-operatória",
+  area: "Neuroanestesia",
+  dificuldade: "muito difícil",
+  pergunta: "Paciente submetido à artrodese toracolombar em prona por 10 horas, com perda sanguínea importante, grande reposição volêmica, edema facial e anemia no pós-operatório, refere perda visual bilateral indolor. Qual fator é mais associado à neuropatia óptica isquêmica nesse contexto?",
+  alternativas: {
+    A: "Sexo feminino isoladamente.",
+    B: "Tempo cirúrgico prolongado associado a anemia, hipotensão e congestão venosa.",
+    C: "Uso de antiemético no intraoperatório.",
+    D: "Ventilação com FiO2 elevada."
+  },
+  resposta: "B",
+  comentario: "A neuropatia óptica isquêmica pós-operatória é rara, mas associada a cirurgias longas em prona, anemia, hipotensão, edema facial/orbitário e aumento da pressão venosa. A prevenção passa por posicionamento, proteção ocular e manutenção de perfusão adequada.",
+  frase_ouro: "Em prona prolongada, o olho sofre com pouca oferta e muita congestão."
+},
+{
+  id: "tsa-elite-003",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Obstetrícia",
+  tema: "Transferência placentária",
+  area: "Obstetrícia",
+  dificuldade: "muito difícil",
+  pergunta: "Em cesariana sob anestesia geral, qual fármaco tende a apresentar menor transferência placentária clinicamente relevante, considerando ionização, polaridade e baixa lipossolubilidade relativa?",
+  alternativas: {
+    A: "Fentanil.",
+    B: "Propofol.",
+    C: "Cisatracúrio.",
+    D: "Tiopental."
+  },
+  resposta: "C",
+  comentario: "Bloqueadores neuromusculares são compostos ionizados e pouco lipossolúveis, atravessando pouco a placenta. Já hipnóticos e opioides são mais lipossolúveis e podem atingir o feto, especialmente em maiores doses ou intervalo indução-nascimento prolongado.",
+  frase_ouro: "Droga ionizada e pouco lipossolúvel cruza mal a placenta."
+},
+{
+  id: "tsa-elite-004",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "DPOC",
+  tema: "Espirometria no enfisema",
+  area: "Respiratório / Torácica",
+  dificuldade: "muito difícil",
+  pergunta: "Paciente com enfisema grave apresenta dispneia crônica, tórax em barril e hiperinsuflação. Qual padrão espirométrico é esperado?",
+  alternativas: {
+    A: "VEF1 reduzido, relação VEF1/CVF reduzida e aumento da capacidade residual funcional.",
+    B: "VEF1 normal, relação VEF1/CVF elevada e CRF reduzida.",
+    C: "VEF1 reduzido, relação VEF1/CVF elevada e CRF normal.",
+    D: "VEF1 normal, relação VEF1/CVF normal e CRF reduzida."
+  },
+  resposta: "A",
+  comentario: "O enfisema é doença obstrutiva. Há redução do VEF1, queda da relação VEF1/CVF e aprisionamento aéreo, com aumento da CRF e do volume residual. A hiperinsuflação também reduz eficiência mecânica ventilatória.",
+  frase_ouro: "Enfisema é obstrução com ar preso: VEF1 cai, VEF1/CVF cai e CRF sobe."
+},
+{
+  id: "tsa-elite-005",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Obstetrícia",
+  tema: "Ruptura uterina",
+  area: "Obstetrícia",
+  dificuldade: "muito difícil",
+  pergunta: "Gestante multípara em trabalho de parto prolongado domiciliar chega com dor abdominal intensa, choque hemorrágico, palidez e ausência de batimento cardíaco fetal audível. Qual diagnóstico deve ser priorizado?",
+  alternativas: {
+    A: "Ruptura uterina.",
+    B: "Placenta prévia não sangrante.",
+    C: "Hiperêmese gravídica.",
+    D: "Pré-eclâmpsia leve."
+  },
+  resposta: "A",
+  comentario: "Dor abdominal intensa, choque, trabalho de parto prolongado e morte fetal sugerem ruptura uterina, especialmente em paciente com fatores de risco obstétricos. O quadro exige ressuscitação materna e intervenção cirúrgica imediata.",
+  frase_ouro: "Choque materno com dor abdominal e sofrimento fetal extremo é ruptura uterina até prova em contrário."
+},
+{
+  id: "tsa-elite-006",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Coagulação",
+  tema: "Tromboelastografia",
+  area: "Hematologia / Coagulação",
+  dificuldade: "muito difícil",
+  pergunta: "Durante laparotomia pediátrica, há sangramento difuso de áreas cruentas. Tromboelastografia mostra prolongamento importante do tempo de reação inicial, com ângulo e amplitude relativamente preservados. Qual distúrbio é mais provável?",
+  alternativas: {
+    A: "Hiperfibrinólise isolada.",
+    B: "Deficiência de fatores de coagulação.",
+    C: "Trombocitopenia pura.",
+    D: "Excesso de fibrinogênio."
+  },
+  resposta: "B",
+  comentario: "O tempo de reação prolongado no TEG/ROTEM sugere atraso na formação inicial do coágulo, frequentemente relacionado a deficiência de fatores ou efeito anticoagulante. Alterações de amplitude apontariam mais para plaquetas/fibrinogênio.",
+  frase_ouro: "No TEG, R prolongado fala de início lento do coágulo: pense em fatores."
+},
+{
+  id: "tsa-elite-007",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Recuperação pós-anestésica",
+  tema: "Fase I",
+  area: "Ambulatorial / Remoto / Especialidades",
+  dificuldade: "muito difícil",
+  pergunta: "Em um serviço ambulatorial, discute-se a função da recuperação pós-anestésica de Fase I. Qual objetivo define melhor essa fase?",
+  alternativas: {
+    A: "Garantir alimentação plena antes da alta.",
+    B: "Monitorar complicações imediatas e estabilizar funções vitais no pós-operatório inicial.",
+    C: "Realizar acompanhamento tardio de ferida operatória.",
+    D: "Liberar todos os pacientes diretamente para casa."
+  },
+  resposta: "B",
+  comentario: "A Fase I da recuperação pós-anestésica é focada em vigilância imediata: ventilação, oxigenação, circulação, nível de consciência, dor, náuseas, sangramento e eventos adversos precoces. Alta para fases posteriores exige estabilidade.",
+  frase_ouro: "Fase I é o amortecedor entre anestesia e segurança fisiológica."
+},
+{
+  id: "tsa-elite-008",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Bloqueios periféricos",
+  tema: "Artroplastia de joelho",
+  area: "Regional / Dor",
+  dificuldade: "muito difícil",
+  pergunta: "Após artroplastia total de joelho com bloqueio femoral isolado, o paciente acorda com dor importante em região posterior do joelho e fossa poplítea. Qual território provavelmente não foi adequadamente coberto?",
+  alternativas: {
+    A: "Nervo obturador.",
+    B: "Nervo femoral.",
+    C: "Nervo ciático.",
+    D: "Nervo cutâneo femoral lateral."
+  },
+  resposta: "C",
+  comentario: "A região posterior do joelho recebe contribuição importante do nervo ciático, especialmente por seus ramos tibiais. Bloqueio femoral isolado cobre bem componente anterior, mas pode falhar na dor posterior.",
+  frase_ouro: "Joelho operado dói na frente e atrás; femoral sozinho não cobre tudo."
+},
+{
+  id: "tsa-elite-009",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Medicina perioperatória",
+  tema: "Medicações pré-operatórias",
+  area: "Medicina Perioperatória",
+  dificuldade: "muito difícil",
+  pergunta: "Paciente diabético tipo 1, hipertenso, coronariopata com stent farmacológico antigo e em uso de beta-bloqueador, AAS, estatina e insulina NPH fará cirurgia eletiva pela manhã. Qual orientação é mais adequada?",
+  alternativas: {
+    A: "Suspender beta-bloqueador na véspera.",
+    B: "Suspender estatina por risco de rabdomiólise.",
+    C: "Reduzir a dose matinal de NPH, mantendo estratégia para evitar hipoglicemia e cetose.",
+    D: "Suspender toda insulina no dia da cirurgia."
+  },
+  resposta: "C",
+  comentario: "No diabético tipo 1, suspender completamente insulina aumenta risco de cetose. A NPH matinal costuma ser reduzida, com monitorização glicêmica e ajuste conforme jejum/cirurgia. Beta-bloqueador e estatina geralmente são mantidos.",
+  frase_ouro: "Diabético tipo 1 em jejum ainda precisa de insulina basal."
+},
+{
+  id: "tsa-elite-010",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Farmacologia cardiovascular",
+  tema: "Amiodarona",
+  area: "Farmacologia",
+  dificuldade: "muito difícil",
+  pergunta: "Paciente com taquiarritmia ventricular estável será tratado com amiodarona intravenosa. Qual condição representa contraindicação importante ao uso sem suporte de marcapasso?",
+  alternativas: {
+    A: "Hipotireoidismo antigo controlado.",
+    B: "Bloqueio atrioventricular avançado.",
+    C: "História de náusea com opioide.",
+    D: "Uso prévio de estatina."
+  },
+  resposta: "B",
+  comentario: "A amiodarona pode deprimir condução nodal e agravar bradicardia ou bloqueios de condução. Bloqueio AV avançado sem suporte de marcapasso é contraindicação relevante. Alterações tireoidianas importam no uso crônico, mas não são o ponto mais agudo aqui.",
+  frase_ouro: "Amiodarona trata arritmia, mas pode piorar condução já doente."
+},
+{
+  id: "tsa-elite-011",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Monitorização da profundidade anestésica",
+  tema: "BIS",
+  area: "Monitorização",
+  dificuldade: "muito difícil",
+  pergunta: "Durante anestesia geral, o BIS permanece em torno de 60. Qual interpretação é mais correta?",
+  alternativas: {
+    A: "Garante imobilidade à incisão.",
+    B: "Equivale a 60% de chance de estar acordado.",
+    C: "Relaciona-se a baixa probabilidade de lembrança explícita intraoperatória em anestesia adequada.",
+    D: "Substitui analgesia e bloqueio neuromuscular."
+  },
+  resposta: "C",
+  comentario: "O BIS é índice processado do EEG associado à hipnose. Valores entre 40 e 60 são usualmente compatíveis com baixa probabilidade de consciência explícita. Ele não mede analgesia, resposta autonômica nem bloqueio motor.",
+  frase_ouro: "BIS mede hipnose processada; não mede dor nem movimento."
+},
+{
+  id: "tsa-elite-012",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Isquemia miocárdica",
+  tema: "Pressão diastólica aórtica",
+  area: "Cardiovascular",
+  dificuldade: "muito difícil",
+  pergunta: "Paciente coronariopata sob anestesia geral e peridural apresenta PA 78/40 mmHg, FC 70 bpm e supradesnivelamento de ST. Não há hipoxemia. Qual objetivo hemodinâmico imediato melhor melhora a oferta coronariana?",
+  alternativas: {
+    A: "Aumentar pressão diastólica aórtica.",
+    B: "Reduzir a frequência para menos de 40 bpm.",
+    C: "Reduzir hematócrito com cristaloide.",
+    D: "Induzir vasodilatação sistêmica profunda."
+  },
+  resposta: "A",
+  comentario: "A perfusão coronariana do ventrículo esquerdo ocorre predominantemente na diástole. Hipotensão diastólica reduz gradiente de perfusão coronariana, especialmente em coronariopatas. Restaurar pressão diastólica é prioridade.",
+  frase_ouro: "Coronária esquerda perfunde na diástole; diastólica baixa é isquemia esperando acontecer."
+},
+{
+  id: "tsa-elite-013",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Fast-track",
+  tema: "Alta direta e NVPO",
+  area: "Ambulatorial / Remoto / Especialidades",
+  dificuldade: "muito difícil",
+  pergunta: "Um centro ambulatorial adota alta direta da sala cirúrgica para fase posterior de recuperação em pacientes selecionados. Qual complicação pode aumentar se a fase inicial de vigilância for abreviada em excesso?",
+  alternativas: {
+    A: "Náuseas e vômitos detectados mais tardiamente na fase seguinte.",
+    B: "Redução universal da dor tardia.",
+    C: "Eliminação completa de retenção urinária.",
+    D: "Ausência de necessidade de critérios objetivos de alta."
+  },
+  resposta: "A",
+  comentario: "Protocolos fast-track reduzem tempo de permanência, mas dependem de seleção adequada, anestesia de curta duração e controle de dor/NVPO. A fase I não deve ser abolida sem critérios, pois eventos iniciais podem aparecer na fase seguinte.",
+  frase_ouro: "Fast-track não é pular segurança; é provar que ela já foi atingida."
+},
+{
+  id: "tsa-elite-014",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Toxicidade por anestésico local",
+  tema: "Ventilação e acidose",
+  area: "Regional / Dor",
+  dificuldade: "muito difícil",
+  pergunta: "Após bloqueio axilar com ropivacaína, paciente convulsiona. A convulsão é controlada e inicia-se ventilação sob máscara. Qual benefício fisiológico da ventilação adequada nesse contexto?",
+  alternativas: {
+    A: "Aumentar aprisionamento iônico neuronal.",
+    B: "Reduzir acidose e hipercapnia, diminuindo fração ionizada intracelular e toxicidade.",
+    C: "Aumentar absorção do anestésico no plexo.",
+    D: "Substituir a necessidade de emulsão lipídica em toxicidade cardiovascular."
+  },
+  resposta: "B",
+  comentario: "Acidose e hipercapnia pioram toxicidade por anestésico local, aumentando fração ionizada e ligação aos canais de sódio. Ventilação adequada ajuda a corrigir pH e reduzir gravidade da toxicidade, mas não substitui tratamento específico quando indicado.",
+  frase_ouro: "Na LAST, hipóxia, hipercapnia e acidose jogam a favor do anestésico local."
+},
+{
+  id: "tsa-elite-015",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Bloqueadores neuromusculares",
+  tema: "Interações medicamentosas",
+  area: "Farmacologia",
+  dificuldade: "muito difícil",
+  pergunta: "Após anestesia com rocurônio e agente volátil, paciente mantém bloqueio neuromuscular mais prolongado que o esperado. Qual fator intraoperatório pode potencializar bloqueadores não despolarizantes?",
+  alternativas: {
+    A: "Anestésicos inalatórios voláteis.",
+    B: "Oxigênio a 100%.",
+    C: "Ondansetrona.",
+    D: "Aquecimento ativo."
+  },
+  resposta: "A",
+  comentario: "Anestésicos voláteis potencializam bloqueadores neuromusculares não despolarizantes, por efeitos na junção neuromuscular e na excitabilidade muscular. Hipotermia e distúrbios eletrolíticos também podem prolongar bloqueio.",
+  frase_ouro: "Volátil aprofunda anestesia e também pode aprofundar bloqueio."
+},
+{
+  id: "tsa-elite-016",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Obstetrícia",
+  tema: "Cardiomiopatia periparto",
+  area: "Obstetrícia",
+  dificuldade: "muito difícil",
+  pergunta: "Puérpera 12 horas após cesariana evolui com fadiga, hipotensão, taquicardia, extremidades frias e edemaciadas. Após bolus de fluido não melhora. PVC está elevada e débito cardíaco reduzido. Qual diagnóstico é mais provável?",
+  alternativas: {
+    A: "Hipovolemia pura.",
+    B: "Cardiomiopatia periparto.",
+    C: "Bloqueio espinhal residual.",
+    D: "Ansiedade pós-operatória."
+  },
+  resposta: "B",
+  comentario: "Hipotensão com PVC elevada, baixo débito e sinais congestivos em puérpera sugere falência cardíaca, incluindo cardiomiopatia periparto. A ausência de resposta a fluidos e a congestão afastam hipovolemia pura.",
+  frase_ouro: "Na puérpera em choque, PVC alta e baixo débito apontam para bomba, não para volume."
+},
+{
+  id: "tsa-elite-017",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Analgesia pós-operatória",
+  tema: "PCA com opioide",
+  area: "Regional / Dor",
+  dificuldade: "muito difícil",
+  pergunta: "Paciente em PCA com morfina apresenta depressão respiratória 12 horas após laparotomia. A prescrição incluía bolus, intervalo de bloqueio, limite de 4 horas e infusão contínua basal. Qual componente mais aumenta risco de depressão respiratória tardia?",
+  alternativas: {
+    A: "Dose de bolus isolada.",
+    B: "Infusão contínua basal.",
+    C: "Intervalo de bloqueio curto apenas.",
+    D: "Ausência de antiemético."
+  },
+  resposta: "B",
+  comentario: "A infusão basal contínua de opioide aumenta risco de acúmulo e depressão respiratória, especialmente em pacientes sensíveis, idosos, com apneia do sono ou uso concomitante de sedativos. PCA sem basal é mais segura em muitos contextos.",
+  frase_ouro: "Na PCA, infusão basal transforma analgesia sob demanda em opioide contínuo."
+},
+{
+  id: "tsa-elite-018",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Dexmedetomidina",
+  tema: "Hipertensão inicial",
+  area: "Farmacologia",
+  dificuldade: "muito difícil",
+  pergunta: "Durante sedação com dose de ataque elevada de dexmedetomidina, paciente apresenta hipertensão arterial associada a bradicardia. Qual mecanismo explica melhor esse fenômeno inicial?",
+  alternativas: {
+    A: "Bloqueio muscarínico cardíaco.",
+    B: "Agonismo alfa-2 pós-sináptico periférico com vasoconstrição inicial.",
+    C: "Antagonismo beta-1.",
+    D: "Liberação maciça de histamina."
+  },
+  resposta: "B",
+  comentario: "Doses de ataque rápidas ou altas de dexmedetomidina podem ativar receptores alfa-2 periféricos pós-sinápticos, gerando vasoconstrição e hipertensão inicial, associada a bradicardia reflexa. Depois predomina efeito simpaticolítico central.",
+  frase_ouro: "Dexmedetomidina pode começar apertando vaso antes de desligar simpático."
+},
+{
+  id: "tsa-elite-019",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Proteção renal",
+  tema: "Isquemia-reperfusão renal",
+  area: "Renal / Endócrino / Metabólico",
+  dificuldade: "muito difícil",
+  pergunta: "Após clampeamento suprarrenal prolongado de aorta, paciente apresenta oligúria e urina escura no intraoperatório. Qual medida tem racional fisiológico relacionado à redução de edema celular e fluxo tubular em lesão isquêmica?",
+  alternativas: {
+    A: "Manitol.",
+    B: "Dose renal de dopamina.",
+    C: "Restrição absoluta de volume.",
+    D: "Furosemida para inibir prostaglandinas renais."
+  },
+  resposta: "A",
+  comentario: "O manitol pode atuar como osmótico, reduzindo edema celular e promovendo fluxo tubular, embora a proteção renal farmacológica seja limitada e contexto-dependente. A medida principal continua sendo perfusão renal adequada e correção de fatores hemodinâmicos.",
+  frase_ouro: "No rim isquêmico, perfusão manda; manitol é adjuvante, não milagre."
+},
+{
+  id: "tsa-elite-020",
+  fonte: "TSA 2016 - inspirado",
+  capitulo: "Cardiopatias congênitas",
+  tema: "Tetralogia de Fallot",
+  area: "Pediatria",
+  dificuldade: "muito difícil",
+  pergunta: "Lactente com Tetralogia de Fallot será induzido com sevoflurano. A indução inalatória é mais lenta que o esperado. Qual fisiologia explica melhor esse achado?",
+  alternativas: {
+    A: "Relação Qp/Qs menor que 1, reduzindo captação pulmonar do anestésico.",
+    B: "Aumento do fluxo pulmonar efetivo.",
+    C: "Ausência de shunt intracardíaco.",
+    D: "Aumento da ventilação alveolar relativa ao fluxo pulmonar."
+  },
+  resposta: "A",
+  comentario: "Na Tetralogia de Fallot, há redução do fluxo pulmonar e shunt direita-esquerda. Para anestésicos inalatórios, menor fluxo pulmonar efetivo reduz a captação e torna a indução mais lenta. Com agentes venosos, o shunt pode acelerar chegada ao cérebro.",
+  frase_ouro: "Na Fallot, menos sangue passando pelo pulmão significa indução inalatória mais lenta."
 }
+
 ];
