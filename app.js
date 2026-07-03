@@ -929,12 +929,27 @@ function registerEvents() {
 
   els.statsBackBtn.addEventListener("click", () => showScreen("home"));
 
-    els.oralBtn.addEventListener("click", startOralTraining);
+if (els.oralBtn) {
+  els.oralBtn.addEventListener("click", startOralTraining);
+}
+
+if (els.oralBackBtn) {
   els.oralBackBtn.addEventListener("click", () => showScreen("home"));
-  els.oralCard.addEventListener("click", flipOralCard);
+}
+
+if (els.oralFlipBtn) {
   els.oralFlipBtn.addEventListener("click", flipOralCard);
+}
+
+if (els.oralNextBtn) {
   els.oralNextBtn.addEventListener("click", nextOralCard);
+}
+
+if (els.oralPrevBtn) {
   els.oralPrevBtn.addEventListener("click", prevOralCard);
+}
+
+if (els.oralShuffleBtn) {
   els.oralShuffleBtn.addEventListener("click", shuffleOralCards);
 }
 
