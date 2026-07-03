@@ -873,8 +873,14 @@ function renderOralCard() {
 
 function flipOralCard() {
   oralFlipped = !oralFlipped;
-  els.oralCard.classList.toggle("flipped", oralFlipped);
-  els.oralFlipBtn.textContent = oralFlipped ? "Ver caso" : "Virar cartão";
+
+  if (oralFlipped) {
+    els.oralCard.classList.add("show-answer");
+    els.oralFlipBtn.textContent = "Ver caso";
+  } else {
+   els.oralCard.classList.remove("flipped");
+els.oralCard.classList.remove("show-answer");
+els.oralFlipBtn.textContent = "Ver resposta";
 }
 
 function nextOralCard() {
