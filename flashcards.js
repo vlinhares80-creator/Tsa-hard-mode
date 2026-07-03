@@ -503,4 +503,494 @@ const FLASHCARDS = [
     fraseOuro: "Embolia amniótica é uma emergência de pulmão, coração e coagulação ao mesmo tempo.",
     referencias: ["Yao", "Miller", "Barash", "SBA", "Obstetric anesthesia emergencies"]
   }
+  ,
+{
+  id: "oral-mixed-011",
+  titulo: "Hipoxemia em ventilação monopulmonar",
+  area: "Respiratório / Torácica",
+  dificuldade: "muito difícil",
+  caso: "Homem de 68 anos, DPOC moderado, será submetido à segmentectomia pulmonar por videotoracoscopia. Após 15 minutos de ventilação monopulmonar, com FiO₂ 100%, tubo de duplo lúmen bem posicionado por broncoscopia, SpO₂ cai para 84%. Hemodinâmica estável. O cirurgião solicita que não se reexpanda o pulmão operado.",
+  pergunta: "Você é o anestesiologista. Como organiza sua conduta para corrigir a hipoxemia mantendo a ventilação monopulmonar?",
+  respostaIdeal: [
+    "Eu reconheço hipoxemia durante ventilação monopulmonar, inicialmente assumindo aumento de shunt pelo pulmão não ventilado.",
+    "Confirmo imediatamente posição do tubo de duplo lúmen com broncoscopia, porque mal posicionamento é uma das causas mais frequentes e corrigíveis.",
+    "Aumento FiO₂ para 100%, se ainda não estiver, e avalio complacência, pressões de via aérea, secreções, atelectasia e broncoespasmo no pulmão ventilado.",
+    "Otimizo ventilação do pulmão dependente com volume corrente protetor, PEEP individualizada e evitando hiperinsuflação, pois PEEP excessiva pode desviar fluxo para o pulmão não ventilado.",
+    "Se persistir hipoxemia, considero CPAP com O₂ no pulmão não ventilado, em baixa pressão, negociando com o cirurgião.",
+    "Se não houver melhora ou se a hipoxemia for grave, solicito pausa cirúrgica e ventilação bipulmonar temporária.",
+    "Evito fatores que inibem vasoconstrição pulmonar hipóxica, como hipóxia sistêmica, hipocapnia ou hipercapnia extremas, hipotermia, acidose e sobrecarga hídrica importante.",
+    "Mantenho comunicação constante com a equipe, porque a prioridade final é oxigenação segura."
+  ],
+  pontosObrigatorios: [
+    "Confirmar posição do tubo com broncoscopia.",
+    "FiO₂ 100%.",
+    "Otimizar pulmão ventilado.",
+    "PEEP individualizada, sem hiperinsuflar.",
+    "Considerar CPAP no pulmão não ventilado.",
+    "Ventilação bipulmonar temporária se hipoxemia grave.",
+    "Preservar vasoconstrição pulmonar hipóxica."
+  ],
+  errosGraves: [
+    "Aplicar CPAP sem confirmar posição do tubo.",
+    "Aumentar PEEP indiscriminadamente no pulmão ventilado.",
+    "Ignorar broncoespasmo, secreção ou atelectasia.",
+    "Manter hipoxemia grave para não atrapalhar o campo.",
+    "Esquecer que hiperinsuflação do pulmão ventilado pode piorar shunt."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Qual é o principal mecanismo de hipoxemia na ventilação monopulmonar?",
+      resposta: "Shunt intrapulmonar pelo pulmão não ventilado, parcialmente limitado pela vasoconstrição pulmonar hipóxica."
+    },
+    {
+      pergunta: "Por que PEEP excessiva no pulmão ventilado pode piorar a oxigenação?",
+      resposta: "Porque pode aumentar a resistência vascular no pulmão dependente e desviar fluxo para o pulmão não ventilado, aumentando shunt."
+    },
+    {
+      pergunta: "Qual medida preserva a vasoconstrição pulmonar hipóxica?",
+      resposta: "Evitar hipoxemia sistêmica, acidose importante, extremos de PaCO₂, hipotermia e sobrecarga hídrica."
+    }
+  ],
+  fraseOuro: "Na ventilação monopulmonar, oxigenar é equilibrar shunt, PEEP e campo cirúrgico sem esquecer de olhar o tubo.",
+  referencias: ["Yao", "Miller", "Barash"]
+},
+
+{
+  id: "oral-mixed-012",
+  titulo: "Gestante com tromboembolismo pulmonar no pós-parto",
+  area: "Obstetrícia",
+  dificuldade: "muito difícil",
+  caso: "Gestante de 40 semanas foi submetida à cesariana sem intercorrências. No primeiro dia pós-operatório, apresenta dispneia súbita, taquipneia, hipotensão, dessaturação e dor torácica. ECG mostra taquicardia sinusal com sinais sugestivos de sobrecarga direita. Não há sangramento ativo.",
+  pergunta: "Qual diagnóstico deve ser priorizado e quais alterações fisiológicas da gestação favorecem esse quadro?",
+  respostaIdeal: [
+    "Eu priorizo o diagnóstico de tromboembolismo pulmonar, especialmente pela combinação de dispneia súbita, hipoxemia, hipotensão e sinais de sobrecarga de ventrículo direito no pós-parto.",
+    "A gestação e o puerpério são estados de hipercoagulabilidade fisiológica, com aumento de fatores pró-coagulantes, redução de anticoagulantes naturais e redução da fibrinólise.",
+    "Além disso, há estase venosa por compressão venosa pélvica e cava, somada à lesão endotelial relacionada ao parto ou à cirurgia.",
+    "O quadro deve ser abordado como emergência: oxigênio, suporte hemodinâmico, avaliação do ventrículo direito, gasometria, imagem quando possível e anticoagulação se não houver contraindicação.",
+    "Se houver instabilidade grave, deve-se discutir trombólise, embolectomia ou suporte avançado conforme risco hemorrágico e disponibilidade.",
+    "No pós-cesariana, a decisão exige equilíbrio entre risco de sangramento e risco de morte por TEP maciço."
+  ],
+  pontosObrigatorios: [
+    "Reconhecer TEP como hipótese principal.",
+    "Gestação e puerpério são hipercoaguláveis.",
+    "Estase venosa e lesão endotelial completam a tríade de Virchow.",
+    "Avaliar ventrículo direito.",
+    "Anticoagular se não houver contraindicação.",
+    "TEP maciço instável pode exigir terapia de reperfusão."
+  ],
+  errosGraves: [
+    "Tratar como ansiedade puerperal.",
+    "Afastar TEP por ter ocorrido cesárea sem intercorrências.",
+    "Ignorar hipotensão como sinal de gravidade.",
+    "Esquecer risco hemorrágico pós-operatório ao anticoagular.",
+    "Não chamar obstetrícia, UTI e equipe de imagem/vascular quando grave."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Qual alteração hemodinâmica sugere TEP maciço?",
+      resposta: "Hipotensão associada a disfunção ou dilatação de ventrículo direito, com hipoxemia e queda de débito."
+    },
+    {
+      pergunta: "Qual alteração fisiológica da gestação reduz proteína anticoagulante natural?",
+      resposta: "Há redução funcional da proteína S, contribuindo para estado pró-trombótico."
+    },
+    {
+      pergunta: "Por que o pós-parto é especialmente crítico?",
+      resposta: "Porque combina hipercoagulabilidade persistente, imobilidade relativa, lesão vascular e, muitas vezes, cirurgia recente."
+    }
+  ],
+  fraseOuro: "No puerpério, dispneia súbita com hipotensão é TEP até que o ventrículo direito prove o contrário.",
+  referencias: ["Yao", "Miller", "Barash", "Anestesia obstétrica"]
+},
+
+{
+  id: "oral-mixed-013",
+  titulo: "Síndrome pós-reperfusão no transplante hepático",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "muito difícil",
+  caso: "Homem de 56 anos, cirrótico, em transplante hepático. Durante a fase anepática, recebe transfusão significativa e apresenta acidose leve, cálcio ionizado limítrofe e potássio 4,9 mEq/L. Logo após reperfusão do enxerto, evolui com bradicardia, hipotensão profunda, aumento do potássio, queda da contratilidade e elevação abrupta da pressão pulmonar.",
+  pergunta: "Explique o mecanismo da síndrome pós-reperfusão e conduza o caso.",
+  respostaIdeal: [
+    "Eu reconheço síndrome pós-reperfusão hepática, caracterizada por instabilidade hemodinâmica logo após liberação do fluxo para o enxerto.",
+    "A reperfusão devolve à circulação sangue frio, ácido, rico em potássio, citrato, mediadores inflamatórios e substâncias vasoativas acumuladas no enxerto.",
+    "Isso pode causar vasodilatação, depressão miocárdica, bradicardia, arritmias, hipercalemia, acidose e aumento da resistência vascular pulmonar.",
+    "Antes da reperfusão, antecipo o problema corrigindo cálcio, acidose, hipercalemia, temperatura e volemia, além de comunicar a equipe.",
+    "Durante a crise, administro oxigênio 100%, suporte vasopressor e inotrópico conforme perfil hemodinâmico, cálcio intravenoso, tratamento da hipercalemia e correção de acidose relevante.",
+    "Se houver falência de VD ou hipertensão pulmonar aguda, considero reduzir resistência vascular pulmonar e manter pressão sistêmica para perfusão coronariana do VD.",
+    "Após estabilização, sigo monitorizando coagulação, eletrólitos, temperatura, lactato e função do enxerto."
+  ],
+  pontosObrigatorios: [
+    "Reconhecer relação temporal com reperfusão.",
+    "Hipercalemia, acidose, hipotermia e citrato são gatilhos importantes.",
+    "Cálcio ionizado deve ser monitorado e corrigido.",
+    "Suporte vasopressor/inotrópico conforme necessidade.",
+    "Tratar hipercalemia imediatamente.",
+    "Pensar em falência de VD se PAP sobe e débito cai."
+  ],
+  errosGraves: [
+    "Atribuir tudo a plano anestésico superficial.",
+    "Aguardar estabilização espontânea em choque profundo.",
+    "Esquecer cálcio durante transfusão/reperfusão.",
+    "Não avisar a equipe antes da reperfusão.",
+    "Tratar bradicardia sem corrigir hipercalemia."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que o cálcio é tão importante no transplante hepático?",
+      resposta: "Porque citrato dos hemocomponentes e menor metabolismo hepático podem causar hipocalcemia, piorando contratilidade e coagulação."
+    },
+    {
+      pergunta: "Qual eletrólito pode matar no momento da reperfusão?",
+      resposta: "Potássio. Hipercalemia pode causar bradicardia, bloqueios, QRS largo e parada cardíaca."
+    },
+    {
+      pergunta: "Qual ventrículo pode falhar se houver aumento abrupto da pressão pulmonar?",
+      resposta: "O ventrículo direito, que é sensível a aumentos agudos de pós-carga pulmonar."
+    }
+  ],
+  fraseOuro: "Na reperfusão hepática, o enxerto devolve ao coração frio, ácido, potássio e instabilidade.",
+  referencias: ["Yao", "Miller", "Barash", "Transplante hepático"]
+},
+
+{
+  id: "oral-mixed-014",
+  titulo: "Osmolaridade e composição de soluções",
+  area: "Renal / Endócrino / Metabólico",
+  dificuldade: "muito difícil",
+  caso: "Durante discussão em sala, é apresentada uma solução hipotética composta por: glicose 18 g/L, NaCl 120 mmol/L, KCl 10 mmol/L, CaCl₂ 5 mmol/L e sulfato de magnésio 4 mmol/L. O residente calcula apenas sódio e glicose e subestima a osmolaridade.",
+  pergunta: "Como você calcula a osmolaridade aproximada dessa solução e quais cuidados conceituais deve ter?",
+  respostaIdeal: [
+    "Eu começo lembrando que osmolaridade depende do número de partículas osmoticamente ativas em solução.",
+    "A glicose não se dissocia. Como seu peso molecular é aproximadamente 180 g/mol, 18 g/L correspondem a 0,1 mol/L, ou 100 mOsm/L.",
+    "O NaCl se dissocia em duas partículas principais: Na⁺ e Cl⁻. Portanto, 120 mmol/L contribuem com aproximadamente 240 mOsm/L.",
+    "O KCl também se dissocia em duas partículas: 10 mmol/L contribuem com cerca de 20 mOsm/L.",
+    "O CaCl₂ se dissocia em três partículas: Ca²⁺ e dois Cl⁻. Portanto, 5 mmol/L contribuem com aproximadamente 15 mOsm/L.",
+    "O sulfato de magnésio, em aproximação ideal, se dissocia em Mg²⁺ e SO₄²⁻, contribuindo com cerca de 8 mOsm/L.",
+    "Somando: 100 + 240 + 20 + 15 + 8 = aproximadamente 383 mOsm/L.",
+    "Na prática clínica, há desvios por coeficiente osmótico, mas para prova costuma-se usar dissociação ideal."
+  ],
+  pontosObrigatorios: [
+    "Glicose 18 g/L = 100 mmol/L.",
+    "Glicose não dissocia.",
+    "NaCl e KCl contam como duas partículas.",
+    "CaCl₂ conta como três partículas.",
+    "MgSO₄ conta aproximadamente como duas partículas.",
+    "Resultado aproximado: 383 mOsm/L."
+  ],
+  errosGraves: [
+    "Somar apenas os mmol sem multiplicar pela dissociação.",
+    "Tratar glicose como se dissociasse.",
+    "Esquecer cloro no CaCl₂.",
+    "Confundir osmolaridade com tonicidade efetiva.",
+    "Usar fórmula do sódio plasmático sem olhar composição da solução."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Osmolaridade e tonicidade são a mesma coisa?",
+      resposta: "Não. Osmolaridade considera todas as partículas em solução; tonicidade considera partículas efetivas que não atravessam livremente a membrana e geram movimento de água."
+    },
+    {
+      pergunta: "Por que glicose pode não se comportar como osmole efetivo depois de metabolizada?",
+      resposta: "Porque a glicose entra nas células e é metabolizada, de modo que sua contribuição para tonicidade pode ser transitória, dependendo do contexto."
+    },
+    {
+      pergunta: "Qual pegadinha comum em prova?",
+      resposta: "Esquecer que sais se dissociam e, portanto, contribuem com mais partículas do que sua concentração em mmol/L."
+    }
+  ],
+  fraseOuro: "Osmolaridade não soma moléculas; soma partículas.",
+  referencias: ["Yao", "Miller", "Fisiologia renal e soluções intravenosas"]
+},
+
+{
+  id: "oral-mixed-015",
+  titulo: "EEG processado em lactentes",
+  area: "Monitorização",
+  dificuldade: "muito difícil",
+  caso: "Você anestesia uma criança de 3 meses com sevoflurano. Além da concentração alveolar mínima, decide usar EEG processado para acompanhar profundidade anestésica. O monitor mostra padrão diferente daquele esperado em adultos, e o residente interpreta o índice como se fosse adulto.",
+  pergunta: "Quais particularidades do EEG pediátrico devem ser lembradas e qual o risco de interpretar o monitor como adulto?",
+  respostaIdeal: [
+    "Eu começo lembrando que o EEG muda muito com a idade, especialmente nos primeiros meses de vida.",
+    "Em lactentes pequenos, há menor maturação cortical, menor organização de ritmos e padrão espectral diferente do adulto.",
+    "Os algoritmos de EEG processado foram, em grande parte, desenvolvidos e validados em adultos; portanto, podem ter desempenho limitado em crianças pequenas.",
+    "A presença, ausência ou distribuição de ondas alfa, delta e padrões de burst-suppression não deve ser interpretada com a mesma régua usada no adulto.",
+    "A concentração alveolar de anestésico, sinais clínicos, hemodinâmica, contexto cirúrgico e conhecimento do desenvolvimento neurofisiológico precisam ser integrados.",
+    "O risco de interpretar como adulto é superestimar ou subestimar profundidade anestésica, levando a anestesia excessiva ou insuficiente.",
+    "Em prova, o ponto central é reconhecer que idade altera a assinatura eletroencefalográfica e reduz a confiabilidade universal dos índices processados."
+  ],
+  pontosObrigatorios: [
+    "EEG depende da maturação cerebral.",
+    "Lactentes não têm padrão igual ao adulto.",
+    "Índices processados têm limitações em crianças pequenas.",
+    "Não interpretar alfa/delta como no adulto.",
+    "Integrar MAC, clínica e hemodinâmica.",
+    "Evitar decisão baseada em número isolado."
+  ],
+  errosGraves: [
+    "Usar BIS/SedLine em lactente como se fosse adulto.",
+    "Achar que mesmo número significa mesma profundidade em todas as idades.",
+    "Ignorar concentração expirada de anestésico.",
+    "Tratar qualquer burst-suppression como normal.",
+    "Não reconhecer imaturidade cortical."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que o EEG muda com a idade?",
+      resposta: "Porque maturação sináptica, mielinização, conectividade cortical e organização tálamo-cortical evoluem progressivamente."
+    },
+    {
+      pergunta: "O índice processado deve ser abandonado?",
+      resposta: "Não necessariamente, mas deve ser interpretado com cautela e sempre integrado ao contexto clínico."
+    },
+    {
+      pergunta: "Qual é a armadilha da prova?",
+      resposta: "Aplicar padrões de EEG adulto a lactentes, especialmente em relação a alfa, delta e burst-suppression."
+    }
+  ],
+  fraseOuro: "No lactente, o EEG não é um adulto pequeno: é outro cérebro, com outra assinatura elétrica.",
+  referencias: ["Yao", "Miller", "Monitorização da profundidade anestésica"]
+},
+
+{
+  id: "oral-mixed-016",
+  titulo: "Farmacocinética dos anestésicos venosos",
+  area: "Farmacologia",
+  dificuldade: "muito difícil",
+  caso: "Durante discussão sobre anestesia venosa, um residente afirma que fármacos com alta taxa de extração hepática têm depuração limitada principalmente pela saturação enzimática. Outro afirma que, para esses fármacos, o fluxo sanguíneo hepático é o principal determinante da depuração.",
+  pergunta: "Qual raciocínio farmacocinético está correto e como isso se aplica aos anestésicos venosos?",
+  respostaIdeal: [
+    "Eu explicaria que fármacos com alta taxa de extração hepática têm depuração muito dependente do fluxo sanguíneo hepático.",
+    "Quando a extração se aproxima de 1, o fígado remove grande fração do fármaco que chega a ele; portanto, a quantidade depurada por unidade de tempo depende principalmente de quanto sangue entrega fármaco ao fígado.",
+    "Nesses casos, redução de débito cardíaco ou fluxo hepático pode reduzir depuração e prolongar efeito.",
+    "Já fármacos com baixa taxa de extração são mais dependentes de capacidade enzimática e fração livre, sofrendo mais influência de ligação proteica e função metabólica intrínseca.",
+    "Em anestesia, isso ajuda a entender por que choque, baixo débito, envelhecimento e hipoperfusão hepática podem alterar duração de fármacos venosos.",
+    "A pegadinha é confundir alta extração com metabolismo saturável; na verdade, para alta extração, o limitante costuma ser fluxo."
+  ],
+  pontosObrigatorios: [
+    "Alta extração: depuração limitada por fluxo.",
+    "Baixa extração: depende mais de capacidade enzimática/fração livre.",
+    "Débito cardíaco influencia fármacos de alta extração.",
+    "Choque pode prolongar efeito de anestésicos venosos.",
+    "Não confundir extração alta com saturação enzimática."
+  ],
+  errosGraves: [
+    "Dizer que alta extração é limitada por saturação enzimática.",
+    "Ignorar fluxo hepático.",
+    "Achar que meia-vida isolada prevê recuperação clínica.",
+    "Não considerar contexto hemodinâmico.",
+    "Confundir redistribuição com depuração."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Propofol tem depuração dependente de quê?",
+      resposta: "Propofol tem alta depuração e importante dependência de fluxo, além de metabolismo extra-hepático relevante."
+    },
+    {
+      pergunta: "O que acontece em baixo débito?",
+      resposta: "Menor entrega aos órgãos de depuração e maior concentração inicial no compartimento central, podendo intensificar e prolongar efeitos."
+    },
+    {
+      pergunta: "Qual conceito explica despertar após bolus único de tiopental ou propofol?",
+      resposta: "Redistribuição, não eliminação completa."
+    }
+  ],
+  fraseOuro: "Fármaco de alta extração não pergunta tanto se o fígado sabe metabolizar; pergunta se o sangue chega lá.",
+  referencias: ["Yao", "Miller", "Farmacocinética"]
+},
+
+{
+  id: "oral-mixed-017",
+  titulo: "Bloqueio regional guiado por USG e neuroestimulador",
+  area: "Regional / Dor",
+  dificuldade: "muito difícil",
+  caso: "Paciente de 52 anos será submetido a bloqueio de plexo lombar guiado por ultrassonografia e neuroestimulador. A visualização da agulha é difícil. O neuroestimulador está configurado em 0,5 mA. Em determinado momento, há contração compatível com estímulo motor, mas a ponta da agulha não é claramente identificada.",
+  pergunta: "Qual é a conduta mais segura e qual raciocínio deve orientar a decisão?",
+  respostaIdeal: [
+    "Eu não injetaria anestésico local sem visualização adequada da ponta da agulha ou sem certeza de posicionamento seguro.",
+    "A resposta ao neuroestimulador é uma informação auxiliar, mas não substitui visualização da ponta, especialmente em bloqueios profundos e próximos a estruturas críticas.",
+    "Se a imagem está ruim, devo reposicionar transdutor, ajustar profundidade, ganho, ângulo de insonação e tentar melhorar alinhamento da agulha.",
+    "Também posso recuar a agulha para uma área visível e reiniciar a progressão sob visão contínua.",
+    "Aspiração negativa não garante segurança, e injeção teste às cegas pode resultar em injeção intraneural, intravascular ou em plano inadequado.",
+    "A presença de resposta motora com corrente muito baixa pode inclusive sugerir proximidade excessiva ou contato neural, devendo aumentar cautela.",
+    "A segurança vem da combinação: visualização, pressão de injeção adequada, ausência de dor/parestesia intensa, aspiração e resposta clínica."
+  ],
+  pontosObrigatorios: [
+    "Não injetar sem saber onde está a ponta.",
+    "Neuroestimulador é auxiliar, não substituto da imagem.",
+    "Melhorar imagem antes de avançar.",
+    "Recuar e realinhar se necessário.",
+    "Corrente muito baixa pode sugerir proximidade neural.",
+    "Aspirar negativo não exclui injeção intravascular."
+  ],
+  errosGraves: [
+    "Injetar 5 mL para tentar localizar a ponta.",
+    "Confiar apenas no neuroestimulador.",
+    "Avançar agulha fora do plano sem visualização.",
+    "Ignorar dor ou parestesia intensa.",
+    "Assumir que ausência de resposta significa segurança."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Qual é o risco de injetar para localizar a ponta?",
+      resposta: "Pode haver injeção intraneural, intravascular ou em plano perigoso antes de se confirmar posição."
+    },
+    {
+      pergunta: "Resposta a 0,2 mA é tranquilizadora?",
+      resposta: "Não. Resposta com corrente muito baixa pode indicar proximidade excessiva ou contato com nervo."
+    },
+    {
+      pergunta: "Quais ferramentas aumentam segurança?",
+      resposta: "Visualização contínua da ponta, injeção fracionada, baixa pressão de injeção, aspiração frequente e monitorização clínica."
+    }
+  ],
+  fraseOuro: "Em bloqueio guiado por ultrassom, se você não vê a ponta, você não sabe onde está injetando.",
+  referencias: ["Yao", "Miller", "Regional anesthesia", "ASRA"]
+},
+
+{
+  id: "oral-mixed-018",
+  titulo: "POCUS pulmonar no perioperatório",
+  area: "POCUS / Respiratório",
+  dificuldade: "muito difícil",
+  caso: "Paciente no pós-operatório imediato de laparotomia apresenta dispneia e dessaturação. Ao ultrassom pulmonar, você observa múltiplas linhas verticais hiperecogênicas partindo da linha pleural, alcançando o final da tela e apagando linhas A, bilateralmente.",
+  pergunta: "O que essa imagem sugere e como você integra esse achado ao diagnóstico diferencial?",
+  respostaIdeal: [
+    "O achado descrito é compatível com linhas B múltiplas, sugerindo aumento de conteúdo intersticial/alveolar de água ou síndrome intersticial.",
+    "No contexto perioperatório, isso pode ocorrer por edema pulmonar cardiogênico, sobrecarga volêmica, lesão pulmonar, SDRA inicial ou outras causas de espessamento intersticial.",
+    "A distribuição é fundamental: linhas B difusas e bilaterais favorecem edema/interstício difuso; achados focais podem sugerir pneumonia, contusão ou atelectasia periférica.",
+    "Eu integraria com exame cardíaco à beira-leito, VCI, pressão arterial, balanço hídrico, gasometria, ausculta, BNP se pertinente e resposta a tratamento.",
+    "Se houver instabilidade, usaria o POCUS para diferenciar edema cardiogênico, pneumotórax, atelectasia, derrame pleural e disfunção ventricular.",
+    "A conduta depende da causa: diurético/vasodilatador se edema cardiogênico, suporte ventilatório/PEEP se SDRA, drenagem se derrame significativo e tratamento da causa base."
+  ],
+  pontosObrigatorios: [
+    "Linhas B indicam síndrome intersticial.",
+    "Linhas B múltiplas bilaterais sugerem edema/interstício difuso.",
+    "Distribuição focal versus difusa importa.",
+    "Integrar com eco cardíaco e contexto.",
+    "Diferenciar de pneumotórax e atelectasia.",
+    "POCUS não substitui raciocínio clínico."
+  ],
+  errosGraves: [
+    "Chamar toda linha B de edema cardiogênico.",
+    "Ignorar distribuição dos achados.",
+    "Não procurar pneumotórax em dessaturação súbita.",
+    "Tratar com diurético sem avaliar volemia e coração.",
+    "Interpretar imagem isolada sem contexto clínico."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "O que são linhas A?",
+      resposta: "Artefatos horizontais repetidos, paralelos à linha pleural, associados a pulmão aerado."
+    },
+    {
+      pergunta: "O que diferencia pneumotórax no USG?",
+      resposta: "Ausência de lung sliding, ausência de linhas B e, se presente, lung point."
+    },
+    {
+      pergunta: "Linhas B podem ocorrer em SDRA?",
+      resposta: "Sim. Na SDRA podem aparecer linhas B, frequentemente com distribuição heterogênea e alterações pleurais/subpleurais."
+    }
+  ],
+  fraseOuro: "Linha B não é diagnóstico; é o pulmão dizendo que perdeu ar para líquido ou interstício.",
+  referencias: ["Yao", "Miller", "POCUS perioperatório", "BLUE protocol"]
+},
+
+{
+  id: "oral-mixed-019",
+  titulo: "Neuroanestesia para schwannoma vestibular",
+  area: "Neuroanestesia",
+  dificuldade: "muito difícil",
+  caso: "Paciente de 27 anos será submetida à ressecção de schwannoma vestibular de 2 cm. A equipe cirúrgica deseja preservar audição e função do nervo facial. O neurofisiologista solicita planejamento anestésico adequado para monitorização intraoperatória.",
+  pergunta: "Qual monitorização é mais relevante e quais cuidados anestésicos você deve tomar para não prejudicar os sinais?",
+  respostaIdeal: [
+    "Para schwannoma vestibular com objetivo de preservar audição e nervo facial, a monitorização relevante inclui potencial evocado auditivo de tronco cerebral e eletromiografia do nervo facial.",
+    "O potencial evocado auditivo ajuda a acompanhar integridade da via auditiva durante manipulação do VIII par e tronco.",
+    "A eletromiografia facial permite detectar irritação ou lesão do VII par durante dissecção.",
+    "Do ponto de vista anestésico, devo evitar ou minimizar bloqueadores neuromusculares após intubação se a EMG facial for essencial.",
+    "Também devo manter anestesia estável, evitando grandes variações de halogenado, hipotermia, hipotensão e alterações fisiológicas que prejudiquem potenciais evocados.",
+    "TIVA com propofol/remifentanil frequentemente é preferida quando há monitorização neurofisiológica, especialmente se potenciais motores também forem usados.",
+    "Comunicação com neurofisiologia e cirurgia é indispensável antes de bolus de anestésicos, vasopressores ou relaxantes."
+  ],
+  pontosObrigatorios: [
+    "Potencial evocado auditivo para via auditiva.",
+    "EMG facial para nervo facial.",
+    "Evitar bloqueador neuromuscular se EMG necessária.",
+    "Manter anestesia estável.",
+    "Evitar hipotermia e hipotensão.",
+    "Comunicação com neurofisiologia."
+  ],
+  errosGraves: [
+    "Usar bloqueio neuromuscular profundo contínuo sem avisar.",
+    "Escolher potencial visual como principal monitor.",
+    "Ignorar temperatura e pressão arterial.",
+    "Fazer bolus anestésicos sem comunicar queda de sinal.",
+    "Não alinhar plano anestésico antes da incisão."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Qual nervo craniano está relacionado ao schwannoma vestibular?",
+      resposta: "O VIII par craniano, especialmente a porção vestibular."
+    },
+    {
+      pergunta: "Por que EMG facial não combina com bloqueio neuromuscular?",
+      resposta: "Porque o bloqueador reduz ou abole resposta muscular, prejudicando detecção de irritação ou lesão do nervo facial."
+    },
+    {
+      pergunta: "Voláteis interferem em potenciais evocados?",
+      resposta: "Sim, especialmente em maiores concentrações; por isso TIVA é frequentemente preferida para monitorização neurofisiológica complexa."
+    }
+  ],
+  fraseOuro: "Em neurocirurgia com monitorização, anestesia boa é a que mantém o paciente anestesiado e o sinal acordado.",
+  referencias: ["Yao", "Miller", "Neuroanestesia", "Monitorização neurofisiológica"]
+},
+
+{
+  id: "oral-mixed-020",
+  titulo: "Náuseas e vômitos perioperatórios: mecanismo dos antieméticos",
+  area: "Ambulatorial / Farmacologia",
+  dificuldade: "muito difícil",
+  caso: "Paciente jovem, mulher, não tabagista, com história de cinetose, será submetida à laparoscopia ginecológica com opioide previsto no pós-operatório. O residente prescreve apenas metoclopramida e afirma que todos os antieméticos atuam por mecanismo semelhante.",
+  pergunta: "Como você estratifica o risco e explica a escolha racional de antieméticos por mecanismos diferentes?",
+  respostaIdeal: [
+    "Eu reconheço paciente de alto risco para náuseas e vômitos perioperatórios: sexo feminino, não tabagista, história de cinetose/NVPO e uso de opioide.",
+    "A profilaxia deve ser multimodal, combinando fármacos de mecanismos diferentes e reduzindo fatores emetogênicos.",
+    "Ondansetrona é antagonista 5-HT3, atuando em vias serotoninérgicas periféricas e centrais.",
+    "Dexametasona tem mecanismo antiemético multifatorial e é útil como profilaxia, especialmente no início do procedimento.",
+    "Droperidol ou haloperidol atuam principalmente por antagonismo dopaminérgico D2, com atenção a QT e sedação.",
+    "Aprepitanto/fosaprepitanto antagonizam receptor NK1, especialmente útil em pacientes de alto risco ou vômitos tardios.",
+    "Escopolamina transdérmica tem ação antimuscarínica e pode ser útil, mas causa boca seca, sonolência e visão turva.",
+    "Além de fármacos, considero TIVA com propofol, evitar óxido nitroso/voláteis quando possível, hidratação adequada e analgesia poupadora de opioide."
+  ],
+  pontosObrigatorios: [
+    "Usar escore de risco, como Apfel.",
+    "Mulher, não tabagista, cinetose/NVPO e opioide aumentam risco.",
+    "Profilaxia multimodal em alto risco.",
+    "Combinar mecanismos diferentes.",
+    "Reduzir opioides e fatores emetogênicos.",
+    "Conhecer receptores: 5-HT3, D2, NK1, muscarínico."
+  ],
+  errosGraves: [
+    "Usar apenas metoclopramida em paciente de alto risco.",
+    "Achar que todos antieméticos têm mesmo mecanismo.",
+    "Esquecer redução de opioides.",
+    "Ignorar QT com butirofenonas.",
+    "Tratar só depois de vômitos repetidos em paciente claramente de alto risco."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Quais são os quatro fatores clássicos do escore de Apfel?",
+      resposta: "Sexo feminino, não tabagismo, história de NVPO/cinetose e uso de opioide pós-operatório."
+    },
+    {
+      pergunta: "Qual receptor o aprepitanto bloqueia?",
+      resposta: "Receptor NK1, relacionado à substância P."
+    },
+    {
+      pergunta: "Qual estratégia anestésica reduz NVPO?",
+      resposta: "TIVA com propofol, analgesia multimodal poupadora de opioide, evitar óxido nitroso e reduzir voláteis quando possível."
+    }
+  ],
+  fraseOuro: "NVPO de alto risco não se trata com uma droga solitária; trata-se fechando várias portas da via emética.",
+  referencias: ["Yao", "Miller", "Barash", "Consensos de NVPO"]
+}
 ];
