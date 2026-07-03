@@ -200,7 +200,7 @@
       </div>
     </section>
 
-    <section id="oral-screen" class="screen">
+   <section id="oral-screen" class="screen">
   <div class="card">
     <div class="quiz-topbar">
       <button class="ghost-btn" id="oral-back-btn">← Início</button>
@@ -213,45 +213,45 @@
     </div>
 
     <div id="oral-card" class="oral-card">
-      <div class="oral-card-inner">
 
-        <div class="oral-face oral-front">
-          <h2 id="oral-title">Título do caso</h2>
+      <div id="oral-front" class="oral-face oral-front">
+        <h2 id="oral-title">Título do caso</h2>
 
-          <h3>Caso clínico</h3>
-          <p id="oral-case"></p>
+        <h3>Caso clínico</h3>
+        <p id="oral-case"></p>
 
-          <h3>Pergunta da banca</h3>
-          <p id="oral-question"></p>
+        <h3>Pergunta da banca</h3>
+        <p id="oral-question"></p>
 
-          <p class="muted">Pense ou responda em voz alta. Depois clique no cartão para ver o verso.</p>
-        </div>
-
-        <div class="oral-face oral-back">
-          <h2>Resposta ideal</h2>
-          <div id="oral-answer"></div>
-
-          <h3>O examinador espera ouvir</h3>
-          <ul id="oral-required"></ul>
-
-          <h3>Erros graves</h3>
-          <ul id="oral-errors"></ul>
-
-          <h3>Perguntas de aprofundamento</h3>
-          <div id="oral-deepening"></div>
-
-          <div class="gold-box">
-            <strong>Frase de ouro:</strong>
-            <p id="oral-gold"></p>
-          </div>
-        </div>
-
+        <p class="muted">
+          Pense ou responda em voz alta. Depois clique em Ver resposta.
+        </p>
       </div>
+
+      <div id="oral-back" class="oral-face oral-back">
+        <h2>Resposta ideal</h2>
+        <div id="oral-answer"></div>
+
+        <h3>O examinador espera ouvir</h3>
+        <ul id="oral-required"></ul>
+
+        <h3>Erros graves</h3>
+        <ul id="oral-errors"></ul>
+
+        <h3>Perguntas de aprofundamento</h3>
+        <div id="oral-deepening"></div>
+
+        <div class="gold-box">
+          <strong>Frase de ouro:</strong>
+          <p id="oral-gold"></p>
+        </div>
+      </div>
+
     </div>
 
     <div class="quiz-actions oral-actions">
       <button class="secondary-btn" id="oral-prev-btn">Anterior</button>
-      <button class="primary-btn" id="oral-flip-btn">Virar cartão</button>
+      <button class="primary-btn" id="oral-flip-btn">Ver resposta</button>
       <button class="secondary-btn" id="oral-next-btn">Próximo</button>
       <button class="secondary-btn" id="oral-shuffle-btn">Embaralhar</button>
     </div>
@@ -265,7 +265,7 @@
     <span>Criado por Vinícius Linhares - V445</span>
   </footer>
 
- <script src="questions.js?v=600"></script>
+<script src="questions.js?v=600"></script>
 <script src="flashcards.js?v=600"></script>
 <script src="app.js?v=600"></script>
 </body>
