@@ -832,7 +832,8 @@ function renderOralCard() {
   if (!card) return;
 
   oralFlipped = false;
-  els.oralCard.classList.remove("flipped");
+els.oralCard.classList.remove("show-answer");
+els.oralFlipBtn.textContent = "Ver resposta";
 
   els.oralProgress.textContent = `Caso ${oralIndex + 1} de ${oralSession.length}`;
   els.oralArea.textContent = card.area || "Treinamento oral";
@@ -878,9 +879,9 @@ function flipOralCard() {
     els.oralCard.classList.add("show-answer");
     els.oralFlipBtn.textContent = "Ver caso";
   } else {
-   els.oralCard.classList.remove("flipped");
-els.oralCard.classList.remove("show-answer");
-els.oralFlipBtn.textContent = "Ver resposta";
+    els.oralCard.classList.remove("show-answer");
+    els.oralFlipBtn.textContent = "Ver resposta";
+  }
 }
 
 function nextOralCard() {
