@@ -10,12 +10,16 @@ let currentSession = [];
 let currentIndex = 0;
 let currentMode = "quiz";
 let sessionResults = [];
+let oralSession = [];
+let oralIndex = 0;
+let oralFlipped = false;
 
 const screens = {
   home: document.getElementById("home-screen"),
   quiz: document.getElementById("quiz-screen"),
   result: document.getElementById("result-screen"),
-  stats: document.getElementById("stats-screen")
+  stats: document.getElementById("stats-screen"),
+  oral: document.getElementById("oral-screen")
 };
 
 const els = {
@@ -60,7 +64,26 @@ const els = {
   overallStats: document.getElementById("overall-stats"),
   areaStats: document.getElementById("area-stats"),
   difficultyStats: document.getElementById("difficulty-stats"),
-  weakAreaStats: document.getElementById("weak-area-stats")
+  weakAreaStats: document.getElementById("weak-area-stats"),
+
+    oralBtn: document.getElementById("oral-btn"),
+  oralBackBtn: document.getElementById("oral-back-btn"),
+  oralProgress: document.getElementById("oral-progress"),
+  oralArea: document.getElementById("oral-area"),
+  oralDifficulty: document.getElementById("oral-difficulty"),
+  oralCard: document.getElementById("oral-card"),
+  oralTitle: document.getElementById("oral-title"),
+  oralCase: document.getElementById("oral-case"),
+  oralQuestion: document.getElementById("oral-question"),
+  oralAnswer: document.getElementById("oral-answer"),
+  oralRequired: document.getElementById("oral-required"),
+  oralErrors: document.getElementById("oral-errors"),
+  oralDeepening: document.getElementById("oral-deepening"),
+  oralGold: document.getElementById("oral-gold"),
+  oralPrevBtn: document.getElementById("oral-prev-btn"),
+  oralFlipBtn: document.getElementById("oral-flip-btn"),
+  oralNextBtn: document.getElementById("oral-next-btn"),
+  oralShuffleBtn: document.getElementById("oral-shuffle-btn")
 };
 
 function ensureQuestions() {
@@ -775,6 +798,109 @@ function renderStats() {
 }
 
 /* =========================
+   TREINAMENTO ORAL / FLASHCARDS
+========================= */
+
+function ensureFlashcards() {
+  if (typeof FLASHCARDS === "undefined" || !Array.isArray(FLASHCARDS)) {
+    alert("Banco de flashcards não encontrado. Verifique se flashcards.js foi carregado antes do app.js.");
+    return [];
+  }
+
+  return FLASHCARDS;
+}
+
+function startOralTraining() {
+  const cards = ensureFlashcards();
+
+  if (cards.length === 0) {
+    alert("Nenhum flashcard encontrado.");
+    return;
+  }
+
+  oralSession = shuffle(cards);
+  oralIndex = 0;
+  oralFlipped = false;
+
+  showScreen("oral");
+  renderOralCard();
+}
+
+function renderOralCard() {
+  const card = oralSession[oralIndex];
+
+  if (!card) return;
+
+  oralFlipped = false;
+  els.oralCard.classList.remove("flipped");
+
+  els.oralProgress.textContent = `Caso ${oralIndex + 1} de ${oralSession.length}`;
+  els.oralArea.textContent = card.area || "Treinamento oral";
+  els.oralDifficulty.textContent = card.dificuldade || "muito difícil";
+
+  els.oralTitle.textContent = card.titulo || "Caso oral";
+  els.oralCase.textContent = card.caso || "";
+  els.oralQuestion.textContent = card.pergunta || "";
+
+  els.oralAnswer.innerHTML = (card.respostaIdeal || [])
+    .map((item) => `<p>${item}</p>`)
+    .join("");
+
+  els.oralRequired.innerHTML = (card.pontosObrigatorios || [])
+    .map((item) => `<li>${item}</li>`)
+    .join("");
+
+  els.oralErrors.innerHTML = (card.errosGraves || [])
+    .map((item) => `<li>${item}</li>`)
+    .join("");
+
+  els.oralDeepening.innerHTML = (card.aprofundamento || [])
+    .map((item) => {
+      return `
+        <div class="oral-deep-item">
+          <strong>${item.pergunta}</strong>
+          <p>${item.resposta}</p>
+        </div>
+      `;
+    })
+    .join("");
+
+  els.oralGold.textContent = card.fraseOuro || "";
+
+  els.oralPrevBtn.disabled = oralIndex === 0;
+  els.oralNextBtn.disabled = oralIndex === oralSession.length - 1;
+}
+
+function flipOralCard() {
+  oralFlipped = !oralFlipped;
+  els.oralCard.classList.toggle("flipped", oralFlipped);
+  els.oralFlipBtn.textContent = oralFlipped ? "Ver caso" : "Virar cartão";
+}
+
+function nextOralCard() {
+  if (oralIndex >= oralSession.length - 1) return;
+
+  oralIndex += 1;
+  els.oralFlipBtn.textContent = "Virar cartão";
+  renderOralCard();
+}
+
+function prevOralCard() {
+  if (oralIndex <= 0) return;
+
+  oralIndex -= 1;
+  els.oralFlipBtn.textContent = "Virar cartão";
+  renderOralCard();
+}
+
+function shuffleOralCards() {
+  oralSession = shuffle(ensureFlashcards());
+  oralIndex = 0;
+  els.oralFlipBtn.textContent = "Virar cartão";
+  renderOralCard();
+}
+
+/* =========================
    EVENTOS
 ========================= */
 
@@ -796,6 +922,14 @@ function registerEvents() {
   els.resultHomeBtn.addEventListener("click", () => showScreen("home"));
 
   els.statsBackBtn.addEventListener("click", () => showScreen("home"));
+
+    els.oralBtn.addEventListener("click", startOralTraining);
+  els.oralBackBtn.addEventListener("click", () => showScreen("home"));
+  els.oralCard.addEventListener("click", flipOralCard);
+  els.oralFlipBtn.addEventListener("click", flipOralCard);
+  els.oralNextBtn.addEventListener("click", nextOralCard);
+  els.oralPrevBtn.addEventListener("click", prevOralCard);
+  els.oralShuffleBtn.addEventListener("click", shuffleOralCards);
 }
 
 function registerServiceWorker() {
