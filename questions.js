@@ -8858,6 +8858,546 @@ const QUESTIONS = [
   resposta: "A",
   comentario: "Na Tetralogia de Fallot, há redução do fluxo pulmonar e shunt direita-esquerda. Para anestésicos inalatórios, menor fluxo pulmonar efetivo reduz a captação e torna a indução mais lenta. Com agentes venosos, o shunt pode acelerar chegada ao cérebro.",
   frase_ouro: "Na Fallot, menos sangue passando pelo pulmão significa indução inalatória mais lenta."
+},
+{
+  id: "tsa-photo-elite-021",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Náuseas e vômitos perioperatórios",
+  tema: "Mecanismo dos antieméticos",
+  area: "Farmacologia",
+  dificuldade: "muito difícil",
+  pergunta: "Sobre o mecanismo de ação dos fármacos utilizados para profilaxia de náuseas e vômitos perioperatórios, assinale a alternativa correta:",
+  alternativas: {
+    A: "A ondansetrona atua por agonismo parcial dos receptores 5-HT3 na zona gatilho quimiorreceptora.",
+    B: "O droperidol exerce efeito antiemético principalmente por antagonismo dopaminérgico D2, embora seu uso exija atenção ao prolongamento do intervalo QT.",
+    C: "A dexametasona tem efeito antiemético exclusivamente por antagonismo competitivo dos receptores NK1.",
+    D: "A metoclopramida é mais eficaz como profilaxia isolada universal por antagonismo seletivo dos receptores muscarínicos centrais."
+  },
+  resposta: "B",
+  comentario: "Miller e Yao descrevem a NVPO como fenômeno multifatorial, envolvendo vias serotoninérgicas, dopaminérgicas, histaminérgicas, muscarínicas e substância P/NK1. O droperidol é butirofenona com ação antiemética importante por antagonismo D2, mas pode prolongar QT. Ondansetrona é antagonista 5-HT3, não agonista. Dexametasona tem mecanismo multifatorial, não NK1 seletivo. Metoclopramida tem antagonismo D2 e efeito procinético, mas não é a melhor profilaxia isolada em alto risco.",
+  frase_ouro: "NVPO difícil se previne fechando várias portas da via emética, não insistindo em uma fechadura só."
+},
+{
+  id: "tsa-photo-elite-022",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Fisiologia ocular",
+  tema: "Músculo ciliar",
+  area: "Farmacologia / Oftalmologia",
+  dificuldade: "muito difícil",
+  pergunta: "Sobre o músculo ciliar e sua relevância farmacológica para a anestesia, é correto afirmar:",
+  alternativas: {
+    A: "A contração do músculo ciliar é mediada principalmente por estímulo simpático alfa-1, levando à acomodação para longe.",
+    B: "O músculo ciliar é inervado por fibras parassimpáticas muscarínicas, e sua contração relaxa as zônulas, favorecendo acomodação para perto.",
+    C: "O bloqueio muscarínico sistêmico provoca contração do músculo ciliar e miose intensa.",
+    D: "A atividade colinérgica relaxa o músculo ciliar e aumenta a tensão zonular, reduzindo o diâmetro anteroposterior do cristalino."
+  },
+  resposta: "B",
+  comentario: "A acomodação para perto depende da contração do músculo ciliar por estímulo parassimpático muscarínico. Essa contração relaxa as fibras zonulares, permitindo que o cristalino fique mais convexo. Antimuscarínicos, como atropina e escopolamina, podem causar cicloplegia e midríase, justificando visão turva como efeito adverso.",
+  frase_ouro: "Muscarínico contrai músculo ciliar; antimuscarínico rouba a acomodação e embaça o mundo."
+},
+{
+  id: "tsa-photo-elite-023",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Hemorragia subaracnoidea",
+  tema: "Hunt-Hess e Fisher",
+  area: "Neuroanestesia",
+  dificuldade: "muito difícil",
+  pergunta: "Mulher de 31 anos, portadora de MAV conhecida, chega confusa, sonolenta, com hemiparesia direita. TC mostra hemorragia subaracnoidea com sangue difuso espesso nas cisternas da base e pequena quantidade de sangue intraventricular. Qual interpretação é mais adequada?",
+  alternativas: {
+    A: "Hunt-Hess I e Fisher I, pois a presença de déficit focal não influencia a classificação clínica.",
+    B: "Hunt-Hess III ou IV, conforme nível de consciência, e Fisher IV pela presença de sangue intraventricular.",
+    C: "Hunt-Hess V e Fisher II, pois qualquer hemorragia por MAV equivale a coma profundo.",
+    D: "Hunt-Hess II e Fisher I, pois a classificação de Fisher considera apenas hidrocefalia."
+  },
+  resposta: "B",
+  comentario: "A classificação de Hunt-Hess é clínica e valoriza cefaleia, rigidez de nuca, déficit neurológico e nível de consciência. Sonolência/confusão com déficit focal sugere grau III ou IV dependendo da profundidade do rebaixamento. Fisher avalia sangue na TC e risco de vasoespasmo; sangue intraventricular ou intracerebral coloca o paciente no grupo IV na classificação clássica.",
+  frase_ouro: "Hunt-Hess olha o paciente; Fisher olha o sangue na tomografia."
+},
+{
+  id: "tsa-photo-elite-024",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Fisiologia fetal",
+  tema: "Curva de dissociação da hemoglobina",
+  area: "Obstetrícia / Fisiologia",
+  dificuldade: "muito difícil",
+  pergunta: "Em relação à curva de dissociação da oxi-hemoglobina fetal, assinale a alternativa correta:",
+  alternativas: {
+    A: "A hemoglobina fetal apresenta desvio da curva para a direita, facilitando liberação placentária de oxigênio para a mãe.",
+    B: "A hemoglobina fetal tem menor afinidade pelo oxigênio por se ligar mais intensamente ao 2,3-DPG.",
+    C: "A hemoglobina fetal apresenta desvio para a esquerda, devido à menor interação com 2,3-DPG, favorecendo captação de oxigênio na placenta.",
+    D: "A curva fetal é idêntica à adulta, sendo a transferência placentária determinada apenas pelo débito cardíaco fetal."
+  },
+  resposta: "C",
+  comentario: "A hemoglobina fetal tem maior afinidade pelo oxigênio que a adulta, com curva desviada para a esquerda. Isso ocorre por menor ligação ao 2,3-DPG, facilitando captação de oxigênio em ambiente placentário de menor PO2. Esse conceito é central na fisiologia fetal descrita em Miller e Yao.",
+  frase_ouro: "Hb fetal segura oxigênio com mais afinidade para vencer a baixa PO2 da placenta."
+},
+{
+  id: "tsa-photo-elite-025",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Sepse e disfunção orgânica",
+  tema: "SOFA",
+  area: "Emergências / Crítico",
+  dificuldade: "muito difícil",
+  pergunta: "A avaliação de disfunção orgânica pelo SOFA inclui variáveis respiratória, cardiovascular, hepática, coagulação, renal e neurológica. Qual alternativa contém um critério que pertence ao SOFA?",
+  alternativas: {
+    A: "Frequência respiratória maior ou igual a 22 irpm.",
+    B: "Diurese menor que 500 mL/dia.",
+    C: "Proteína C reativa maior que 100 mg/L.",
+    D: "Pressão intracraniana maior que 20 mmHg."
+  },
+  resposta: "B",
+  comentario: "O SOFA avalia PaO2/FiO2, plaquetas, bilirrubina, pressão/vasopressor, escala de Glasgow, creatinina e diurese. FR ≥ 22 faz parte do qSOFA, não do SOFA completo. PIC e PCR não são componentes do escore. O componente renal do SOFA inclui creatinina e diurese.",
+  frase_ouro: "SOFA mede órgão falhando; qSOFA é triagem rápida à beira-leito."
+},
+{
+  id: "tsa-photo-elite-026",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Ultrassom pulmonar",
+  tema: "Linhas B e síndrome intersticial",
+  area: "POCUS / Respiratório",
+  dificuldade: "muito difícil",
+  pergunta: "No pós-operatório imediato, paciente evolui com hipoxemia. USG pulmonar mostra múltiplos artefatos verticais hiperecogênicos, originados da linha pleural, que alcançam o fim da tela e apagam as linhas A, bilateralmente. Esse achado é mais compatível com:",
+  alternativas: {
+    A: "Pneumotórax hipertensivo.",
+    B: "Síndrome intersticial pulmonar.",
+    C: "Pulmão normalmente aerado.",
+    D: "Intubação seletiva direita."
+  },
+  resposta: "B",
+  comentario: "Linhas B múltiplas representam artefatos verticais associados a espessamento intersticial ou aumento de água pulmonar extravascular. Podem aparecer em edema pulmonar cardiogênico, SDRA, pneumonia intersticial e contusão, conforme distribuição e contexto. Pneumotórax tende a cursar com ausência de lung sliding, ausência de linhas B e possível lung point.",
+  frase_ouro: "Linha B é o pulmão perdendo ar para líquido ou interstício."
+},
+{
+  id: "tsa-photo-elite-027",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Bloqueios periféricos",
+  tema: "Bloqueio axilar e osteótomos do antebraço",
+  area: "Regional / Dor",
+  dificuldade: "muito difícil",
+  pergunta: "Paciente com fratura diafisária do rádio será submetido à osteossíntese sob bloqueio de plexo braquial por via axilar. Para anestesia adequada do rádio e cobertura cirúrgica do antebraço lateral, qual nervo é especialmente relevante além dos ramos terminais frequentemente visualizados ao redor da artéria axilar?",
+  alternativas: {
+    A: "Nervo musculocutâneo, que pode estar fora da bainha neurovascular axilar.",
+    B: "Nervo frênico, por inervar o periósteo radial proximal.",
+    C: "Nervo obturador, por contribuir para a face lateral do antebraço.",
+    D: "Nervo laríngeo recorrente, por conter fibras simpáticas periosteais."
+  },
+  resposta: "A",
+  comentario: "No bloqueio axilar, os nervos mediano, ulnar e radial costumam estar próximos da artéria axilar. O musculocutâneo frequentemente já saiu para o plano entre bíceps e coracobraquial, devendo ser bloqueado separadamente. Ele contribui para sensibilidade lateral do antebraço via nervo cutâneo lateral do antebraço.",
+  frase_ouro: "No axilar, esquecer o musculocutâneo é deixar o antebraço lateral acordado."
+},
+{
+  id: "tsa-photo-elite-028",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Anestesia regional guiada por ultrassom",
+  tema: "Neuroestimulação e segurança",
+  area: "Regional / Dor",
+  dificuldade: "muito difícil",
+  pergunta: "Durante bloqueio de plexo lombar guiado por USG e neuroestimulador a 0,5 mA, há resposta motora compatível, mas a ponta da agulha não é visualizada com segurança. Qual conduta é mais apropriada?",
+  alternativas: {
+    A: "Injetar 5 mL de anestésico local para abrir o plano e identificar a ponta.",
+    B: "Avançar até desaparecer a resposta motora, pois ausência de resposta confirma segurança.",
+    C: "Recuar, otimizar imagem e só injetar quando a ponta da agulha estiver claramente identificada em local seguro.",
+    D: "Reduzir a corrente para 0,1 mA e injetar se a resposta persistir."
+  },
+  resposta: "C",
+  comentario: "Yao e Miller enfatizam que ultrassom aumenta segurança quando a ponta da agulha e a dispersão do anestésico são visualizadas. Neuroestimulação é auxiliar, não substitui visualização. Injetar para localizar a ponta pode causar injeção intraneural, intravascular ou em plano perigoso, principalmente em bloqueios profundos.",
+  frase_ouro: "Se você não vê a ponta da agulha, você não sabe onde está injetando."
+},
+{
+  id: "tsa-photo-elite-029",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Anestesia obstétrica",
+  tema: "Tromboembolismo pulmonar no puerpério",
+  area: "Obstetrícia",
+  dificuldade: "muito difícil",
+  pergunta: "Puérpera no primeiro dia após cesariana apresenta dispneia súbita, taquicardia, hipotensão, hipoxemia e ECG com sinais de sobrecarga direita. Qual alteração fisiológica da gestação favorece esse quadro?",
+  alternativas: {
+    A: "Redução da proteína S livre e aumento global de fatores pró-coagulantes.",
+    B: "Aumento da fibrinólise e redução de fibrinogênio.",
+    C: "Redução do volume plasmático e hemoconcentração fisiológica intensa.",
+    D: "Redução da compressão venosa ilíaco-cava pelo útero gravídico."
+  },
+  resposta: "A",
+  comentario: "Gestação e puerpério são estados de hipercoagulabilidade, com aumento de fatores pró-coagulantes, elevação do fibrinogênio, redução funcional de proteína S e redução da fibrinólise. Somam-se estase venosa e lesão endotelial, compondo a tríade de Virchow e aumentando risco de TEP.",
+  frase_ouro: "No puerpério, a coagulação ainda está em modo proteção contra sangramento — e isso cobra risco trombótico."
+},
+{
+  id: "tsa-photo-elite-030",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Anatomia de via aérea",
+  tema: "Pregas vocais e aspiração",
+  area: "Via aérea",
+  dificuldade: "muito difícil",
+  pergunta: "Em imagem endoscópica da laringe, uma estrutura localizada superiormente às pregas vocais verdadeiras é apontada. Sobre as pregas vestibulares/falsas cordas vocais, é correto afirmar:",
+  alternativas: {
+    A: "São as principais responsáveis pela fonação fina e controle do tom vocal.",
+    B: "Localizam-se inferiormente às pregas vocais verdadeiras e delimitam a entrada da traqueia.",
+    C: "Participam da proteção laríngea durante deglutição, mas não substituem o fechamento glótico verdadeiro.",
+    D: "São estruturas cartilaginosas rígidas sem mucosa associada."
+  },
+  resposta: "C",
+  comentario: "As pregas vestibulares ficam superiores às pregas vocais verdadeiras e ajudam na proteção laríngea, especialmente em fechamento supraglótico. A fonação fina depende principalmente das pregas vocais verdadeiras. Em anestesia, reconhecer anatomia glótica e supraglótica é essencial para intubação, broncoscopia e avaliação de aspiração.",
+  frase_ouro: "Falsa corda ajuda a proteger; corda verdadeira fala e fecha a porta principal."
+},
+{
+  id: "tsa-photo-elite-031",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Anestesia torácica",
+  tema: "GOLD e risco pulmonar",
+  area: "Respiratório / Torácica",
+  dificuldade: "muito difícil",
+  pergunta: "Paciente tabagista de 84 anos com DPOC será submetido à lobectomia. Espirometria: VEF1 82% do previsto e VEF1/CVF pós-broncodilatador de 0,80. Relata duas internações por exacerbação no último ano. Pela lógica da classificação GOLD atual, qual aspecto pesa mais para agrupamento sintomático/risco do que o VEF1 isolado?",
+  alternativas: {
+    A: "Apenas VEF1, pois exacerbações não entram na classificação clínica.",
+    B: "História de exacerbações e carga sintomática, além da obstrução ao fluxo aéreo.",
+    C: "Somente idade acima de 80 anos.",
+    D: "Relação VEF1/CVF normal exclui risco perioperatório pulmonar."
+  },
+  resposta: "B",
+  comentario: "A classificação GOLD moderna separa gravidade espirométrica de agrupamento clínico baseado em sintomas e exacerbações. Em avaliação perioperatória torácica, Miller destaca que VEF1 isolado não basta; DLCO, ppoFEV1, ppoDLCO, exercício, exacerbações e reserva funcional são relevantes.",
+  frase_ouro: "No DPOC cirúrgico, VEF1 conta parte da história; exacerbação conta prognóstico."
+},
+{
+  id: "tsa-photo-elite-032",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Oncologia e anestesia",
+  tema: "Toxicidade da quimioterapia",
+  area: "Medicina Perioperatória",
+  dificuldade: "muito difícil",
+  pergunta: "Paciente oncológico tratado com cisplatina será submetido a cirurgia abdominal. Qual efeito adverso é classicamente associado à cisplatina e deve ser lembrado na avaliação perioperatória?",
+  alternativas: {
+    A: "Fibrose pulmonar intersticial dose-dependente como toxicidade predominante.",
+    B: "Cistite hemorrágica por metabólito urinário acroleína.",
+    C: "Nefrotoxicidade e neuropatia periférica.",
+    D: "Cardiomiopatia dilatada irreversível como efeito dose-limitante clássico."
+  },
+  resposta: "C",
+  comentario: "Cisplatina é associada a nefrotoxicidade, ototoxicidade, neuropatia periférica, náuseas intensas e distúrbios eletrolíticos, como hipomagnesemia. Cistite hemorrágica é mais típica de ciclofosfamida/ifosfamida. Fibrose pulmonar lembra bleomicina. Cardiomiopatia dose-dependente é clássica das antraciclinas.",
+  frase_ouro: "Cisplatina cobra rim, nervo, ouvido e eletrólitos; bleomicina cobra pulmão, antraciclina cobra coração."
+},
+{
+  id: "tsa-photo-elite-033",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Neurofisiologia intraoperatória",
+  tema: "Schwannoma vestibular",
+  area: "Neuroanestesia",
+  dificuldade: "muito difícil",
+  pergunta: "Paciente de 27 anos será submetida à ressecção de schwannoma vestibular, com intenção de preservar audição e função do nervo facial. Qual combinação de monitorização é mais apropriada?",
+  alternativas: {
+    A: "Potencial evocado auditivo de tronco cerebral e eletromiografia facial.",
+    B: "Potencial evocado visual e BIS.",
+    C: "Potencial evocado somatossensorial de membros inferiores e TOF.",
+    D: "NIRS cerebral bilateral e capnografia volumétrica."
+  },
+  resposta: "A",
+  comentario: "Schwannoma vestibular envolve o VIII par craniano e se relaciona anatomicamente ao VII par. A preservação auditiva usa potencial evocado auditivo de tronco cerebral; a preservação facial exige EMG facial. Bloqueio neuromuscular deve ser evitado ou minimizado quando EMG é necessária.",
+  frase_ouro: "No schwannoma vestibular, o anestésico precisa dormir o paciente sem calar o nervo facial."
+},
+{
+  id: "tsa-photo-elite-034",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Farmacocinética",
+  tema: "Taxa de extração hepática",
+  area: "Farmacologia",
+  dificuldade: "muito difícil",
+  pergunta: "Sobre a farmacocinética dos anestésicos venosos metabolizados no fígado, assinale a alternativa correta:",
+  alternativas: {
+    A: "Quanto maior a taxa de extração hepática, maior a dependência da depuração em relação ao fluxo sanguíneo hepático.",
+    B: "Fármacos de alta extração têm depuração limitada principalmente pela saturação enzimática em concentrações clínicas.",
+    C: "Fármacos de baixa extração são os mais dependentes do débito cardíaco para depuração.",
+    D: "Redistribuição e depuração são sinônimos na recuperação após bolus único."
+  },
+  resposta: "A",
+  comentario: "Fármacos de alta extração hepática têm depuração fluxo-dependente: se chega menos sangue ao fígado, menos fármaco é depurado. Fármacos de baixa extração são mais dependentes da capacidade metabólica intrínseca e da fração livre. A recuperação após bolus único frequentemente decorre de redistribuição, não de eliminação.",
+  frase_ouro: "Alta extração: quem manda na depuração é o fluxo que entrega a droga ao fígado."
+},
+{
+  id: "tsa-photo-elite-035",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Monitorização cerebral",
+  tema: "EEG e idade",
+  area: "Monitorização",
+  dificuldade: "muito difícil",
+  pergunta: "Sobre alterações do EEG relacionadas à idade e interpretação de monitores de profundidade anestésica, assinale a alternativa correta:",
+  alternativas: {
+    A: "O EEG do lactente tem assinatura espectral idêntica ao adulto quando ajustado pela CAM do halogenado.",
+    B: "No idoso, há tendência a menor potência eletroencefalográfica e maior vulnerabilidade a supressão com anestésicos.",
+    C: "Em crianças menores de 3 meses, predominam ritmos alfa frontais robustos semelhantes aos adultos anestesiados.",
+    D: "Índices processados são igualmente validados em neonatos, lactentes, adultos e idosos."
+  },
+  resposta: "B",
+  comentario: "O EEG varia com maturação e envelhecimento. Lactentes pequenos não apresentam padrão adulto; monitores processados foram desenvolvidos sobretudo em adultos e têm limitações pediátricas. Idosos tendem a apresentar menor potência e maior sensibilidade cerebral a anestésicos, com risco de supressão e delirium.",
+  frase_ouro: "EEG não envelhece em linha reta: lactente e idoso exigem régua própria."
+},
+{
+  id: "tsa-photo-elite-036",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Swan-Ganz e hemodinâmica",
+  tema: "Transplante hepático",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "muito difícil",
+  pergunta: "Em transplante hepático, cateter de artéria pulmonar mostra PVC 10 mmHg, POAP 12 mmHg, PAP 25/12 mmHg, índice cardíaco elevado e SvO2 88%. Qual interpretação é mais coerente no cirrótico avançado?",
+  alternativas: {
+    A: "Baixo débito oculto com extração periférica extremamente aumentada.",
+    B: "Estado hiperdinâmico com baixa extração sistêmica de oxigênio, comum na cirrose avançada.",
+    C: "Choque cardiogênico com congestão pulmonar obrigatória.",
+    D: "Hipovolemia grave, pois SvO2 elevada sempre indica baixo retorno venoso."
+  },
+  resposta: "B",
+  comentario: "Cirróticos avançados frequentemente apresentam circulação hiperdinâmica: alto débito cardíaco, baixa resistência vascular sistêmica e SvO2 elevada por baixa extração relativa e shunts. Isso não significa obrigatoriamente perfusão microcirculatória normal. O contexto hemodinâmico deve ser interpretado de forma integrada.",
+  frase_ouro: "Na cirrose, SvO2 alta pode ser excesso de fluxo mal distribuído, não garantia de perfusão perfeita."
+},
+{
+  id: "tsa-photo-elite-037",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Ventilação monopulmonar",
+  tema: "CPAP no pulmão não ventilado",
+  area: "Respiratório / Torácica",
+  dificuldade: "muito difícil",
+  pergunta: "Durante segmentectomia por videotoracoscopia em ventilação monopulmonar, ocorre dessaturação persistente apesar de FiO2 100%, tubo bem posicionado e estabilidade hemodinâmica. Decide-se aplicar CPAP no pulmão não ventilado. Qual cuidado é mais apropriado?",
+  alternativas: {
+    A: "Aplicar CPAP elevado, acima de 15 cmH2O, para abolir completamente o shunt, independentemente do campo.",
+    B: "Aplicar CPAP baixo com oxigênio no pulmão não ventilado, avaliando melhora da SpO2 e impacto no campo cirúrgico.",
+    C: "Aplicar CPAP no pulmão ventilado e desconectar o pulmão não ventilado.",
+    D: "Evitar broncoscopia, pois tubo bem posicionado inicialmente não se desloca durante toracoscopia."
+  },
+  resposta: "B",
+  comentario: "CPAP no pulmão não ventilado pode reduzir shunt e melhorar oxigenação, mas pressões altas atrapalham o campo cirúrgico. Antes disso, deve-se confirmar posição do tubo, otimizar ventilação do pulmão dependente e ajustar PEEP. A estratégia é sempre balancear oxigenação e exposição cirúrgica.",
+  frase_ouro: "CPAP no pulmão operado é remédio para shunt, mas dose alta vira inimigo do cirurgião."
+},
+{
+  id: "tsa-photo-elite-038",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Diabetes mellitus",
+  tema: "Mecanismos dos antidiabéticos",
+  area: "Renal / Endócrino / Metabólico",
+  dificuldade: "muito difícil",
+  pergunta: "Qual alternativa associa corretamente uma medicação para diabetes mellitus ao seu mecanismo principal?",
+  alternativas: {
+    A: "Acarbose — inibição da alfa-glicosidase intestinal, reduzindo absorção de carboidratos complexos.",
+    B: "Metformina — estimulação direta da secreção pancreática de insulina por fechamento de canais KATP.",
+    C: "Sulfonilureias — aumento da excreção urinária de glicose por inibição de SGLT2.",
+    D: "Inibidores de DPP-4 — antagonismo direto do receptor de insulina no tecido adiposo."
+  },
+  resposta: "A",
+  comentario: "Acarbose inibe alfa-glicosidases intestinais, retardando digestão/absorção de carboidratos. Metformina reduz produção hepática de glicose e melhora sensibilidade à insulina; sulfonilureias fecham canais KATP na célula beta; inibidores SGLT2 aumentam glicosúria; inibidores DPP-4 aumentam efeito incretínico.",
+  frase_ouro: "No diabetes, saber a droga é pouco; a prova quer o ponto do metabolismo onde ela aperta."
+},
+{
+  id: "tsa-photo-elite-039",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Obesidade e consciência intraoperatória",
+  tema: "Propofol e redistribuição",
+  area: "Farmacologia",
+  dificuldade: "muito difícil",
+  pergunta: "Paciente com obesidade mórbida recebe dose única de propofol para indução, calculada de forma inadequada, e apresenta sinais de consciência durante período de manipulação de via aérea difícil. Qual fator farmacocinético contribui para esse risco?",
+  alternativas: {
+    A: "Baixa lipossolubilidade do propofol, impedindo distribuição tecidual.",
+    B: "Rápida redistribuição do propofol a partir do compartimento central para tecidos periféricos, podendo reduzir concentração cerebral após bolus isolado.",
+    C: "Ausência de ligação do propofol a proteínas plasmáticas.",
+    D: "Metabolismo exclusivamente renal do propofol, acelerado na obesidade."
+  },
+  resposta: "B",
+  comentario: "Propofol é altamente lipossolúvel e redistribui rapidamente. Em via aérea difícil, se houver intervalo prolongado entre indução e manutenção anestésica adequada, a concentração cerebral pode cair. Em obesos, dose, massa corporal usada no cálculo, débito cardíaco e distribuição devem ser considerados para evitar sub ou superdosagem.",
+  frase_ouro: "Bolus de propofol não compra tempo infinito; via aérea difícil pode durar mais que a hipnose."
+},
+{
+  id: "tsa-photo-elite-040",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Fitoterápicos",
+  tema: "Interações perioperatórias",
+  area: "Medicina Perioperatória",
+  dificuldade: "muito difícil",
+  pergunta: "Qual fitoterápico é classicamente associado a efeito sedativo/ansiolítico, potencialização de depressores do SNC e possível interferência com metabolismo hepático, sendo relevante na avaliação pré-anestésica?",
+  alternativas: {
+    A: "Ephedra.",
+    B: "Valeriana.",
+    C: "Echinacea.",
+    D: "Ginkgo biloba."
+  },
+  resposta: "B",
+  comentario: "Valeriana possui efeito sedativo e pode potencializar depressores do SNC, além de sintomas de abstinência com suspensão abrupta em uso crônico. Ephedra tem ação simpatomimética; ginkgo associa-se a sangramento por efeito plaquetário; echinacea pode ter implicações imunológicas/hepáticas.",
+  frase_ouro: "Fitoterápico também é fármaco; no perioperatório, chá não é sinônimo de inofensivo."
+},
+{
+  id: "tsa-photo-elite-041",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Trauma cranioencefálico pediátrico",
+  tema: "PIC e PPC",
+  area: "Neuroanestesia / Pediatria",
+  dificuldade: "muito difícil",
+  pergunta: "Criança de 4 anos, previamente hígida, vítima de TCE, apresenta Glasgow 8, respiração espontânea e sinais vitais estáveis. Sobre manejo de PIC e pressão de perfusão cerebral nessa faixa etária, assinale a alternativa correta:",
+  alternativas: {
+    A: "Hipotensão deve ser evitada agressivamente, pois reduz PPC e piora lesão secundária.",
+    B: "Cetamina é absolutamente contraindicada em qualquer TCE por aumentar inevitavelmente PIC.",
+    C: "Hiperventilação profilática intensa deve ser mantida por 24 horas em todo TCE moderado.",
+    D: "PPC não tem relevância em crianças, pois a autorregulação cerebral é sempre preservada."
+  },
+  resposta: "A",
+  comentario: "Miller e Yao enfatizam prevenção de lesão cerebral secundária: evitar hipotensão, hipóxia, hipercapnia importante, hipoglicemia/hiperglicemia extrema e hipertermia. Cetamina não é mais considerada absolutamente proibida quando ventilação e hemodinâmica são controladas. Hiperventilação intensa pode causar isquemia cerebral e deve ser reservada para herniação iminente.",
+  frase_ouro: "No TCE pediátrico, a primeira neuroproteção é não deixar cair pressão nem oxigênio."
+},
+{
+  id: "tsa-photo-elite-042",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Anestesia tumescente",
+  tema: "Dose de lidocaína e absorção tardia",
+  area: "Farmacologia / Regional",
+  dificuldade: "muito difícil",
+  pergunta: "Mulher de 70 kg realiza lipoaspiração com solução tumescente contendo lidocaína e epinefrina. Recebe 1.500 mL de solução com concentração total de 400 mg de lidocaína por 500 mL. Permanece assintomática na primeira hora de recuperação. Qual afirmação é mais correta?",
+  alternativas: {
+    A: "A ausência de sintomas na primeira hora exclui toxicidade sistêmica por lidocaína.",
+    B: "A dose total recebida foi 1.200 mg, e a toxicidade pode ser tardia pela absorção lenta do tecido subcutâneo.",
+    C: "Epinefrina acelera absorção sistêmica da lidocaína, antecipando sempre o pico para os primeiros 5 minutos.",
+    D: "Lidocaína tumescente não entra na circulação sistêmica em quantidade relevante."
+  },
+  resposta: "B",
+  comentario: "A solução contém 400 mg/500 mL; em 1.500 mL, a dose total é 1.200 mg. Na anestesia tumescente, a absorção da lidocaína é retardada pelo grande volume subcutâneo e pela epinefrina, com picos tardios. Portanto, observação curta não exclui toxicidade, especialmente com doses altas.",
+  frase_ouro: "Na tumescente, a lidocaína pode cobrar a conta horas depois da sala parecer tranquila."
+},
+{
+  id: "tsa-photo-elite-043",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Anestesia regional pediátrica",
+  tema: "Bloqueio caudal e dose",
+  area: "Pediatria / Regional",
+  dificuldade: "muito difícil",
+  pergunta: "Em criança submetida à correção de hérnia inguinal, planeja-se bloqueio caudal com anestésico local de longa duração. Qual princípio é mais adequado para reduzir risco de toxicidade sistêmica?",
+  alternativas: {
+    A: "Calcular dose total em mg/kg, aspirar, injetar fracionadamente e manter vigilância clínica.",
+    B: "Usar sempre o mesmo volume do adulto, pois o espaço caudal dilui o anestésico.",
+    C: "Ignorar epinefrina teste, pois injeção intravascular caudal é impossível.",
+    D: "Associar múltiplos anestésicos locais em dose máxima de cada um isoladamente."
+  },
+  resposta: "A",
+  comentario: "Em pediatria, dose máxima em mg/kg é crítica. Bloqueios caudais podem ter absorção sistêmica relevante. A injeção deve ser fracionada, com aspiração frequente e monitorização. Quando se combinam anestésicos locais, as toxicidades são aditivas; não se deve usar dose máxima de cada um.",
+  frase_ouro: "Em criança, volume faz bloqueio; mg/kg faz segurança."
+},
+{
+  id: "tsa-photo-elite-044",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Metabolismo e anestesia",
+  tema: "Hipertermia maligna e diagnóstico diferencial",
+  area: "Emergências / Crítico",
+  dificuldade: "muito difícil",
+  pergunta: "Durante anestesia com sevoflurano, paciente apresenta aumento progressivo do EtCO2, taquicardia, rigidez de masseter após succinilcolina e acidose. Temperatura central é 37,8 ºC. Qual interpretação é mais adequada?",
+  alternativas: {
+    A: "Hipertermia maligna só deve ser considerada após temperatura maior que 40 ºC.",
+    B: "O aumento precoce e inexplicado do EtCO2 pode ser sinal inicial de hipertermia maligna, mesmo antes de hipertermia importante.",
+    C: "Rigidez de masseter exclui hipertermia maligna se a temperatura estiver normal.",
+    D: "A conduta inicial deve ser aprofundar sevoflurano para reduzir metabolismo muscular."
+  },
+  resposta: "B",
+  comentario: "Hipertermia pode ser sinal tardio. EtCO2 elevado apesar de ventilação, rigidez, taquicardia, acidose e hipercalemia após exposição a halogenado/succinilcolina são sinais de alerta. O tratamento inclui suspender gatilhos, dantrolene, O2 100%, hiperventilação e correção de complicações.",
+  frase_ouro: "Na hipertermia maligna, o capnógrafo costuma avisar antes do termômetro."
+},
+{
+  id: "tsa-photo-elite-045",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Eletrofisiologia cardíaca",
+  tema: "Marca-passo e eletrocautério",
+  area: "Cardiovascular / Monitorização",
+  dificuldade: "muito difícil",
+  pergunta: "Paciente dependente de marca-passo será submetido a colectomia com cautério monopolar. Após indução, apresenta assistolia por inibição do comando do dispositivo. Qual mecanismo é mais provável?",
+  alternativas: {
+    A: "Interferência eletromagnética interpretada como atividade cardíaca pelo marca-passo, inibindo estímulo.",
+    B: "Bloqueio permanente dos canais de sódio pelo etomidato.",
+    C: "Supressão adrenal aguda impedindo condução atrioventricular.",
+    D: "Aumento da sensibilidade miocárdica ao estímulo elétrico por fentanil."
+  },
+  resposta: "A",
+  comentario: "Interferência eletromagnética por cautério pode ser interpretada pelo dispositivo como atividade cardíaca, levando à inibição de marca-passo em pacientes dependentes. Planejamento envolve avaliação do dispositivo, modo assíncrono quando indicado, desfibrilação externa disponível e posicionamento adequado da placa.",
+  frase_ouro: "No dependente de marca-passo, cautério pode enganar o aparelho e silenciar o estímulo."
+},
+{
+  id: "tsa-photo-elite-046",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Ventilação mecânica",
+  tema: "Auto-PEEP e curva fluxo-tempo",
+  area: "Respiratório / Torácica",
+  dificuldade: "muito difícil",
+  pergunta: "Paciente sob anestesia geral apresenta aumento progressivo da pressão de pico, hipotensão e curva fluxo-tempo mostrando que o fluxo expiratório não retorna a zero antes do próximo ciclo. Qual ajuste ventilatório é mais apropriado?",
+  alternativas: {
+    A: "Aumentar frequência respiratória para eliminar CO2 mais rapidamente.",
+    B: "Aumentar tempo expiratório, reduzindo frequência respiratória e/ou relação I:E.",
+    C: "Aumentar volume corrente para vencer a resistência expiratória.",
+    D: "Reduzir totalmente FiO2 para diminuir aprisionamento aéreo."
+  },
+  resposta: "B",
+  comentario: "Fluxo expiratório que não retorna a zero indica esvaziamento incompleto e auto-PEEP, comum em broncoespasmo/DPOC. Isso aumenta pressão intratorácica, reduz retorno venoso e causa hipotensão. O tratamento ventilatório é aumentar tempo expiratório, reduzir frequência, tratar broncoespasmo e evitar hiperinsuflação.",
+  frase_ouro: "Se o fluxo expiratório não zerou, o próximo volume entra em um pulmão que ainda não esvaziou."
+},
+{
+  id: "tsa-photo-elite-047",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Neuroanestesia",
+  tema: "Monitorização para cirurgia de coluna",
+  area: "Neuroanestesia",
+  dificuldade: "muito difícil",
+  pergunta: "Durante correção de escoliose, queda abrupta de potenciais evocados motores ocorre após manobra cirúrgica. PAM está 58 mmHg, Hb 8 g/dL, temperatura 35 ºC e anestesia inalatória foi aumentada recentemente. Qual conduta inicial é mais apropriada?",
+  alternativas: {
+    A: "Ignorar se os potenciais somatossensoriais ainda estiverem preservados.",
+    B: "Aumentar bloqueador neuromuscular para melhorar qualidade dos potenciais motores.",
+    C: "Corrigir fatores fisiológicos e anestésicos: aumentar PAM, otimizar Hb/oxigenação/temperatura, reduzir interferência anestésica e avisar o cirurgião.",
+    D: "Reduzir PAM para diminuir sangramento medular."
+  },
+  resposta: "C",
+  comentario: "MEP é sensível a isquemia medular, anestésicos, hipotensão, anemia, hipotermia e bloqueio neuromuscular. Queda de sinal exige resposta rápida e coordenada: otimizar perfusão medular e oferta de O2, revisar anestesia e solicitar reversão/pausa de manobra cirúrgica se necessário.",
+  frase_ouro: "Potencial motor que cai é medula pedindo fluxo, oxigênio e menos interferência."
+},
+{
+  id: "tsa-photo-elite-048",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Fisiologia respiratória",
+  tema: "Shunt e relação V/Q",
+  area: "Respiratório / Torácica",
+  dificuldade: "muito difícil",
+  pergunta: "Após extubação, paciente apresenta cianose central, esforço respiratório intenso e tórax silencioso à ausculta. Qual relação ventilação/perfusão melhor explica a hipoxemia se houver obstrução completa de vias aéreas em áreas ainda perfundidas?",
+  alternativas: {
+    A: "V/Q igual a infinito.",
+    B: "V/Q maior que 1.",
+    C: "V/Q aproximadamente zero.",
+    D: "V/Q igual a 1."
+  },
+  resposta: "C",
+  comentario: "Quando uma unidade pulmonar é perfundida, mas não ventilada, a relação V/Q tende a zero, caracterizando shunt. Em espaço morto, ocorre o oposto: ventilação sem perfusão, com V/Q tendendo ao infinito. Obstrução grave de via aérea com perfusão mantida gera shunt e hipoxemia importante.",
+  frase_ouro: "Perfusão sem ventilação é shunt: V/Q caminha para zero."
+},
+{
+  id: "tsa-photo-elite-049",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Dor crônica",
+  tema: "Síndrome dolorosa complexa regional",
+  area: "Regional / Dor",
+  dificuldade: "muito difícil",
+  pergunta: "Mulher de 36 anos apresenta síndrome dolorosa complexa regional em mão esquerda, com dor intensa, alteração vasomotora e alodinia, refratária a tratamento medicamentoso inicial. Como parte de abordagem multimodal, qual bloqueio é mais coerente com a fisiopatologia simpaticamente mantida?",
+  alternativas: {
+    A: "Bloqueio do gânglio estrelado.",
+    B: "Bloqueio do plexo cervical profundo.",
+    C: "Bloqueio do nervo femoral.",
+    D: "Injeção epidural lombar com corticoide."
+  },
+  resposta: "A",
+  comentario: "A síndrome dolorosa complexa regional de membro superior pode ter componente simpaticamente mantido. O bloqueio do gânglio estrelado bloqueia a cadeia simpática cervicotorácica, podendo ser usado como parte de tratamento multimodal. A resposta ajuda inclusive na caracterização do componente simpático.",
+  frase_ouro: "Dor regional complexa na mão com componente simpático aponta para o estrelado, não para o plexo cervical profundo."
+},
+{
+  id: "tsa-photo-elite-050",
+  fonte: "TSA difícil - inspirado / Miller-Yao",
+  capitulo: "Cefaleia pós-punção dural",
+  tema: "Prevenção",
+  area: "Regional / Dor",
+  dificuldade: "muito difícil",
+  pergunta: "Qual medida está associada à redução do risco de cefaleia pós-punção dural em raquianestesia?",
+  alternativas: {
+    A: "Uso preferencial de agulha cortante tipo Quincke de maior calibre.",
+    B: "Inserção de agulha cortante com o bisel paralelo ao eixo longitudinal das fibras durais.",
+    C: "Manutenção obrigatória de decúbito dorsal por 24 horas após punção.",
+    D: "Cafeína profilática rotineira antes da punção."
+  },
+  resposta: "B",
+  comentario: "Agulhas menores e não cortantes reduzem CPPD. Quando se usa agulha cortante, orientar o bisel paralelo às fibras durais longitudinais reduz lesão transversal e vazamento liquórico. Repouso supino prolongado e cafeína profilática não são medidas preventivas consistentes.",
+  frase_ouro: "Na punção dural, tamanho e desenho da agulha importam mais que repouso no leito."
 }
 
 ];
