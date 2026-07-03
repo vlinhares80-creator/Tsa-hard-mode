@@ -1,4 +1,4 @@
-const CACHE_NAME = "tsa-hard-mode-cache-v702";
+const CACHE_NAME = "tsa-hard-mode-cache-v705";
 
 const FILES_TO_CACHE = [
   "./",
