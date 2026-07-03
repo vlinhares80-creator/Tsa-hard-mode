@@ -363,4 +363,93 @@ button:disabled {
   .app-header h1 {
     font-size: 2.4rem;
   }
+  
+  /* =========================
+   TREINAMENTO ORAL
+========================= */
+
+.oral-card {
+  perspective: 1600px;
+  width: 100%;
+  min-height: 620px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.oral-card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 620px;
+  transition: transform 0.55s ease;
+  transform-style: preserve-3d;
+}
+
+.oral-card.flipped .oral-card-inner {
+  transform: rotateY(180deg);
+}
+
+.oral-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  box-shadow: 0 14px 35px rgba(157, 62, 105, 0.12);
+  overflow-y: auto;
+  max-height: 72vh;
+}
+
+.oral-front {
+  background: linear-gradient(180deg, #ffffff 0%, #fff8fb 100%);
+}
+
+.oral-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(180deg, #fff8fb 0%, #ffffff 100%);
+}
+
+.oral-face h2 {
+  color: var(--primary-dark);
+  margin-top: 0;
+}
+
+.oral-face h3 {
+  color: var(--primary-dark);
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.oral-face p {
+  line-height: 1.55;
+}
+
+.oral-face ul {
+  padding-left: 20px;
+  line-height: 1.55;
+}
+
+.oral-deep-item {
+  background: #f8e8ef;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.oral-deep-item strong {
+  color: var(--primary-dark);
+}
+
+.oral-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 700px) {
+  .oral-actions {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
