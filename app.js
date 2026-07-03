@@ -912,51 +912,90 @@ function shuffleOralCards() {
 ========================= */
 
 function registerEvents() {
-  els.start10Btn.addEventListener("click", () => startQuiz(10));
-  els.start20Btn.addEventListener("click", () => startQuiz(20));
-  els.reviewBtn.addEventListener("click", startReview);
-  els.statsBtn.addEventListener("click", () => showScreen("stats"));
-  els.resetBtn.addEventListener("click", resetProgress);
+  if (els.start10Btn) {
+    els.start10Btn.addEventListener("click", () => startQuiz(10));
+  }
 
-  els.backHomeBtn.addEventListener("click", () => showScreen("home"));
-  els.nextBtn.addEventListener("click", nextQuestion);
-  els.finishBtn.addEventListener("click", finishSession);
+  if (els.start20Btn) {
+    els.start20Btn.addEventListener("click", () => startQuiz(20));
+  }
 
-  els.new10Btn.addEventListener("click", () => startQuiz(10));
-  els.new20Btn.addEventListener("click", () => startQuiz(20));
-  els.resultReviewBtn.addEventListener("click", startReview);
-  els.resultStatsBtn.addEventListener("click", () => showScreen("stats"));
-  els.resultHomeBtn.addEventListener("click", () => showScreen("home"));
+  if (els.reviewBtn) {
+    els.reviewBtn.addEventListener("click", startReview);
+  }
 
-  els.statsBackBtn.addEventListener("click", () => showScreen("home"));
+  if (els.statsBtn) {
+    els.statsBtn.addEventListener("click", () => showScreen("stats"));
+  }
 
-if (els.oralBtn) {
-  els.oralBtn.addEventListener("click", startOralTraining);
-}
+  if (els.resetBtn) {
+    els.resetBtn.addEventListener("click", resetProgress);
+  }
 
-if (els.oralBackBtn) {
-  els.oralBackBtn.addEventListener("click", () => showScreen("home"));
-}
+  if (els.backHomeBtn) {
+    els.backHomeBtn.addEventListener("click", () => showScreen("home"));
+  }
 
-if (els.oralFlipBtn) {
-  els.oralFlipBtn.addEventListener("click", flipOralCard);
-}
+  if (els.nextBtn) {
+    els.nextBtn.addEventListener("click", nextQuestion);
+  }
 
-if (els.oralNextBtn) {
-  els.oralNextBtn.addEventListener("click", nextOralCard);
-}
+  if (els.finishBtn) {
+    els.finishBtn.addEventListener("click", finishSession);
+  }
 
-if (els.oralPrevBtn) {
-  els.oralPrevBtn.addEventListener("click", prevOralCard);
-}
+  if (els.new10Btn) {
+    els.new10Btn.addEventListener("click", () => startQuiz(10));
+  }
 
-if (els.oralShuffleBtn) {
-  els.oralShuffleBtn.addEventListener("click", shuffleOralCards);
+  if (els.new20Btn) {
+    els.new20Btn.addEventListener("click", () => startQuiz(20));
+  }
+
+  if (els.resultReviewBtn) {
+    els.resultReviewBtn.addEventListener("click", startReview);
+  }
+
+  if (els.resultStatsBtn) {
+    els.resultStatsBtn.addEventListener("click", () => showScreen("stats"));
+  }
+
+  if (els.resultHomeBtn) {
+    els.resultHomeBtn.addEventListener("click", () => showScreen("home"));
+  }
+
+  if (els.statsBackBtn) {
+    els.statsBackBtn.addEventListener("click", () => showScreen("home"));
+  }
+
+  if (els.oralBtn) {
+    els.oralBtn.addEventListener("click", startOralTraining);
+  }
+
+  if (els.oralBackBtn) {
+    els.oralBackBtn.addEventListener("click", () => showScreen("home"));
+  }
+
+  if (els.oralFlipBtn) {
+    els.oralFlipBtn.addEventListener("click", flipOralCard);
+  }
+
+  if (els.oralNextBtn) {
+    els.oralNextBtn.addEventListener("click", nextOralCard);
+  }
+
+  if (els.oralPrevBtn) {
+    els.oralPrevBtn.addEventListener("click", prevOralCard);
+  }
+
+  if (els.oralShuffleBtn) {
+    els.oralShuffleBtn.addEventListener("click", shuffleOralCards);
+  }
 }
 
 function registerServiceWorker() {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js?v=310").catch((error) => {
+    navigator.serviceWorker.register("sw.js?v=703").catch((error) => {
       console.warn("Service worker não registrado:", error);
     });
   }
