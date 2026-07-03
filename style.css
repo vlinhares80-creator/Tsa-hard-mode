@@ -452,4 +452,57 @@ button:disabled {
   .oral-actions {
     grid-template-columns: repeat(4, 1fr);
   }
+  /* Correção flashcard oral - versão estável */
+
+.oral-card {
+  width: 100%;
+  margin-top: 16px;
+  cursor: default;
+}
+
+.oral-card-inner {
+  width: 100%;
+}
+
+.oral-face {
+  display: block;
+  position: relative;
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  box-shadow: 0 14px 35px rgba(157, 62, 105, 0.12);
+  max-height: none;
+  overflow: visible;
+}
+
+.oral-back {
+  display: none;
+  transform: none !important;
+}
+
+.oral-card.show-answer .oral-front {
+  display: none;
+}
+
+.oral-card.show-answer .oral-back {
+  display: block;
+}
+
+.oral-card.flipped .oral-card-inner {
+  transform: none !important;
+}
+
+.oral-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+@media (min-width: 700px) {
+  .oral-actions {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 }
