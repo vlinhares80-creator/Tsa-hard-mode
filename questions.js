@@ -10350,4 +10350,765 @@ const QUESTIONS = [
   comentario: "A antiga contraindicação absoluta da cetamina no TCE foi relativizada. Em paciente hipovolêmico, preservar pressão arterial pode ser mais importante para CPP do que uma preocupação teórica isolada com PIC. Hipóxia e hipotensão são os grandes vilões. Propofol pode reduzir PIC, mas bolus em choque pode derrubar PAM e CPP.",
   frase_ouro: "No TCE chocado, o cérebro prefere uma cetamina com pressão a um propofol elegante com hipotensão."
 }
+  ,
+{
+  id: "tsa-ultra-601",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Farmacologia dos opioides",
+  tema: "Meia-vida contexto-sensível",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente de 62 anos será submetido a uma ressecção craniofacial com duração estimada de 9 horas. A equipe deseja despertar neurológico rápido ao final para avaliação motora e pares cranianos. Durante o planejamento, discute-se analgesia intraoperatória contínua com remifentanil, sufentanil ou fentanil. Considerando farmacocinética dos opioides em infusão prolongada, qual alternativa representa a melhor interpretação?",
+  alternativas: {
+    A: "O fentanil é preferível ao remifentanil porque sua meia-vida de eliminação é menor que a do sufentanil, determinando recuperação mais rápida após infusões longas.",
+    B: "O sufentanil sempre apresenta despertar mais lento que o fentanil, pois sua meia-vida terminal é maior e isso define diretamente o tempo de recuperação clínica.",
+    C: "O remifentanil é o mais previsível para despertar rápido, pois sua depuração por esterases inespecíficas torna sua meia-vida contexto-sensível praticamente independente da duração da infusão.",
+    D: "O alfentanil é sempre superior ao sufentanil em infusões longas porque tem menor meia-vida de eliminação e menor volume de distribuição.",
+    E: "A escolha do opioide é irrelevante se houver suspensão 30 minutos antes do fim, pois todos os opioides sintéticos têm queda plasmática semelhante após infusão prolongada."
+  },
+  resposta: "C",
+  comentario: "A questão tenta te empurrar para a armadilha clássica: confundir meia-vida de eliminação com meia-vida contexto-sensível. Em anestesia venosa, especialmente após infusões longas, o que importa clinicamente não é apenas a eliminação final do fármaco, mas quanto tempo a concentração efetiva leva para cair depois que a infusão é interrompida. O remifentanil é metabolizado rapidamente por esterases plasmáticas e teciduais inespecíficas, o que faz sua recuperação ser pouco dependente do tempo de infusão. Fentanil, embora familiar e potente, acumula em compartimentos periféricos; após infusões prolongadas, retorna ao plasma e prolonga a recuperação. Sufentanil pode ter comportamento mais favorável que fentanil em algumas durações de infusão por diferenças de distribuição, apesar de meia-vida terminal maior. Moral da história: quem responde só pela meia-vida terminal cai na casca de banana da farmacocinética.",
+  frase_ouro: "Em infusão contínua, quem manda no despertar não é a meia-vida terminal isolada: é o contexto."
+},
+{
+  id: "tsa-ultra-602",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Modelos farmacocinéticos",
+  tema: "TCI e concentração-alvo",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Homem de 84 anos, 54 kg, frágil, será submetido à correção de aneurisma endovascular sob anestesia venosa total. A bomba de infusão alvo-controlada é programada para concentração no sítio efetor de propofol usando dados de idade, sexo, peso e altura. Após bolus inicial calculado pelo modelo, ocorre hipotensão importante e eletroencefalograma processado sugere anestesia excessiva. Qual interpretação é mais adequada?",
+  alternativas: {
+    A: "A bomba alvo-controlada mede continuamente a concentração cerebral real; portanto, hipotensão não pode ser atribuída a excesso de propofol se o alvo estava adequado.",
+    B: "Modelos alvo-controlados estimam concentrações plasmáticas ou de sítio efetor com base em populações e covariáveis, mas não substituem titulação clínica individual, especialmente em idosos frágeis.",
+    C: "A concentração de sítio efetor é sempre menor que a plasmática durante toda a anestesia, logo não há risco de sobredose inicial quando se escolhe alvo no efeito.",
+    D: "A fragilidade modifica apenas farmacocinética renal, sem relevância para propofol, pois sua eliminação é predominantemente hepática.",
+    E: "A hipotensão sugere obrigatoriamente hipovolemia, porque modelos de propofol são suficientemente precisos para excluir efeito farmacodinâmico excessivo."
+  },
+  resposta: "B",
+  comentario: "A TCI é ferramenta elegante, mas não é clarividência farmacológica. Ela usa modelos derivados de populações e estima concentração plasmática ou no sítio efetor; não mede a concentração real no cérebro. Idosos frágeis têm menor reserva fisiológica, maior sensibilidade farmacodinâmica a hipnóticos, menor resposta barorreflexa e frequentemente menor volume central efetivo. Mesmo que o modelo inclua idade e composição corporal, existe variabilidade individual. A concentração-alvo deve ser ponto de partida, não ordem divina. No TSA Ultra, a resposta inteligente é reconhecer a utilidade da tecnologia e, ao mesmo tempo, seus limites.",
+  frase_ouro: "TCI estima; o paciente confirma ou desmente."
+},
+{
+  id: "tsa-ultra-603",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Farmacologia dos hipnóticos",
+  tema: "Cetamina no choque",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente de 71 anos com sepse abdominal grave, lactato 6,2 mmol/L, noradrenalina em dose alta e ecocardiografia mostrando ventrículo esquerdo hipocinético será induzido para laparotomia. Um residente sugere cetamina em dose plena porque ela sempre aumenta pressão arterial. Qual alternativa é a melhor?",
+  alternativas: {
+    A: "A cetamina é sempre o hipnótico mais seguro no choque, pois sua ação simpaticomimética independe do estado catecolaminérgico do paciente.",
+    B: "A cetamina deve ser evitada em todos os pacientes sépticos porque aumenta invariavelmente a pressão intracraniana e a resistência vascular pulmonar.",
+    C: "A cetamina pode preservar pressão arterial por estímulo simpático, mas em paciente catecolamina-depletado ou com disfunção miocárdica seu efeito depressor direto pode se manifestar.",
+    D: "A cetamina não tem efeito cardiovascular direto; todas as alterações hemodinâmicas são mediadas exclusivamente por liberação de adrenalina pela medula adrenal.",
+    E: "A cetamina é contraindicada se o paciente usa noradrenalina, pois há interação farmacológica que bloqueia receptores alfa-adrenérgicos."
+  },
+  resposta: "C",
+  comentario: "A cetamina é muito útil, mas não é amuleto contra hipotensão. Ela tem efeito simpatomimético indireto, aumentando tônus adrenérgico e podendo elevar frequência cardíaca, pressão arterial e débito cardíaco. Porém, o fármaco também possui efeito depressor miocárdico direto. Em pacientes criticamente doentes, sépticos, acidóticos, catecolamina-depletados ou com miocárdio já deprimido, o componente indireto pode ser insuficiente para mascarar a depressão direta. Portanto, a indução deve ser titulada, com vasopressores prontos, cálcio se indicado, correção de acidose/hipocalcemia e plano de ventilação que não destrua retorno venoso. Questão de prova boa adora transformar 'costuma aumentar pressão' em 'sempre aumenta pressão'. Aí mora o crime.",
+  frase_ouro: "Cetamina ajuda no choque, mas não ressuscita fisiologia quebrada no grito."
+},
+{
+  id: "tsa-ultra-604",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Farmacologia dos hipnóticos",
+  tema: "Etomidato e adrenal",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Homem de 59 anos com choque séptico por pneumonia necrosante, já em noradrenalina, necessita intubação orotraqueal na emergência. O plantonista considera etomidato pela estabilidade cardiovascular. Sobre esse cenário, assinale a alternativa mais correta.",
+  alternativas: {
+    A: "Etomidato é ideal no choque séptico porque não interfere na resposta adrenal e preserva completamente a síntese de cortisol.",
+    B: "Etomidato pode produzir estabilidade hemodinâmica relativa na indução, mas inibe enzimas da esteroidogênese adrenal, devendo ser usado com ponderação no choque séptico.",
+    C: "A supressão adrenal pelo etomidato só ocorre após infusão contínua por mais de 24 horas, nunca após dose única de indução.",
+    D: "Etomidato é contraindicado em qualquer paciente instável, pois causa liberação maciça de histamina e vasoplegia imediata.",
+    E: "A principal limitação do etomidato na sepse é depressão respiratória prolongada por metabólitos ativos renais."
+  },
+  resposta: "B",
+  comentario: "Etomidato é tentador no paciente instável porque costuma causar menor queda pressórica que propofol ou tiopental. Só que cobra pedágio na adrenal: inibe enzimas envolvidas na síntese de cortisol, especialmente a 11-beta-hidroxilase. A supressão pode ocorrer mesmo após dose única, embora a tradução clínica em mortalidade seja debatida. Em choque séptico grave, justamente quando o organismo depende de resposta corticosteroide ao estresse, isso importa. A resposta madura não é 'nunca use' nem 'use sempre'; é reconhecer risco, benefício, alternativas e contexto. Se usado, o paciente deve ser acompanhado quanto à necessidade de corticosteroide no choque refratário.",
+  frase_ouro: "Etomidato preserva pressão na porta de entrada, mas pode cobrar na adrenal depois."
+},
+{
+  id: "tsa-ultra-605",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Sedativos e agonistas alfa-2",
+  tema: "Dexmedetomidina",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente de 77 anos, com bloqueio atrioventricular de primeiro grau, estenose aórtica moderada e uso crônico de betabloqueador, recebe dose de ataque de dexmedetomidina para sedação em bloqueio regional. Dez minutos depois apresenta pressão arterial de 196/92 mmHg, frequência cardíaca de 38/min e sonolência, mantendo ventilação espontânea. Qual explicação é mais adequada?",
+  alternativas: {
+    A: "A hipertensão inicial exclui relação com dexmedetomidina, pois agonistas alfa-2 causam apenas hipotensão por ação central.",
+    B: "O quadro pode decorrer de ação periférica alfa-2B com vasoconstrição inicial, associada a bradicardia por redução simpática e aumento vagal, especialmente em paciente vulnerável.",
+    C: "A dexmedetomidina causa depressão respiratória intensa antes de efeitos hemodinâmicos; a ventilação preservada afasta toxicidade.",
+    D: "O fármaco é contraindicado apenas em pacientes com bloqueio atrioventricular total; bloqueios menores não alteram risco.",
+    E: "A conduta correta é administrar nova dose de ataque para compensar a hipertensão reflexa e estabilizar o sistema nervoso autônomo."
+  },
+  resposta: "B",
+  comentario: "Dexmedetomidina é sedativo bonito no papel: sedação cooperativa, pouca depressão ventilatória e analgesia discreta. Mas no mundo real ela mexe com o sistema nervoso autônomo como quem mexe em bomba de infusão no escuro. Pode haver hipertensão transitória por ativação periférica alfa-2B, especialmente com bolus rápido, seguida ou acompanhada de bradicardia e hipotensão por ação central simpaticolítica. Idoso, betabloqueio, distúrbio de condução e valvopatia aumentam risco de bradicardia clinicamente relevante. Não confunda 'pouca depressão respiratória' com 'sedação sem risco'.",
+  frase_ouro: "Dexmedetomidina respira bem, mas pode frear o nó sinusal sem pedir licença."
+},
+{
+  id: "tsa-ultra-606",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Anestésicos locais",
+  tema: "pH, ionização e falha de bloqueio",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Mulher de 44 anos com abscesso axilar extenso será submetida à drenagem. Infiltração local com lidocaína aparentemente em dose adequada produz analgesia muito incompleta, apesar de aguardar tempo suficiente. Qual alternativa melhor explica o fenômeno?",
+  alternativas: {
+    A: "O tecido infectado aumenta o pH local, tornando a lidocaína mais ionizada e menos capaz de bloquear canais de sódio.",
+    B: "O tecido infectado reduz o pH local, aumentando a fração ionizada do anestésico local e reduzindo a quantidade de base não ionizada que atravessa a membrana neural.",
+    C: "A infecção aumenta a ligação proteica da lidocaína, impedindo sua metabolização hepática e encurtando a duração do bloqueio.",
+    D: "A lidocaína só funciona em nervos mielinizados, e fibras nociceptivas de abscessos são exclusivamente amielínicas.",
+    E: "A falha ocorre porque anestésicos locais bloqueiam canais de cálcio, que são inativados pelo ambiente purulento."
+  },
+  resposta: "B",
+  comentario: "Anestésico local precisa atravessar a membrana neural na forma base não ionizada; dentro do axoplasma, a forma ionizada é a que interage melhor com o canal de sódio. Em tecido infectado, o pH baixo desloca o equilíbrio para a forma ionizada fora do nervo. Resultado: menos moléculas atravessam a membrana, e o bloqueio falha ou fica incompleto. A prova pode temperar isso com 'dose adequada' para ver se você entende que o problema não é só quantidade, mas distribuição química. Alcalinização com bicarbonato pode acelerar início em algumas situações, mas não transforma pus em ambiente ideal para anestesia local.",
+  frase_ouro: "No abscesso, o anestésico local chega carregado demais para atravessar a porta."
+},
+{
+  id: "tsa-ultra-607",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Toxicidade por anestésico local",
+  tema: "LAST e fatores agravantes",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Gestante de 36 semanas recebe dose epidural fracionada para analgesia de parto. Após uma fração adicional, apresenta zumbido, gosto metálico, agitação, convulsão e, em seguida, taquicardia ventricular. A gasometria mostra acidose respiratória importante por hipoventilação durante a crise. Sobre a toxicidade sistêmica por anestésico local, assinale a melhor alternativa.",
+  alternativas: {
+    A: "A acidose reduz a toxicidade cardíaca dos anestésicos locais ao diminuir a fração livre plasmática.",
+    B: "A gestação protege contra toxicidade sistêmica porque aumenta o volume de distribuição plasmático dos anestésicos locais.",
+    C: "Hipóxia, hipercarbia e acidose agravam a toxicidade, e o tratamento exige ventilação adequada, controle de convulsão e emulsão lipídica em toxicidade grave.",
+    D: "A prioridade é cardioversão imediata; ventilação e oxigenação são secundárias porque a toxicidade é exclusivamente elétrica.",
+    E: "A emulsão lipídica é reservada apenas para toxicidade por lidocaína, não tendo papel em bupivacaína ou ropivacaína."
+  },
+  resposta: "C",
+  comentario: "A toxicidade por anestésico local é uma emergência de neurologia, cardiologia e ventilação ao mesmo tempo. Hipóxia, hipercarbia e acidose pioram ligação do anestésico ao canal de sódio e reduzem reserva cardiovascular; por isso ventilar bem não é detalhe, é tratamento. Gestação aumenta vulnerabilidade por alterações fisiológicas, maior sensibilidade neural e cardiovascular e ingurgitamento venoso epidural, que pode aumentar risco de injeção intravascular. A emulsão lipídica deve ser acionada precocemente em toxicidade grave, especialmente com instabilidade cardiovascular. Questão boa não quer só 'lipídio'; quer saber que oxigênio e ventilação salvam o lipídio de trabalhar sozinho.",
+  frase_ouro: "Na LAST, acidose é gasolina no incêndio do canal de sódio."
+},
+{
+  id: "tsa-ultra-608",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Bloqueadores neuromusculares",
+  tema: "Sugamadex e insuficiência renal",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com doença renal crônica terminal em hemodiálise será submetido à cirurgia abdominal urgente. Durante o caso recebe rocurônio em doses repetidas e, ao final, apresenta bloqueio profundo com contagem pós-tetânica baixa. A equipe sugere neostigmina em dose alta para evitar uso de sugamadex por insuficiência renal. Qual conduta conceitual é mais correta?",
+  alternativas: {
+    A: "Neostigmina em dose alta reverte com segurança qualquer profundidade de bloqueio aminosteroidal, desde que associada à atropina.",
+    B: "Sugamadex encapsula rocurônio, mas o complexo é eliminado predominantemente por via renal; em insuficiência renal grave, seu uso exige ponderação, monitorização e conhecimento do risco de exposição prolongada.",
+    C: "Rocurônio é completamente metabolizado por esterases plasmáticas, portanto a insuficiência renal não altera a duração de bloqueio.",
+    D: "Em bloqueio profundo, a melhor estratégia é extubar acordado e observar, porque estímulo cirúrgico residual mantém ventilação espontânea.",
+    E: "A presença de insuficiência renal contraindica qualquer monitorização quantitativa, pois o trem de quatro perde validade."
+  },
+  resposta: "B",
+  comentario: "Neostigmina tem teto: ela aumenta acetilcolina na junção neuromuscular, mas não derrota bloqueio profundo sem recuperação espontânea mínima. Sugamadex age de forma diferente, encapsulando rocurônio e vecurônio, o que o torna muito eficaz mesmo em bloqueios mais profundos. O problema no renal crônico é que o complexo sugamadex-rocurônio depende de eliminação renal, podendo permanecer por mais tempo. A questão não é decorar 'pode' ou 'não pode', e sim demonstrar pensamento: profundidade do bloqueio, risco de ventilação inadequada, monitorização quantitativa, possibilidade de manter intubado e risco-benefício do sugamadex. Extubação sem recuperação documentada é pedir para o plantão virar churrasco de receptor nicotínico.",
+  frase_ouro: "Neostigmina não é retroescavadeira: não tira paciente de bloqueio profundo."
+},
+{
+  id: "tsa-ultra-609",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Reversão neuromuscular",
+  tema: "Neostigmina e bloqueio residual",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Ao final de colecistectomia videolaparoscópica, paciente apresenta relação do trem de quatro de 0,92 medida quantitativamente. Um colega sugere neostigmina para 'garantir' recuperação completa. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "Neostigmina deve ser usada sempre que houver qualquer bloqueador neuromuscular no intraoperatório, independentemente do trem de quatro.",
+    B: "Neostigmina em paciente praticamente recuperado pode produzir fraqueza paradoxal por excesso colinérgico na junção neuromuscular e não deve ser usada de forma automática.",
+    C: "Relação do trem de quatro acima de 0,7 exclui qualquer risco respiratório, logo a monitorização quantitativa é desnecessária.",
+    D: "Neostigmina não tem efeitos muscarínicos relevantes quando usada com glicopirrolato ou atropina.",
+    E: "A reversão farmacológica substitui avaliação clínica, capnografia e força ventilatória no momento da extubação."
+  },
+  resposta: "B",
+  comentario: "A reversão deve ser proporcional ao bloqueio existente. Neostigmina é útil quando ainda há bloqueio recuperável, mas não deve ser aplicada como água benta no final do caso. Em paciente com recuperação quase completa, excesso de acetilcolina pode prejudicar transmissão neuromuscular e gerar fraqueza, além de efeitos muscarínicos. A meta moderna é monitorização quantitativa e relação do trem de quatro idealmente igual ou superior a 0,9, mas o contexto clínico permanece essencial. O erro de prova é achar que 'mais reversor' sempre significa 'mais força'. Não significa.",
+  frase_ouro: "Reversor demais também pode atrapalhar; receptor não gosta de zelo histérico."
+},
+{
+  id: "tsa-ultra-610",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Anestésicos inalatórios",
+  tema: "MAC e modificadores",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente de 72 anos, hipotérmico, em uso de remifentanil, será mantido com sevoflurano durante laparotomia. Um residente observa que a concentração expirada está abaixo de 1 MAC adulto e conclui que o paciente está superficial. Qual alternativa interpreta melhor o conceito de MAC nesse cenário?",
+  alternativas: {
+    A: "MAC é concentração cerebral medida diretamente, invariável entre pacientes e independente de idade, temperatura ou fármacos associados.",
+    B: "Idade avançada, hipotermia e opioides reduzem a necessidade de anestésico inalatório; portanto, uma fração expirada aparentemente baixa pode ser clinicamente adequada.",
+    C: "Opioides aumentam MAC dos halogenados porque reduzem estímulo cirúrgico e exigem maior hipnose.",
+    D: "Hipotermia aumenta MAC por reduzir metabolismo hepático dos anestésicos inalatórios.",
+    E: "MAC se aplica apenas a óxido nitroso e não deve ser usado para halogenados modernos."
+  },
+  resposta: "B",
+  comentario: "MAC é uma medida populacional: concentração alveolar que impede movimento em resposta a estímulo cirúrgico em 50% dos indivíduos. Ela não é medidor individual de consciência e muda com idade, temperatura, gestação e coadministração de outros fármacos. Idoso precisa de menos halogenado; hipotermia reduz MAC; opioides reduzem resposta motora e necessidade de agente inalatório para imobilidade. A fração expirada ajuda muito, mas deve ser interpretada com idade e contexto farmacológico. A pergunta é maldosa porque coloca um número bonito na tela e espera que você esqueça o paciente em volta.",
+  frase_ouro: "MAC é mapa populacional, não GPS absoluto do córtex."
+},
+{
+  id: "tsa-ultra-611",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Captação dos anestésicos inalatórios",
+  tema: "Débito cardíaco e FA/FI",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Homem de 68 anos com choque cardiogênico, em dobutamina e noradrenalina, recebe desflurano após indução. Mesmo com ajuste baixo no vaporizador, a fração alveolar sobe rapidamente e ocorre hipotensão acentuada. Qual alternativa explica melhor o fenômeno?",
+  alternativas: {
+    A: "Baixo débito cardíaco aumenta a captação pulmonar do anestésico, retardando a elevação da fração alveolar.",
+    B: "Baixo débito cardíaco reduz a remoção do anestésico dos alvéolos pelo sangue, fazendo a fração alveolar subir mais rapidamente em direção à inspirada.",
+    C: "A velocidade de aumento da fração alveolar depende apenas da solubilidade sangue-gás, não sendo influenciada por débito cardíaco.",
+    D: "A hipotensão exclui sobredose relativa de halogenado, pois anestésicos inalatórios não deprimem miocárdio em choque.",
+    E: "Desflurano não sofre influência de alterações hemodinâmicas por ter baixa solubilidade."
+  },
+  resposta: "B",
+  comentario: "Em baixo débito, menos sangue passa pelos pulmões retirando anestésico dos alvéolos. Assim, a razão fração alveolar/fração inspirada aumenta mais rápido. Isso acelera equilíbrio com o cérebro e pode causar efeito anestésico mais intenso que o esperado para o dial. Em paciente cardiogênico, pequenas mudanças na vasodilatação, contratilidade e frequência podem derrubar a hemodinâmica. Alta solubilidade torna esse efeito mais dramático, mas mesmo agentes pouco solúveis devem ser titulados com respeito em baixo débito. Aqui a fisiologia dá rasteira: menos circulação pode significar mais anestésico no alvéolo e no cérebro, não menos.",
+  frase_ouro: "No baixo débito, o alvéolo enche rápido e a pressão cai mais rápido ainda."
+},
+{
+  id: "tsa-ultra-612",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Óxido nitroso",
+  tema: "Cavidades fechadas e difusão",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente politraumatizado será submetido à laparotomia exploradora. A tomografia mostra pequeno pneumotórax não drenado e há suspeita de pneumoencéfalo discreto. Durante a indução, cogita-se óxido nitroso para reduzir consumo de halogenado. Qual alternativa é a melhor?",
+  alternativas: {
+    A: "Óxido nitroso é seguro em pneumotórax pequeno, pois sua baixa solubilidade impede difusão para cavidades fechadas.",
+    B: "Óxido nitroso deve ser evitado, pois difunde-se para cavidades fechadas contendo ar mais rapidamente do que o nitrogênio sai, podendo expandi-las.",
+    C: "Óxido nitroso reduz volume de cavidades aéreas por substituir nitrogênio por moléculas menores.",
+    D: "O risco existe apenas em alças intestinais, não em pneumotórax, ouvido médio, balões ou pneumoencéfalo.",
+    E: "A contraindicação depende apenas da fração inspirada; abaixo de 50%, não há expansão clinicamente relevante."
+  },
+  resposta: "B",
+  comentario: "Óxido nitroso difunde-se para espaços fechados com ar com rapidez maior que a saída do nitrogênio. Isso pode expandir pneumotórax, pneumoencéfalo, bolhas pulmonares, alças obstruídas, ouvido médio e balões de dispositivos. Em trauma, onde diagnósticos podem estar incompletos e a fisiologia muda rápido, o benefício de reduzir halogenado raramente justifica o risco. A alternativa correta mostra entendimento de difusão, não medo irracional do gás. Em prova, quando aparecer cavidade fechada com ar, o óxido nitroso entra na lista dos convidados que devem ficar do lado de fora.",
+  frase_ouro: "Óxido nitroso adora cavidade fechada; por isso o anestesista deve odiar esse encontro."
+},
+{
+  id: "tsa-ultra-613",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Aparelho de anestesia",
+  tema: "Crossover de gases e fail-safe",
+  area: "Aparelhos de anestesia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Durante anestesia geral em sala recém-reformada, o analisador de gases mostra fração inspirada de oxigênio de 12%, apesar do fluxômetro de oxigênio indicar 3 L/min. A pressão da rede de oxigênio no aparelho está aparentemente normal e o alarme de baixa pressão de oxigênio não dispara. Qual é a explicação e conduta mais adequada?",
+  alternativas: {
+    A: "O sistema fail-safe garante concentração mínima de oxigênio; portanto, o analisador deve estar errado e a anestesia pode continuar.",
+    B: "Pode haver crossover ou contaminação da tubulação com gás não oxigênio; deve-se abrir cilindro reserva de oxigênio, desconectar a rede e ventilar com fonte segura.",
+    C: "O problema é incompatível com crossover, pois a pressão normal da rede exclui fornecimento de gás errado.",
+    D: "Deve-se aumentar o fluxo de óxido nitroso para reativar o sistema proporcional de segurança.",
+    E: "A válvula de flush de oxigênio corrige definitivamente qualquer problema de composição do gás da rede."
+  },
+  resposta: "B",
+  comentario: "O fail-safe clássico responde à pressão de oxigênio, não à identidade molecular do gás. Se a tubulação de oxigênio estiver pressurizada com gás errado, o aparelho pode achar que está tudo bem. O único monitor que realmente informa a fração entregue de oxigênio é o analisador de oxigênio no circuito. A conduta é tratar como falha/contaminação de rede: abrir cilindro de oxigênio reserva, desconectar suprimento da parede, ventilar com oxigênio confiável e considerar bolsa autoinflável com fonte independente. Essa é questão de aparelho que derruba quem acredita demais na máquina e pouco no analisador.",
+  frase_ouro: "Fail-safe lê pressão; quem lê oxigênio é o analisador."
+},
+{
+  id: "tsa-ultra-614",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Aparelho de anestesia",
+  tema: "Cilindro E de oxigênio",
+  area: "Aparelhos de anestesia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Na checagem matinal, o anestesiologista percebe que o cilindro E de oxigênio do aparelho estava aberto desde o plantão anterior. A rede central funciona com pressão normal. Qual é o maior risco de manter o cilindro aberto durante operação rotineira?",
+  alternativas: {
+    A: "O aparelho passará a consumir exclusivamente o cilindro, esvaziando-o rapidamente mesmo com rede central normal.",
+    B: "O cilindro aberto pode mascarar falha catastrófica da rede, retardando o alarme de baixa pressão até que o cilindro esteja depletado.",
+    C: "A presença do cilindro aberto aumenta automaticamente a fração inspirada de oxigênio para 100%, causando atelectasia.",
+    D: "O cilindro aberto desativa o vaporizador e causa consciência intraoperatória.",
+    E: "O cilindro aberto impede funcionamento do fluxômetro de ar comprimido."
+  },
+  resposta: "B",
+  comentario: "Em condições normais, a máquina tende a usar a rede central, pois sua pressão é adequada. O perigo do cilindro aberto é outro: se a rede falhar, o cilindro já aberto mantém pressão no sistema por algum tempo, mascarando a falha. O alarme de baixa pressão pode só aparecer quando o cilindro estiver quase vazio ou vazio — exatamente quando você mais precisaria dele. Por isso, cilindro reserva deve estar presente, cheio o suficiente e fechado durante uso rotineiro, pronto para ser aberto na falha da rede. É aquela coisa: reserva aberta não é reserva, é spoiler de desastre.",
+  frase_ouro: "Cilindro reserva aberto é guarda-chuva furado antes da tempestade."
+},
+{
+  id: "tsa-ultra-615",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Aparelho de anestesia",
+  tema: "Flush de oxigênio",
+  area: "Aparelhos de anestesia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Durante anestesia pediátrica em ventilador mecânico antigo, o residente aciona repetidamente o flush de oxigênio durante a fase inspiratória para corrigir dessaturação. Em seguida, a pressão de via aérea sobe abruptamente. Qual alternativa é mais correta?",
+  alternativas: {
+    A: "O flush de oxigênio passa obrigatoriamente pelo vaporizador, aumentando anestesia e reduzindo risco de consciência.",
+    B: "O flush fornece alto fluxo diretamente ao circuito comum, podendo causar barotrauma em máquinas antigas e também diluir anestésico inalatório.",
+    C: "O flush de oxigênio reduz pressão no circuito porque aspira gás expirado para o sistema antipoluição.",
+    D: "O risco existe apenas em adultos, pois circuitos pediátricos têm alta complacência protetora.",
+    E: "Em qualquer aparelho moderno ou antigo, o flush durante inspiração é completamente inofensivo devido aos sistemas proporcionais."
+  },
+  resposta: "B",
+  comentario: "A válvula de flush entrega alto fluxo de oxigênio diretamente ao circuito, geralmente contornando vaporizadores. Em máquinas antigas, acioná-la durante a inspiração mecânica pode somar fluxo ao volume entregue e causar barotrauma, especialmente em crianças. Além disso, ao passar fora do vaporizador, pode reduzir concentração inspirada do anestésico, contribuindo para anestesia mais superficial se usado repetidamente. Workstations modernas têm recursos como desacoplamento de gás fresco ou limitadores de pressão, mas não é licença para apertar botão azul como videogame. Primeiro corrija causa de dessaturação; flush é ferramenta, não reflexo patelar.",
+  frase_ouro: "Flush de oxigênio não é botão de pânico sem custo."
+},
+{
+  id: "tsa-ultra-616",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Aparelho de anestesia",
+  tema: "Vazamento de baixa pressão",
+  area: "Aparelhos de anestesia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Em anestesia com sevoflurano, paciente apresenta movimento e aumento de pressão arterial apesar de vaporizador ligado em concentração adequada. O analisador mostra fração expirada muito menor que a ajustada. O teste automático do aparelho pela manhã havia sido aprovado. Qual hipótese deve ser valorizada?",
+  alternativas: {
+    A: "Vazamento no sistema de baixa pressão, inclusive no vaporizador ou conexões até a saída comum de gases, que pode não ser detectado por alguns testes automáticos.",
+    B: "Falha do sistema de alta pressão do cilindro, pois vazamentos de baixa pressão não alteram concentração anestésica.",
+    C: "Excesso de cal sodada, que absorve sevoflurano de forma completa quando nova.",
+    D: "Ativação do fail-safe de oxigênio, que aumenta obrigatoriamente a entrega de halogenado.",
+    E: "Ausência de sistema antipoluição, que reduz concentração expirada por aspiração traqueal."
+  },
+  resposta: "A",
+  comentario: "A seção de baixa pressão vai dos controles de fluxo, passa pelos vaporizadores e chega à saída comum de gases. Vazamentos nessa região são traiçoeiros: podem causar entrega inadequada de agente inalatório, mistura hipóxica ou dificuldade ventilatória, e nem sempre são detectados por checagens automáticas, especialmente se o vaporizador não foi testado ligado. Quando o vaporizador está ajustado, mas a fração expirada não acompanha, não brigue com o paciente; investigue a entrega real. Analisador de agente é seu advogado contra o aparelho.",
+  frase_ouro: "Vaporizador ligado não é sinônimo de anestésico entregue."
+},
+{
+  id: "tsa-ultra-617",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Aparelho de anestesia",
+  tema: "Absorvedor de gás carbônico exaurido",
+  area: "Aparelhos de anestesia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Durante cirurgia longa em baixo fluxo, a capnografia mostra elevação progressiva da linha de base inspiratória de gás carbônico, apesar de ventilação minuto aumentada. A pressão inspiratória e o volume corrente estão preservados. Qual é a explicação mais provável?",
+  alternativas: {
+    A: "Absorvedor de gás carbônico exaurido ou canalizado, levando à reinalação de gás carbônico.",
+    B: "Embolia pulmonar maciça, que tipicamente aumenta gás carbônico inspirado no circuito.",
+    C: "Desconexão completa do circuito, que preserva capnograma com linha de base elevada.",
+    D: "Hiperventilação alveolar, que aumenta gás carbônico inspirado por redução de espaço morto.",
+    E: "Falha do oxímetro, que interfere diretamente na leitura de capnografia."
+  },
+  resposta: "A",
+  comentario: "Linha de base inspiratória de gás carbônico subindo é pista forte de reinalação. As causas incluem cal sodada exaurida, canalização do absorvedor, válvula unidirecional defeituosa ou fluxo fresco muito baixo em sistema inadequado. A cor do absorvedor ajuda, mas não deve ser a única fonte de verdade; capnografia é dinâmica e mostra o problema durante o caso. A conduta é aumentar fluxo fresco, trocar absorvedor, verificar válvulas e circuito. A prova adora ver se você confunde hipercapnia por produção/ventilação com reinalação: na reinalação, o inspirado já vem contaminado.",
+  frase_ouro: "Se o paciente inspira gás carbônico, o problema pode estar antes do pulmão."
+},
+{
+  id: "tsa-ultra-618",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Aparelho de anestesia",
+  tema: "Absorvedor dessecado e monóxido de carbono",
+  area: "Aparelhos de anestesia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Na primeira anestesia de segunda-feira, após o aparelho ter ficado com fluxo de gases aberto durante o fim de semana, paciente sob desflurano apresenta coloração rósea, oxímetro persistentemente 100%, mas gasometria com co-oximetria mostra carboxi-hemoglobina muito elevada. Qual é o mecanismo mais provável?",
+  alternativas: {
+    A: "Formação de composto A por sevoflurano em absorvedor fresco, causando carboxi-hemoglobinemia grave.",
+    B: "Produção de monóxido de carbono pela degradação de anestésicos voláteis em absorvedor de gás carbônico dessecado, especialmente com agentes como desflurano.",
+    C: "Falha do oxímetro, pois carboxi-hemoglobina sempre reduz saturação periférica para valores próximos de zero.",
+    D: "Reação do óxido nitroso com hemoglobina fetal, formando meta-hemoglobina.",
+    E: "Absorção direta de gás carbônico pelo sangue, deslocando oxigênio da hemoglobina."
+  },
+  resposta: "B",
+  comentario: "Absorvedores dessecados, especialmente com bases fortes, podem degradar voláteis e produzir monóxido de carbono. O cenário clássico é máquina esquecida com fluxo ligado por longo período, muitas vezes depois do fim de semana. O oxímetro de pulso convencional não diferencia adequadamente oxi-hemoglobina de carboxi-hemoglobina e pode mostrar saturação falsamente tranquilizadora. O diagnóstico exige co-oximetria. Desflurano e isoflurano são mais implicados que sevoflurano nesse fenômeno. Conduta: trocar absorvedor suspeito, usar alto fluxo de oxigênio, suspender exposição e tratar intoxicação conforme gravidade.",
+  frase_ouro: "SpO2 bonita não absolve monóxido de carbono."
+},
+{
+  id: "tsa-ultra-619",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Vaporizadores",
+  tema: "Desflurano",
+  area: "Aparelhos de anestesia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Em hospital de altitude elevada, paciente é mantido com desflurano em vaporizador específico aquecido e pressurizado. Apesar do dial em concentração usual, o plano anestésico parece mais superficial que o esperado para o mesmo percentual usado ao nível do mar. Qual alternativa explica melhor?",
+  alternativas: {
+    A: "Em altitude, a concentração percentual dialada corresponde a menor pressão parcial do agente; pode ser necessário ajustar o dial para manter pressão parcial anestésica equivalente.",
+    B: "O vaporizador de desflurano é variável bypass convencional, portanto aumenta automaticamente a pressão parcial em altitude.",
+    C: "A altitude aumenta a potência do desflurano porque reduz sua pressão de vapor saturado.",
+    D: "A concentração percentual é sempre equivalente à pressão parcial, independentemente da pressão barométrica.",
+    E: "O desflurano não pode ser usado em altitude porque seu ponto de ebulição cai para zero grau Celsius."
+  },
+  resposta: "A",
+  comentario: "Efeito anestésico depende mais da pressão parcial do agente que da porcentagem isolada. Em altitude, a pressão barométrica é menor; a mesma porcentagem representa menor pressão parcial. Vaporizadores de desflurano mantêm concentração percentual de saída de forma estável, mas isso não significa mesma pressão parcial cerebral ao nível do mar. Desflurano exige vaporizador especial porque tem alta pressão de vapor e ponto de ebulição próximo à temperatura ambiente, funcionando como dispositivo aquecido e pressurizado, mais parecido com um misturador de gases do que com vaporizador variável bypass clássico.",
+  frase_ouro: "Em altitude, porcentagem é número bonito; pressão parcial é o que anestesia."
+},
+{
+  id: "tsa-ultra-620",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Vaporizadores e absorvedores",
+  tema: "Sevoflurano e composto A",
+  area: "Aparelhos de anestesia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente sem doença renal será mantido com sevoflurano em técnica de baixo fluxo por 5 horas. Um colega afirma que baixo fluxo com sevoflurano é proibido porque sempre causa lesão renal por composto A. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "A afirmação é correta; qualquer baixo fluxo com sevoflurano causa nefrotoxicidade humana clinicamente inevitável.",
+    B: "Sevoflurano pode formar composto A ao interagir com absorvedores de gás carbônico, especialmente em baixo fluxo e certas condições, mas a relevância clínica renal em humanos nas práticas modernas é limitada.",
+    C: "Composto A é formado principalmente por desflurano em absorvedor dessecado e causa carboxi-hemoglobinemia.",
+    D: "O risco de composto A é eliminado aumentando a concentração de sevoflurano no circuito.",
+    E: "Absorvedores frescos nunca participam de degradação de anestésicos inalatórios."
+  },
+  resposta: "B",
+  comentario: "Sevoflurano pode degradar-se em contato com absorvedores de gás carbônico formando composto A, e a formação aumenta em condições como baixo fluxo, maior concentração de sevoflurano, temperatura elevada do absorvedor e alguns tipos de absorvedor. Porém, estudos clínicos modernos não demonstraram a catástrofe renal universal que a frase do colega sugere. É tema de prova porque exige equilíbrio: saber o mecanismo sem transformar em dogma. Monitore contexto, use absorvedor adequado, evite absorvedor ressecado e respeite recomendações do equipamento/instituição.",
+  frase_ouro: "Composto A existe; pânico automático também existe, mas não ajuda."
+},
+{
+  id: "tsa-ultra-621",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Sistema antipoluição",
+  tema: "Scavenging ativo fechado",
+  area: "Aparelhos de anestesia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Após troca do sistema antipoluição, o balão reservatório do scavenging ativo fechado permanece completamente colabado durante anestesia, e o ventilador começa a apresentar comportamento errático. Qual interpretação é mais adequada?",
+  alternativas: {
+    A: "O balão colabado indica funcionamento ideal, pois todo gás residual deve ser aspirado sem resistência.",
+    B: "Sucção excessiva ou falha da válvula de pressão negativa pode transmitir pressão negativa indevida ao sistema, exigindo ajuste imediato.",
+    C: "O sistema antipoluição não se comunica de nenhuma forma com o circuito anestésico; alterações são sempre coincidência.",
+    D: "O problema se corrige aumentando a fração de óxido nitroso.",
+    E: "A válvula de pressão positiva é a única necessária em sistema ativo fechado."
+  },
+  resposta: "B",
+  comentario: "No scavenging ativo fechado, há reservatório ligado à sucção. Ele deve ficar adequadamente insuflado, nem tenso nem colabado. Se a sucção for excessiva e a válvula de pressão negativa falhar ou for insuficiente, pressão negativa pode ser transmitida ao circuito, interferindo na ventilação. Se o reservatório ficar hiperinsuflado, o problema pode ser obstrução ou sucção insuficiente, com escape de gases para sala pela válvula positiva. Sistema antipoluição parece periférico, mas quando mal ajustado pode virar vilão ventilatório silencioso.",
+  frase_ouro: "Balão do scavenging também fala; colabado demais, ele está gritando sucção."
+},
+{
+  id: "tsa-ultra-622",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Sistema circular",
+  tema: "Válvulas unidirecionais",
+  area: "Aparelhos de anestesia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente em anestesia geral apresenta capnograma com reinalação de gás carbônico. O absorvedor é novo e adequadamente instalado. Ao ventilar manualmente um pulmão-teste, percebe-se fluxo anormal durante inspiração e expiração. Qual alternativa é a mais provável?",
+  alternativas: {
+    A: "Válvula unidirecional inspiratória ou expiratória presa, ausente ou incompetente, causando fluxo retrógrado e reinalação.",
+    B: "Falha de vaporizador, pois vapores anestésicos elevam diretamente a linha de base do gás carbônico.",
+    C: "Cilindro de oxigênio vazio, que causa reinalação isolada sem alterar fração inspirada de oxigênio.",
+    D: "Ausência de filtro bacteriano, que aumenta produção metabólica de gás carbônico.",
+    E: "Pressão de rede elevada, que impede abertura da válvula ajustável de pressão."
+  },
+  resposta: "A",
+  comentario: "Sistema circular depende de válvulas unidirecionais para direcionar fluxo: uma no ramo inspiratório, outra no expiratório. Se uma delas trava aberta, trava fechada, fica ausente ou quebrada, pode ocorrer reinalação mesmo com absorvedor novo. Algumas checagens automáticas não detectam todas as obstruções ou incompetências valvares; por isso o teste de fluxo com balão ou pulmão-teste, observando movimento correto das válvulas durante inspiração e expiração, continua valioso. A prova aqui quer que você vá além da cal sodada: reinalação não é sinônimo obrigatório de absorvedor exaurido.",
+  frase_ouro: "No círculo, válvula preguiçosa faz o paciente respirar passado."
+},
+{
+  id: "tsa-ultra-623",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Farmacocinética",
+  tema: "Tempo de decremento contexto-sensível",
+  area: "Modelos farmacocinéticos",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Após infusão de propofol por 7 horas em neurocirurgia, o residente pergunta por que a recuperação não pode ser prevista pela meia-vida de eliminação do propofol. Qual resposta é mais correta?",
+  alternativas: {
+    A: "Porque a meia-vida de eliminação é sempre menor que o tempo de recuperação em todos os modelos multicompartmentais.",
+    B: "Porque a recuperação depende da queda da concentração no sítio efetor abaixo do limiar clínico, influenciada por redistribuição, duração da infusão e depuração, não apenas eliminação terminal.",
+    C: "Porque propofol não sofre redistribuição; toda recuperação depende exclusivamente de metabolismo pulmonar.",
+    D: "Porque a meia-vida de eliminação só se aplica a opioides, não a hipnóticos.",
+    E: "Porque após 7 horas o propofol passa a ter metabolismo renal saturável de ordem zero."
+  },
+  resposta: "B",
+  comentario: "A meia-vida terminal descreve fase tardia de eliminação, mas o paciente acorda quando a concentração no sítio efetor cai abaixo de um limiar de efeito. Em fármacos multicompartmentais, durante a infusão há distribuição para tecidos periféricos; ao interromper, há redistribuição de volta ao plasma ao mesmo tempo em que ocorre depuração. O tempo de decremento contexto-sensível incorpora a duração da infusão como parte do problema. Propofol é relativamente favorável porque tem alta depuração e aumento modesto do tempo contexto-sensível em comparação com tiopental, mas ainda assim não é 'desliga e acorda' em todo paciente.",
+  frase_ouro: "Paciente acorda do sítio efetor, não da meia-vida terminal no rodapé do livro."
+},
+{
+  id: "tsa-ultra-624",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "TCI",
+  tema: "Alvo plasmático versus sítio efetor",
+  area: "Modelos farmacocinéticos",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Em anestesia venosa total, o anestesista muda a bomba de propofol de alvo plasmático para alvo no sítio efetor mantendo o mesmo número de concentração-alvo. Observa-se bolus inicial maior e queda pressórica. Qual alternativa explica melhor?",
+  alternativas: {
+    A: "No modo sítio efetor, a bomba pode administrar bolus maior para acelerar o equilíbrio entre plasma e compartimento de efeito, produzindo pico plasmático inicial mais alto.",
+    B: "Alvo no sítio efetor significa que a bomba mede diretamente concentração no cérebro e, por isso, nunca há overshoot plasmático.",
+    C: "Alvo plasmático sempre gera bolus maior que alvo no efeito porque o plasma é o compartimento final de ação.",
+    D: "Não existe diferença operacional entre os modos; qualquer variação hemodinâmica é necessariamente cirúrgica.",
+    E: "O modo sítio efetor só altera opioides, não hipnóticos."
+  },
+  resposta: "A",
+  comentario: "Entre plasma e cérebro existe atraso de equilíbrio, representado por constantes como ke0. Quando se escolhe alvo no sítio efetor, a bomba pode produzir concentração plasmática inicial maior para que o efeito cerebral alcance rapidamente o alvo programado. Isso acelera indução, mas aumenta risco de overshoot hemodinâmico, especialmente em idoso, hipovolêmico, cardiopata ou frágil. O modelo estima, não mede, concentração cerebral. A questão é sofisticada porque o mesmo número no visor pode não significar o mesmo comportamento de entrega.",
+  frase_ouro: "Alvo no efeito chega mais rápido ao cérebro, às vezes passando por cima da pressão."
+},
+{
+  id: "tsa-ultra-625",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Farmacocinética aplicada",
+  tema: "Obesidade e propofol",
+  area: "Modelos farmacocinéticos",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com índice de massa corporal de 62 kg/m² será submetido à cirurgia bariátrica. Planeja-se anestesia venosa total com propofol e remifentanil. Sobre modelos farmacocinéticos e dose no obeso grave, assinale a alternativa mais adequada.",
+  alternativas: {
+    A: "Todos os bolus e infusões devem ser calculados pelo peso real, pois o aumento de tecido adiposo aumenta proporcionalmente o compartimento central.",
+    B: "Todos os fármacos devem ser calculados pelo peso ideal, pois tecido adiposo nunca participa da distribuição de anestésicos lipofílicos.",
+    C: "No obeso grave, a dose deve considerar propriedades do fármaco, fase da anestesia e limitações do modelo; peso real, ideal e ajustado podem ter papéis diferentes, exigindo titulação clínica.",
+    D: "A TCI elimina o problema da obesidade extrema porque todos os modelos foram validados igualmente em qualquer composição corporal.",
+    E: "Remifentanil deve ser calculado pelo peso real porque sua meia-vida contexto-sensível aumenta proporcionalmente à gordura corporal."
+  },
+  resposta: "C",
+  comentario: "Obesidade extrema é um pesadelo elegante para farmacocinética. Nem peso real nem peso ideal resolvem tudo. Propofol é lipofílico, mas bolus de indução se relaciona mais com compartimento central e débito cardíaco; manutenção envolve depuração e distribuição ao longo do tempo. Remifentanil deve ser dosado com cuidado, frequentemente por peso ideal ou ajustado, porque peso real pode superdosar. Modelos TCI podem não ser validados em extremos de índice de massa corporal. A resposta de prova madura é individualizar: farmacologia, fase do ato anestésico, resposta clínica, monitorização e segurança ventilatória.",
+  frase_ouro: "No obeso extremo, a balança informa; ela não prescreve sozinha."
+},
+{
+  id: "tsa-ultra-626",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Modelos farmacocinéticos",
+  tema: "Variabilidade dos modelos",
+  area: "Modelos farmacocinéticos",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Durante anestesia venosa total em paciente jovem, a bomba alvo-controlada mostra concentração de propofol no sítio efetor de 3,0 mcg/mL, mas o paciente apresenta sinais eletroencefalográficos de anestesia profunda. Qual alternativa é correta?",
+  alternativas: {
+    A: "A concentração exibida pela bomba é concentração real medida no líquido cefalorraquidiano.",
+    B: "A discrepância é impossível se a bomba estiver programada corretamente.",
+    C: "A concentração exibida é estimativa baseada em modelo populacional; variabilidade farmacocinética e farmacodinâmica pode tornar o efeito maior ou menor que o previsto.",
+    D: "O eletroencefalograma processado é sempre superior ao modelo e dispensa avaliação hemodinâmica e clínica.",
+    E: "A única explicação possível é erro de lote do propofol."
+  },
+  resposta: "C",
+  comentario: "Modelos farmacocinéticos não são sensores biológicos. Eles calculam a provável concentração a partir de dose entregue, tempo, compartimentos e covariáveis. Mas pacientes variam em composição corporal, proteína plasmática, débito cardíaco, função orgânica e sensibilidade do receptor. Além disso, outros fármacos, idade, temperatura e doença mudam farmacodinâmica. O número da bomba deve conversar com pressão, frequência, eletroencefalograma, resposta ao estímulo e objetivo cirúrgico. O erro é transformar estimativa em verdade absoluta. A bomba é boa, mas ainda não fez prova de TSA por você.",
+  frase_ouro: "Modelo farmacocinético é previsão do tempo: útil, não infalível."
+},
+{
+  id: "tsa-ultra-627",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Interações farmacodinâmicas",
+  tema: "Propofol e opioides",
+  area: "Modelos farmacocinéticos",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Em tireoidectomia com monitorização neural, decide-se evitar bloqueio neuromuscular após a intubação. O anestesista aumenta remifentanil e reduz propofol para manter pressão estável. O paciente não se move, mas eletroencefalograma sugere hipnose limítrofe. Qual alternativa é a mais correta?",
+  alternativas: {
+    A: "Ausência de movimento garante inconsciência, pois imobilidade e hipnose são o mesmo componente anestésico.",
+    B: "Opioides reduzem resposta a estímulo e necessidade de hipnótico para imobilidade, mas não substituem de forma confiável hipnose e amnésia.",
+    C: "Remifentanil em alta dose sempre produz inconsciência completa por agonismo direto em receptor GABA-A.",
+    D: "Propofol pode ser suspenso se o paciente estiver recebendo opioide de meia-vida contexto-sensível curta.",
+    E: "Monitorização neural impede consciência intraoperatória porque detecta movimento muscular voluntário."
+  },
+  resposta: "B",
+  comentario: "Anestesia geral não é um único botão. Hipnose, analgesia, amnésia, imobilidade e controle autonômico se sobrepõem, mas não são idênticos. Opioides potentes como remifentanil reduzem resposta motora e autonômica ao estímulo, permitindo menor concentração de hipnótico. Porém, analgesia intensa não garante inconsciência. Em cirurgia sem bloqueio neuromuscular, ausência de movimento é menos enganosa do que com paralisia, mas ainda não é prova de hipnose adequada. O caso força o equilíbrio fino: evitar movimento para o cirurgião, preservar monitorização neural e não entregar consciência com elegância farmacológica.",
+  frase_ouro: "Opioide cala o estímulo; hipnótico apaga a experiência."
+},
+{
+  id: "tsa-ultra-628",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Avaliação pré-anestésica",
+  tema: "RCRI",
+  area: "Avaliação pré-anestésica",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Homem de 74 anos será submetido à colectomia aberta por neoplasia. Tem história de infarto há 5 anos, insuficiência cardíaca compensada, diabetes em uso de insulina, creatinina de 2,4 mg/dL e acidente vascular cerebral antigo sem déficit atual. Qual alternativa melhor interpreta o Revised Cardiac Risk Index nesse caso?",
+  alternativas: {
+    A: "O paciente tem apenas um ponto, pois eventos cardiovasculares antigos não entram no índice se estiverem compensados.",
+    B: "O paciente tem múltiplos critérios: cirurgia intraperitoneal de alto risco, doença isquêmica, insuficiência cardíaca, diabetes em insulina, creatinina elevada e doença cerebrovascular.",
+    C: "O índice não considera função renal, apenas sintomas cardíacos ativos.",
+    D: "Diabetes só pontua se houver cetoacidose no mês anterior.",
+    E: "Cirurgia abdominal aberta não pontua, pois apenas cirurgia vascular é considerada de alto risco."
+  },
+  resposta: "B",
+  comentario: "O RCRI clássico inclui cirurgia de alto risco, doença isquêmica cardíaca, insuficiência cardíaca, doença cerebrovascular, diabetes tratado com insulina e creatinina maior que 2 mg/dL. Esse paciente coleciona critérios como quem coleciona carimbo em congresso. O ponto não é decorar uma porcentagem, mas reconhecer que ele não é candidato a avaliação superficial. Depois de estimar risco, a conduta depende de urgência, estabilidade clínica, capacidade funcional, possibilidade de mudança de manejo e otimização. Índice de risco não opera paciente; ele organiza a conversa.",
+  frase_ouro: "RCRI alto não cancela cirurgia sozinho; ele impede anestesia no automático."
+},
+{
+  id: "tsa-ultra-629",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Risco cardiovascular",
+  tema: "Condições cardíacas ativas",
+  area: "Avaliação pré-anestésica",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente de 69 anos comparece para artroplastia eletiva de joelho. Relata dispneia progressiva há 1 semana, ortopneia nova e edema de membros inferiores. Ao exame, crepitações bibasais e saturação de 91% em ar ambiente. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "Proceder com a cirurgia, pois artroplastia é cirurgia ortopédica e o risco cardíaco é sempre baixo.",
+    B: "Solicitar apenas eletrocardiograma e liberar se não houver supradesnivelamento de ST.",
+    C: "Tratar como possível insuficiência cardíaca descompensada, uma condição cardíaca ativa que exige avaliação e otimização antes de cirurgia eletiva.",
+    D: "Realizar raquianestesia obrigatoriamente, pois bloqueio neuraxial elimina risco de edema pulmonar.",
+    E: "Administrar diurético em sala e induzir assim que houver diurese."
+  },
+  resposta: "C",
+  comentario: "Dispneia nova, ortopneia, edema e crepitações sugerem insuficiência cardíaca descompensada. Em cirurgia eletiva, condições cardíacas ativas devem ser avaliadas e tratadas antes de prosseguir. O erro é olhar só o tipo de cirurgia e ignorar que o paciente chegou instável. Raquianestesia não é purificador de risco: simpatectomia pode piorar hemodinâmica em paciente descompensado. O manejo correto é adiar eletiva, investigar causa, otimizar volume, função ventricular, isquemia/valvopatia se pertinente e só depois replanejar anestesia.",
+  frase_ouro: "Cirurgia eletiva não deve disputar prioridade com insuficiência cardíaca descompensada."
+},
+{
+  id: "tsa-ultra-630",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Risco cardiovascular",
+  tema: "MACE, METs e teste adicional",
+  area: "Avaliação pré-anestésica",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Mulher de 66 anos com doença coronariana estável e stent há 4 anos será submetida à colectomia eletiva. Risco estimado de evento cardíaco maior é superior a 1%. Ela sobe dois lances de escada sem sintomas, caminha diariamente e não tem angina. Qual é a melhor conduta quanto à investigação cardíaca adicional?",
+  alternativas: {
+    A: "Solicitar teste de estresse obrigatoriamente porque todo paciente com stent prévio tem risco elevado.",
+    B: "Prosseguir sem teste adicional se a capacidade funcional for moderada ou boa e o resultado do teste não mudaria a conduta.",
+    C: "Cancelar definitivamente a cirurgia porque risco estimado maior que 1% contraindica cirurgia abdominal.",
+    D: "Solicitar cateterismo coronariano de rotina para reduzir risco perioperatório.",
+    E: "Ignorar capacidade funcional, pois METs não têm relação com risco cardiovascular perioperatório."
+  },
+  resposta: "B",
+  comentario: "O algoritmo moderno combina urgência, risco clínico/cirúrgico e capacidade funcional. Paciente com risco elevado, mas capacidade funcional moderada ou boa e sem sintomas instáveis, em geral pode seguir para cirurgia sem teste adicional, desde que o resultado não vá mudar manejo. Teste de estresse não é ritual de purificação pré-operatória; deve ser pedido quando pode alterar decisão: revascularizar, otimizar tratamento, mudar técnica, adiar ou discutir alternativa. Capacidade funcional continua sendo peça central, e instrumentos como DASI podem ser mais objetivos que 'acho que sobe escada'.",
+  frase_ouro: "Teste pré-operatório bom é o que muda conduta; o resto é decoração cara."
+},
+{
+  id: "tsa-ultra-631",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Avaliação pré-anestésica",
+  tema: "DASI versus METs subjetivos",
+  area: "Avaliação pré-anestésica",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente vascular de 73 anos, claudicante, será submetido à correção aberta de aneurisma de aorta abdominal. Quando perguntado sobre capacidade funcional, responde que 'acha que conseguiria subir escadas se a perna deixasse'. Qual alternativa é mais inteligente?",
+  alternativas: {
+    A: "Considerar capacidade funcional excelente, pois a limitação é periférica e não cardíaca.",
+    B: "Considerar capacidade funcional impossível de estimar apenas por pergunta subjetiva; instrumentos como Duke Activity Status Index e discussão sobre testes adicionais podem ser úteis se mudarem conduta.",
+    C: "Dispensar avaliação cardiovascular porque claudicação protege contra isquemia miocárdica por pré-condicionamento.",
+    D: "Solicitar cateterismo para todo paciente que não consegue caminhar por doença vascular periférica.",
+    E: "Usar apenas idade como critério, pois capacidade funcional não tem valor em cirurgia vascular."
+  },
+  resposta: "B",
+  comentario: "Doença vascular periférica frequentemente impede avaliar capacidade funcional por esforço usual. O paciente pode ter miocárdio ruim, mas a perna falha antes de revelar angina ou dispneia. Nessa zona cinzenta, a pergunta solta sobre METs é frágil. O DASI organiza atividades e gera estimativa mais objetiva; ainda assim, em cirurgia vascular aberta, risco é alto e teste adicional só faz sentido se alterar manejo. A resposta correta não cai no extremo de liberar sem pensar nem cateterizar todo mundo. É a arte chata e necessária da medicina perioperatória.",
+  frase_ouro: "Quando a perna limita o teste de esforço da vida real, o coração pode estar escondido."
+},
+{
+  id: "tsa-ultra-632",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Avaliação pré-anestésica",
+  tema: "Exames pré-operatórios",
+  area: "Avaliação pré-anestésica",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente de 32 anos, saudável, sem medicações, será submetida à correção de hérnia umbilical eletiva de pequeno porte. A clínica cirúrgica solicita hemograma, coagulograma, eletrólitos, radiografia de tórax, eletrocardiograma e urina tipo 1 'porque é a primeira anestesia'. Qual alternativa é a melhor?",
+  alternativas: {
+    A: "Todos os exames são obrigatórios antes da primeira anestesia geral em qualquer idade.",
+    B: "Exames pré-operatórios devem ser guiados por história, exame físico, comorbidades, medicações e porte cirúrgico, e não por rotina indiscriminada.",
+    C: "Coagulograma é obrigatório para qualquer paciente que possa receber bloqueio local infiltrativo.",
+    D: "Radiografia de tórax é obrigatória em toda cirurgia abdominal, mesmo em paciente jovem assintomática.",
+    E: "Eletrocardiograma normal elimina necessidade de avaliação clínica pré-anestésica."
+  },
+  resposta: "B",
+  comentario: "Avaliação pré-anestésica não é caça-níquel laboratorial. Em paciente jovem, saudável e cirurgia de baixo porte, exames rotineiros raramente mudam conduta e podem gerar falsos positivos, atrasos e custos. O que manda é a probabilidade pré-teste: doenças conhecidas, sintomas, medicamentos, sangramento esperado, risco de gravidez, técnica planejada e necessidade real de resultado para decisão. Prova de TSA gosta desse tema porque diferencia anestesista clínico de carimbador de check-list. Exame bom responde pergunta clínica; exame ruim cria uma.",
+  frase_ouro: "Exame pré-operatório sem pergunta é só ruído impresso."
+},
+{
+  id: "tsa-ultra-633",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Avaliação pré-anestésica",
+  tema: "Medicações cardiovasculares",
+  area: "Avaliação pré-anestésica",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Homem de 71 anos, hipertenso, coronariopata estável, em uso crônico de metoprolol, atorvastatina, losartana e ácido acetilsalicílico, será submetido à colectomia oncológica. Sobre manejo medicamentoso perioperatório, assinale a alternativa mais adequada.",
+  alternativas: {
+    A: "Betabloqueador crônico deve ser suspenso no dia anterior para evitar bradicardia intraoperatória.",
+    B: "Estatina deve ser suspensa porque aumenta risco de rabdomiólise anestésica.",
+    C: "Betabloqueador crônico geralmente deve ser mantido; inibidores do sistema renina-angiotensina podem ser associados a hipotensão intraoperatória e devem ser avaliados individualmente.",
+    D: "Ácido acetilsalicílico deve ser suspenso em todos os coronariopatas, independentemente do risco trombótico e hemorrágico.",
+    E: "Introduzir betabloqueador em dose alta na manhã da cirurgia reduz risco cardiovascular sem aumentar eventos adversos."
+  },
+  resposta: "C",
+  comentario: "Betabloqueador crônico deve, em geral, ser continuado para evitar rebote adrenérgico, taquicardia e isquemia. Outra coisa é iniciar dose alta imediatamente antes da cirurgia, o que pode causar hipotensão e bradicardia. Estatinas costumam ser mantidas, especialmente em pacientes vasculares/coronariopatas. Inibidores da enzima conversora e bloqueadores do receptor de angiotensina podem aumentar hipotensão após indução; a decisão de manter ou suspender depende de indicação, controle pressórico, insuficiência cardíaca e protocolo local. AAS exige ponderação entre trombose e sangramento, especialmente em stents. Resposta ultra não é regra cega: é risco individual.",
+  frase_ouro: "Medicação cardiovascular no perioperatório não é liga/desliga; é fisiologia aplicada."
+},
+{
+  id: "tsa-ultra-634",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Risco cardiovascular",
+  tema: "Stent coronário e antiagregação",
+  area: "Avaliação pré-anestésica",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com stent farmacológico recente, ainda em dupla antiagregação, agenda cirurgia estética eletiva com alto potencial de sangramento. O cirurgião pede suspensão de todos os antiagregantes por 10 dias para 'operar seco'. Qual é a melhor resposta anestésica?",
+  alternativas: {
+    A: "Concordar, pois sangramento cirúrgico é sempre mais grave que trombose de stent.",
+    B: "Suspender apenas o ácido acetilsalicílico e manter inibidor P2Y12 em todo caso, sem discutir com cardiologia.",
+    C: "Reavaliar indicação e tempo da cirurgia; em procedimento eletivo, deve-se considerar adiar até período mais seguro e discutir risco trombótico e hemorrágico com cardiologia e cirurgia.",
+    D: "Manter dupla antiagregação obrigatoriamente em qualquer cirurgia, mesmo quando o sangramento ameaça vida.",
+    E: "Trocar antiagregantes por heparina sempre previne trombose de stent com menor sangramento."
+  },
+  resposta: "C",
+  comentario: "Stent recente e dupla antiagregação são terreno minado. Suspender antiagregantes cedo demais aumenta risco de trombose de stent, infarto e morte; manter tudo pode ser inaceitável em cirurgias com sangramento crítico. Em cirurgia verdadeiramente eletiva, a primeira alternativa inteligente é adiar até janela mais segura. Se cirurgia for necessária, decisão deve ser compartilhada com cardiologia, cirurgia e paciente, considerando tipo de stent, tempo desde implante, indicação do stent, risco de sangramento e possibilidade de manter ácido acetilsalicílico. Heparina não substitui adequadamente antiagregação para prevenir trombose de stent. Aqui o TSA cobra bom senso: o melhor sangramento é o da cirurgia que ainda não precisava acontecer.",
+  frase_ouro: "Stent recente transforma cirurgia eletiva em reunião multidisciplinar obrigatória."
+},
+{
+  id: "tsa-ultra-635",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Avaliação pré-anestésica",
+  tema: "Profilaxia de endocardite",
+  area: "Avaliação pré-anestésica",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Homem de 66 anos com prótese valvar aórtica biológica será submetido à colecistectomia videolaparoscópica eletiva, sem evidência de infecção ativa biliar. Perguntam se há indicação de antibiótico especificamente para profilaxia de endocardite infecciosa. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "Sim, prótese valvar exige profilaxia de endocardite para qualquer procedimento sob anestesia geral.",
+    B: "Sim, todo procedimento gastrointestinal exige profilaxia de endocardite em cardiopatas.",
+    C: "Não há indicação rotineira de profilaxia específica para endocardite apenas por prótese valvar em procedimento gastrointestinal não infectado; antibiótico cirúrgico segue indicação do procedimento.",
+    D: "A profilaxia deve ser feita apenas com vancomicina por 7 dias.",
+    E: "A decisão depende apenas do tipo de anestesia; com raquianestesia não há risco de endocardite."
+  },
+  resposta: "C",
+  comentario: "Prótese valvar coloca o paciente em grupo de alto risco para consequências ruins se desenvolver endocardite. Porém, as recomendações modernas restringem profilaxia específica principalmente a procedimentos dentários de maior risco em grupos cardíacos selecionados. Procedimentos gastrointestinais ou geniturinários não infectados, em geral, não indicam profilaxia específica de endocardite apenas pela cardiopatia. Isso não elimina antibioticoprofilaxia cirúrgica comum da colecistectomia, que segue outra lógica: flora esperada e prevenção de infecção de sítio cirúrgico. A pegadinha é misturar 'risco alto se tiver endocardite' com 'profilaxia indicada para tudo'.",
+  frase_ouro: "Alto risco de consequência não significa antibiótico para qualquer porta de entrada."
+},
+{
+  id: "tsa-ultra-636",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Avaliação pré-anestésica",
+  tema: "Apneia obstrutiva do sono",
+  area: "Avaliação pré-anestésica",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Homem de 56 anos, índice de massa corporal 41 kg/m², roncos intensos, sonolência diurna, hipertensão resistente e circunferência cervical aumentada será submetido a herniorrafia ambulatorial. Não tem diagnóstico formal de apneia obstrutiva do sono. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "Sem polissonografia, o risco deve ser considerado igual ao da população geral.",
+    B: "Deve-se usar triagem clínica, como STOP-Bang, planejar via aérea, reduzir opioides, considerar recuperação prolongada e avaliar segurança do regime ambulatorial.",
+    C: "A única técnica segura é anestesia geral com extubação profunda para evitar tosse.",
+    D: "Opioides de longa ação são preferíveis porque reduzem despertares e eventos obstrutivos.",
+    E: "Oxigênio suplementar elimina risco de hipoventilação e dispensa monitorização."
+  },
+  resposta: "B",
+  comentario: "A ausência de polissonografia não apaga o fenótipo. O paciente tem alta probabilidade clínica de apneia obstrutiva do sono e risco de via aérea difícil, obstrução pós-operatória e depressão respiratória por sedativos/opioides. Triagens como STOP-Bang ajudam a estratificar. O plano deve favorecer analgesia multimodal poupadora de opioide, extubação acordada, posição adequada, uso de pressão positiva se já utiliza ou se indicado, e observação compatível com risco. Em ambulatorial, a pergunta é: ele consegue manter ventilação, analgesia segura e suporte em casa? Oxigênio pode mascarar hipoventilação; não é salvo-conduto.",
+  frase_ouro: "Sem polissonografia não significa sem apneia; significa sem desculpa para não suspeitar."
+},
+{
+  id: "tsa-ultra-637",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Geriatria e avaliação pré-operatória",
+  tema: "Fragilidade e fratura de quadril",
+  area: "Avaliação pré-anestésica",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Mulher de 89 anos, frágil, com fratura de quadril, chega desidratada, anêmica leve, com dor intensa e delirium hipoativo. A equipe quer solicitar ecocardiograma, prova funcional pulmonar, avaliação cardiológica formal e tomografia de crânio antes de operar, embora não haja sinais focais ou instabilidade cardíaca ativa. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "Adiar sistematicamente a cirurgia até todos os exames estarem normais, pois idade avançada contraindica cirurgia precoce.",
+    B: "Realizar avaliação focada, corrigir fatores reversíveis relevantes e evitar atrasos desnecessários, pois cirurgia precoce em fratura de quadril costuma melhorar desfechos quando não há condição ativa impeditiva.",
+    C: "Operar imediatamente sem analgesia, hidratação ou revisão de anticoagulantes para não perder tempo.",
+    D: "Escolher anestesia geral obrigatoriamente, pois raquianestesia causa delirium em todos os idosos.",
+    E: "Tratar delirium com benzodiazepínico em dose alta antes de qualquer decisão."
+  },
+  resposta: "B",
+  comentario: "Fratura de quadril no idoso é urgência geriátrica. Atrasar cirurgia por cascata de exames sem indicação pode aumentar complicações, dor, delirium, imobilidade, trombose, pneumonia e mortalidade. Isso não significa negligenciar preparo: corrigir hipovolemia, dor, hipoxemia, eletrólitos, anemia relevante e anticoagulação quando necessário. Delirium hipoativo frequentemente é sinal de sofrimento fisiológico e dor, não motivo automático para tomografia sem foco. A decisão é equilíbrio: otimizar o que muda desfecho, não transformar pré-operatório em museu de exames.",
+  frase_ouro: "No quadril do idoso, atraso inútil também é complicação."
+},
+{
+  id: "tsa-ultra-638",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Consentimento informado",
+  tema: "Capacidade decisória e sedação",
+  area: "Avaliação pré-anestésica",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente ansioso recebe midazolam na enfermaria antes da visita pré-anestésica. Ao chegar ao centro cirúrgico, está sonolento e não consegue repetir riscos ou alternativas da anestesia. A equipe pede que ele assine o consentimento anestésico naquele momento. Qual alternativa é correta?",
+  alternativas: {
+    A: "A assinatura é válida porque qualquer paciente que responde ao nome mantém capacidade plena.",
+    B: "Sedativos e analgésicos podem comprometer capacidade de consentimento; o ideal é obter consentimento antes de medicação que prejudique compreensão, ou reavaliar capacidade e envolver representante quando apropriado.",
+    C: "Consentimento anestésico nunca precisa discutir risco de morte ou complicações graves.",
+    D: "Consentimento cirúrgico substitui automaticamente consentimento e discussão anestésica.",
+    E: "Ansiedade invalida qualquer consentimento, mesmo antes de sedativos."
+  },
+  resposta: "B",
+  comentario: "Consentimento informado exige capacidade, informação, compreensão e voluntariedade. Sedativos, opioides, delirium, dor intensa ou hipoxemia podem comprometer esse processo. A conversa sobre anestesia deve ocorrer antes de medicação que reduza entendimento, sempre que possível. O conteúdo inclui condição do paciente, técnica proposta, alternativas, riscos relevantes e plano de dor pós-operatória. A necessidade de formulário separado varia por instituição, mas a necessidade ética de informação não some. Fazer paciente grogue assinar papel é burocracia performática, não consentimento.",
+  frase_ouro: "Consentimento assinado sem compreensão é só caligrafia sedada."
+},
+{
+  id: "tsa-ultra-639",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Otimização pré-operatória",
+  tema: "Anemia e patient blood management",
+  area: "Avaliação pré-anestésica",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente de 63 anos será submetida à artroplastia total de quadril eletiva em 5 semanas. Hemoglobina 9,4 g/dL, ferritina baixa, saturação de transferrina reduzida e história de sangramento menstrual intenso até menopausa tardia. O cirurgião sugere apenas reservar duas bolsas de hemácias e prosseguir. Qual alternativa é a mais adequada?",
+  alternativas: {
+    A: "Reservar sangue substitui investigação e tratamento da anemia pré-operatória.",
+    B: "Anemia ferropriva deve ser reconhecida como fator modificável; em cirurgia eletiva com tempo disponível, deve-se investigar causa e tratar antes do procedimento quando possível.",
+    C: "Transfundir duas bolsas na véspera é sempre melhor que ferro, pois normaliza hemoglobina sem risco.",
+    D: "Anemia só importa se hemoglobina estiver abaixo de 7 g/dL.",
+    E: "Ácido tranexâmico corrige anemia ferropriva ao aumentar eritropoiese."
+  },
+  resposta: "B",
+  comentario: "Anemia pré-operatória não é detalhe de rodapé; associa-se a maior transfusão, complicações e pior recuperação. Em cirurgia eletiva com semanas de antecedência, há oportunidade real de otimização: confirmar deficiência de ferro, investigar causa, tratar com ferro oral ou venoso conforme urgência/tolerância, considerar eritropoetina em casos selecionados e planejar redução de sangramento. Reservar sangue prepara a resposta à perda; não corrige o terreno. Transfusão tem papel quando indicada, mas não deve substituir patient blood management. A questão mede mentalidade perioperatória, não hemoglobina decorada.",
+  frase_ouro: "Bolsa reservada não trata anemia; só espera o problema sangrar."
+},
+{
+  id: "tsa-ultra-640",
+  fonte: "Miller / Barash / Yao",
+  capitulo: "Critérios de risco cardiovascular",
+  tema: "Estenose aórtica e cirurgia não cardíaca",
+  area: "Avaliação pré-anestésica",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Homem de 78 anos com sopro sistólico rude, síncope aos esforços há 2 meses e dispneia progressiva será submetido à colectomia eletiva por pólipo maligno sem obstrução. Não há ecocardiograma recente. Qual alternativa é a melhor?",
+  alternativas: {
+    A: "Prosseguir com raquianestesia em dose única, pois simpatectomia reduz pós-carga e beneficia estenose aórtica.",
+    B: "Prosseguir sem ecocardiograma porque sopro sistólico em idoso é achado fisiológico.",
+    C: "Suspeitar de estenose aórtica sintomática, condição de alto risco que deve ser avaliada com ecocardiografia e otimizada antes de cirurgia eletiva.",
+    D: "Induzir anestesia geral profunda para evitar taquicardia, aceitando hipotensão desde que transitória.",
+    E: "Administrar vasodilatador arterial profilático para reduzir gradiente transvalvar antes da indução."
+  },
+  resposta: "C",
+  comentario: "Sopro sistólico rude com síncope e dispneia em idoso é estenose aórtica grave até prova em contrário. Estenose aórtica sintomática aumenta muito o risco perioperatório: o ventrículo depende de pré-carga, ritmo sinusal, tempo diastólico e pressão de perfusão coronariana. Hipotensão e taquicardia podem ser desastrosas. Em cirurgia eletiva sem urgência imediata, é necessário ecocardiograma e discussão de tratamento valvar ou estratégia alternativa antes da colectomia. Neuraxial de dose única com simpatectomia abrupta pode ser perigosa. A resposta certa protege o paciente da frase assassina: 'é só um sopro'.",
+  frase_ouro: "Síncope com sopro aórtico não é achado: é aviso pré-anestésico."
+}
 ];
