@@ -9399,5 +9399,955 @@ const QUESTIONS = [
   comentario: "Agulhas menores e não cortantes reduzem CPPD. Quando se usa agulha cortante, orientar o bisel paralelo às fibras durais longitudinais reduz lesão transversal e vazamento liquórico. Repouso supino prolongado e cafeína profilática não são medidas preventivas consistentes.",
   frase_ouro: "Na punção dural, tamanho e desenho da agulha importam mais que repouso no leito."
 }
-
+,
+{
+  id: "tsa-ultra-001",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Avaliação funcional pré-ressecção pulmonar",
+  area: "Respiratório / Torácica",
+  dificuldade: "Muito difícil",
+  pergunta: "Homem de 68 anos, tabagista ativo, DPOC moderado e coronariopatia estável, será submetido à lobectomia superior direita por adenocarcinoma. Espirometria: VEF1 1,75 L, 58% do previsto; DLCO 46% do previsto. Cintilografia perfusional mostra que o pulmão direito contribui com 44% da perfusão total e o lobo a ser ressecado corresponde a aproximadamente 17% da perfusão total. Teste cardiopulmonar: VO2 pico 11 mL/kg/min. Considerando a estratificação de risco para ressecção pulmonar, a interpretação mais adequada é:",
+  alternativas: {
+    A: "O VEF1 absoluto acima de 1,5 L torna a lobectomia aceitável sem necessidade de integração com DLCO ou teste de exercício.",
+    B: "O VO2 pico de 11 mL/kg/min sugere risco intermediário/alto, devendo pesar fortemente na decisão, mesmo com VEF1 aparentemente aceitável.",
+    C: "A DLCO reduzida é irrelevante em lobectomia, pois prediz risco apenas em pneumonectomia.",
+    D: "A cintilografia perfusional só é útil quando a ressecção planejada é pneumonectomia esquerda.",
+    E: "O risco é baixo porque o lobo ressecado contribui com menos de 20% da perfusão total."
+  },
+  resposta: "B",
+  comentario: "A prova difícil não pergunta apenas se o VEF1 'passa'. Em cirurgia torácica moderna, VEF1, DLCO, valores previstos pós-operatórios e capacidade funcional precisam ser integrados. DLCO baixa pode predizer complicações mesmo quando o VEF1 parece razoável. VO2 pico em torno de 10 a 15 mL/kg/min coloca o paciente em faixa de risco relevante; abaixo de 10 mL/kg/min o risco costuma ser proibitivo ou muito alto. A pegadinha é aceitar o VEF1 absoluto isoladamente e ignorar DLCO/VO2.",
+  frase_ouro: "Na ressecção pulmonar, VEF1 sozinho é armadilha: DLCO e VO2 pico frequentemente dizem quem realmente vai tolerar perder parênquima."
+},
+{
+  id: "tsa-ultra-002",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Escolha do dispositivo de isolamento pulmonar",
+  area: "Respiratório / Torácica",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente de 59 anos, com tumor endobrônquico obstruindo parcialmente o brônquio principal esquerdo a 1,5 cm da carina, será submetido à pneumonectomia esquerda. A equipe solicita isolamento pulmonar confiável, com mínima manipulação tumoral e possibilidade de broncoscopia intraoperatória. Qual conduta é mais apropriada?",
+  alternativas: {
+    A: "Tubo duplo lúmen esquerdo, pois o tubo esquerdo é preferido na maioria das cirurgias torácicas.",
+    B: "Tubo duplo lúmen direito ou bloqueador brônquico seletivo, evitando posicionar componente brônquico no brônquio esquerdo comprometido.",
+    C: "Máscara laríngea com bloqueador brônquico, pois reduz trauma de via aérea e permite pneumonectomia com campo adequado.",
+    D: "Tubo simples convencional, pois a abertura pleural esquerda gera colapso pulmonar espontâneo suficiente.",
+    E: "Tubo duplo lúmen esquerdo de menor calibre para ultrapassar parcialmente a lesão e manter ventilação seletiva."
+  },
+  resposta: "B",
+  comentario: "O tubo duplo lúmen esquerdo é preferido de rotina, mas não quando o brônquio esquerdo está ocupado por tumor, distorcido, estenosado ou será o alvo da ressecção. Em pneumonectomia esquerda com lesão no brônquio principal esquerdo, deve-se evitar traumatizar ou obstruir o lado doente com o ramo brônquico do DLT esquerdo. DLT direito ou bloqueador brônquico são alternativas, escolhidas conforme anatomia, experiência e necessidade cirúrgica.",
+  frase_ouro: "DLT esquerdo é o padrão; brônquio esquerdo doente é a exceção que derruba o padrão."
+},
+{
+  id: "tsa-ultra-003",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Hipoxemia na ventilação monopulmonar",
+  area: "Respiratório / Torácica",
+  dificuldade: "Muito difícil",
+  pergunta: "Durante segmentectomia por VATS em decúbito lateral esquerdo, 20 minutos após iniciar ventilação monopulmonar direita, a SpO2 cai para 86% com FiO2 1,0. A pressão de platô do pulmão ventilado é 24 cmH2O, ETCO2 42 mmHg, pressão arterial estável. O tubo duplo lúmen havia sido confirmado antes do posicionamento, mas não após o decúbito lateral. Qual sequência inicial é mais adequada?",
+  alternativas: {
+    A: "Aplicar imediatamente CPAP de 10 cmH2O no pulmão não ventilado, pois essa é a intervenção mais eficaz e não prejudica o campo cirúrgico.",
+    B: "Aumentar volume corrente para 10 mL/kg no pulmão ventilado, pois a hipoxemia decorre principalmente de hipoventilação alveolar.",
+    C: "Confirmar posição do dispositivo com broncoscopia, recrutar o pulmão ventilado, ajustar PEEP individualizada e considerar CPAP baixo no pulmão não ventilado se persistir hipoxemia.",
+    D: "Reduzir FiO2 para reativar vasoconstrição pulmonar hipóxica e diminuir shunt no pulmão não ventilado.",
+    E: "Suspender imediatamente o anestésico inalatório, pois doses clínicas habituais abolirão a vasoconstrição pulmonar hipóxica."
+  },
+  resposta: "C",
+  comentario: "Em hipoxemia na ventilação monopulmonar, o primeiro passo de prova é verificar causa mecânica: deslocamento de DLT/bloqueador é comum após mudança de posição. Depois entram manobras no pulmão ventilado: recrutamento, PEEP adequada, evitar atelectasia e hiperdistensão. CPAP baixo no pulmão não ventilado melhora oxigenação, mas pode atrapalhar campo cirúrgico; por isso não é automaticamente a primeira medida sem checar posição. Reduzir FiO2 é errado em dessaturação.",
+  frase_ouro: "Na OLV, antes de filosofar sobre HPV, olhe o tubo com broncoscópio."
+},
+{
+  id: "tsa-ultra-004",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Vasoconstrição pulmonar hipóxica",
+  area: "Respiratório / Torácica",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente em ventilação monopulmonar apresenta queda progressiva da PaO2 apesar de FiO2 1,0. O residente afirma que o sevoflurano a 0,8 CAM deve ser suspenso porque 'volátil sempre destrói a vasoconstrição pulmonar hipóxica'. Qual afirmação é mais correta?",
+  alternativas: {
+    A: "Todos os halogenados, mesmo em doses clínicas baixas, abolirão a HPV e devem ser substituídos por anestesia venosa total.",
+    B: "A HPV é modulada por múltiplos fatores; doses clínicas usuais de voláteis podem ter efeito limitado, e a prioridade deve ser corrigir causas mecânicas, atelectasia e distribuição de ventilação/perfusão.",
+    C: "A HPV piora a oxigenação durante OLV porque aumenta o fluxo para o pulmão não ventilado.",
+    D: "A FiO2 elevada inibe completamente a HPV e, por isso, FiO2 1,0 é contraindicada na hipoxemia intraoperatória.",
+    E: "A hipercapnia sempre melhora HPV e deve ser induzida como primeira medida para tratar hipoxemia."
+  },
+  resposta: "B",
+  comentario: "A HPV desvia fluxo do pulmão hipóxico/não ventilado para o pulmão ventilado, reduzindo shunt. Halogenados podem inibir HPV em modelos experimentais, mas em concentrações clínicas usuais o impacto nem sempre é dominante. A conduta prática é integrada: posição do tubo, recrutamento, PEEP, débito cardíaco, pressão pulmonar, CPAP no pulmão não ventilado e comunicação com a cirurgia. O erro típico é transformar fisiologia em dogma absoluto.",
+  frase_ouro: "HPV importa, mas hipoxemia em OLV costuma ser mais mecânica e distributiva do que 'culpa pura do sevo'."
+},
+{
+  id: "tsa-ultra-005",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Massa mediastinal anterior",
+  area: "Via aérea",
+  dificuldade: "Muito difícil",
+  pergunta: "Mulher de 24 anos com massa mediastinal anterior volumosa, ortopneia, estridor em decúbito dorsal e compressão traqueal distal de 65% na TC será submetida à biópsia. Ao deitar, apresenta piora da dispneia. Qual plano anestésico é mais seguro?",
+  alternativas: {
+    A: "Indução venosa em sequência rápida com rocurônio, pois o bloqueio neuromuscular reduz esforço e melhora complacência torácica.",
+    B: "Indução inalatória em decúbito dorsal com ventilação sob máscara até plano profundo, seguida de intubação convencional.",
+    C: "Manter ventilação espontânea, evitar perda abrupta de tônus de via aérea, planejar posição tolerada, ter broncoscopia rígida e estratégia de resgate cardiopulmonar disponíveis.",
+    D: "Pré-oxigenação com CPAP e bloqueio neuromuscular profundo antes de manipular via aérea, pois o problema é apenas hipoxemia.",
+    E: "Máscara laríngea como via aérea definitiva, pois a obstrução é distal e a ventilação supraglótica evita colapso traqueal."
+  },
+  resposta: "C",
+  comentario: "Massa mediastinal com sintomas posturais e compressão importante é cenário de colapso de via aérea e/ou cardiovascular após anestesia geral, perda de tônus, PPV e bloqueio neuromuscular. A estratégia deve preservar ventilação espontânea enquanto possível, usar posição de menor sintoma, planejar broncoscopia rígida e resgate. A alternativa A é a clássica 'morte elegante': rápida, limpa e potencialmente irreversível.",
+  frase_ouro: "Massa mediastinal sintomática não gosta de três coisas: supino, anestesia profunda e paralisia."
+},
+{
+  id: "tsa-ultra-006",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Fístula broncopleural",
+  area: "Respiratório / Torácica",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente com fístula broncopleural direita pós-lobectomia evolui com escape aéreo importante, sepse controlada e necessidade de toracotomia para correção. Durante ventilação sob pressão positiva, há perda de volume corrente e dificuldade de ventilação. Qual estratégia anestésica tende a reduzir passagem de gás pela fístula?",
+  alternativas: {
+    A: "Aumentar PEEP global para manter a fístula fechada por pressão alveolar elevada.",
+    B: "Isolar o pulmão acometido, ventilar preferencialmente o pulmão contralateral com menores pressões e evitar óxido nitroso.",
+    C: "Usar ventilação com altos volumes correntes para compensar o vazamento através da fístula.",
+    D: "Manter ventilação bilateral até abertura pleural, pois isolamento piora a relação ventilação/perfusão.",
+    E: "Utilizar máscara laríngea para reduzir pressão traqueal e manter ventilação bilateral espontânea."
+  },
+  resposta: "B",
+  comentario: "Na fístula broncopleural, quanto maior a pressão no lado acometido, maior o vazamento, pior a ventilação alveolar efetiva e maior o risco de contaminação. A lógica é isolar o lado doente, ventilar com menores pressões possíveis o pulmão saudável e evitar N2O. PEEP alta e volumes altos podem aumentar o fluxo pela fístula.",
+  frase_ouro: "Fístula broncopleural é vazamento pressórico: isole o lado doente e não alimente o buraco."
+},
+{
+  id: "tsa-ultra-007",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Pneumonectomia e manejo de fluidos",
+  area: "Respiratório / Torácica",
+  dificuldade: "Muito difícil",
+  pergunta: "Após pneumonectomia direita por neoplasia central, paciente chega à UTI extubado, normotenso, lactato 1,8 mmol/L e débito urinário limítrofe. O cirurgião solicita reposição vigorosa de cristaloide para 'proteger rim'. Qual resposta anestésica é mais adequada?",
+  alternativas: {
+    A: "Administrar cristaloide liberalmente, pois após pneumonectomia o pulmão remanescente recebe menor fluxo e está protegido de edema.",
+    B: "Evitar excesso de fluido, avaliar perfusão global e considerar vasopressor/inotrópico conforme necessidade, pois edema pulmonar pós-pneumonectomia pode ser catastrófico.",
+    C: "Manter balanço positivo de 30 mL/kg nas primeiras 6 horas, pois pneumonectomia reduz retorno venoso.",
+    D: "Usar albumina como reposição liberal, pois coloide não contribui para edema pulmonar.",
+    E: "Drenar continuamente o hemitórax operado sob sucção elevada para prevenir desvio mediastinal."
+  },
+  resposta: "B",
+  comentario: "Após pneumonectomia, o pulmão remanescente recebe todo o débito cardíaco e é vulnerável a lesão por pressão, hiperfluxo e excesso de fluido. O manejo deve ser restritivo e guiado por perfusão, não por débito urinário isolado. Sucção pleural no espaço pós-pneumonectomia pode causar desvio mediastinal e instabilidade, devendo ser muito cautelosa e determinada pela equipe cirúrgica.",
+  frase_ouro: "Depois da pneumonectomia, cada mL desnecessário pode virar edema no único pulmão que sobrou."
+},
+{
+  id: "tsa-ultra-008",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "VATS robótica e insuflação de CO2",
+  area: "Respiratório / Torácica",
+  dificuldade: "Muito difícil",
+  pergunta: "Durante lobectomia robótica em ventilação monopulmonar, com insuflação intratorácica de CO2, ocorre hipotensão progressiva, aumento de pressão de via aérea, ETCO2 subindo de 38 para 58 mmHg e ecocardiografia mostrando VD dilatado com septo interventricular em D. Qual interpretação integra melhor o quadro?",
+  alternativas: {
+    A: "Hipovolemia isolada por perda sanguínea oculta, devendo ser tratada com cristaloide rápido antes de qualquer mudança ventilatória.",
+    B: "Efeito combinado de CO2 intratorácico, aumento de pressão intratorácica, hipercapnia e elevação da resistência vascular pulmonar, com sobrecarga aguda de VD.",
+    C: "Broncoespasmo puro, pois aumento de ETCO2 e pressão de via aérea são suficientes para diagnóstico.",
+    D: "Embolia gasosa venosa por CO2, cuja conduta inicial é aumentar PEEP e manter insuflação para tamponamento.",
+    E: "Vasodilatação por anestésico inalatório, sem relação com ventilação monopulmonar ou VD."
+  },
+  resposta: "B",
+  comentario: "Na cirurgia torácica robótica, a insuflação de CO2 pode reduzir retorno venoso, elevar pressão intratorácica, aumentar PaCO2 e agravar PVR. Em OLV, isso pode descompensar VD, especialmente se houver hipercapnia, acidose, hipoxemia ou doença pulmonar. A leitura ecocardiográfica fecha o raciocínio: VD dilatado e septo em D indicam sobrecarga de pressão/volume do VD.",
+  frase_ouro: "Na torácica robótica, CO2 não é só gás de campo: ele pode virar vasoconstritor pulmonar por hipercapnia e esmagar o VD."
+},
+{
+  id: "tsa-ultra-009",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Mediastinoscopia cervical",
+  area: "Cardiovascular",
+  dificuldade: "Muito difícil",
+  pergunta: "Durante mediastinoscopia cervical para biópsia paratraqueal direita, o anestesista observa súbita atenuação da curva de pressão arterial invasiva no braço direito e queda da saturação no oxímetro do mesmo lado, sem alteração importante na pressão arterial medida no braço esquerdo. Qual explicação e monitorização são mais adequadas?",
+  alternativas: {
+    A: "Compressão da artéria pulmonar direita; a pressão arterial esquerda é falsamente normal e deve-se tratar como choque obstrutivo.",
+    B: "Compressão da artéria inominada/braquiocefálica pelo mediastinoscópio; monitorar perfusão cerebral e pressão em membro não comprometido é mais confiável.",
+    C: "Dissecção aguda de aorta; a cirurgia deve prosseguir até confirmação por tomografia.",
+    D: "Obstrução da veia cava superior; o oxímetro direito é o melhor marcador de débito cardíaco.",
+    E: "Erro de transdutor; alteração unilateral durante mediastinoscopia não tem significado clínico."
+  },
+  resposta: "B",
+  comentario: "Na mediastinoscopia, o mediastinoscópio pode comprimir grandes vasos, incluindo a artéria inominada, reduzindo pulso/pressão no braço direito e potencialmente fluxo carotídeo direito. Monitorização em membro contralateral e atenção à perfusão cerebral são importantes. A pegadinha é tratar como hipotensão sistêmica ou ignorar a assimetria.",
+  frase_ouro: "Na mediastinoscopia, desapareceu a radial direita? Pense em compressão da inominada antes de culpar o transdutor."
+},
+{
+  id: "tsa-ultra-010",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "CPAP no pulmão não ventilado",
+  area: "Respiratório / Torácica",
+  dificuldade: "Muito difícil",
+  pergunta: "Em lobectomia por VATS, paciente mantém SpO2 88% apesar de FiO2 1,0, DLT bem posicionado, recrutamento do pulmão dependente e PEEP de 6 cmH2O. O cirurgião aceita pequena insuflação do pulmão operado. Qual ajuste tende a melhorar oxigenação com menor prejuízo inicial ao campo?",
+  alternativas: {
+    A: "CPAP de 2 a 5 cmH2O com oxigênio no pulmão não ventilado.",
+    B: "PEEP de 15 cmH2O no pulmão dependente, independentemente da complacência.",
+    C: "Redução da FiO2 para 0,6 para intensificar HPV.",
+    D: "Hipoventilação permissiva até PaCO2 acima de 70 mmHg.",
+    E: "Aumento do volume corrente para 12 mL/kg no pulmão dependente."
+  },
+  resposta: "A",
+  comentario: "CPAP baixo com O2 no pulmão não ventilado pode melhorar muito a PaO2 ao oxigenar unidades perfundidas, mas pode prejudicar o campo se excessivo. Quando medidas no pulmão ventilado e posição do DLT já foram corrigidas, CPAP baixo é uma opção razoável, negociada com o cirurgião. PEEP alta demais pode sobredistender o pulmão dependente e piorar fluxo/VD.",
+  frase_ouro: "CPAP no pulmão operado é remédio de dose pequena: oxigena bem, mas se passar do ponto o cirurgião te excomunga."
+},
+{
+  id: "tsa-ultra-011",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Bolhas pulmonares e óxido nitroso",
+  area: "Respiratório / Torácica",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente com enfisema bolhoso gigante será submetido à bullectomia por toracoscopia. Antes da abertura pleural, apresenta bolha ocupando grande parte do hemitórax direito e desvio mediastinal discreto. Qual conduta é mais apropriada?",
+  alternativas: {
+    A: "Usar óxido nitroso em baixa concentração, pois reduz necessidade de halogenado e não difunde para bolhas já formadas.",
+    B: "Evitar óxido nitroso, limitar pressões de via aérea, considerar isolamento pulmonar e estar preparado para pneumotórax hipertensivo após ventilação positiva.",
+    C: "Realizar ventilação manual vigorosa antes da intubação para recrutar o pulmão comprimido.",
+    D: "Usar PEEP elevada para impedir expansão da bolha durante indução.",
+    E: "Evitar intubação seletiva, pois o colapso do lado acometido aumenta risco de ruptura da bolha."
+  },
+  resposta: "B",
+  comentario: "Bolhas gigantes podem expandir com N2O e romper com pressão positiva, causando pneumotórax hipertensivo. O objetivo é evitar aumento de volume da bolha, limitar pressão, isolar o pulmão se necessário e reconhecer rapidamente instabilidade por ruptura. PEEP alta e ventilação vigorosa aumentam risco.",
+  frase_ouro: "Bolha pulmonar gigante e N2O são igual fósforo perto de álcool: até pode não pegar fogo, mas por que testar?"
+},
+{
+  id: "tsa-ultra-012",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Ventilação protetora em OLV",
+  area: "Respiratório / Torácica",
+  dificuldade: "Muito difícil",
+  pergunta: "Durante OLV em paciente com pulmão dependente complacente, o ventilador mostra VT 8 mL/kg de peso predito, PEEP 5, pressão de platô 31 cmH2O e driving pressure 26 cmH2O. PaCO2 44 mmHg, SpO2 95%. Qual ajuste é mais alinhado com ventilação protetora?",
+  alternativas: {
+    A: "Manter VT atual porque oxigenação e PaCO2 estão adequadas.",
+    B: "Reduzir VT para cerca de 4 a 6 mL/kg de peso predito, aceitar hipercapnia moderada se pH permitir e ajustar PEEP/recrutamento conforme mecânica.",
+    C: "Aumentar VT para reduzir driving pressure por maior recrutamento alveolar.",
+    D: "Retirar PEEP, pois toda PEEP em OLV aumenta shunt.",
+    E: "Aumentar frequência respiratória e manter VT, pois a lesão pulmonar depende apenas de hipercapnia."
+  },
+  resposta: "B",
+  comentario: "OLV concentra toda a ventilação em um pulmão; usar volumes altos aumenta risco de volutrauma e pressão de distensão elevada. Estratégia protetora usa VT menor, pressão de platô/drive controladas, PEEP individualizada e permissive hypercapnia se aceitável. O fato de SpO2 estar boa não autoriza mecânica lesiva.",
+  frase_ouro: "Na OLV, oxigenação normal não absolve driving pressure criminosa."
+},
+{
+  id: "tsa-ultra-013",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Cirurgia de traqueia",
+  area: "Via aérea",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente com estenose traqueal subglótica de 70%, estridor leve em repouso e piora com sedação será submetido à ressecção traqueal. Qual planejamento anestésico é mais adequado?",
+  alternativas: {
+    A: "Indução profunda com bloqueio neuromuscular antes de garantir ventilação, pois reduz resistência dinâmica na estenose.",
+    B: "Planejamento conjunto com cirurgião, manutenção de ventilação espontânea até confirmação de ventilabilidade, tubos de pequeno calibre, broncoscopia rígida/campo cirúrgico prontos e estratégia de ventilação cruzada após abertura traqueal.",
+    C: "Máscara laríngea definitiva, pois ela evita passagem pelo segmento estreitado.",
+    D: "Intubação nasotraqueal às cegas com tubo pequeno, pois reduz manipulação da lesão.",
+    E: "Ventilação jet de alta frequência antes de avaliar localização da estenose, pois elimina risco de barotrauma."
+  },
+  resposta: "B",
+  comentario: "Cirurgia de traqueia é uma anestesia compartilhada em que o plano de via aérea precisa estar combinado antes da indução. Estenose sintomática pode colapsar ou tornar ventilação impossível após anestesia. Ventilação espontânea, broncoscopia rígida, tubos pequenos e ventilação através do campo são opções conforme fase cirúrgica. Jet ventilation pode ser útil, mas exige avaliação cuidadosa e não é solução universal.",
+  frase_ouro: "Na traqueia, quem improvisa via aérea depois da indução já começou atrasado."
+},
+{
+  id: "tsa-ultra-014",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Analgesia torácica e anticoagulação",
+  area: "Regional / Dor",
+  dificuldade: "Muito difícil",
+  pergunta: "Homem de 72 anos em uso de clopidogrel suspenso há 48 horas será submetido à toracotomia aberta por lobectomia. A equipe quer analgesia regional robusta e possibilidade de anticoagulação pós-operatória precoce. Qual alternativa é mais defensável?",
+  alternativas: {
+    A: "Peridural torácica imediatamente antes da cirurgia, pois a toracotomia justifica ignorar o intervalo do antiagregante.",
+    B: "Bloqueio paravertebral ou plano fascial conforme risco/benefício e protocolo institucional, evitando técnica neuraxial se intervalo do clopidogrel for inadequado.",
+    C: "Raquianestesia com morfina isolada, pois o risco de hematoma é menor que na peridural.",
+    D: "Cateter peridural pós-operatório após reiniciar clopidogrel, pois o sangramento já estará controlado.",
+    E: "Intrapleural contínuo como técnica de escolha, pois não sofre influência de anticoagulação."
+  },
+  resposta: "B",
+  comentario: "A prova quer ponderação: analgesia torácica é fundamental, mas neuraxial em paciente com antiagregação inadequadamente suspensa pode ser perigosa. Paravertebral e bloqueios de plano fascial podem oferecer boa analgesia com perfil de risco diferente, embora também exijam cautela. Não se deve banalizar peridural torácica com clopidogrel recente.",
+  frase_ouro: "Toracotomia dói muito, mas hematoma neuraxial dói na alma."
+},
+{
+  id: "tsa-ultra-015",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Hemoptise maciça",
+  area: "Via aérea",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente com bronquiectasias à esquerda chega ao centro cirúrgico com hemoptise maciça, hipoxemia e necessidade de controle de via aérea. A broncoscopia sugere sangramento do pulmão esquerdo. Qual objetivo inicial é prioritário?",
+  alternativas: {
+    A: "Intubar seletivamente o brônquio esquerdo para tamponar o sangramento e ventilar o pulmão fonte.",
+    B: "Proteger o pulmão direito da contaminação, posicionar sangramento para baixo se possível, aspirar e isolar o pulmão esquerdo com dispositivo adequado.",
+    C: "Evitar intubação até angiografia, pois pressão positiva sempre aumenta sangramento.",
+    D: "Usar máscara laríngea para facilitar broncoscopia e evitar trauma traqueal.",
+    E: "Administrar heparina para prevenir trombose por sangue retido na árvore brônquica."
+  },
+  resposta: "B",
+  comentario: "Na hemoptise maciça, o paciente morre frequentemente por asfixia e inundação do pulmão saudável, não por perda sanguínea isolada. O objetivo é proteger o pulmão não sangrante, aspirar, isolar o lado doente e manter oxigenação. Colocar o lado sangrante para baixo ajuda a limitar contaminação por gravidade.",
+  frase_ouro: "Hemoptise maciça é antes uma emergência de oxigenação do que de hemoglobina."
+},
+{
+  id: "tsa-ultra-016",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Toracoscopia em DPOC e auto-PEEP",
+  area: "Respiratório / Torácica",
+  dificuldade: "Muito difícil",
+  pergunta: "Durante OLV em paciente com DPOC grave, há hipotensão, aumento de pressão de pico, curva fluxo-tempo sem retornar a zero antes do próximo ciclo e ETCO2 progressivamente elevado. A ausculta não sugere intubação seletiva inadequada. Qual intervenção é mais coerente?",
+  alternativas: {
+    A: "Aumentar frequência respiratória para corrigir hipercapnia rapidamente.",
+    B: "Reduzir tempo expiratório para melhorar ventilação minuto.",
+    C: "Reduzir frequência, aceitar hipercapnia moderada, aumentar tempo expiratório e avaliar PEEP externa cuidadosamente abaixo da auto-PEEP.",
+    D: "Aumentar volume corrente, pois DPOC exige maior pressão para vencer resistência.",
+    E: "Administrar vasodilatador pulmonar sistêmico como primeira medida."
+  },
+  resposta: "C",
+  comentario: "A curva fluxo-tempo que não retorna a zero indica aprisionamento aéreo/auto-PEEP. Em DPOC durante OLV, aumentar FR pode piorar hiperinsuflação dinâmica, reduzir retorno venoso e causar hipotensão. O tratamento é dar tempo para expirar, reduzir ventilação minuto se tolerável, broncodilatar e ajustar PEEP externa com cautela.",
+  frase_ouro: "No DPOC em OLV, ETCO2 alto tenta te seduzir a aumentar frequência; a auto-PEEP agradece e derruba a pressão."
+},
+{
+  id: "tsa-ultra-017",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Transplante pulmonar e clampeamento da artéria pulmonar",
+  area: "Cardiovascular",
+  dificuldade: "Muito difícil",
+  pergunta: "Durante transplante pulmonar unilateral em paciente com hipertensão pulmonar, após clampeamento da artéria pulmonar do lado a ser transplantado, ocorre elevação abrupta da PAP, queda da pressão sistêmica, aumento importante da PVC e TEE mostra VD dilatado e hipocinético. Qual conduta é mais apropriada?",
+  alternativas: {
+    A: "Aumentar PEEP para reduzir fluxo pulmonar e proteger o enxerto.",
+    B: "Reduzir fatores que elevam PVR, otimizar oxigenação/ventilação, considerar vasodilatador pulmonar inalatório, suporte inotrópico/vasopressor e discutir suporte circulatório se refratário.",
+    C: "Administrar nitroprussiato sistêmico como primeira linha, pois reduz PVR sem comprometer perfusão coronariana do VD.",
+    D: "Induzir hipercapnia permissiva intensa para melhorar débito cardíaco.",
+    E: "Reposição volêmica liberal até normalizar PVC, pois o VD falha apenas por hipovolemia."
+  },
+  resposta: "B",
+  comentario: "Clampeamento de artéria pulmonar aumenta a carga sobre a circulação pulmonar remanescente e pode precipitar falência de VD. A conduta é reduzir PVR: evitar hipóxia, hipercapnia, acidose, pressões altas; usar iNO/prostaciclinas inaladas quando indicadas; sustentar pressão sistêmica e contratilidade do VD. Volume em excesso piora septo e perfusão do VE.",
+  frase_ouro: "VD em transplante pulmonar não quer volume heróico; quer PVR baixa e pressão sistêmica suficiente."
+},
+{
+  id: "tsa-ultra-018",
+  fonte: "Yao / Barash / Prova TSA",
+  capitulo: "Cirurgia torácica",
+  tema: "Extubação após cirurgia torácica",
+  area: "Respiratório / Torácica",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente submetido à lobectomia inferior esquerda apresenta ao final: normotermia, hemostasia adequada, troca gasosa aceitável em ventilação bilateral, bloqueio neuromuscular revertido, analgesia paravertebral funcionando, mas secreção espessa e tosse inefetiva. Qual decisão é mais apropriada?",
+  alternativas: {
+    A: "Extubar obrigatoriamente, pois lobectomia é cirurgia de extubação precoce.",
+    B: "Manter intubação se tosse e depuração de secreção forem inadequadas, pois capacidade de tossir e eliminar secreções é determinante para segurança respiratória.",
+    C: "Extubar e evitar fisioterapia respiratória nas primeiras 24 horas para não causar dor.",
+    D: "Administrar opioide em bolus alto antes da extubação para suprimir tosse e proteger sutura brônquica.",
+    E: "Extubar se a SpO2 estiver acima de 94%, independentemente da força de tosse."
+  },
+  resposta: "B",
+  comentario: "Extubação precoce é desejável, mas não obrigatória. Após ressecção pulmonar, tosse eficaz, controle de dor, reversão neuromuscular e manejo de secreções são críticos. Se o paciente não consegue tossir, a extubação pode gerar atelectasia, retenção de secreção e insuficiência respiratória.",
+  frase_ouro: "Na torácica, extubar não é só oxigenar: é tossir, limpar e ventilar sem destruir a analgesia."
+},
+{
+  id: "tsa-ultra-019",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Tetralogia de Fallot e crise hipercianótica",
+  area: "Pediatria",
+  dificuldade: "Muito difícil",
+  pergunta: "Lactente de 8 meses, 7 kg, com tetralogia de Fallot não corrigida, chora intensamente na indução inalatória para cirurgia não cardíaca. Evolui com SpO2 de 78% para 48%, taquicardia, sopro sistólico menos audível e pressão arterial reduzida. Qual conduta inicial é mais fisiologicamente correta?",
+  alternativas: {
+    A: "Reduzir SVR com nitroprussiato para aumentar fluxo sistêmico e diminuir shunt direita-esquerda.",
+    B: "Aumentar SVR com fenilefrina, tratar hipovolemia, aprofundar anestesia/analgesia, considerar betabloqueio para espasmo infundibular e corrigir hipóxia/acidemia.",
+    C: "Administrar diurético para reduzir pressão de VD e melhorar fluxo pulmonar.",
+    D: "Hiperventilar agressivamente até PaCO2 menor que 25 mmHg como medida isolada suficiente.",
+    E: "Aumentar concentração de sevoflurano rapidamente, pois queda de SVR melhora saturação na tetralogia."
+  },
+  resposta: "B",
+  comentario: "Crise hipercianótica em TOF decorre de aumento do shunt direita-esquerda por piora da obstrução dinâmica da via de saída do VD, queda de SVR ou aumento de PVR. O sopro pode diminuir porque há menos fluxo pelo trato de saída pulmonar. Aumentar SVR reduz o gradiente para shunt D-E; volume, analgesia, beta-bloqueio e correção de hipóxia/acidemia completam a fisiologia.",
+  frase_ouro: "Na crise de Fallot, fenilefrina não é 'pressão por pressão': é remédio anti-shunt."
+},
+{
+  id: "tsa-ultra-020",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Shunts e velocidade de indução",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil",
+  pergunta: "Criança com cardiopatia congênita cianótica por shunt direita-esquerda significativo será anestesiada. Em relação à indução anestésica, qual associação está correta?",
+  alternativas: {
+    A: "Shunt direita-esquerda acelera indução inalatória e retarda indução venosa.",
+    B: "Shunt direita-esquerda retarda indução inalatória e pode acelerar efeito de fármacos venosos que chegam à circulação sistêmica sem passar pelo pulmão.",
+    C: "Shunt esquerda-direita sempre impede indução venosa por diluição pulmonar.",
+    D: "Shunts intracardíacos não alteram farmacocinética de indução porque o débito cardíaco total é preservado.",
+    E: "Em shunt direita-esquerda, aumentar ventilação alveolar sempre normaliza a velocidade de indução inalatória."
+  },
+  resposta: "B",
+  comentario: "No shunt direita-esquerda, parte do sangue evita o pulmão; assim, a captação de anestésico inalatório para o sangue arterial é retardada. Já fármacos IV podem atingir cérebro mais rapidamente e com menor diluição pulmonar. Em shunt esquerda-direita, o efeito é menos dramático e depende do tamanho do shunt e débito pulmonar.",
+  frase_ouro: "Shunt D-E atrasa gás e apressa veia: o pulmão deixa de ser o primeiro filtro."
+},
+{
+  id: "tsa-ultra-021",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Fisiologia de ventrículo único",
+  area: "Pediatria",
+  dificuldade: "Muito difícil",
+  pergunta: "Neonato com síndrome do coração esquerdo hipoplásico em circulação paralela, mantido com prostaglandina E1, será submetido a procedimento urgente. Saturação 82%, lactato 2,1 mmol/L, boa perfusão. Durante ventilação, o residente sugere FiO2 1,0 e hiperventilação para 'normalizar a saturação'. Qual é o maior risco dessa estratégia?",
+  alternativas: {
+    A: "Aumentar PVR, reduzir fluxo pulmonar e causar hipoxemia grave.",
+    B: "Diminuir PVR excessivamente, aumentar Qp/Qs, roubar fluxo sistêmico e piorar perfusão tecidual apesar de saturação maior.",
+    C: "Fechar imediatamente o canal arterial por alcalose respiratória.",
+    D: "Aumentar SVR e reduzir fluxo cerebral.",
+    E: "Transformar a circulação paralela em circulação em série."
+  },
+  resposta: "B",
+  comentario: "Em ventrículo único/circulação paralela, saturação 'bonita' pode ser sinal de fluxo pulmonar excessivo e roubo sistêmico. Oxigênio e hipocapnia reduzem PVR, aumentam Qp e podem reduzir perfusão sistêmica, elevando lactato. O alvo não é SpO2 normal; é equilíbrio Qp/Qs, perfusão e oxigenação aceitável.",
+  frase_ouro: "No ventrículo único, saturação 100% pode ser má notícia com maquiagem."
+},
+{
+  id: "tsa-ultra-022",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Circulação de Fontan",
+  area: "Pediatria",
+  dificuldade: "Muito difícil",
+  pergunta: "Adulto jovem com circulação de Fontan extracardíaco será submetido à videolaparoscopia. Após pneumoperitônio e Trendelenburg, apresenta queda de pressão arterial, aumento de PVC, redução de ETCO2 e piora da saturação. Qual princípio explica melhor a descompensação?",
+  alternativas: {
+    A: "A circulação de Fontan depende de bomba ventricular direita subpulmonar, que falha com aumento de pós-carga sistêmica.",
+    B: "O fluxo pulmonar no Fontan é passivo e depende de baixa PVR, gradiente venoso adequado, ritmo sinusal e retorno venoso; pressão intratorácica/abdominal elevada e PEEP podem reduzir fluxo pulmonar.",
+    C: "Fontan tolera bem pneumoperitônio porque o retorno venoso aumentado melhora a pré-carga pulmonar.",
+    D: "Hipercapnia reduz PVR e aumenta fluxo pulmonar no Fontan.",
+    E: "O principal problema é queda de SVR, que sempre aumenta fluxo pulmonar."
+  },
+  resposta: "B",
+  comentario: "No Fontan não existe VD impulsionando sangue para o pulmão. Fluxo pulmonar depende de pressão venosa sistêmica, baixa PVR, ausência de obstruções, ritmo adequado e pressões intratorácicas baixas. Pneumoperitônio, hipercapnia, acidose, PEEP e altas pressões podem reduzir fluxo pulmonar e débito sistêmico.",
+  frase_ouro: "Fontan é circulação por gradiente; se você aumenta pressão no caminho, o sangue simplesmente não passa."
+},
+{
+  id: "tsa-ultra-023",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Eisenmenger",
+  area: "Cardiovascular",
+  dificuldade: "Muito difícil",
+  pergunta: "Mulher de 32 anos com comunicação interventricular ampla e síndrome de Eisenmenger será submetida a drenagem de abscesso sob anestesia. Saturação basal 84%, hematócrito 62%, pressão pulmonar sistêmica. Qual conduta é mais adequada?",
+  alternativas: {
+    A: "Reduzir SVR com bloqueio neuraxial alto para diminuir trabalho ventricular direito.",
+    B: "Manter SVR, evitar aumento de PVR, prevenir embolia aérea, corrigir hipovolemia com cautela e tratar hipotensão prontamente com vasopressor apropriado.",
+    C: "Hiperventilar intensamente e manter FiO2 baixa para evitar absorção de atelectasia.",
+    D: "Realizar flebotomia pré-operatória de rotina para reduzir hematócrito abaixo de 45%.",
+    E: "Usar nitroprussiato como vasopressor pulmonar seletivo."
+  },
+  resposta: "B",
+  comentario: "Eisenmenger combina hipertensão pulmonar fixa e shunt D-E. Queda de SVR aumenta shunt D-E e piora hipoxemia; aumento de PVR também piora fluxo pulmonar. Deve-se evitar hipóxia, hipercapnia, acidose, hipotermia, dor e embolia aérea. Flebotomia só é considerada em hiperviscosidade sintomática e com reposição, não de rotina.",
+  frase_ouro: "No Eisenmenger, cair SVR é abrir a porta do shunt direita-esquerda."
+},
+{
+  id: "tsa-ultra-024",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Blalock-Taussig modificado",
+  area: "Pediatria",
+  dificuldade: "Muito difícil",
+  pergunta: "Criança com atresia pulmonar e shunt de Blalock-Taussig modificado à direita será anestesiada para cirurgia abdominal. Na admissão, pulso radial direito é fraco e SpO2 no membro superior direito é 72%, enquanto no membro superior esquerdo é 82%. Qual interpretação é mais correta?",
+  alternativas: {
+    A: "O shunt está necessariamente trombosado e a cirurgia deve ser cancelada imediatamente.",
+    B: "A artéria subclávia ipsilateral ao shunt pode ter pulso e pressão reduzidos; monitorar pressão e oximetria em membro adequado é essencial para não interpretar erroneamente perfusão sistêmica.",
+    C: "O membro direito é sempre o melhor local para pressão não invasiva, por estar próximo ao shunt.",
+    D: "Diferença de saturação entre braços indica coarctação crítica até prova em contrário.",
+    E: "A aferição de pressão em qualquer membro é equivalente nesses pacientes."
+  },
+  resposta: "B",
+  comentario: "Após shunt BT/BT modificado, o braço ipsilateral pode ter pulso e pressão reduzidos pela anatomia da subclávia e do shunt. Isso pode dificultar monitorização e gerar falsa impressão de hipotensão ou dessaturação. Avaliar previamente pulsos e escolher local confiável para pressão/oximetria é ponto clássico do Yao.",
+  frase_ouro: "No BT shunt, o braço do shunt pode mentir para o anestesista."
+},
+{
+  id: "tsa-ultra-025",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Prostaglandina E1",
+  area: "Pediatria",
+  dificuldade: "Muito difícil",
+  pergunta: "Neonato com transposição das grandes artérias chega para septostomia atrial em uso de prostaglandina E1. Durante preparo, apresenta apneia, hipotensão leve e febre. Qual interpretação é mais adequada?",
+  alternativas: {
+    A: "São efeitos esperados da PGE1; deve-se estar preparado para suporte ventilatório e hemodinâmico, sem suspender inadvertidamente a droga se a circulação for ducto-dependente.",
+    B: "Apneia exclui efeito da PGE1 e indica sepse obrigatória.",
+    C: "A PGE1 deve ser suspensa imediatamente porque o canal arterial piora mistura em TGA.",
+    D: "A PGE1 fecha o ducto por dessensibilização de receptor e deve ser substituída por indometacina.",
+    E: "A presença de febre contraindica qualquer procedimento cardíaco paliativo."
+  },
+  resposta: "A",
+  comentario: "PGE1 mantém patência ductal em cardiopatias ducto-dependentes, mas pode causar apneia, hipotensão, febre e flushing. O erro grave é suspender a droga em circulação dependente do canal. Em TGA, manter ducto e melhorar mistura são vitais enquanto se planeja septostomia/correção.",
+  frase_ouro: "PGE1 dá apneia; suspender sem pensar pode dar algo pior: colapso ducto-dependente."
+},
+{
+  id: "tsa-ultra-026",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Crise de hipertensão pulmonar",
+  area: "Cardiovascular",
+  dificuldade: "Muito difícil",
+  pergunta: "Após correção de CIV com CEC, criança de 10 meses evolui na UTI cirúrgica com queda abrupta da saturação, hipotensão, aumento de PVC, bradicardia relativa e TEE mostrando VD dilatado. Gasometria: pH 7,18, PaCO2 62 mmHg. Qual intervenção inicial é mais adequada?",
+  alternativas: {
+    A: "Reduzir FiO2 para estimular respiração espontânea e evitar toxicidade pulmonar.",
+    B: "Corrigir hipoxemia, hipercapnia e acidose, aprofundar sedação/analgesia, iniciar vasodilatador pulmonar inalatório e sustentar pressão sistêmica.",
+    C: "Administrar nitroprussiato sistêmico em bolus para reduzir rapidamente pressão pulmonar.",
+    D: "Suspender ventilação mecânica, pois pressão positiva é sempre a causa de crise pulmonar hipertensiva.",
+    E: "Reposição volêmica agressiva até reduzir PVC."
+  },
+  resposta: "B",
+  comentario: "Crise de hipertensão pulmonar é círculo vicioso: hipóxia, hipercapnia, acidose e estímulo simpático elevam PVR, falem VD e pioram débito. O tratamento é remover gatilhos, oxigenar, ventilar, alcalinizar se necessário, analgesiar/sedar, usar iNO ou vasodilatador pulmonar seletivo e manter pressão sistêmica para perfusão coronariana do VD.",
+  frase_ouro: "Na crise de hipertensão pulmonar, trate PVR e proteja a coronária do VD."
+},
+{
+  id: "tsa-ultra-027",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Cianose crônica e coagulação",
+  area: "Hematologia / Coagulação",
+  dificuldade: "Muito difícil",
+  pergunta: "Adolescente com cardiopatia congênita cianótica, SpO2 basal 78%, hematócrito 68%, plaquetas 105.000/mm³ e história de epistaxes será submetido à correção paliativa. Qual afirmação é mais adequada?",
+  alternativas: {
+    A: "O hematócrito elevado protege contra sangramento por aumentar viscosidade e concentração de fatores.",
+    B: "Cardiopatia cianótica pode cursar com trombocitopenia, disfunção plaquetária, alterações de coagulação e risco simultâneo de sangramento e trombose.",
+    C: "A flebotomia profilática é obrigatória em todos com hematócrito acima de 60%.",
+    D: "O uso de antifibrinolítico é contraindicado porque esses pacientes nunca apresentam fibrinólise.",
+    E: "A hiperviscosidade elimina necessidade de reposição volêmica."
+  },
+  resposta: "B",
+  comentario: "Cianose crônica causa eritrocitose secundária, mas também pode haver plaquetopenia, disfunção plaquetária, deficiência relativa de fatores e anormalidades endoteliais. O risco é paradoxal: sangra e trombosa. Flebotomia não é rotina; deve ser reservada a hiperviscosidade sintomática, com reposição isovolêmica.",
+  frase_ouro: "Na cardiopatia cianótica, hematócrito alto não significa coagulação forte."
+},
+{
+  id: "tsa-ultra-028",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Síndrome de deleção 22q11",
+  area: "Pediatria",
+  dificuldade: "Muito difícil",
+  pergunta: "Criança com tetralogia de Fallot e atresia pulmonar será submetida a correção. Há fácies dismórfica, infecções de repetição, palato anômalo e cálcio total reduzido. Qual associação deve ser lembrada?",
+  alternativas: {
+    A: "Síndrome de Williams; hipercalcemia, estenose supravalvar aórtica e baixa incidência de dificuldade de via aérea.",
+    B: "Deleção 22q11; hipocalcemia, imunodeficiência, anomalias conotruncais e possível dificuldade de via aérea/alimentação.",
+    C: "Síndrome de Down; hipercoagulabilidade isolada e ausência de hipertensão pulmonar.",
+    D: "Síndrome de Marfan; atresia pulmonar, micrognatia e hipocalcemia neonatal.",
+    E: "Neurofibromatose; hipocalcemia por hipoparatireoidismo e truncus arteriosus obrigatório."
+  },
+  resposta: "B",
+  comentario: "TOF com atresia pulmonar e anomalias conotruncais deve lembrar deleção 22q11, que pode cursar com hipocalcemia por hipoparatireoidismo, imunodeficiência, anomalias de palato, alterações de via aérea e problemas alimentares. É detalhe de prova porque muda planejamento: cálcio, sangue irradiado/filtrado conforme protocolo, via aérea e infecção.",
+  frase_ouro: "Conotruncal + hipocalcemia + infecção recorrente: pense 22q11 antes da banca pensar por você."
+},
+{
+  id: "tsa-ultra-029",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Transposição das grandes artérias",
+  area: "Pediatria",
+  dificuldade: "Muito difícil",
+  pergunta: "Neonato com transposição das grandes artérias apresenta SpO2 62% apesar de FiO2 1,0, acidose metabólica progressiva e ecocardiograma mostrando forame oval restritivo. Qual intervenção corrige melhor a fisiopatologia imediata?",
+  alternativas: {
+    A: "Aumentar FiO2 e hiperventilar até saturação normal.",
+    B: "Melhorar mistura entre circulações paralelas, especialmente com septostomia atrial se comunicação interatrial restritiva, mantendo PGE1 enquanto indicado.",
+    C: "Reduzir SVR com nitroprussiato para aumentar fluxo pulmonar.",
+    D: "Administrar diurético agressivo para reduzir congestão pulmonar.",
+    E: "Fechar ducto arterial com indometacina para evitar roubo sistêmico."
+  },
+  resposta: "B",
+  comentario: "Na TGA, as circulações sistêmica e pulmonar estão em paralelo. Oxigênio não resolve se não houver mistura adequada. Forame oval restritivo gera hipóxia profunda e acidose; septostomia atrial pode ser salvadora. PGE1 ajuda a manter ducto e mistura, mas pode não bastar se a comunicação atrial for inadequada.",
+  frase_ouro: "Na TGA, o problema não é falta de oxigênio no ventilador; é falta de mistura no coração."
+},
+{
+  id: "tsa-ultra-030",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Anestesia venosa em criança cardiopata",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil",
+  pergunta: "Criança de 2 anos com cardiopatia congênita complexa, baixa reserva ventricular e shunt residual será induzida para cateterismo. Qual escolha farmacológica é mais apropriada como princípio geral?",
+  alternativas: {
+    A: "Propofol em bolus alto é sempre ideal porque reduz PVR e melhora todos os shunts.",
+    B: "A escolha deve evitar quedas abruptas de SVR, depressão miocárdica e alterações extremas de PVR; etomidato, cetamina titulada ou técnica opioide podem ser consideradas conforme lesão e objetivo hemodinâmico.",
+    C: "Halotano é preferido ao sevoflurano por menor depressão miocárdica em crianças.",
+    D: "Todos os cardiopatas congênitos se beneficiam de reduzir SVR na indução.",
+    E: "A técnica anestésica não altera shunt se a saturação basal for conhecida."
+  },
+  resposta: "B",
+  comentario: "Não há indutor universal em cardiopatia congênita. O erro é aplicar regra única. Propofol pode causar vasodilatação e depressão, problemático em lesões dependentes de SVR. Cetamina pode preservar SVR, mas deve ser contextualizada; etomidato preserva hemodinâmica, mas tem outras considerações. O alvo é manter equilíbrio entre SVR/PVR, débito, contratilidade e oxigenação.",
+  frase_ouro: "Na cardiopatia congênita, o melhor indutor é o que respeita o shunt daquele paciente."
+},
+{
+  id: "tsa-ultra-031",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Norwood e Qp/Qs",
+  area: "Pediatria",
+  dificuldade: "Muito difícil",
+  pergunta: "No pós-operatório imediato de Norwood com shunt Sano, lactente apresenta SpO2 92%, extremidades frias, lactato subindo de 2 para 6 mmol/L e pressão arterial limítrofe. Qual interpretação é mais provável?",
+  alternativas: {
+    A: "A saturação alta exclui baixo débito sistêmico.",
+    B: "Pode haver hiperfluxo pulmonar relativo com roubo sistêmico; a avaliação deve focar oferta sistêmica de oxigênio, lactato, perfusão e equilíbrio Qp/Qs, não apenas SpO2.",
+    C: "A conduta inicial obrigatória é aumentar FiO2 e hiperventilar para SpO2 100%.",
+    D: "A saturação desejável nessa fisiologia é sempre acima de 95%.",
+    E: "O shunt Sano impede qualquer desequilíbrio entre fluxo pulmonar e sistêmico."
+  },
+  resposta: "B",
+  comentario: "Após Norwood, saturação alta pode refletir fluxo pulmonar excessivo à custa do sistêmico. Lactato crescente e perfusão ruim são mais importantes que a SpO2 isolada. O manejo busca equilíbrio Qp/Qs, evitando queda excessiva de PVR e mantendo perfusão sistêmica.",
+  frase_ouro: "No Norwood, SpO2 alta com lactato subindo é o paciente dizendo: meu pulmão está roubando meu corpo."
+},
+{
+  id: "tsa-ultra-032",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Endocardite e bolhas em acesso venoso",
+  area: "Cardiovascular",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente com cardiopatia congênita cianótica e shunt direita-esquerda residual será submetido a procedimento ortopédico. Qual cuidado aparentemente simples tem maior relevância fisiopatológica?",
+  alternativas: {
+    A: "Evitar filtros de ar nos equipos, pois aumentam resistência à infusão.",
+    B: "Eliminar bolhas de sistemas venosos e considerar filtros, pois embolia aérea venosa pode atravessar shunt e causar embolia arterial paradoxal.",
+    C: "Manter cabeceira elevada obrigatoriamente para reduzir retorno venoso e shunt.",
+    D: "Usar óxido nitroso para reduzir volume de bolhas intravasculares.",
+    E: "Preferir punção venosa em membro superior direito para reduzir risco de embolia cerebral."
+  },
+  resposta: "B",
+  comentario: "Em shunt direita-esquerda, pequenas bolhas venosas podem passar para circulação sistêmica e causar embolia cerebral/coronária. Cuidado meticuloso com equipos, seringas e conexões é obrigatório. Essa é uma questão cruel porque parece detalhe operacional, mas é fisiologia pura.",
+  frase_ouro: "No shunt D-E, bolha venosa vira problema arterial."
+},
+{
+  id: "tsa-ultra-033",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Canal arterial e anestesia",
+  area: "Pediatria",
+  dificuldade: "Muito difícil",
+  pergunta: "Neonato com coarctação crítica pré-ductal depende de canal arterial para perfusão sistêmica distal. Durante anestesia, ocorre piora de perfusão de membros inferiores, acidose e queda de pressão pós-ductal. Qual conduta é mais coerente?",
+  alternativas: {
+    A: "Administrar indometacina para reduzir roubo pulmonar.",
+    B: "Garantir ou reiniciar PGE1, corrigir acidose/hipóxia, manter débito e avaliar perfusão pré e pós-ductal.",
+    C: "Hiperventilar até PaCO2 20 mmHg para fechar canal e aumentar pressão proximal.",
+    D: "Reduzir SVR distal com nitroprussiato para melhorar gradiente transcoarctação.",
+    E: "Evitar suporte ventilatório porque PGE1 só funciona em respiração espontânea."
+  },
+  resposta: "B",
+  comentario: "Na coarctação crítica, a circulação sistêmica distal pode depender de fluxo ductal. Fechamento ou constrição do canal leva a choque de membros inferiores, acidose e injúria renal/mesentérica. PGE1, correção de fatores que aumentam consumo e monitorização pré/pós-ductal são essenciais.",
+  frase_ouro: "Em lesão ducto-dependente, canal arterial é circulação, não detalhe anatômico."
+},
+{
+  id: "tsa-ultra-034",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Comunicação interatrial e embolia paradoxal",
+  area: "Cardiovascular",
+  dificuldade: "Muito difícil",
+  pergunta: "Adulto com CIA grande, hipertensão pulmonar leve e fibrilação atrial será submetido à colecistectomia laparoscópica. Durante insuflação, há queda de ETCO2, dessaturação transitória e instabilidade. Qual evento deve entrar no diferencial com especial atenção pela cardiopatia?",
+  alternativas: {
+    A: "Embolia gasosa venosa com possibilidade de embolia paradoxal se houver inversão transitória de gradiente interatrial.",
+    B: "Fechamento agudo da CIA por pneumoperitônio.",
+    C: "Hipoxemia por absorção de CO2, sem risco sistêmico.",
+    D: "Tamponamento cardíaco por aumento de PVR isoladamente.",
+    E: "Crise tireotóxica por absorção peritoneal de CO2."
+  },
+  resposta: "A",
+  comentario: "Em laparoscopia, embolia gasosa é rara, mas queda abrupta de ETCO2 e instabilidade sugerem redução de fluxo pulmonar/debito ou embolia. Em defeitos intracardíacos, especialmente com pressões direitas eleváveis, há risco de passagem paradoxal para circulação arterial.",
+  frase_ouro: "Defeito septal transforma embolia venosa em ameaça cerebral."
+},
+{
+  id: "tsa-ultra-035",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Síndrome de Down e hipertensão pulmonar",
+  area: "Pediatria",
+  dificuldade: "Muito difícil",
+  pergunta: "Criança com síndrome de Down, canal atrioventricular parcialmente corrigido e hipertensão pulmonar residual será submetida à amigdalectomia. Qual conjunto de preocupações é mais adequado?",
+  alternativas: {
+    A: "Baixo risco de via aérea, ausência de hipertensão pulmonar e maior tolerância à hipóxia.",
+    B: "Via aérea potencialmente difícil/obstrutiva, instabilidade atlantoaxial quando suspeita clínica, hipertensão pulmonar residual e risco de aumento de PVR por hipóxia, hipercapnia, dor e laringoespasmo.",
+    C: "Contraindicação absoluta à anestesia geral.",
+    D: "Preferência obrigatória por succinilcolina devido à resistência aos bloqueadores não despolarizantes.",
+    E: "Hiperventilação e FiO2 baixa para prevenir atelectasia como objetivos principais."
+  },
+  resposta: "B",
+  comentario: "Síndrome de Down associa via aérea superior problemática, apneia/obstrução, hipotonia, cardiopatia congênita e hipertensão pulmonar. Em cirurgia de via aérea, hipóxia, hipercapnia, dor e laringoespasmo podem precipitar crise pulmonar hipertensiva. A alternativa correta integra via aérea e coração, como faria a banca.",
+  frase_ouro: "Na criança Down cardiopata, a via aérea pode ser o gatilho da crise pulmonar."
+},
+{
+  id: "tsa-ultra-036",
+  fonte: "Yao / Miller / Prova TSA",
+  capitulo: "Cardiopatia congênita",
+  tema: "Baixo débito pós-CEC pediátrica",
+  area: "Cardiovascular",
+  dificuldade: "Muito difícil",
+  pergunta: "Após correção de cardiopatia congênita com CEC, lactente apresenta baixo débito: extremidades frias, lactato crescente, ecocardiografia com disfunção biventricular leve a moderada e pressão arterial baixa. Qual afirmação sobre milrinona é mais correta?",
+  alternativas: {
+    A: "Aumenta contratilidade e reduz resistência vascular pulmonar/sistêmica por inibição da fosfodiesterase III, podendo ajudar, mas pode piorar hipotensão e exigir vasopressor associado.",
+    B: "É vasoconstritor pulmonar seletivo, ideal quando a pressão sistêmica está baixa.",
+    C: "Tem efeito apenas cronotrópico, sem ação lusitrópica ou vascular.",
+    D: "É contraindicada em qualquer hipertensão pulmonar.",
+    E: "Substitui sempre adrenalina quando há hipotensão grave."
+  },
+  resposta: "A",
+  comentario: "Milrinona é inodilatador: aumenta AMPc por inibição da PDE III, melhora inotropismo/lusitropismo e reduz PVR/SVR. Em pós-CEC pediátrica pode ser útil em baixo débito e hipertensão pulmonar, mas sua vasodilatação pode agravar hipotensão, exigindo noradrenalina/vasopressina/adrenalina conforme fisiologia.",
+  frase_ouro: "Milrinona ajuda o coração e abre vaso; quando a pressão já está baixa, ela precisa de escolta."
+},
+{
+  id: "tsa-ultra-037",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "Ressuscitação hemostática",
+  area: "Emergências / Crítico",
+  dificuldade: "Muito difícil",
+  pergunta: "Homem de 29 anos, ferimento por arma branca abdominal, PA 70/40, FC 148, pele fria, FAST positivo. Chega ao centro cirúrgico com dois acessos 16G e recebeu 2 L de cristaloide no pré-hospitalar. Qual estratégia inicial é mais alinhada ao controle de dano?",
+  alternativas: {
+    A: "Cristaloide aquecido até normalizar PA antes da incisão.",
+    B: "Ativar protocolo de transfusão maciça com hemocomponentes balanceados, limitar cristaloide, corrigir cálcio/temperatura/coagulopatia e buscar controle cirúrgico rápido da hemorragia.",
+    C: "Noradrenalina em dose crescente até PAM 80 antes de transfundir.",
+    D: "Aguardar exames convencionais de coagulação antes de administrar plasma ou plaquetas.",
+    E: "Reposição inicial apenas com albumina, pois preserva pressão oncótica e evita coagulopatia."
+  },
+  resposta: "B",
+  comentario: "Trauma hemorrágico grave exige ressuscitação hemostática e controle de sangramento. Cristaloide liberal dilui fatores, piora acidose/hipotermia e não transporta oxigênio. Vasopressor não substitui sangue e pode piorar perfusão se usado como muleta antes de volume/controle. A meta é componente hemostático cedo, aquecimento, cálcio, TXA quando indicado e cirurgia rápida.",
+  frase_ouro: "No trauma sangrando, ressuscitação bonita sem controle de sangramento é teatro; cirurgia sem ressuscitação é roleta."
+},
+{
+  id: "tsa-ultra-038",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "TCE e hipotensão permissiva",
+  area: "Neuroanestesia",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente vítima de colisão moto-auto apresenta TCE grave, anisocoria, FAST positivo e choque hemorrágico. A equipe sugere hipotensão permissiva até laparotomia para reduzir sangramento. Qual nuance é correta?",
+  alternativas: {
+    A: "Hipotensão permissiva é ideal em todo trauma, inclusive TCE grave, desde que por menos de 30 minutos.",
+    B: "No TCE grave, deve-se evitar hipotensão e hipoxemia, pois lesão secundária cerebral pode superar benefício de menor sangramento; a estratégia pressórica precisa equilibrar controle hemorrágico e perfusão cerebral.",
+    C: "A pressão arterial não influencia prognóstico neurológico se a cirurgia for rápida.",
+    D: "Hiperventilação profunda profilática substitui manutenção de pressão arterial.",
+    E: "Cristaloide hipotônico é preferível por reduzir edema cerebral."
+  },
+  resposta: "B",
+  comentario: "Hipotensão permissiva pode ter lugar em hemorragia sem TCE, mas TCE grave é exceção importante. Hipotensão e hipóxia são fortes causadores de lesão secundária. O alvo pressórico deve preservar perfusão cerebral enquanto se busca controle hemorrágico e ressuscitação hemostática.",
+  frase_ouro: "No trauma com TCE grave, a cabeça não aceita hipotensão filosófica."
+},
+{
+  id: "tsa-ultra-039",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "Via aérea e coluna cervical",
+  area: "Via aérea",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente politraumatizado, Glasgow 7, sangue em cavidade oral, suspeita de lesão cervical, necessita intubação emergencial. Qual conduta é mais adequada?",
+  alternativas: {
+    A: "Retirar colar, hiperestender pescoço e realizar laringoscopia direta clássica para primeira tentativa.",
+    B: "Realizar sequência rápida com estabilização manual em linha, aspiração agressiva, plano alternativo pronto e considerar videolaringoscopia ou laringoscopia direta conforme disponibilidade/experiência.",
+    C: "Aguardar radiografia cervical antes de intubar, mesmo com rebaixamento e sangue em via aérea.",
+    D: "Máscara laríngea definitiva é preferível porque elimina movimento cervical.",
+    E: "Evitar cricotireoidostomia em 'não intuba/não ventila' até confirmação tomográfica da coluna."
+  },
+  resposta: "B",
+  comentario: "Trauma com Glasgow baixo e sangue na via aérea exige controle rápido. A técnica típica é RSI com estabilização manual da coluna cervical, aspiração e preparo para falha. Videolaringoscopia pode ajudar, mas sangue pode limitar visão. Em CICO, cricotireoidostomia não deve ser postergada.",
+  frase_ouro: "No trauma, via aérea difícil não espera tomografia ficar pronta."
+},
+{
+  id: "tsa-ultra-040",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "Pneumotórax hipertensivo intraoperatório",
+  area: "Emergências / Crítico",
+  dificuldade: "Muito difícil",
+  pergunta: "Após intubação de paciente com trauma torácico fechado, ocorre hipotensão súbita, SpO2 84%, aumento de pressão de via aérea, murmúrio abolido à esquerda e turgência jugular. O capnógrafo mostra queda de ETCO2. Qual conduta é correta?",
+  alternativas: {
+    A: "Solicitar radiografia de tórax antes de intervenção para evitar punção desnecessária.",
+    B: "Tratar imediatamente como pneumotórax hipertensivo com descompressão torácica, seguida de drenagem definitiva.",
+    C: "Aumentar PEEP para reexpandir o pulmão esquerdo.",
+    D: "Administrar broncodilatador e aguardar resposta.",
+    E: "Reduzir FiO2 para evitar absorção do pneumotórax."
+  },
+  resposta: "B",
+  comentario: "Pneumotórax hipertensivo é diagnóstico clínico em paciente instável, especialmente após PPV. Hipotensão, aumento de pressão, ausência unilateral de murmúrio e queda de ETCO2 indicam choque obstrutivo. Não se espera imagem.",
+  frase_ouro: "Pneumotórax hipertensivo instável não é diagnóstico radiológico; é diagnóstico de agulha/dedo."
+},
+{
+  id: "tsa-ultra-041",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "Hipocalcemia na transfusão maciça",
+  area: "Hematologia / Coagulação",
+  dificuldade: "Muito difícil",
+  pergunta: "Durante laparotomia por trauma, após 8 concentrados de hemácias, 6 plasmas e 1 pool de plaquetas, paciente mantém hipotensão, QT prolongado, contratilidade reduzida ao eco e cálcio ionizado 0,78 mmol/L. Qual interpretação é mais adequada?",
+  alternativas: {
+    A: "Hipocalcemia por citrato é esperada na transfusão maciça e pode contribuir para hipotensão, disfunção miocárdica e coagulopatia; deve ser corrigida com cálcio ionizado guiando reposição.",
+    B: "Cálcio baixo é protetor contra coagulação intravascular e não deve ser corrigido.",
+    C: "Gluconato de cálcio é proibido em trauma por aumentar mortalidade.",
+    D: "Hipocalcemia não altera contratilidade nem coagulação.",
+    E: "O único tratamento é bicarbonato, pois acidose explica todo cálcio baixo."
+  },
+  resposta: "A",
+  comentario: "Citrato dos hemocomponentes quelam cálcio, especialmente quando a velocidade de transfusão supera metabolismo hepático. Cálcio ionizado baixo deprime contratilidade, piora vasoplegia, prolonga QT e prejudica coagulação. Em MTP, cálcio é parte da ressuscitação, não cosmético de laboratório.",
+  frase_ouro: "Transfundir sem olhar cálcio é abastecer o tanque e desligar a ignição."
+},
+{
+  id: "tsa-ultra-042",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "TXA no trauma",
+  area: "Hematologia / Coagulação",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente com trauma penetrante e choque hemorrágico chega 90 minutos após o evento. Há suspeita de hiperfibrinólise e sangramento ativo. Qual afirmação sobre ácido tranexâmico é mais adequada?",
+  alternativas: {
+    A: "Deve ser considerado precocemente em trauma hemorrágico, idealmente dentro de 3 horas, pois após janela tardia o benefício diminui e pode haver risco.",
+    B: "É útil apenas se fibrinogênio estiver acima de 400 mg/dL.",
+    C: "É contraindicado em qualquer trauma cranioencefálico associado.",
+    D: "Substitui plasma e plaquetas no protocolo de transfusão maciça.",
+    E: "Age ativando plasminogênio para remover microtrombos."
+  },
+  resposta: "A",
+  comentario: "TXA inibe fibrinólise ao bloquear ativação/ligação do plasminogênio à fibrina. Em trauma hemorrágico, benefício é tempo-dependente, mais claro quando administrado cedo, especialmente dentro de 3 horas. Não substitui ressuscitação hemostática.",
+  frase_ouro: "TXA no trauma é remédio de relógio: cedo ajuda; tarde pode atrapalhar."
+},
+{
+  id: "tsa-ultra-043",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "Tamponamento cardíaco traumático",
+  area: "Cardiovascular",
+  dificuldade: "Muito difícil",
+  pergunta: "Homem com ferimento precordial chega consciente, PA 80/50, bulhas abafadas, turgência jugular e FAST com líquido pericárdico. Vai para toracotomia imediata. Qual manejo anestésico é mais apropriado antes da abertura do pericárdio?",
+  alternativas: {
+    A: "Indução profunda com propofol em bolus e ventilação positiva com PEEP alta para reduzir retorno venoso.",
+    B: "Manter pré-carga, evitar vasodilatação e depressão miocárdica, preparar drogas/hemocomponentes, induzir de forma titulada e reconhecer que PPV pode precipitar colapso.",
+    C: "Administrar diurético para reduzir pressão pericárdica.",
+    D: "Aguardar drenagem pericárdica percutânea obrigatória antes de levar à sala.",
+    E: "Hipotensão permissiva profunda é sempre ideal porque reduz sangramento cardíaco."
+  },
+  resposta: "B",
+  comentario: "Tamponamento é estado dependente de pré-carga e tônus simpático. Indução, vasodilatação e PPV podem reduzir retorno venoso e débito, levando à parada. O objetivo é manter perfusão até controle cirúrgico, com indução titulada, equipe pronta e sangue disponível.",
+  frase_ouro: "No tamponamento, a anestesia pode ser a última gota que tira o débito cardíaco."
+},
+{
+  id: "tsa-ultra-044",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "Queimadura e succinilcolina",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente de 40 anos, queimadura elétrica e térmica de 35% da superfície corporal há 5 dias, será submetido a desbridamento. Potássio 4,8 mEq/L, via aérea sem edema. Qual bloqueador neuromuscular deve ser evitado e por quê?",
+  alternativas: {
+    A: "Rocurônio, por causar hipercalemia tardia em queimados.",
+    B: "Succinilcolina, por risco de hipercalemia grave após upregulation de receptores acetilcolínicos extrajuncionais.",
+    C: "Cisatracúrio, por depender exclusivamente de rim e fígado.",
+    D: "Vecurônio, por liberar histamina maciçamente em queimados.",
+    E: "Nenhum; succinilcolina é segura em qualquer fase da queimadura se potássio basal for normal."
+  },
+  resposta: "B",
+  comentario: "Após queimaduras extensas, trauma neuromuscular e imobilização, há proliferação de receptores acetilcolínicos extrajuncionais. Succinilcolina pode causar saída maciça de potássio e PCR. O risco aumenta após as primeiras 24-48 horas e persiste por semanas/meses. Potássio basal normal não garante segurança.",
+  frase_ouro: "Em queimado tardio, succinilcolina é teste de potássio que ninguém deveria fazer."
+},
+{
+  id: "tsa-ultra-045",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "Lesão inalatória",
+  area: "Via aérea",
+  dificuldade: "Muito difícil",
+  pergunta: "Vítima de incêndio em ambiente fechado chega falando, com rouquidão discreta, vibrissas chamuscadas, escarro carbonáceo e queimadura facial. SpO2 99% em oxímetro de pulso. Qual conduta é mais apropriada?",
+  alternativas: {
+    A: "Observar sem intubação, pois SpO2 normal exclui lesão inalatória e intoxicação por CO.",
+    B: "Manter alto índice de suspeita, administrar oxigênio a 100%, avaliar carboxi-hemoglobina/co-oximetria e considerar intubação precoce antes de edema progressivo de via aérea.",
+    C: "Evitar oxigênio alto porque piora toxicidade por monóxido de carbono.",
+    D: "Aguardar estridor intenso para indicar via aérea definitiva.",
+    E: "Usar succinilcolina obrigatoriamente, pois toda queimadura aguda contraindica rocurônio."
+  },
+  resposta: "B",
+  comentario: "O oxímetro convencional não diferencia oxi-hemoglobina de carboxi-hemoglobina e pode superestimar saturação. Sinais de lesão inalatória e queimadura facial podem evoluir com edema rápido; intubação precoce é mais segura que via aérea tardia impossível. O2 100% reduz meia-vida da COHb.",
+  frase_ouro: "Na fumaça, SpO2 bonita pode ser mentira com monóxido de carbono."
+},
+{
+  id: "tsa-ultra-046",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "Choque medular versus hemorrágico",
+  area: "Emergências / Crítico",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente vítima de queda apresenta trauma raquimedular cervical alto, PA 75/40, FC 48, pele quente e seca, sem sinais externos de sangramento importante. FAST negativo. Qual interpretação é mais provável e conduta hemodinâmica inicial?",
+  alternativas: {
+    A: "Choque hemorrágico classe IV; bradicardia exclui choque neurogênico.",
+    B: "Choque neurogênico por perda de tônus simpático; tratar com reposição cautelosa, vasopressor com ação alfa e suporte cronotrópico se necessário, sem deixar de excluir hemorragia.",
+    C: "Tamponamento cardíaco; tratar com diurético e PEEP.",
+    D: "Sepse medular aguda; iniciar vasodilatador.",
+    E: "Anafilaxia traumática; adrenalina é obrigatória e investigação de sangramento é desnecessária."
+  },
+  resposta: "B",
+  comentario: "Choque neurogênico típico cursa com hipotensão e bradicardia por perda simpática, pele quente e vasodilatação. Trauma sempre exige excluir hemorragia, mas o padrão difere do hemorrágico, em que taquicardia e pele fria são mais esperadas. Vasopressor alfa e suporte cronotrópico podem ser necessários.",
+  frase_ouro: "No trauma, hipotensão com bradicardia cervical é simpático desligado até prova em contrário — mas sangue oculto continua no diferencial."
+},
+{
+  id: "tsa-ultra-047",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "TEG/ROTEM no sangramento traumático",
+  area: "Hematologia / Coagulação",
+  dificuldade: "Muito difícil",
+  pergunta: "Durante ressuscitação de trauma, ROTEM mostra tempo de coagulação prolongado, amplitude máxima reduzida e lise aumentada aos 30 minutos. Sangramento difuso persiste. Qual interpretação terapêutica é mais apropriada?",
+  alternativas: {
+    A: "Deficiência isolada de fibrinogênio; tratar apenas com crioprecipitado.",
+    B: "Padrão misto com atraso de iniciação, baixa força de coágulo e hiperfibrinólise; considerar plasma/fatores, plaquetas/fibrinogênio conforme ensaios específicos e antifibrinolítico se dentro da janela.",
+    C: "Coagulação normal; ROTEM não deve influenciar manejo.",
+    D: "Excesso de plaquetas; indicar antiagregante.",
+    E: "Hipercoagulabilidade por trauma; contraindica transfusão."
+  },
+  resposta: "B",
+  comentario: "Questão difícil porque exige ler dinâmica, não decorar um número. Tempo prolongado sugere deficiência de fatores/hemodiluição; amplitude baixa sugere plaquetas e/ou fibrinogênio; lise elevada sugere hiperfibrinólise. O tratamento deve ser guiado pelo padrão global e ensaios específicos, não por uma única ampola mágica.",
+  frase_ouro: "Viscoelástico não diz 'sangra muito'; ele conta em que fase o coágulo está fracassando."
+},
+{
+  id: "tsa-ultra-048",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "Trauma pélvico",
+  area: "Emergências / Crítico",
+  dificuldade: "Muito difícil",
+  pergunta: "Homem com fratura pélvica instável, PA 65/35, lactato 7, base excess -12, sem resposta sustentada a cristaloide. Qual combinação inicial é mais adequada?",
+  alternativas: {
+    A: "Retirar binder pélvico para facilitar acesso femoral e aguardar tomografia contrastada.",
+    B: "Binder pélvico adequado, protocolo de transfusão maciça, correção de tríade letal e encaminhamento para controle hemorrágico por cirurgia/intervenção radiológica conforme disponibilidade e padrão de sangramento.",
+    C: "Reposição de 4 a 6 L de cristaloide antes de qualquer sangue.",
+    D: "Noradrenalina isolada até PAM 90 e tomografia após estabilização farmacológica.",
+    E: "Analgesia neuraxial precoce para reduzir catecolaminas."
+  },
+  resposta: "B",
+  comentario: "Fratura pélvica instável pode sangrar muito. O binder reduz volume pélvico e ajuda tamponamento. A ressuscitação deve ser hemostática, aquecida e com controle definitivo por packing, fixação, angioembolização ou abordagem combinada. Cristaloide liberal e vasopressor isolado atrasam o que salva.",
+  frase_ouro: "Pelve aberta sangrando quer compressão, sangue e controle; não quer soro infinito."
+},
+{
+  id: "tsa-ultra-049",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "Gestante politraumatizada",
+  area: "Obstetrícia",
+  dificuldade: "Muito difícil",
+  pergunta: "Gestante de 32 semanas sofre trauma abdominal fechado, chega hipotensa, confusa, com dor abdominal e desacelerações fetais. Qual princípio é correto?",
+  alternativas: {
+    A: "A prioridade inicial é cesariana imediata antes de estabilizar a mãe, pois fetal distress sempre indica parto primeiro.",
+    B: "A melhor ressuscitação fetal é ressuscitação materna: deslocamento uterino à esquerda, oxigenação, controle hemorrágico, hemocomponentes e decisão obstétrica conforme estabilidade, idade gestacional e resposta.",
+    C: "Hipotensão materna é bem tolerada pelo feto por redistribuição placentária.",
+    D: "Vasopressores são absolutamente contraindicados em qualquer gestante traumatizada.",
+    E: "Monitorização fetal substitui FAST e avaliação materna."
+  },
+  resposta: "B",
+  comentario: "No trauma obstétrico, salvar a mãe é salvar o feto. Hipotensão, hipóxia e acidose maternas reduzem perfusão uteroplacentária. Deslocamento uterino, oxigênio, controle de sangramento e ressuscitação adequada vêm primeiro; cesariana pode ser necessária, mas não substitui ressuscitação materna.",
+  frase_ouro: "No trauma da gestante, o feto não tem UTI melhor que uma mãe perfundida."
+},
+{
+  id: "tsa-ultra-050",
+  fonte: "Barash / Yao / Prova TSA",
+  capitulo: "Trauma",
+  tema: "Ketamina no TCE",
+  area: "Neuroanestesia",
+  dificuldade: "Muito difícil",
+  pergunta: "Paciente com TCE grave e choque hemorrágico precisa de intubação. O residente afirma que cetamina é absolutamente contraindicada porque sempre aumenta pressão intracraniana. Qual resposta é mais atual e adequada?",
+  alternativas: {
+    A: "Cetamina é absolutamente proibida em qualquer TCE, mesmo em choque, independentemente da pressão arterial.",
+    B: "Cetamina pode ser considerada em TCE, especialmente quando preservar pressão arterial é importante; o essencial é evitar hipóxia, hipotensão, hipercapnia grave e estimular resposta simpática descontrolada.",
+    C: "Propofol em bolus alto é sempre preferível porque reduz PIC sem risco hemodinâmico.",
+    D: "Etomidato deve ser evitado porque sempre aumenta PIC mais que cetamina.",
+    E: "A escolha do indutor não influencia pressão de perfusão cerebral."
+  },
+  resposta: "B",
+  comentario: "A antiga contraindicação absoluta da cetamina no TCE foi relativizada. Em paciente hipovolêmico, preservar pressão arterial pode ser mais importante para CPP do que uma preocupação teórica isolada com PIC. Hipóxia e hipotensão são os grandes vilões. Propofol pode reduzir PIC, mas bolus em choque pode derrubar PAM e CPP.",
+  frase_ouro: "No TCE chocado, o cérebro prefere uma cetamina com pressão a um propofol elegante com hipotensão."
+}
 ];
