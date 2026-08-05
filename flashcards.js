@@ -1794,4 +1794,805 @@ const FLASHCARDS = [
   ],
   fraseOuro: "No paciente dependente de marca-passo, cautério monopolar pode desligar o coração por engano."
 }
+  ,
+{
+  id: "oral-ultra-041",
+  titulo: "Trauma abdominal em gestante viável",
+  area: "Gestante em cirurgia não obstétrica",
+  dificuldade: "Muito difícil",
+  caso: "Gestante de 31 semanas, vítima de colisão automobilística, chega hipotensa, taquicárdica, com dor abdominal, defesa à palpação e ultrassom abdominal positivo para líquido livre. A cardiotocografia mostra desacelerações fetais. A equipe discute realizar cesariana antes da laparotomia para salvar o feto.",
+  pergunta: "A banca pergunta: qual é sua prioridade anestésica e como você organiza a conduta materno-fetal?",
+  respostaIdeal: [
+    "A prioridade é ressuscitar a mãe. A melhor forma de tratar o feto é restaurar oxigenação, pressão arterial, volemia e perfusão uteroplacentária maternas.",
+    "Eu conduziria como trauma grave: via aérea com proteção cervical, oxigenação, controle de hemorragia, acesso venoso calibroso, protocolo de transfusão, cálcio, aquecimento, ácido tranexâmico se indicado e deslocamento uterino para esquerda.",
+    "A cardiotocografia ajuda, mas sofrimento fetal pode ser consequência direta da hipoperfusão materna. Cesariana só deve entrar se houver indicação obstétrica, parada materna com idade gestacional viável ou se ela fizer parte da estratégia de controle materno.",
+    "Não atrasaria exame ou cirurgia materna necessária por medo genérico de radiação ou anestesia. O risco principal, nesse momento, é choque hemorrágico materno."
+  ],
+  pontosObrigatorios: [
+    "Priorizar ressuscitação materna.",
+    "Deslocamento uterino à esquerda.",
+    "Evitar hipóxia e hipotensão maternas.",
+    "Controle rápido de hemorragia.",
+    "Avaliação obstétrica simultânea, sem atrasar tratamento materno.",
+    "Cesárea não é automaticamente primeira conduta."
+  ],
+  errosGraves: [
+    "Levar direto para cesariana sem tratar choque materno.",
+    "Manter decúbito dorsal plano.",
+    "Negar tomografia ou laparotomia indicadas por medo fetal.",
+    "Tratar desaceleração fetal sem corrigir pressão materna.",
+    "Usar cristaloide isolado em choque hemorrágico grave."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que o feto sofre tão rápido no choque materno?",
+      resposta: "Porque o fluxo uteroplacentário depende muito da pressão e do débito cardíaco maternos, sem autorregulação robusta. Hipotensão materna reduz oferta fetal de oxigênio."
+    },
+    {
+      pergunta: "Quando pensar em cesariana perimortem?",
+      resposta: "Em parada cardiorrespiratória materna com gestação viável, especialmente se não houver retorno rápido da circulação, pois pode melhorar retorno venoso materno e permitir chance fetal."
+    }
+  ],
+  fraseOuro: "No trauma da gestante, salvar a mãe é a primeira manobra fetal."
+},
+{
+  id: "oral-ultra-042",
+  titulo: "Procedimento EXIT para massa cervical fetal",
+  area: "Cirurgia fetal",
+  dificuldade: "Muito difícil",
+  caso: "Gestante de 36 semanas tem feto com grande massa cervical, desvio de traqueia e provável impossibilidade de ventilação após nascimento. Foi programado procedimento EXIT para garantir via aérea fetal antes do clampeamento do cordão.",
+  pergunta: "A banca pergunta: quais são os objetivos anestésicos maternos, uterinos e fetais nesse procedimento?",
+  respostaIdeal: [
+    "O objetivo central é manter circulação uteroplacentária enquanto a via aérea fetal é assegurada. O cordão não deve ser clampeado até que o feto esteja ventilável.",
+    "Para isso, é necessário relaxamento uterino profundo, estabilidade hemodinâmica materna, oxigenação adequada e coordenação entre anestesia materna, anestesia fetal, obstetrícia, cirurgia pediátrica e neonatologia.",
+    "Durante a manipulação fetal, podem ser necessários anestesia e analgesia fetal adicionais. Após a via aérea estar segura e o cordão ser clampeado, a estratégia muda: reduzir anestésico inalatório, reverter relaxamento uterino e administrar uterotônicos para evitar hemorragia materna.",
+    "O maior erro é tratar como cesariana comum. No EXIT, a placenta funciona temporariamente como suporte vital fetal."
+  ],
+  pontosObrigatorios: [
+    "Manter circulação uteroplacentária.",
+    "Relaxamento uterino profundo até via aérea fetal segura.",
+    "Evitar hipotensão materna.",
+    "Equipe dupla ou altamente coordenada.",
+    "Via aérea fetal antes do clampeamento do cordão.",
+    "Reverter relaxamento uterino após clampeamento."
+  ],
+  errosGraves: [
+    "Clampear cordão antes de obter via aérea fetal.",
+    "Usar anestesia superficial que permita contração uterina.",
+    "Esquecer preparo para hemorragia materna.",
+    "Não ter plano de broncoscopia ou traqueostomia fetal.",
+    "Não comunicar o momento da mudança para uterotônicos."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que se usa relaxamento uterino profundo?",
+      resposta: "Para evitar contração uterina, descolamento placentário e perda da circulação uteroplacentária enquanto o feto ainda depende da placenta."
+    },
+    {
+      pergunta: "Qual é o ponto de virada do caso?",
+      resposta: "O clampeamento do cordão. Antes dele, o foco é relaxar o útero e manter placenta. Depois dele, o foco é contrair o útero e controlar sangramento."
+    }
+  ],
+  fraseOuro: "No EXIT, a via aérea fetal precisa nascer antes do bebê terminar de nascer."
+},
+{
+  id: "oral-ultra-043",
+  titulo: "Sangramento varicoso em cirrótico",
+  area: "Hepatopatia",
+  dificuldade: "Muito difícil",
+  caso: "Homem de 58 anos, cirrótico por álcool, com ascite, encefalopatia leve, plaquetas de 52 mil, razão normalizada internacional de 2,6 e hematêmese volumosa, será submetido à endoscopia terapêutica de urgência. Está sonolento, hipotenso e com vômitos recorrentes.",
+  pergunta: "A banca pergunta: como você planeja anestesia, via aérea e hemostasia nesse paciente?",
+  respostaIdeal: [
+    "Eu considero esse paciente de alto risco para aspiração, choque hemorrágico, encefalopatia, coagulopatia complexa e instabilidade após indução.",
+    "A via aérea deve ser protegida com intubação traqueal, geralmente em sequência rápida modificada, com aspiração pronta, preparo hemodinâmico e drogas tituladas.",
+    "A coagulopatia do cirrótico não deve ser interpretada apenas pela razão normalizada internacional. A hemostasia é reequilibrada, mas frágil. Eu guiaria transfusão por sangramento, fibrinogênio, plaquetas, cálcio, temperatura, acidose e, se disponível, teste viscoelástico.",
+    "Evitaria excesso de plasma sem indicação, porque pode aumentar volume intravascular, pressão portal e piorar sangramento. O tratamento endoscópico e a ressuscitação hemostática precisam andar juntos."
+  ],
+  pontosObrigatorios: [
+    "Proteção de via aérea por alto risco de aspiração.",
+    "Indução com preparo para choque.",
+    "Cirrótico não é simplesmente autoanticoagulado.",
+    "Evitar transfusão profilática cega de plasma.",
+    "Corrigir cálcio, temperatura e acidose.",
+    "Usar testes viscoelásticos quando disponíveis."
+  ],
+  errosGraves: [
+    "Sedação profunda sem via aérea protegida em hematêmese ativa.",
+    "Tentar normalizar a razão normalizada internacional com plasma antes de qualquer conduta.",
+    "Esquecer hipocalcemia por citrato.",
+    "Usar grandes volumes de cristaloide.",
+    "Ignorar encefalopatia no despertar."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que plasma pode piorar sangramento varicoso?",
+      resposta: "Porque pode aumentar volume intravascular e pressão portal, agravando sangramento, sem necessariamente corrigir a hemostasia global."
+    },
+    {
+      pergunta: "O que o teste viscoelástico acrescenta?",
+      resposta: "Ajuda a diferenciar deficiência de fibrinogênio, plaquetopenia funcional, deficiência de fatores e hiperfibrinólise, permitindo transfusão mais direcionada."
+    }
+  ],
+  fraseOuro: "No cirrótico sangrando, coagulograma isolado é bússola quebrada."
+},
+{
+  id: "oral-ultra-044",
+  titulo: "Síndrome pós-reperfusão no transplante hepático",
+  area: "Transplante hepático",
+  dificuldade: "Muito difícil",
+  caso: "Durante transplante hepático, no momento da reperfusão do enxerto, o paciente apresenta queda súbita da pressão arterial, bradicardia, alargamento do complexo no eletrocardiograma, acidose, potássio de 6,8 mEq/L e cálcio ionizado baixo.",
+  pergunta: "A banca pergunta: explique a fisiopatologia e conduza a crise.",
+  respostaIdeal: [
+    "O quadro é compatível com síndrome pós-reperfusão. Ao reperfundir o enxerto, entram na circulação sangue frio, ácido, rico em potássio, citrato, mediadores vasoativos e metabólitos acumulados.",
+    "A conduta é antecipatória: comunicar antes de reperfundir, otimizar cálcio ionizado, potássio, temperatura e volume, ter vasopressores prontos e avaliar função cardíaca.",
+    "Na crise, eu trato hipercalemia com cálcio imediato para estabilizar membrana, insulina com glicose, bicarbonato se acidose relevante, hiperventilação temporária se apropriada e suporte vasopressor ou inotrópico conforme a fisiologia.",
+    "Também considero disfunção de ventrículo direito, embolia, hipovolemia, sangramento e vasoplegia. A queda de pressão não deve ser atribuída automaticamente a anestesia profunda."
+  ],
+  pontosObrigatorios: [
+    "Reconhecer síndrome pós-reperfusão.",
+    "Tratar hipercalemia rapidamente.",
+    "Repor cálcio ionizado.",
+    "Usar vasopressor e inotrópico conforme necessidade.",
+    "Comunicação com cirurgião antes da reperfusão.",
+    "Considerar ecocardiografia se disponível."
+  ],
+  errosGraves: [
+    "Esperar nova gasometria para tratar complexo alargado.",
+    "Ignorar cálcio ionizado.",
+    "Atribuir a hipotensão apenas ao anestésico.",
+    "Não avisar a equipe antes de reperfundir.",
+    "Usar volume indiscriminado sem avaliar sangramento e coração."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que o cálcio é tão importante nesse momento?",
+      resposta: "Porque estabiliza a membrana miocárdica na hipercalemia, melhora contratilidade e participa da coagulação, além de poder estar reduzido por citrato dos hemocomponentes."
+    },
+    {
+      pergunta: "Qual é a diferença entre fase anepática e neo-hepática?",
+      resposta: "Na fase anepática o paciente está sem função hepática efetiva. A fase neo-hepática começa após a reperfusão do enxerto, quando surgem riscos metabólicos e hemodinâmicos próprios."
+    }
+  ],
+  fraseOuro: "Na reperfusão hepática, cálcio e potássio precisam estar na ponta da agulha, não na lembrança."
+},
+{
+  id: "oral-ultra-045",
+  titulo: "Dialítico hipercalêmico em cirurgia urgente",
+  area: "Nefropatia",
+  dificuldade: "Muito difícil",
+  caso: "Paciente em hemodiálise crônica por nefropatia diabética chega para laparotomia por abdome agudo. A última diálise foi há 3 dias. Potássio 6,7 mEq/L, ondas T apiculadas, acidose metabólica e pressão arterial limítrofe. O cirurgião diz que não há tempo para diálise.",
+  pergunta: "A banca pergunta: como você estabiliza esse paciente para indução anestésica?",
+  respostaIdeal: [
+    "Hipercalemia com alteração eletrocardiográfica é emergência. A primeira medida é cálcio intravenoso para estabilizar membrana miocárdica, sem esperar reduzir o potássio sérico.",
+    "Em seguida, faço medidas de redistribuição: insulina com glicose, beta-agonista inalatório ou venoso conforme contexto, e bicarbonato se acidose relevante.",
+    "A remoção definitiva do potássio é diálise. Se a cirurgia é inadiável, estabilizo, coordeno diálise assim que possível e evito tudo que aumente potássio, como succinilcolina.",
+    "A indução deve ser titulada, com monitorização invasiva se possível, preparo para arritmia e correção de cálcio, acidose e temperatura."
+  ],
+  pontosObrigatorios: [
+    "Cálcio imediato se alteração eletrocardiográfica.",
+    "Insulina com glicose para deslocar potássio.",
+    "Evitar succinilcolina.",
+    "Considerar bicarbonato na acidose.",
+    "Planejar diálise definitiva.",
+    "Monitorização rigorosa durante indução."
+  ],
+  errosGraves: [
+    "Induzir antes de tratar eletrocardiograma alterado.",
+    "Usar succinilcolina em potássio elevado.",
+    "Achar que cálcio reduz potássio sérico.",
+    "Confiar em furosemida em paciente anúrico.",
+    "Usar apenas cristaloide e esperar melhora."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "O que o cálcio faz molecularmente?",
+      resposta: "Ele aumenta a estabilidade elétrica da membrana miocárdica, elevando o limiar de excitabilidade e reduzindo risco de arritmia por hipercalemia."
+    },
+    {
+      pergunta: "Qual medida remove potássio do corpo?",
+      resposta: "A diálise. Insulina, glicose e beta-agonistas apenas deslocam potássio temporariamente para dentro da célula."
+    }
+  ],
+  fraseOuro: "Na hipercalemia grave, cálcio salva agora; diálise resolve depois."
+},
+{
+  id: "oral-ultra-046",
+  titulo: "Reperfusão do enxerto no transplante renal",
+  area: "Transplante renal",
+  dificuldade: "Muito difícil",
+  caso: "Durante transplante renal, após desclampeamento vascular, o rim transplantado permanece pálido, a pressão arterial média está baixa, há pouco sangramento e nenhuma diurese imediata. O residente sugere furosemida em bolus como primeira medida.",
+  pergunta: "A banca pergunta: qual é sua interpretação e conduta?",
+  respostaIdeal: [
+    "A prioridade é garantir perfusão do enxerto. Diurético não substitui fluxo sanguíneo renal. Eu avaliaria pressão arterial, volemia, débito cardíaco, resistência vascular, posição dos clamps, trombose vascular e compressões mecânicas.",
+    "Manteria pressão arterial média adequada, volume intravascular apropriado e vasopressor se houver vasodilatação com volume razoável. A diurese imediata é desejável, mas sua ausência não confirma falha irreversível.",
+    "Também evitaria acidose, hipercalemia, hipotermia e soluções que piorem acidose hiperclorêmica em grandes volumes.",
+    "Se houver suspeita cirúrgica, peço avaliação imediata de anastomoses, fluxo e posicionamento do enxerto."
+  ],
+  pontosObrigatorios: [
+    "Perfusão vem antes de diurético.",
+    "Manter pressão arterial adequada.",
+    "Avaliar volemia e débito cardíaco.",
+    "Comunicar cirurgião sobre enxerto pálido.",
+    "Evitar acidose e hipercalemia.",
+    "Ausência de diurese imediata não fecha diagnóstico isoladamente."
+  ],
+  errosGraves: [
+    "Dar furosemida antes de corrigir hipotensão.",
+    "Aceitar pressão baixa para evitar sangramento.",
+    "Ignorar possibilidade de problema vascular cirúrgico.",
+    "Fazer hipercloremia com grandes volumes sem necessidade.",
+    "Considerar todo enxerto sem diurese como perdido."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que a pressão arterial importa tanto no transplante renal?",
+      resposta: "Porque o enxerto recém-reperfundido depende de pressão de perfusão adequada para estabelecer fluxo e minimizar função retardada."
+    },
+    {
+      pergunta: "Vasopressor é proibido no transplante renal?",
+      resposta: "Não. Se o volume está adequado e há vasodilatação, vasopressor titulado pode ser necessário para manter perfusão."
+    }
+  ],
+  fraseOuro: "Rim transplantado não precisa de diurético heroico; precisa de sangue chegando."
+},
+{
+  id: "oral-ultra-047",
+  titulo: "Timectomia em paciente miastênica",
+  area: "Doença neuromuscular",
+  dificuldade: "Muito difícil",
+  caso: "Mulher de 34 anos com miastenia gravis generalizada, ptose, disfagia leve e dispneia aos esforços será submetida à timectomia. Usa piridostigmina e prednisona. A equipe quer bloqueio neuromuscular profundo para facilitar o procedimento.",
+  pergunta: "A banca pergunta: como você maneja bloqueio neuromuscular, extubação e risco pós-operatório?",
+  respostaIdeal: [
+    "A paciente miastênica é muito sensível a bloqueadores neuromusculares não despolarizantes. Se forem usados, devem ser em doses reduzidas, com monitorização quantitativa e reversão guiada.",
+    "A decisão de extubação depende de força clínica, capacidade ventilatória, troca gasosa, deglutição, secreções, duração da cirurgia, dose de bloqueador e gravidade prévia. Fraqueza bulbar aumenta risco de aspiração.",
+    "Eu evitaria sedação residual, corrigiria dor sem excesso de opioide e planejaria unidade monitorizada se houver risco de crise miastênica ou ventilação prolongada.",
+    "Também avaliaria necessidade de cobertura de estresse por corticoide, porque ela usa prednisona cronicamente."
+  ],
+  pontosObrigatorios: [
+    "Sensibilidade aumentada a não despolarizantes.",
+    "Monitorização quantitativa do bloqueio.",
+    "Planejar extubação por critérios respiratórios e bulbares.",
+    "Evitar excesso de opioides e sedativos.",
+    "Considerar ventilação pós-operatória.",
+    "Avaliar corticoide perioperatório."
+  ],
+  errosGraves: [
+    "Usar dose plena de rocurônio sem monitorização.",
+    "Extubar apenas porque a paciente abriu os olhos.",
+    "Ignorar disfagia e risco de aspiração.",
+    "Confundir crise miastênica com sonolência simples.",
+    "Não planejar recuperação monitorizada."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Qual é a diferença entre crise miastênica e crise colinérgica?",
+      resposta: "Crise miastênica é piora da fraqueza por atividade insuficiente na junção neuromuscular. Crise colinérgica ocorre por excesso de anticolinesterásico, com manifestações muscarínicas e nicotínicas."
+    },
+    {
+      pergunta: "Sugamadex resolve todos os problemas?",
+      resposta: "Pode reverter rocurônio, mas não trata a doença de base, não substitui monitorização quantitativa e não elimina risco respiratório por fraqueza bulbar."
+    }
+  ],
+  fraseOuro: "Na miastenia, o relaxante deve pedir licença ao monitor antes de entrar."
+},
+{
+  id: "oral-ultra-048",
+  titulo: "Distrofia muscular de Duchenne",
+  area: "Miopatia hereditária",
+  dificuldade: "Muito difícil",
+  caso: "Menino de 10 anos com distrofia muscular de Duchenne será submetido à artrodese de coluna. Tem fraqueza proximal importante, cardiomiopatia dilatada leve e capacidade vital reduzida. O residente sugere succinilcolina para intubação rápida e sevoflurano para manutenção.",
+  pergunta: "A banca pergunta: quais riscos essa sugestão traz e qual plano você adotaria?",
+  respostaIdeal: [
+    "Distrofia de Duchenne tem risco de rabdomiólise, hipercalemia grave, arritmias e parada com succinilcolina. Anestésicos voláteis também podem estar associados a rabdomiólise anestésica nesses pacientes.",
+    "Eu evitaria succinilcolina e, quando possível, preferiria anestesia venosa total, com bloqueador não despolarizante em dose cautelosa e monitorização quantitativa.",
+    "A avaliação deve incluir função cardíaca, distúrbios de condução, função respiratória, risco de ventilação pós-operatória, perda sanguínea e posicionamento prolongado.",
+    "No pós-operatório, eu teria baixo limiar para ventilação assistida, analgesia poupadora de opioides e monitorização em unidade adequada."
+  ],
+  pontosObrigatorios: [
+    "Evitar succinilcolina.",
+    "Reconhecer risco de hipercalemia e rabdomiólise.",
+    "Avaliar cardiomiopatia e arritmias.",
+    "Avaliar função respiratória.",
+    "Considerar anestesia venosa total.",
+    "Planejar ventilação pós-operatória."
+  ],
+  errosGraves: [
+    "Chamar isso simplesmente de hipertermia maligna clássica.",
+    "Usar succinilcolina por ser criança.",
+    "Ignorar cardiomiopatia.",
+    "Extubar sem avaliar reserva respiratória.",
+    "Usar opioide excessivo em restrição ventilatória."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que a succinilcolina é perigosa?",
+      resposta: "Porque a membrana muscular instável pode liberar grande quantidade de potássio e mioglobina, levando a arritmia, hipercalemia e rabdomiólise."
+    },
+    {
+      pergunta: "Dantrolene profilático libera uso de succinilcolina?",
+      resposta: "Não. A prevenção central é evitar o gatilho perigoso, especialmente succinilcolina."
+    }
+  ],
+  fraseOuro: "Em Duchenne, succinilcolina não relaxa: ela pode explodir o músculo por dentro."
+},
+{
+  id: "oral-ultra-049",
+  titulo: "Porfiria aguda intermitente",
+  area: "Doença metabólica rara",
+  dificuldade: "Muito difícil",
+  caso: "Mulher de 29 anos com porfiria aguda intermitente conhecida será submetida à colecistectomia urgente. Está em jejum prolongado, com dor intensa, náuseas, hiponatremia leve e ansiedade. O cirurgião pede que se use qualquer anestésico disponível, pois a doença é rara.",
+  pergunta: "A banca pergunta: como você previne crise porfírica perioperatória?",
+  respostaIdeal: [
+    "A porfiria aguda pode ser precipitada por jejum, estresse, dor, infecção, álcool, alterações hormonais e fármacos porfirinogênicos.",
+    "Eu evitaria jejum prolongado, administraria glicose se necessário, trataria dor e náuseas, corrigiria distúrbios eletrolíticos e escolheria fármacos considerados seguros para porfiria.",
+    "Barbitúricos e alguns anticonvulsivantes são clássicos gatilhos e devem ser evitados. Propofol, opioides usuais, bloqueadores neuromusculares não despolarizantes e anestésicos inalatórios modernos costumam ser considerados utilizáveis, mas eu checaria base específica institucional se possível.",
+    "Se houver crise, penso em dor abdominal, neuropatia, disautonomia, hiponatremia, confusão e convulsões; tratamento inclui suporte, carboidrato e hemina quando indicada."
+  ],
+  pontosObrigatorios: [
+    "Evitar jejum e catabolismo.",
+    "Controlar dor e estresse.",
+    "Evitar fármacos porfirinogênicos.",
+    "Corrigir hiponatremia com cuidado.",
+    "Reconhecer sintomas neuroviscerais.",
+    "Consultar lista de segurança medicamentosa se possível."
+  ],
+  errosGraves: [
+    "Usar tiopental por rotina.",
+    "Deixar paciente em jejum prolongado sem glicose.",
+    "Tratar convulsão com fármaco porfirinogênico sem ponderar.",
+    "Ignorar hiponatremia.",
+    "Achar que doença rara não influencia anestesia."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que glicose pode ajudar?",
+      resposta: "Porque reduz indução da via de síntese do heme, diminuindo produção de precursores porfirínicos em alguns contextos."
+    },
+    {
+      pergunta: "Qual é a apresentação clássica de crise?",
+      resposta: "Dor abdominal intensa, sintomas autonômicos, neuropatia, alterações psiquiátricas, hiponatremia e, às vezes, convulsões."
+    }
+  ],
+  fraseOuro: "Na porfiria, jejum e remédio errado podem ser mais perigosos que a incisão."
+},
+{
+  id: "oral-ultra-050",
+  titulo: "Colecistectomia em doença falciforme",
+  area: "Hematologia",
+  dificuldade: "Muito difícil",
+  caso: "Paciente de 22 anos com doença falciforme homozigótica será submetida à colecistectomia por colelitíase sintomática. Tem história de síndrome torácica aguda após infecção respiratória e hemoglobina basal de 8,2 g/dL.",
+  pergunta: "A banca pergunta: como reduzir risco de falcização e síndrome torácica aguda?",
+  respostaIdeal: [
+    "O objetivo é evitar condições que promovem falcização: hipóxia, acidose, hipotermia, desidratação, estase, dor intensa e infecção.",
+    "Eu faria hidratação cuidadosa sem sobrecarga, aquecimento ativo, oxigenação adequada, ventilação que evite atelectasia, analgesia multimodal e incentivo respiratório no pós-operatório.",
+    "A decisão transfusional depende do fenótipo, cirurgia, hemoglobina basal e risco. Não é simplesmente normalizar hemoglobina; excesso de viscosidade também é prejudicial.",
+    "No pós-operatório, vigilância para dor torácica, febre, hipoxemia e infiltrado pulmonar é essencial, pois síndrome torácica aguda pode ser catastrófica."
+  ],
+  pontosObrigatorios: [
+    "Evitar hipóxia.",
+    "Evitar acidose e hipotermia.",
+    "Hidratação cuidadosa.",
+    "Analgesia adequada.",
+    "Prevenir atelectasia.",
+    "Pensar em transfusão individualizada."
+  ],
+  errosGraves: [
+    "Deixar paciente hipovolêmica por medo de sobrecarga.",
+    "Permitir hipotermia.",
+    "Tratar dor de forma insuficiente.",
+    "Transfundir até hemoglobina normal sem considerar viscosidade.",
+    "Ignorar dessaturação no pós-operatório."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que transfusão excessiva pode fazer mal?",
+      resposta: "Porque aumenta viscosidade sanguínea, podendo piorar fluxo microvascular se a hemoglobina subir demais."
+    },
+    {
+      pergunta: "Qual complicação pulmonar deve ser temida?",
+      resposta: "Síndrome torácica aguda, caracterizada por sintomas respiratórios, hipoxemia e novo infiltrado pulmonar."
+    }
+  ],
+  fraseOuro: "Na falciforme, anestesia boa é aquela que mantém o sangue fluindo, quente, oxigenado e sem acidose."
+},
+{
+  id: "oral-ultra-051",
+  titulo: "Adrenalectomia por feocromocitoma",
+  area: "Tumor neuroendócrino",
+  dificuldade: "Muito difícil",
+  caso: "Homem de 46 anos com feocromocitoma adrenal direito apresenta crises de cefaleia, sudorese, palpitações e pressão arterial de 220 por 120 mmHg. Está em uso de bloqueador alfa há 12 dias, com hipotensão ortostática leve. Durante manipulação tumoral, a pressão sobe para 250 por 130 mmHg.",
+  pergunta: "A banca pergunta: como deve ser o preparo e o manejo intraoperatório?",
+  respostaIdeal: [
+    "O preparo deve incluir bloqueio alfa adequado antes de qualquer beta-bloqueio, expansão volêmica relativa e controle de sintomas. Beta-bloqueio antes do alfa pode gerar vasoconstrição alfa sem oposição.",
+    "Durante manipulação, trato hipertensão com vasodilatadores tituláveis e bloqueadores alfa de ação curta quando disponíveis, além de aprofundar anestesia e controlar estímulo cirúrgico.",
+    "Após ligadura venosa tumoral, espero queda abrupta de catecolaminas, hipotensão, vasoplegia e possível hipoglicemia. Devo estar pronto com volume, vasopressores e controle glicêmico.",
+    "Monitorização invasiva e comunicação com cirurgião são fundamentais."
+  ],
+  pontosObrigatorios: [
+    "Bloqueio alfa antes de beta.",
+    "Monitorização arterial invasiva.",
+    "Vasodilatadores tituláveis durante manipulação.",
+    "Preparar hipotensão após retirada tumoral.",
+    "Avaliar hipoglicemia pós-ressecção.",
+    "Comunicação cirúrgica constante."
+  ],
+  errosGraves: [
+    "Iniciar betabloqueador antes do bloqueio alfa.",
+    "Tratar crise apenas com anestésico inalatório.",
+    "Não preparar vasopressor para pós-ligadura.",
+    "Ignorar hipoglicemia.",
+    "Aceitar cirurgia eletiva sem preparo adequado."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que pode ocorrer hipoglicemia depois da retirada?",
+      resposta: "Porque a queda de catecolaminas remove efeito anti-insulínico e pode haver aumento relativo de secreção/ação da insulina."
+    },
+    {
+      pergunta: "Por que o paciente fica ortostático no preparo?",
+      resposta: "Porque o bloqueio alfa reduz vasoconstrição intensa e revela hipovolemia relativa crônica."
+    }
+  ],
+  fraseOuro: "No feocromocitoma, alfa vem antes de beta; o contrário é deixar a catecolamina sem freio."
+},
+{
+  id: "oral-ultra-052",
+  titulo: "Crise carcinoide em ressecção hepática",
+  area: "Síndrome carcinoide",
+  dificuldade: "Muito difícil",
+  caso: "Paciente com tumor neuroendócrino metastático hepático, flushing, diarreia crônica e lesão valvar tricúspide será submetido à ressecção hepática. Durante manipulação tumoral, apresenta rubor intenso, broncoespasmo e hipotensão grave.",
+  pergunta: "A banca pergunta: qual é o diagnóstico e como você trata?",
+  respostaIdeal: [
+    "O quadro sugere crise carcinoide, causada por liberação maciça de serotonina, bradicininas, histamina e outros mediadores.",
+    "Eu interromperia estímulo cirúrgico temporariamente, administraria octreotida, trataria broncoespasmo, sustentaria pressão com volume criterioso e vasopressores adequados, e evitaria fármacos liberadores de histamina.",
+    "A presença de metástase hepática aumenta risco porque mediadores escapam do metabolismo hepático de primeira passagem.",
+    "Também avaliaria lesão valvar direita, função ventricular direita e risco de instabilidade com grandes variações de volume e pressão pulmonar."
+  ],
+  pontosObrigatorios: [
+    "Reconhecer crise carcinoide.",
+    "Octreotida como tratamento central.",
+    "Evitar fármacos liberadores de histamina.",
+    "Tratar broncoespasmo e hipotensão.",
+    "Considerar cardiopatia carcinoide direita.",
+    "Comunicar interrupção ou redução da manipulação tumoral."
+  ],
+  errosGraves: [
+    "Tratar apenas como anafilaxia e esquecer octreotida.",
+    "Usar morfina ou atracúrio sem ponderar liberação de histamina.",
+    "Ignorar valvopatia direita.",
+    "Fazer volume ilimitado em ventrículo direito doente.",
+    "Não ter octreotida disponível antes da incisão."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que a valva direita é mais acometida?",
+      resposta: "Porque mediadores passam pelo lado direito antes de serem inativados nos pulmões; o lado esquerdo costuma ser menos exposto, salvo shunts ou doença extensa."
+    },
+    {
+      pergunta: "A adrenalina é proibida?",
+      resposta: "Não é absolutamente proibida em colapso, mas deve ser usada com cautela e contexto, pois catecolaminas podem precipitar liberação de mediadores."
+    }
+  ],
+  fraseOuro: "Na crise carcinoide, octreotida precisa estar na sala antes do tumor ficar bravo."
+},
+{
+  id: "oral-ultra-053",
+  titulo: "Cetoacidose euglicêmica por inibidor de SGLT2",
+  area: "Diabetes e metabolismo",
+  dificuldade: "Muito difícil",
+  caso: "Paciente diabético tipo 2 em uso de empagliflozina chega para colectomia eletiva. Está em jejum há 14 horas, com náuseas e mal-estar. Glicemia 158 mg/dL, bicarbonato baixo, ânion gap elevado e cetonas positivas.",
+  pergunta: "A banca pergunta: como interpretar e conduzir?",
+  respostaIdeal: [
+    "O quadro é compatível com cetoacidose euglicêmica associada a inibidor de cotransportador sódio-glicose tipo 2. A glicemia relativamente normal não exclui cetoacidose.",
+    "Em cirurgia eletiva, eu adiaria o procedimento, suspenderia o fármaco, hidrataria, administraria insulina com glicose conforme necessidade, corrigiria potássio e acompanharia fechamento do ânion gap.",
+    "O gatilho pode ser jejum, estresse cirúrgico, redução de carboidrato, desidratação e deficiência relativa de insulina.",
+    "O maior erro é olhar glicemia normal e liberar o paciente para anestesia."
+  ],
+  pontosObrigatorios: [
+    "Reconhecer cetoacidose euglicêmica.",
+    "Glicemia normal não exclui o diagnóstico.",
+    "Adiar cirurgia eletiva.",
+    "Tratar com hidratação, insulina e glicose.",
+    "Monitorar potássio e ânion gap.",
+    "Suspender inibidor de SGLT2."
+  ],
+  errosGraves: [
+    "Prosseguir porque a glicemia está boa.",
+    "Dar apenas bicarbonato.",
+    "Administrar insulina sem monitorar potássio.",
+    "Confundir cetose de jejum simples com acidose importante.",
+    "Não investigar uso de antidiabéticos."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que a glicemia não fica tão alta?",
+      resposta: "Porque o fármaco aumenta perda urinária de glicose, mascarando hiperglicemia mesmo com cetogênese intensa."
+    },
+    {
+      pergunta: "Qual marcador acompanha resolução?",
+      resposta: "Fechamento do ânion gap, melhora do bicarbonato, redução de cetonas e estabilidade clínica."
+    }
+  ],
+  fraseOuro: "Com SGLT2, glicemia bonita pode esconder metabolismo em chamas."
+},
+{
+  id: "oral-ultra-054",
+  titulo: "Doença de Parkinson e estimulação cerebral profunda",
+  area: "Neuroanestesia funcional",
+  dificuldade: "Muito difícil",
+  caso: "Homem de 72 anos com doença de Parkinson avançada e estimulador cerebral profundo implantado será submetido à colectomia. Usa levodopa em horários rígidos. No pré-operatório, ficou em jejum prolongado e perdeu duas doses. Está rígido, tremoroso e confuso.",
+  pergunta: "A banca pergunta: quais cuidados anestésicos específicos você teria?",
+  respostaIdeal: [
+    "Eu evitaria interrupção prolongada da levodopa. A perda de doses pode causar rigidez grave, piora respiratória, disfagia, confusão e síndrome semelhante à síndrome neuroléptica maligna.",
+    "Planejaria administração perioperatória por via enteral assim que possível, ajustando jejum e sonda quando necessário.",
+    "Evitaria antagonistas dopaminérgicos como metoclopramida, droperidol e alguns antipsicóticos típicos. Para náusea, preferiria fármacos que não bloqueiem dopamina.",
+    "O estimulador cerebral profundo exige cuidado com cautério monopolar, programação, interferência eletromagnética e checagem pós-operatória."
+  ],
+  pontosObrigatorios: [
+    "Manter levodopa no horário mais próximo possível.",
+    "Evitar antagonistas dopaminérgicos.",
+    "Atenção a disfagia e aspiração.",
+    "Cuidado com cautério e estimulador cerebral.",
+    "Planejar controle de náusea sem bloqueio dopaminérgico.",
+    "Reiniciar medicação precocemente."
+  ],
+  errosGraves: [
+    "Suspender levodopa por 24 horas sem plano.",
+    "Usar metoclopramida de rotina.",
+    "Ignorar risco de aspiração.",
+    "Usar cautério monopolar sem precaução no estimulador.",
+    "Confundir rigidez por falta de levodopa com dor simples."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Qual antiemético é problemático?",
+      resposta: "Metoclopramida e droperidol podem piorar sintomas por antagonismo dopaminérgico."
+    },
+    {
+      pergunta: "Qual é o risco de parar dopaminérgico abruptamente?",
+      resposta: "Pode ocorrer rigidez intensa, hipertermia, instabilidade autonômica e quadro semelhante à síndrome neuroléptica maligna."
+    }
+  ],
+  fraseOuro: "No Parkinson, atrasar levodopa pode transformar jejum em complicação neurológica."
+},
+{
+  id: "oral-ultra-055",
+  titulo: "Queimadura de face e via aérea inalatória",
+  area: "Queimaduras",
+  dificuldade: "Muito difícil",
+  caso: "Homem de 38 anos é retirado de incêndio em ambiente fechado. Tem queimaduras em face e pescoço, rouquidão, escarro carbonáceo, vibrissas queimadas e saturação normal com oxigênio. Está agitado e com edema progressivo de lábios.",
+  pergunta: "A banca pergunta: como você conduz via aérea e intoxicações associadas?",
+  respostaIdeal: [
+    "Esse paciente tem alto risco de lesão inalatória e edema progressivo de via aérea. A saturação normal não exclui intoxicação por monóxido de carbono nem evolução para obstrução.",
+    "Eu faria intubação orotraqueal precoce com equipe experiente, plano de via aérea difícil e preparo para cricotireoidostomia se necessário. Esperar edema avançar pode tornar a via aérea impossível.",
+    "Administraria oxigênio a 100%, avaliaria carboxi-hemoglobina por co-oximetria e consideraria intoxicação por cianeto se houver acidose láctica grave, choque ou alteração neurológica desproporcional.",
+    "Também iniciaria ressuscitação volêmica conforme extensão de queimadura, analgesia, aquecimento e avaliação de trauma associado."
+  ],
+  pontosObrigatorios: [
+    "Intubação precoce se sinais de lesão inalatória.",
+    "Saturação periférica pode ser falsa no monóxido de carbono.",
+    "Oxigênio a 100%.",
+    "Co-oximetria para carboxi-hemoglobina.",
+    "Considerar cianeto em incêndio fechado com lactato alto.",
+    "Planejar via aérea cirúrgica."
+  ],
+  errosGraves: [
+    "Aguardar estridor para intubar.",
+    "Confiar no oxímetro convencional.",
+    "Fazer sedação profunda sem controle de via aérea.",
+    "Ignorar edema cervical progressivo.",
+    "Esquecer analgesia e aquecimento."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que o oxímetro engana no monóxido de carbono?",
+      resposta: "Porque ele pode interpretar carboxi-hemoglobina como oxi-hemoglobina, mostrando saturação falsamente normal."
+    },
+    {
+      pergunta: "Qual pista sugere cianeto?",
+      resposta: "Acidose láctica intensa, choque e alteração neurológica após fumaça em ambiente fechado."
+    }
+  ],
+  fraseOuro: "Na queimadura inalatória, via aérea que ainda passa ar pode fechar a porta em minutos."
+},
+{
+  id: "oral-ultra-056",
+  titulo: "Trauma ocular com globo aberto",
+  area: "Oftalmologia",
+  dificuldade: "Muito difícil",
+  caso: "Homem de 41 anos sofreu perfuração ocular por fragmento metálico. Está em jejum incerto, nauseado, com dor intensa e ansiedade. O oftalmologista solicita anestesia geral urgente e pede para evitar qualquer aumento de pressão intraocular.",
+  pergunta: "A banca pergunta: como equilibrar estômago cheio, via aérea e pressão intraocular?",
+  respostaIdeal: [
+    "O paciente deve ser tratado como estômago cheio, com proteção de via aérea. Ao mesmo tempo, é preciso evitar tosse, vômito, hipertensão, laringoscopia traumática e esforço, que aumentam pressão intraocular.",
+    "Eu faria antiemético, analgesia, ansiólise cuidadosa, sequência rápida modificada com plano de via aérea difícil, indução suave e profundidade adequada para intubação.",
+    "A succinilcolina pode aumentar pressão intraocular, mas a discussão é contextual: se a via aérea exige sequência rápida e a alternativa é pior, pode ser considerada. Rocurônio em dose de sequência rápida é alternativa frequente.",
+    "O mais perigoso é uma intubação mal conduzida com tosse, vômito, hipóxia ou múltiplas tentativas."
+  ],
+  pontosObrigatorios: [
+    "Considerar estômago cheio.",
+    "Evitar tosse e vômito.",
+    "Controle pressórico e analgésico.",
+    "Indução suave com via aérea protegida.",
+    "Discutir succinilcolina de forma contextual.",
+    "Evitar pressão externa no olho."
+  ],
+  errosGraves: [
+    "Fazer máscara laríngea em paciente nauseado e estômago cheio sem justificativa.",
+    "Acordar tossindo violentamente.",
+    "Pressionar o globo durante máscara facial.",
+    "Achar que rocurônio elimina necessidade de boa técnica.",
+    "Deixar dor e vômito sem tratamento."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "O que mais aumenta pressão intraocular na prática?",
+      resposta: "Tosse, vômito, laringoscopia com resposta simpática, hipóxia, hipercarbia, hipertensão e compressão externa do olho."
+    },
+    {
+      pergunta: "Por que a succinilcolina é controversa?",
+      resposta: "Porque pode aumentar pressão intraocular, mas sua rapidez pode ser útil em via aérea de alto risco. A decisão compara riscos reais, não dogmas."
+    }
+  ],
+  fraseOuro: "No globo aberto, a intubação mal feita aumenta mais pressão que muita discussão teórica."
+},
+{
+  id: "oral-ultra-057",
+  titulo: "Anestesia em ressonância magnética pediátrica",
+  area: "Anestesia fora do centro cirúrgico",
+  dificuldade: "Muito difícil",
+  caso: "Criança de 3 anos com atraso neuropsicomotor e epilepsia será submetida à ressonância magnética sob anestesia. O exame será em setor remoto, longe do centro cirúrgico. A mãe relata roncos intensos e engasgos frequentes.",
+  pergunta: "A banca pergunta: quais são os riscos específicos e como você organiza segurança?",
+  respostaIdeal: [
+    "Anestesia em ressonância combina distância da equipe, acesso físico limitado ao paciente, ambiente magnético, necessidade de equipamentos compatíveis e risco de via aérea em local remoto.",
+    "Eu faria avaliação de aspiração e obstrução, jejum adequado, plano de via aérea, monitorização compatível com ressonância, bomba e ventilador apropriados, acesso venoso seguro e checklist de emergência.",
+    "Todos os objetos ferromagnéticos devem ficar fora da área de risco. Cilindros, laringoscópios, bombas e monitores precisam ser compatíveis ou posicionados corretamente.",
+    "Se a criança tem roncos e engasgos, sedação leve pode ser pior que anestesia com via aérea controlada. A técnica deve permitir imobilidade e ventilação segura."
+  ],
+  pontosObrigatorios: [
+    "Equipamentos compatíveis com ressonância.",
+    "Acesso limitado ao paciente.",
+    "Plano de via aérea em ambiente remoto.",
+    "Evitar objetos ferromagnéticos.",
+    "Monitorização adequada.",
+    "Avaliar aspiração e obstrução."
+  ],
+  errosGraves: [
+    "Levar cilindro comum para sala magnética.",
+    "Fazer sedação sem plano de resgate de via aérea.",
+    "Usar monitor não compatível.",
+    "Deixar acesso venoso inacessível.",
+    "Subestimar roncos e engasgos."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Qual é o risco físico mais dramático da ressonância?",
+      resposta: "O efeito projétil de objetos ferromagnéticos atraídos pelo campo magnético."
+    },
+    {
+      pergunta: "Por que sedação pode ser pior que anestesia geral nesse caso?",
+      resposta: "Porque pode causar obstrução parcial, hipoventilação e movimento, sem garantir via aérea ou imobilidade."
+    }
+  ],
+  fraseOuro: "Na ressonância, o ímã não perdoa improviso; e a via aérea fica longe demais para otimismo."
+},
+{
+  id: "oral-ultra-058",
+  titulo: "Bleomicina e risco pulmonar perioperatório",
+  area: "Paciente oncológico",
+  dificuldade: "Muito difícil",
+  caso: "Homem de 35 anos tratado previamente com bleomicina por tumor testicular será submetido à laparotomia. Tem dispneia leve aos esforços e tomografia com alterações intersticiais discretas. O residente sugere oxigênio a 100% durante todo o procedimento para segurança.",
+  pergunta: "A banca pergunta: como você lida com oxigênio, fluidos e ventilação nesse paciente?",
+  respostaIdeal: [
+    "Bleomicina pode causar toxicidade pulmonar e maior vulnerabilidade a lesão pulmonar. O objetivo não é negar oxigênio, mas evitar hiperóxia desnecessária.",
+    "Eu usaria a menor fração inspirada de oxigênio capaz de manter saturação adequada, ventilação protetora, pressão de distensão baixa, recrutamento criterioso e evitaria sobrecarga hídrica.",
+    "Oxigênio a 100% é apropriado em pré-oxigenação, hipoxemia ou emergência, mas não deve ser mantido automaticamente por horas se não necessário.",
+    "Também avaliaria função pulmonar, sintomas, dose cumulativa, tempo desde quimioterapia e outras causas de dispneia."
+  ],
+  pontosObrigatorios: [
+    "Reconhecer toxicidade pulmonar da bleomicina.",
+    "Evitar hiperóxia prolongada desnecessária.",
+    "Não negar oxigênio quando indicado.",
+    "Ventilação protetora.",
+    "Evitar sobrecarga de fluidos.",
+    "Avaliar reserva pulmonar pré-operatória."
+  ],
+  errosGraves: [
+    "Manter oxigênio a 100% por rotina sem hipoxemia.",
+    "Negar oxigênio em dessaturação por medo de bleomicina.",
+    "Fazer volume liberal sem critério.",
+    "Ignorar dispneia prévia.",
+    "Usar pressões ventilatórias altas sem necessidade."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Qual é o equilíbrio correto com oxigênio?",
+      resposta: "Usar oxigênio suficiente para evitar hipóxia, mas evitar hiperóxia prolongada e desnecessária."
+    },
+    {
+      pergunta: "Por que fluidos importam?",
+      resposta: "Porque sobrecarga hídrica pode piorar edema e lesão pulmonar em pulmão vulnerável."
+    }
+  ],
+  fraseOuro: "Na bleomicina, oxigênio é remédio: use quando precisa, titule quando sobra."
+},
+{
+  id: "oral-ultra-059",
+  titulo: "Anticoagulante oral direto e raquianestesia",
+  area: "Anticoagulação e neuroeixo",
+  dificuldade: "Muito difícil",
+  caso: "Mulher de 79 anos com fibrilação atrial usa apixabana. Caiu ontem e fraturou colo de fêmur. A última dose foi há 14 horas. Creatinina está elevada e a ortopedia solicita raquianestesia imediata para operar ainda hoje.",
+  pergunta: "A banca pergunta: você faz raquianestesia? Como decide?",
+  respostaIdeal: [
+    "Eu não faria bloqueio neuraxial apenas por pressão de tempo sem avaliar intervalo desde a última dose, função renal, dose, risco hemorrágico e urgência real.",
+    "Anticoagulantes orais diretos aumentam risco de hematoma neuraxial. Insuficiência renal pode prolongar exposição, dependendo do fármaco e do paciente.",
+    "Se o intervalo seguro não foi atingido, alternativas incluem anestesia geral com manejo cuidadoso, bloqueios periféricos compressíveis para analgesia quando seguros, adiamento se clinicamente aceitável ou reversão em situações específicas conforme protocolo.",
+    "O ponto central é que hematoma neuraxial é raro, mas devastador; a decisão deve ser documentada e discutida."
+  ],
+  pontosObrigatorios: [
+    "Verificar última dose de apixabana.",
+    "Considerar função renal.",
+    "Não fazer neuroeixo em anticoagulação ativa sem critério.",
+    "Discutir alternativa anestésica.",
+    "Documentar risco-benefício.",
+    "Considerar bloqueios periféricos compressíveis para analgesia."
+  ],
+  errosGraves: [
+    "Fazer raqui imediata porque é idosa.",
+    "Achar que dose única esquecida não importa.",
+    "Ignorar creatinina elevada.",
+    "Colocar cateter peridural sem plano de retirada.",
+    "Não monitorar déficit neurológico pós-operatório."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Por que a função renal muda a decisão?",
+      resposta: "Porque pode prolongar a presença de anticoagulante ativo e aumentar risco de sangramento em espaço neuraxial."
+    },
+    {
+      pergunta: "Qual sinal pós-operatório preocupa?",
+      resposta: "Dor lombar intensa, déficit motor ou sensitivo novo, disfunção urinária ou intestinal e piora neurológica progressiva."
+    }
+  ],
+  fraseOuro: "Raqui em anticoagulado não é coragem: é cálculo de risco com relógio e rim na mesa."
+},
+{
+  id: "oral-ultra-060",
+  titulo: "Apneia prolongada por deficiência de pseudocolinesterase",
+  area: "Farmacogenética anestésica",
+  dificuldade: "Muito difícil",
+  caso: "Mulher de 28 anos, hígida, recebe succinilcolina para intubação em cirurgia curta. Ao final, 50 minutos depois, permanece sem ventilação espontânea efetiva, com consciência sugerida por lacrimejamento e aumento de pressão, mas sem movimento. O trem de quatro mostra bloqueio intenso.",
+  pergunta: "A banca pergunta: qual diagnóstico provável e como conduzir sem causar sofrimento?",
+  respostaIdeal: [
+    "O diagnóstico provável é bloqueio prolongado por deficiência ou variante de pseudocolinesterase plasmática, responsável pelo metabolismo da succinilcolina.",
+    "A conduta é manter sedação e analgesia adequadas, ventilação mecânica, monitorização neuromuscular e aguardar recuperação espontânea. O paciente não pode ficar acordado e paralisado.",
+    "Não há papel para neostigmina como solução confiável; ela pode até interferir na colinesterase e não reverte adequadamente bloqueio por succinilcolina em fase prolongada.",
+    "Após recuperação, explicaria o evento, registraria no prontuário, orientaria investigação familiar e evitaria succinilcolina ou mivacúrio no futuro."
+  ],
+  pontosObrigatorios: [
+    "Suspeitar deficiência de pseudocolinesterase.",
+    "Manter ventilação até recuperação.",
+    "Garantir hipnose e analgesia.",
+    "Usar monitorização neuromuscular.",
+    "Não extubar até recuperação adequada.",
+    "Orientar paciente e registrar contraindicação futura."
+  ],
+  errosGraves: [
+    "Acordar a paciente paralisada.",
+    "Extubar por tempo decorrido da succinilcolina.",
+    "Dar neostigmina como solução automática.",
+    "Não investigar história familiar depois.",
+    "Não documentar o evento."
+  ],
+  aprofundamento: [
+    {
+      pergunta: "Quais fármacos são problemáticos no futuro?",
+      resposta: "Succinilcolina e mivacúrio, pois dependem da pseudocolinesterase plasmática para metabolismo adequado."
+    },
+    {
+      pergunta: "Como diferenciar de bloqueio por rocurônio?",
+      resposta: "Pela história de uso, padrão de bloqueio, tempo, monitorização neuromuscular e resposta esperada a reversores específicos."
+    }
+  ],
+  fraseOuro: "Paralisia prolongada sem hipnose é uma emergência humana, não só farmacológica."
+}
 ];
