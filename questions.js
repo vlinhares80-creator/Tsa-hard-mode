@@ -11111,4 +11111,955 @@ const QUESTIONS = [
   comentario: "Sopro sistólico rude com síncope e dispneia em idoso é estenose aórtica grave até prova em contrário. Estenose aórtica sintomática aumenta muito o risco perioperatório: o ventrículo depende de pré-carga, ritmo sinusal, tempo diastólico e pressão de perfusão coronariana. Hipotensão e taquicardia podem ser desastrosas. Em cirurgia eletiva sem urgência imediata, é necessário ecocardiograma e discussão de tratamento valvar ou estratégia alternativa antes da colectomia. Neuraxial de dose única com simpatectomia abrupta pode ser perigosa. A resposta certa protege o paciente da frase assassina: 'é só um sopro'.",
   frase_ouro: "Síncope com sopro aórtico não é achado: é aviso pré-anestésico."
 }
+  ,
+{
+  id: "tsa-ultra-641",
+  fonte: "Yao / Barash",
+  capitulo: "Gestante em cirurgia não obstétrica",
+  tema: "Apendicite laparoscópica na gestação",
+  area: "Obstetrícia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Gestante de 24 semanas, previamente hígida, será submetida à apendicectomia laparoscópica por apendicite aguda. O cirurgião solicita pneumoperitônio habitual de 15 a 18 mmHg, Trendelenburg acentuado e diz que a prioridade é manter a saturação fetal, mesmo que seja necessário hiperventilar intensamente a mãe. Qual alternativa representa a melhor conduta anestésica?",
+  alternativas: {
+    A: "Aceitar pneumoperitônio alto, pois a pressão intra-abdominal não interfere no retorno venoso materno nem na perfusão uteroplacentária.",
+    B: "Manter pressão de insuflação a mais baixa possível, geralmente em faixa moderada, evitar extremos de posicionamento, manter oxigenação e pressão arterial maternas, e guiar ventilação pela capnografia.",
+    C: "Hiperventilar a mãe até valores muito baixos de gás carbônico expirado, pois alcalose materna melhora liberação de oxigênio fetal.",
+    D: "Evitar qualquer laparoscopia após o primeiro trimestre, pois laparotomia sempre reduz perda fetal.",
+    E: "Priorizar monitorização fetal contínua mesmo que não exista equipe obstétrica capaz de intervir durante a cirurgia."
+  },
+  resposta: "B",
+  comentario: "A pergunta mistura várias pegadinhas clássicas. Em cirurgia não obstétrica na gestante, o melhor tratamento fetal é manter fisiologia materna: oxigenação, pressão arterial, ventilação e deslocamento uterino adequados. Pneumoperitônio excessivo pode reduzir retorno venoso e perfusão uteroplacentária; extremos de posição também podem piorar mecânica respiratória e hemodinâmica. Hiperventilação materna intensa pode reduzir fluxo uterino por vasoconstrição e deslocar a curva de dissociação da hemoglobina, prejudicando entrega de oxigênio fetal. A laparoscopia não é proibida na gestação, mas exige ajustes. Monitorização fetal só faz sentido se a idade gestacional, recursos e capacidade de intervenção forem coerentes.",
+  frase_ouro: "Na cirurgia não obstétrica da gestante, quem anestesia o feto é a fisiologia materna."
+},
+{
+  id: "tsa-ultra-642",
+  fonte: "Yao / Barash",
+  capitulo: "Gestante em cirurgia não obstétrica",
+  tema: "Monitorização fetal intraoperatória",
+  area: "Obstetrícia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Gestante de 29 semanas será submetida à colecistectomia por colecistite aguda. O feto é viável, há obstetra no hospital, mas não há sala cirúrgica obstétrica disponível imediatamente. Sobre monitorização fetal, assinale a alternativa mais correta.",
+  alternativas: {
+    A: "A monitorização fetal contínua é obrigatória em qualquer gestante acima de 20 semanas, independentemente da possibilidade de intervenção.",
+    B: "Para feto viável, monitorização fetal e de contrações antes e após o procedimento é recomendada; monitorização contínua intraoperatória deve ser individualizada e só é útil se houver capacidade real de interpretação e intervenção.",
+    C: "A anestesia geral impede qualquer interpretação fetal, portanto não se deve monitorizar o feto antes ou depois da cirurgia.",
+    D: "A bradicardia fetal durante anestesia geral sempre indica sofrimento fetal irreversível e exige cesariana imediata.",
+    E: "Para feto pré-viável, deve-se sempre realizar cardiotocografia contínua intraoperatória e tocolítico profilático."
+  },
+  resposta: "B",
+  comentario: "A pegadinha é transformar monitorização em ritual. Para fetos pré-viáveis, geralmente basta documentar batimentos antes e depois. Para fetos viáveis, monitorização fetal e contrações antes e depois é apropriada; durante o intraoperatório, deve haver equipe capaz de interpretar e intervir, caso contrário ela pode gerar ruído e decisões ruins. Anestésicos reduzem variabilidade fetal e podem causar alterações que não significam necessariamente hipóxia. O foco continua sendo corrigir hipóxia, hipotensão, hipocapnia ou hipercapnia materna, compressão aortocava e estímulo uterino.",
+  frase_ouro: "Monitor fetal sem plano obstétrico é alarme sem bombeiro."
+},
+{
+  id: "tsa-ultra-643",
+  fonte: "Yao / Barash",
+  capitulo: "Gestante em cirurgia não obstétrica",
+  tema: "Teratogenicidade anestésica",
+  area: "Obstetrícia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Gestante de 9 semanas necessita drenagem urgente de abscesso cervical profundo com risco de via aérea. O marido pergunta se a anestesia geral causará malformação fetal. Qual resposta representa melhor a evidência e a conduta?",
+  alternativas: {
+    A: "Toda anestesia geral no primeiro trimestre é comprovadamente teratogênica e deve ser recusada, mesmo em urgência.",
+    B: "Nenhum anestésico atravessa a placenta no primeiro trimestre, então o risco fetal é nulo.",
+    C: "Não há evidência de teratogenicidade humana clara com agentes anestésicos em doses clínicas usuais; o maior risco costuma estar ligado à doença materna, hipóxia, hipotensão, infecção e urgência cirúrgica.",
+    D: "O risco fetal é eliminado usando óxido nitroso como único anestésico, pois ele não interfere no metabolismo celular.",
+    E: "A técnica regional sempre é obrigatória no primeiro trimestre, mesmo quando a via aérea está ameaçada."
+  },
+  resposta: "C",
+  comentario: "A prova quer fugir dos extremos. Cirurgias eletivas devem ser adiadas, se possível, mas cirurgia urgente não deve ser negada por medo genérico da anestesia. O risco fetal se relaciona muito com doença materna, febre, sepse, hipóxia, hipotensão, acidose, prematuridade e agressão cirúrgica. A maioria dos agentes anestésicos usados em doses clínicas não tem prova de teratogenicidade humana relevante. Óxido nitroso tem controvérsias históricas e não é escudo fetal. Se a via aérea está em risco, escolher técnica regional por dogma pode ser mais perigoso.",
+  frase_ouro: "Na gestante urgente, evitar hipóxia materna protege mais o feto que evitar anestesia por medo abstrato."
+},
+{
+  id: "tsa-ultra-644",
+  fonte: "Yao / Barash",
+  capitulo: "Cirurgia fetal",
+  tema: "Correção fetal aberta de mielomeningocele",
+  area: "Obstetrícia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Gestante de 25 semanas será submetida à correção fetal aberta de mielomeningocele. O plano inclui laparotomia, histerotomia, exposição parcial fetal e fechamento da lesão. Qual conjunto de objetivos anestésicos é mais apropriado?",
+  alternativas: {
+    A: "Anestesia materna superficial, mínima exposição fetal a fármacos e contração uterina intensa para reduzir sangramento.",
+    B: "Anestesia materna adequada, relaxamento uterino profundo, manutenção rigorosa de perfusão uteroplacentária, analgesia/anestesia fetal quando indicada e preparação para hemorragia e atonia uterina.",
+    C: "Bloqueio periférico materno isolado, pois anestesia fetal ocorre automaticamente pela circulação placentária.",
+    D: "Evitar halogenado em qualquer concentração, pois relaxamento uterino é sempre indesejável em cirurgia fetal aberta.",
+    E: "Manter hipotensão materna controlada para reduzir sangramento uterino e melhorar campo fetal."
+  },
+  resposta: "B",
+  comentario: "Cirurgia fetal aberta não é apenas cirurgia na gestante: é anestesia materna, uterina e fetal. Precisa de relaxamento uterino suficiente para evitar contração e compressão placentária, o que frequentemente exige anestésico inalatório em concentração maior, eventualmente associado a tocolíticos. Isso aumenta risco de hipotensão e atonia uterina, então perfusão materna e uteroplacentária devem ser sustentadas. O feto pode precisar de analgesia/anestesia direta dependendo da técnica. A pegadinha é pensar que reduzir anestésico sempre protege o feto; aqui contração uterina e hipoperfusão podem ser o maior problema.",
+  frase_ouro: "Na cirurgia fetal aberta, útero relaxado e mãe perfundida são parte da anestesia do feto."
+},
+{
+  id: "tsa-ultra-645",
+  fonte: "Yao / Barash",
+  capitulo: "Cirurgia fetal",
+  tema: "EXIT procedure",
+  area: "Obstetrícia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Gestante com feto portador de grande massa cervical será submetida a procedimento EXIT para garantir via aérea fetal antes do clampeamento do cordão. Qual princípio é correto?",
+  alternativas: {
+    A: "O cordão deve ser clampeado logo após exteriorização da cabeça fetal para evitar hipervolemia fetal.",
+    B: "A prioridade é manter circulação uteroplacentária enquanto a via aérea fetal é estabelecida, com relaxamento uterino e estabilidade hemodinâmica materna.",
+    C: "O útero deve permanecer contraído durante todo o procedimento para manter perfusão placentária.",
+    D: "A anestesia fetal é dispensável porque o feto não responde a estímulos cirúrgicos antes do clampeamento.",
+    E: "Hipotensão materna moderada é desejável para reduzir sangramento placentário."
+  },
+  resposta: "B",
+  comentario: "No EXIT, o feto permanece dependente da placenta enquanto se obtém via aérea. Isso exige manter perfusão uteroplacentária, evitar contração uterina, sustentar pressão materna e garantir tempo para intubação, broncoscopia ou traqueostomia fetal. Depois da via aérea assegurada, o cordão é clampeado e a estratégia muda para contração uterina e controle de sangramento. A pegadinha é confundir cesariana comum com EXIT: aqui a placenta é a máquina de circulação extracorpórea natural por alguns minutos.",
+  frase_ouro: "No EXIT, o cordão só sai de cena depois que a via aérea fetal entrou em cena."
+},
+{
+  id: "tsa-ultra-646",
+  fonte: "Yao / Barash",
+  capitulo: "Gestante em cirurgia não obstétrica",
+  tema: "Trauma na gestação",
+  area: "Obstetrícia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Gestante de 32 semanas vítima de colisão automobilística chega hipotensa, taquicárdica, com dor abdominal e suspeita de lesão esplênica. A equipe hesita em realizar tomografia por medo de radiação fetal. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "Evitar tomografia sempre, pois qualquer radiação diagnóstica na gestação causa dano fetal determinístico.",
+    B: "A avaliação e ressuscitação materna seguem prioridades do trauma; exames indicados não devem ser negados se necessários ao diagnóstico e tratamento materno.",
+    C: "Priorizar cardiotocografia e aguardar estabilidade fetal antes de investigar sangramento materno.",
+    D: "Realizar cesariana antes da ressuscitação materna, pois a retirada fetal sempre melhora retorno venoso e sobrevida materna.",
+    E: "Manter a gestante em decúbito dorsal plano para facilitar FAST e compressões venosas."
+  },
+  resposta: "B",
+  comentario: "No trauma, a melhor ressuscitação fetal é ressuscitação materna. Hipóxia, choque e sangramento materno matam mais que a radiação de exames indicados. Tomografia, quando necessária, deve ser realizada com bom senso e proteção adequada, mas não omitida se muda conduta. A cardiotocografia ajuda, mas não substitui controle de hemorragia. Deslocamento uterino à esquerda é importante após metade da gestação para reduzir compressão aortocava. Cesárea perimortem pode ser indicada em parada materna avançada, mas não substitui ressuscitação no choque inicial.",
+  frase_ouro: "No trauma da gestante, o feto não sobrevive a uma mãe subinvestigada e mal perfundida."
+},
+{
+  id: "tsa-ultra-647",
+  fonte: "Yao / Barash",
+  capitulo: "Gestante em cirurgia não obstétrica",
+  tema: "Vasopressor e perfusão uteroplacentária",
+  area: "Obstetrícia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Gestante de 27 semanas sob anestesia geral para cirurgia ortopédica apresenta hipotensão após indução. O residente sugere evitar vasopressor porque qualquer vasoconstrição reduz fluxo uterino. Qual alternativa é mais correta?",
+  alternativas: {
+    A: "Nunca se deve usar vasopressor em gestantes, apenas cristaloide até normalizar pressão.",
+    B: "Hipotensão materna reduz perfusão uteroplacentária; vasopressores titulados, associados a deslocamento uterino e volume criterioso, podem ser necessários para restaurar pressão e fluxo.",
+    C: "Ephedrina é sempre superior a qualquer vasopressor direto porque atravessa a placenta e estimula o feto.",
+    D: "Fenilefrina é proibida em cirurgia não obstétrica porque causa acidose fetal inevitável.",
+    E: "A perfusão uterina é autorregulada como a cerebral, portanto pequenas quedas pressóricas não importam."
+  },
+  resposta: "B",
+  comentario: "Fluxo uteroplacentário é muito dependente da pressão materna e não possui autorregulação robusta como cérebro ou rim. Hipotensão prolongada é ruim. A ideia de que vasopressor é sempre inimigo do útero é ultrapassada e simplista. O alvo é manter pressão materna, evitar compressão aortocava, corrigir hipovolemia real e usar vasopressores titulados. Fenilefrina, noradrenalina em baixa dose ou efedrina podem ser escolhidas conforme frequência cardíaca, contexto e protocolo. Volume excessivo também tem custo. O útero prefere pressão restaurada a hipotensão filosófica.",
+  frase_ouro: "O pior vasopressor para o feto é a hipotensão materna não tratada."
+},
+{
+  id: "tsa-ultra-648",
+  fonte: "Yao / Barash",
+  capitulo: "Gestante em cirurgia não obstétrica",
+  tema: "Anestesia regional em gestante",
+  area: "Obstetrícia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Gestante de 30 semanas será submetida à osteossíntese de rádio distal. A equipe sugere anestesia geral para 'evitar qualquer droga perto do feto'. Qual alternativa representa melhor a escolha anestésica?",
+  alternativas: {
+    A: "Anestesia geral é sempre mais segura para o feto porque permite controle absoluto da ventilação materna.",
+    B: "Bloqueio de plexo braquial pode ser excelente, reduz exposição sistêmica fetal, mas exige dose segura de anestésico local, prevenção de toxicidade e monitorização materna adequada.",
+    C: "Bloqueios periféricos são contraindicados na gestação porque a progesterona impede ação dos anestésicos locais.",
+    D: "A técnica regional dispensa deslocamento uterino e monitorização fetal quando o feto é viável.",
+    E: "A adição de grandes doses de adrenalina ao anestésico local melhora sempre fluxo uterino por beta-2 vasodilatação."
+  },
+  resposta: "B",
+  comentario: "A técnica regional é atraente quando adequada ao sítio cirúrgico, pois evita via aérea gestacional, aspiração e maior exposição fetal a anestésicos sistêmicos. Mas não é isenta de risco: gestante pode ter maior sensibilidade a anestésicos locais, toxicidade sistêmica continua possível e adrenalina em doses altas pode reduzir fluxo uterino. O bloqueio deve ser guiado, fracionado, com dose calculada e vigilância. A técnica anestésica em si não garante desfecho fetal; o que garante é fisiologia materna preservada.",
+  frase_ouro: "Regional na gestante é ótima quando indicada; não é passe livre para esquecer dose e perfusão."
+},
+{
+  id: "tsa-ultra-649",
+  fonte: "Yao / Barash",
+  capitulo: "Gestante em cirurgia não obstétrica",
+  tema: "Aspiração e via aérea",
+  area: "Via aérea",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Gestante de 22 semanas necessita laparoscopia urgente. Tem refluxo importante, náuseas, obesidade e via aérea Mallampati III. Qual afirmação sobre indução anestésica é mais correta?",
+  alternativas: {
+    A: "Após 20 semanas, a anestesia geral em gestante geralmente exige estratégia de proteção de via aérea, incluindo indução em sequência rápida e tubo traqueal com cuff quando apropriado.",
+    B: "Máscara laríngea é sempre a via aérea de escolha na gestante porque reduz resposta pressórica e risco de aspiração.",
+    C: "A gestante dessatura lentamente por aumento da capacidade residual funcional.",
+    D: "A pressão cricoide garante proteção absoluta contra aspiração e dispensa plano de via aérea difícil.",
+    E: "A intubação difícil é menos comum na gestante porque edema de mucosa aumenta complacência das vias aéreas."
+  },
+  resposta: "A",
+  comentario: "A gestação aumenta risco de aspiração e via aérea difícil por esvaziamento gástrico alterado em alguns contextos, refluxo, aumento de pressão intra-abdominal, edema de mucosas, ganho ponderal e redução da reserva de oxigênio. Após metade da gestação, a anestesia geral costuma ser conduzida com proteção de via aérea e sequência rápida, ajustando à situação. A pressão cricoide não é mágica e pode piorar visualização se mal aplicada; deve ser liberada se atrapalhar ventilação/intubação. A gestante dessatura rápido por maior consumo de oxigênio e menor capacidade residual funcional.",
+  frase_ouro: "Na gestante, a via aérea difícil chega com estômago cheio e reserva curta."
+},
+{
+  id: "tsa-ultra-650",
+  fonte: "Yao / Barash",
+  capitulo: "Gestante em cirurgia não obstétrica",
+  tema: "Prematuridade e tocolíticos",
+  area: "Obstetrícia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Gestante de 31 semanas, após laparotomia por obstrução intestinal, apresenta contrações uterinas no pós-operatório. O cirurgião pergunta por que não foi administrado tocolítico profilático antes da incisão. Qual resposta é mais adequada?",
+  alternativas: {
+    A: "Tocolítico profilático é obrigatório em toda cirurgia não obstétrica após 24 semanas.",
+    B: "Tocolítico nunca deve ser usado no pós-operatório porque todos aumentam mortalidade fetal.",
+    C: "A decisão sobre tocolítico deve ser individualizada com obstetrícia; não há regra universal de profilaxia para toda cirurgia, e deve-se monitorar contrações quando apropriado.",
+    D: "Anestésicos inalatórios em baixa dose garantem tocolise pós-operatória por 24 horas.",
+    E: "Contrações pós-operatórias são sempre benignas e não exigem avaliação obstétrica."
+  },
+  resposta: "C",
+  comentario: "O risco de parto prematuro aumenta após cirurgia durante gestação, mas tocolítico profilático universal não é regra. A decisão depende de idade gestacional, tipo de cirurgia, manipulação uterina, contrações, sangramento, infecção, membranas, bem-estar fetal e avaliação obstétrica. Alguns tocolíticos têm efeitos maternos importantes: taquicardia, hipotensão, edema pulmonar, alterações metabólicas. O foco é planejamento multidisciplinar, analgesia adequada, evitar hipóxia/hipotensão, tratar infecção e monitorar contrações quando indicado.",
+  frase_ouro: "Tocolítico não é vitamina da gestante operada; é fármaco com indicação."
+},
+{
+  id: "tsa-ultra-651",
+  fonte: "Yao / Barash",
+  capitulo: "Hepatopatia",
+  tema: "Coagulação no cirrótico",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Homem com cirrose alcoólica, ascite volumosa, plaquetas 58.000/mm³ e razão normalizada internacional de 2,4 será submetido à herniorrafia umbilical complicada por encarceramento. A equipe solicita plasma fresco para normalizar a razão antes da incisão, apesar de não haver sangramento ativo. Qual alternativa é mais correta?",
+  alternativas: {
+    A: "A razão normalizada internacional elevada prediz com precisão sangramento cirúrgico no cirrótico e deve ser sempre normalizada antes de qualquer incisão.",
+    B: "A hemostasia do cirrótico é reequilibrada e frágil; exames convencionais isolados não predizem bem sangramento, e transfusão profilática de plasma pode piorar volume, pressão portal e ascite.",
+    C: "Plaquetas abaixo de 100.000/mm³ contraindicam qualquer cirurgia abdominal.",
+    D: "O cirrótico é sempre autoanticoagulado e protegido contra trombose venosa.",
+    E: "A correção do coagulograma deve ser feita com heparina para reduzir hiperfibrinólise."
+  },
+  resposta: "B",
+  comentario: "Cirróticos têm redução de fatores pró-coagulantes e anticoagulantes, trombocitopenia, disfunção plaquetária, alterações de fibrinólise e aumento de fator de von Willebrand. O resultado é uma hemostasia reequilibrada, instável, que pode sangrar ou trombosar. A razão normalizada internacional mede parte da via pró-coagulante plasmática e não captura o sistema inteiro. Plasma profilático pode causar sobrecarga, aumentar pressão portal e piorar sangramento. A decisão deve considerar campo cirúrgico, sangramento, fibrinogênio, plaquetas, testes viscoelásticos quando disponíveis e risco de procedimento.",
+  frase_ouro: "No cirrótico, razão normalizada internacional alta não é sinônimo de sangue sem freio."
+},
+{
+  id: "tsa-ultra-652",
+  fonte: "Yao / Barash",
+  capitulo: "Hepatopatia",
+  tema: "Síndromes pulmonares do cirrótico",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente cirrótico candidato a transplante apresenta dispneia, hipoxemia que piora em ortostatismo e melhora ao deitar. Ecocardiograma com contraste mostra passagem tardia de microbolhas para câmaras esquerdas. Qual diagnóstico é mais provável e qual pegadinha deve ser evitada?",
+  alternativas: {
+    A: "Hipertensão portopulmonar; a passagem tardia de bolhas indica vasoconstrição arterial pulmonar fixa.",
+    B: "Síndrome hepatopulmonar; a hipoxemia decorre de vasodilatações intrapulmonares e pode piorar em posição ereta.",
+    C: "Embolia pulmonar crônica; o tratamento é anticoagulação plena imediata em todo cirrótico.",
+    D: "Ascite compressiva isolada; contraste positivo tardio é achado normal sem relevância.",
+    E: "Comunicação interatrial; bolhas tardias excluem origem pulmonar."
+  },
+  resposta: "B",
+  comentario: "Síndrome hepatopulmonar combina doença hepática, alteração de oxigenação e vasodilatações intrapulmonares. A platipneia e ortodeóxia são pistas. No ecocardiograma com contraste, bolhas chegando tardiamente ao lado esquerdo sugerem passagem intrapulmonar, diferente de shunt intracardíaco imediato. A hipertensão portopulmonar é outra entidade: hipertensão arterial pulmonar associada a hipertensão portal, com aumento de resistência vascular pulmonar e risco alto no transplante. Confundir as duas muda completamente o manejo.",
+  frase_ouro: "Hepatopulmonar dilata e hipoxemia; portopulmonar constrói resistência e mata o ventrículo direito."
+},
+{
+  id: "tsa-ultra-653",
+  fonte: "Yao / Barash",
+  capitulo: "Hepatopatia",
+  tema: "Ascite, indução e aspiração",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com doença hepática terminal, ascite tensa, hérnia umbilical rota e encefalopatia leve será submetido à cirurgia urgente. Qual abordagem de indução é mais adequada?",
+  alternativas: {
+    A: "Indução inalatória lenta com máscara, pois reduz risco de hipotensão e evita intubação traumática.",
+    B: "Sequência rápida com preparação de via aérea difícil, aspiração disponível, correção hemodinâmica prévia razoável e escolha de fármacos titulados, pois ascite e gastroparesia elevam risco de aspiração.",
+    C: "Máscara laríngea definitiva, pois cirróticos têm coagulopatia e não devem ser intubados.",
+    D: "Sedação profunda sem controle de via aérea, porque encefalopatia reduz reflexos e facilita procedimento.",
+    E: "Bloqueio neuraxial alto como técnica de escolha, independentemente de plaquetas e coagulação."
+  },
+  resposta: "B",
+  comentario: "Ascite aumenta pressão intra-abdominal, reduz complacência respiratória e favorece refluxo; gastroparesia e encefalopatia aumentam risco de aspiração. A indução deve ser planejada como alto risco: pré-oxigenação, aspiração pronta, sequência rápida quando apropriada, tubo com cuff e fármacos titulados para evitar colapso hemodinâmico. Cirrose não contraindica intubação; ao contrário, frequentemente exige proteção de via aérea. Técnicas neuraxiais exigem avaliação cuidadosa de coagulação e risco hemodinâmico.",
+  frase_ouro: "Cirrótico com ascite não tem só barriga cheia; muitas vezes tem estômago perigoso."
+},
+{
+  id: "tsa-ultra-654",
+  fonte: "Yao / Barash",
+  capitulo: "Transplante hepático",
+  tema: "Fases do transplante",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Durante transplante hepático ortotópico, após hepatectomia do fígado nativo e clampeamento vascular, o paciente apresenta queda do retorno venoso, acidose progressiva, redução da depuração de lactato e tendência à hipoglicemia. Em qual fase isso ocorre e qual preocupação é central?",
+  alternativas: {
+    A: "Fase neo-hepática; a principal preocupação é absorção de irrigante hipotônico.",
+    B: "Fase anepática; o paciente está sem função hepática efetiva, com alterações metabólicas, hemodinâmicas e de coagulação relevantes.",
+    C: "Fase de dissecção; a ausência de fígado já ocorreu antes do clampeamento portal.",
+    D: "Fase de reperfusão tardia; hipoglicemia exclui ausência de função hepática.",
+    E: "Fase de fechamento; nessa fase não há risco metabólico significativo."
+  },
+  resposta: "B",
+  comentario: "O transplante hepático é tradicionalmente dividido em fase de dissecção, fase anepática e fase neo-hepática. Na fase anepática, não há fígado funcional para metabolizar lactato, citrato, fármacos e substratos de coagulação; também há impacto de clampeamentos no retorno venoso e na perfusão renal. A prova pode confundir com reperfusão, onde surgem hipercalemia, acidose, hipotensão e bradicardia por liberação do conteúdo do enxerto. Saber a fase ajuda a antecipar o problema antes de ele aparecer no monitor.",
+  frase_ouro: "No transplante hepático, cada fase tem sua própria fisiologia tentando derrubar o paciente."
+},
+{
+  id: "tsa-ultra-655",
+  fonte: "Yao / Barash",
+  capitulo: "Transplante hepático",
+  tema: "Síndrome pós-reperfusão",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "No momento da reperfusão do enxerto hepático, paciente apresenta queda abrupta da pressão arterial, bradicardia, aumento de potássio, acidose e redução transitória da contratilidade ao ecocardiograma. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "O quadro é incompatível com reperfusão hepática e deve ser tratado apenas como plano anestésico profundo.",
+    B: "Trata-se de síndrome pós-reperfusão, relacionada à entrada na circulação de sangue frio, ácido, hipercalêmico, metabólitos vasoativos e mediadores do enxerto.",
+    C: "A síndrome pós-reperfusão ocorre apenas 24 horas após o transplante e se manifesta como rejeição aguda.",
+    D: "A melhor prevenção é hipocalcemia permissiva, pois cálcio aumenta vasoconstrição hepática.",
+    E: "Deve-se evitar vasopressores, pois qualquer vasopressor causa trombose imediata da artéria hepática."
+  },
+  resposta: "B",
+  comentario: "A síndrome pós-reperfusão é uma das cenas clássicas do transplante hepático. Ao reperfundir o enxerto, entram na circulação ácidos, potássio, produtos preservativos, sangue frio e mediadores inflamatórios/vasoativos. O resultado pode ser hipotensão, bradicardia, disfunção miocárdica transitória, arritmias e até parada. A preparação inclui comunicação antes de soltar clamps, cálcio, bicarbonato quando indicado, vasopressores, correção de potássio, temperatura e volume. A pegadinha é achar que queda abrupta após reperfusão é simplesmente excesso de anestésico.",
+  frase_ouro: "Na reperfusão hepática, o novo fígado chega trazendo vida — e uma bomba metabólica no colo."
+},
+{
+  id: "tsa-ultra-656",
+  fonte: "Yao / Barash",
+  capitulo: "Transplante hepático",
+  tema: "Hipocalcemia por citrato",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Durante transplante hepático, paciente recebe grande volume de plasma e hemácias. Evolui com hipotensão, intervalo QT prolongado, contratilidade reduzida e cálcio ionizado de 0,72 mmol/L. Qual alternativa é correta?",
+  alternativas: {
+    A: "A hipocalcemia deve ser tolerada porque reduz risco de trombose do enxerto.",
+    B: "O citrato dos hemocomponentes pode causar hipocalcemia ionizada, especialmente quando o fígado doente ou ausente não o metaboliza adequadamente; cálcio deve ser reposto guiado por cálcio ionizado.",
+    C: "O cálcio total é sempre mais importante que o cálcio ionizado no transplante.",
+    D: "A hipocalcemia por citrato ocorre apenas em transfusão de plaquetas, nunca em plasma.",
+    E: "O tratamento correto é magnésio em bolus, pois antagoniza citrato."
+  },
+  resposta: "B",
+  comentario: "Citrato quelante dos hemocomponentes é metabolizado pelo fígado. Em doença hepática terminal, fase anepática ou transfusão rápida, o citrato acumula e reduz cálcio ionizado. Cálcio ionizado é o que importa para contratilidade, condução, tônus vascular e coagulação. Hipocalcemia causa hipotensão, disfunção miocárdica e pior hemostasia. A reposição deve ser guiada e contínua quando necessário, evitando oscilações grosseiras. O candidato que olha só cálcio total em cirrótico hipoalbuminêmico já caiu antes da pergunta terminar.",
+  frase_ouro: "No transplante hepático, cálcio ionizado é vasopressor, inotrópico e cofator de coagulação."
+},
+{
+  id: "tsa-ultra-657",
+  fonte: "Yao / Barash",
+  capitulo: "Transplante hepático",
+  tema: "Baixa pressão venosa central",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Durante a fase de dissecção do transplante hepático, a equipe pede estratégia de pressão venosa central muito baixa para reduzir sangramento. O paciente tem síndrome hepatorrenal, lactato elevado e necessidade crescente de noradrenalina. Qual resposta é mais apropriada?",
+  alternativas: {
+    A: "Baixa pressão venosa central extrema deve ser mantida em todos os transplantes, pois sempre protege o rim e reduz mortalidade.",
+    B: "A redução de pressão venosa pode diminuir sangramento em alguns casos, mas deve ser individualizada; hipovolemia e baixo fluxo podem piorar rim, perfusão sistêmica e instabilidade.",
+    C: "A pressão venosa central isolada determina com precisão a pré-carga e deve guiar todo volume.",
+    D: "Noradrenalina é proibida no transplante porque reduz fluxo portal em qualquer dose.",
+    E: "Síndrome hepatorrenal melhora com hipovolemia, pois reduz congestão esplâncnica."
+  },
+  resposta: "B",
+  comentario: "Baixa pressão venosa central pode reduzir sangramento venoso na dissecção, mas não é mandamento universal. Pacientes com MELD alto, disfunção renal, vasoplegia e instabilidade podem não tolerar hipovolemia deliberada. O manejo deve integrar campo cirúrgico, ecocardiografia, pressão arterial, lactato, débito, diurese, necessidade de vasopressor e risco renal. A questão quer derrubar o candidato que decora 'CVP baixa no transplante' e esquece que rim e microcirculação também fazem prova.",
+  frase_ouro: "Pressão venosa baixa que economiza sangue pode custar rim se virar baixo fluxo."
+},
+{
+  id: "tsa-ultra-658",
+  fonte: "Yao / Barash",
+  capitulo: "Hepatopatia",
+  tema: "Hiperfibrinólise no transplante",
+  area: "Hematologia / Coagulação",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Após reperfusão do enxerto hepático, surge sangramento difuso. Exames convencionais ainda estão pendentes. O teste viscoelástico mostra formação inicial do coágulo razoável, mas lise acentuada em poucos minutos. Qual intervenção é mais coerente?",
+  alternativas: {
+    A: "Plasma fresco em grande volume como única terapia, pois toda coagulopatia pós-reperfusão é deficiência de fatores.",
+    B: "Antifibrinolítico, se não houver contraindicação, porque o padrão sugere hiperfibrinólise documentada.",
+    C: "Plaquetas em dose maciça, pois lise precoce significa obrigatoriamente trombocitopenia isolada.",
+    D: "Heparina em bolus para impedir consumo de fibrina.",
+    E: "Nenhuma terapia, pois lise no teste viscoelástico é artefato sem relevância clínica."
+  },
+  resposta: "B",
+  comentario: "No transplante hepático, hiperfibrinólise pode ocorrer especialmente na fase anepática e após reperfusão, por acúmulo/liberação de ativadores fibrinolíticos e disfunção temporária do novo fígado. O teste viscoelástico é útil justamente porque diferencia baixa formação de coágulo de lise acelerada. Plasma corrige fatores, plaquetas ajudam se força do coágulo está baixa por plaquetopenia, fibrinogênio corrige substrato, mas lise rápida pede antifibrinolítico. A pegadinha é tratar todo sangramento com plasma sem entender a curva.",
+  frase_ouro: "Se o coágulo nasce e derrete, não falta só tijolo; tem demolição ativa."
+},
+{
+  id: "tsa-ultra-659",
+  fonte: "Yao / Barash",
+  capitulo: "Hepatopatia",
+  tema: "Encefalopatia e fármacos",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Cirrótico com encefalopatia grau II será submetido a endoscopia terapêutica por sangramento varicoso. Qual escolha farmacológica é mais adequada?",
+  alternativas: {
+    A: "Benzodiazepínico em dose alta é ideal porque trata encefalopatia e reduz amônia.",
+    B: "Sedação deve ser titulada com extrema cautela, evitando fármacos de longa ação e protegendo via aérea quando necessário, pois encefalopatia e sangramento aumentam risco de aspiração e depressão ventilatória.",
+    C: "Propofol é contraindicado em qualquer hepatopata, independentemente de dose e contexto.",
+    D: "Opioides são sempre seguros no cirrótico porque não dependem de metabolismo hepático.",
+    E: "A presença de varizes contraindica intubação orotraqueal."
+  },
+  resposta: "B",
+  comentario: "O hepatopata encefalopata tem reserva neurológica e ventilatória reduzida, risco de aspiração por sangramento digestivo e metabolismo alterado de muitos fármacos. Benzodiazepínicos podem precipitar ou agravar encefalopatia. Propofol pode ser usado com titulação e vigilância, mas não é isento de hipotensão. Opioides podem ter ação prolongada. Se houver sangramento ativo, rebaixamento ou alto risco de aspiração, intubação pode ser mais segura que sedação profunda sem via aérea protegida. Variz esofágica não impede intubação; o que exige cuidado é sonda/TEE e manipulações esofágicas.",
+  frase_ouro: "No cirrótico encefalopata, sedação leve demais falha; profunda demais vira aspiração."
+},
+{
+  id: "tsa-ultra-660",
+  fonte: "Yao / Barash",
+  capitulo: "Hepatopatia",
+  tema: "Hiponatremia no cirrótico",
+  area: "Renal / Endócrino / Metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente cirrótico com ascite e sódio de 122 mEq/L será submetido a transplante hepático. Durante o intraoperatório, após transfusão e bicarbonato, o sódio sobe rapidamente para 134 mEq/L em poucas horas. Qual risco deve ser lembrado?",
+  alternativas: {
+    A: "Correção rápida de hiponatremia crônica pode causar síndrome de desmielinização osmótica.",
+    B: "O risco principal é edema cerebral por queda de osmolaridade, portanto a correção rápida é desejável.",
+    C: "Hiponatremia no cirrótico nunca deve ser considerada crônica.",
+    D: "Bicarbonato não contém sódio e não influencia correção.",
+    E: "A síndrome osmótica ocorre apenas se o sódio final ultrapassar 160 mEq/L."
+  },
+  resposta: "A",
+  comentario: "Cirróticos frequentemente têm hiponatremia crônica por retenção de água livre. O cérebro se adapta reduzindo osmóis intracelulares; se o sódio sobe rápido demais, há risco de desmielinização osmótica. Transplante hepático é cenário propício para correção inadvertida: hemocomponentes, bicarbonato, soluções hipertônicas, diurese e mudanças metabólicas. A meta não é 'normalizar' sódio rapidamente, e sim controlar a velocidade de correção. A banca adora esse tema porque o anestesista pode causar uma complicação neurológica tentando corrigir um número bonito.",
+  frase_ouro: "Sódio crônico não gosta de pressa."
+},
+{
+  id: "tsa-ultra-661",
+  fonte: "Yao / Barash",
+  capitulo: "Hepatopatia",
+  tema: "Síndrome hepatorrenal",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Cirrótico com ascite, creatinina em ascensão, sedimento urinário sem proteinúria importante, ultrassom renal normal e ausência de melhora após suspensão de diurético e albumina por 48 horas é avaliado para transplante. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "O quadro sugere síndrome hepatorrenal, diagnóstico funcional de exclusão relacionado à vasodilatação esplâncnica e vasoconstrição renal, não uma necrose tubular obrigatória.",
+    B: "A presença de ascite exclui síndrome hepatorrenal.",
+    C: "Síndrome hepatorrenal deve melhorar imediatamente com furosemida em altas doses.",
+    D: "Proteinúria maciça e hematúria intensa são critérios obrigatórios.",
+    E: "Creatinina normal exclui disfunção renal relevante no cirrótico sarcopênico."
+  },
+  resposta: "A",
+  comentario: "Síndrome hepatorrenal é disfunção renal funcional em doença hepática avançada, associada a vasodilatação esplâncnica, ativação neuro-hormonal e vasoconstrição renal. É diagnóstico de exclusão: ascite, ausência de choque, ausência de nefrotóxicos recentes, pouca evidência de doença renal estrutural e falta de resposta a albumina/suspensão de diuréticos. Creatinina pode subestimar disfunção renal no cirrótico sarcopênico. O manejo perioperatório visa evitar hipovolemia, hipotensão, nefrotóxicos e instabilidade durante transplante.",
+  frase_ouro: "No cirrótico sarcopênico, creatinina pode mentir para baixo enquanto o rim grita."
+},
+{
+  id: "tsa-ultra-662",
+  fonte: "Yao / Barash",
+  capitulo: "Transplante hepático",
+  tema: "Ecocardiografia transesofágica e varizes",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Durante transplante hepático de alto risco, a equipe discute uso de ecocardiografia transesofágica. O paciente tem varizes esofágicas tratadas previamente, sem sangramento recente. Qual alternativa é mais correta?",
+  alternativas: {
+    A: "Varizes esofágicas são contraindicação absoluta e universal à ecocardiografia transesofágica.",
+    B: "O risco deve ser ponderado; muitos centros utilizam ecocardiografia transesofágica em transplante hepático selecionado, com cuidado, quando o benefício hemodinâmico supera o risco.",
+    C: "A ecocardiografia transesofágica não fornece informação útil no transplante hepático, pois pressão venosa central é sempre suficiente.",
+    D: "A presença de varizes elimina risco de embolia ou disfunção ventricular durante reperfusão.",
+    E: "Se usada, a sonda deve permanecer no estômago com manipulação vigorosa para comprimir varizes."
+  },
+  resposta: "B",
+  comentario: "TEE pode ser extremamente útil no transplante hepático para avaliar volume, função ventricular, embolia, sobrecarga de ventrículo direito e causa de hipotensão. Varizes elevam preocupação de sangramento, mas não são, em todos os cenários, proibição absoluta. A decisão depende de gravidade das varizes, sangramento recente, benefício esperado, experiência e cuidado na manipulação. O erro é tanto usar sem pensar quanto proibir por reflexo. Em caso complexo, informação hemodinâmica pode salvar o enxerto e o paciente.",
+  frase_ouro: "No transplante hepático, TEE não é brinquedo; mas também não é tabu automático por variz."
+},
+{
+  id: "tsa-ultra-663",
+  fonte: "Yao / Barash",
+  capitulo: "Nefropatia",
+  tema: "Hipercalemia no renal crônico",
+  area: "Renal / Endócrino / Metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente em hemodiálise, potássio de 6,4 mEq/L, alterações de onda T e necessidade de laparotomia urgente. Qual sequência terapêutica é mais adequada antes e durante a indução?",
+  alternativas: {
+    A: "Administrar furosemida como medida principal, pois todo paciente dialítico mantém resposta diurética preservada.",
+    B: "Proteger membrana com cálcio intravenoso se houver alteração eletrocardiográfica, deslocar potássio para o intracelular com insulina e glicose, considerar beta-agonista e bicarbonato conforme acidose, e planejar remoção definitiva com diálise quando possível.",
+    C: "Aguardar diálise obrigatoriamente antes de qualquer cirurgia urgente, mesmo em peritonite com choque.",
+    D: "Usar succinilcolina para reduzir potássio por contração muscular transitória.",
+    E: "Tratar apenas após a intubação, pois agentes anestésicos reduzem potássio rapidamente."
+  },
+  resposta: "B",
+  comentario: "Hipercalemia com alteração eletrocardiográfica é emergência. Cálcio não reduz potássio, mas estabiliza membrana miocárdica. Insulina com glicose desloca potássio para dentro da célula; beta-agonista ajuda; bicarbonato é mais útil se houver acidose relevante. A remoção real vem de diálise, resina ou eliminação renal, mas renal crônico anúrico não responde à furosemida. Em cirurgia urgente, estabilizar primeiro e seguir com plano de controle. Succinilcolina pode aumentar potássio e é péssima ideia nesse cenário.",
+  frase_ouro: "Na hipercalemia, cálcio compra tempo; insulina desloca; diálise resolve."
+},
+{
+  id: "tsa-ultra-664",
+  fonte: "Yao / Barash",
+  capitulo: "Nefropatia",
+  tema: "Succinilcolina no renal crônico",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Homem em hemodiálise crônica, sem neuropatia periférica, sem queimadura, sem imobilização prolongada, potássio de 4,7 mEq/L, necessita sequência rápida para laparotomia. Sobre succinilcolina, assinale a melhor alternativa.",
+  alternativas: {
+    A: "É absolutamente contraindicada em todo renal crônico, independentemente do potássio.",
+    B: "Pode ser considerada se potássio estiver aceitável e não houver fatores adicionais de hiperpotassemia por receptores extrajuncionais, mas deve-se ponderar alternativas e contexto.",
+    C: "Reduz potássio sérico ao ativar bomba sódio-potássio.",
+    D: "É mais segura que rocurônio em qualquer hipercalemia, pois tem ação curta.",
+    E: "Aumenta potássio apenas em pacientes pediátricos."
+  },
+  resposta: "B",
+  comentario: "Insuficiência renal isolada não é contraindicação absoluta à succinilcolina se o potássio está normal e não há condições que aumentem receptores extrajuncionais, como queimaduras, denervação, lesão medular, imobilização prolongada ou miopatias. Ainda assim, o renal crônico tem menor margem de erro: acidose, transfusão, uso de bloqueadores do sistema renina-angiotensina e catabolismo podem elevar potássio. A pegadinha é dupla: tanto dizer 'nunca' quanto dizer 'sempre tranquilo'. Em TSA Ultra, a resposta é contextual.",
+  frase_ouro: "Renal crônico não proíbe succinilcolina sozinho; potássio e receptor extrajuncional decidem a briga."
+},
+{
+  id: "tsa-ultra-665",
+  fonte: "Yao / Barash",
+  capitulo: "Nefropatia",
+  tema: "Momento da hemodiálise pré-operatória",
+  area: "Renal / Endócrino / Metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente dialítico será submetido à cirurgia eletiva de grande porte amanhã às 7h. Qual planejamento é mais adequado?",
+  alternativas: {
+    A: "Hemodiálise imediatamente antes da indução com heparinização plena, para garantir menor ureia possível.",
+    B: "Hemodiálise geralmente no dia anterior, buscando controle de volume, potássio e acidose, com atenção a heparina residual, eletrólitos e hipotensão pós-diálise.",
+    C: "Suspender hemodiálise por 72 horas para evitar hipovolemia intraoperatória.",
+    D: "Dialítica crônica dispensa eletrólitos pré-operatórios se realizou diálise na semana.",
+    E: "Ultrafiltração máxima é sempre desejável para reduzir risco de edema pulmonar."
+  },
+  resposta: "B",
+  comentario: "A diálise pré-operatória deve deixar o paciente euvolêmico, com potássio e acidose controlados, sem chegar desidratado e instável. Em geral, o dia anterior é bom compromisso. Diálise imediatamente antes pode deixar heparina residual, hipotensão, câimbras, alterações eletrolíticas e hipovolemia. Ultrafiltração agressiva é tentadora no edemaciado, mas pode derrubar pressão após indução. Potássio deve ser checado próximo ao ato, porque intervalo, dieta, acidose e acesso dialítico mudam tudo.",
+  frase_ouro: "Diálise boa para cirurgia não é a que seca mais; é a que entrega euvolemia e potássio seguro."
+},
+{
+  id: "tsa-ultra-666",
+  fonte: "Yao / Barash",
+  capitulo: "Nefropatia",
+  tema: "Fístula arteriovenosa",
+  area: "Renal / Endócrino / Metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com fístula arteriovenosa madura no antebraço esquerdo será submetido a colectomia. A enfermagem punciona acesso venoso no dorso da mão esquerda e instala pressão não invasiva no braço esquerdo. Qual é a conduta correta?",
+  alternativas: {
+    A: "Manter, pois a fístula só importa durante a diálise.",
+    B: "Evitar punções, pressão arterial, compressões e trauma no membro da fístula para preservar acesso dialítico e reduzir risco de trombose.",
+    C: "Usar o membro da fístula preferencialmente porque tem maior fluxo e dilata veias periféricas.",
+    D: "Aferir pressão no braço da fístula melhora acurácia por fluxo aumentado.",
+    E: "Canalizar a fístula para infusão rápida de hemocomponentes."
+  },
+  resposta: "B",
+  comentario: "A fístula é a linha de vida do paciente dialítico. Pressão não invasiva, punções, compressão prolongada, cateteres e trauma podem causar trombose, hematoma ou perda do acesso. Deve-se sinalizar o membro, usar outro local para pressão e acessos venosos e palpar frêmito antes e depois se houver preocupação. A pegadinha é tratar a fístula como veia boa disponível — justamente porque parece boa, dá vontade de fazer bobagem.",
+  frase_ouro: "Fístula de diálise não é acesso venoso conveniente; é patrimônio vascular."
+},
+{
+  id: "tsa-ultra-667",
+  fonte: "Yao / Barash",
+  capitulo: "Transplante renal",
+  tema: "Perfusão do enxerto",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Durante transplante renal, após desclampeamento vascular do enxerto, a pressão sistólica permanece em 92 mmHg, o rim fica pálido e há pouca diurese. O residente sugere furosemida em bolus antes de corrigir pressão e volume. Qual alternativa é melhor?",
+  alternativas: {
+    A: "Diurético deve ser primeira medida, pois urina imediata é o principal determinante de perfusão do enxerto.",
+    B: "A prioridade é manter perfusão do enxerto com pressão arterial adequada, volemia apropriada e correção de fatores hemodinâmicos; diurético não substitui fluxo renal.",
+    C: "Hipotensão é desejável no desclampeamento para prevenir edema do enxerto.",
+    D: "Vasopressores são proibidos em transplante renal, mesmo em hipotensão profunda.",
+    E: "Diurese intraoperatória ausente sempre significa trombose arterial irreversível."
+  },
+  resposta: "B",
+  comentario: "No transplante renal, o objetivo é fluxo para o enxerto. O rim recém-implantado precisa de pressão de perfusão e volume adequados. Diuréticos e manitol podem ser usados conforme prática local, mas não corrigem hipoperfusão. Hipotensão no período de reperfusão associa-se a função retardada e complicações vasculares. Vasopressores podem ser necessários se volume está adequado e há vasodilatação, mas não devem substituir ressuscitação correta. Urina imediata é bom sinal, mas ausência de urina não diagnostica sozinha trombose.",
+  frase_ouro: "Rim transplantado não urina por decreto de furosemida; urina por perfusão."
+},
+{
+  id: "tsa-ultra-668",
+  fonte: "Yao / Barash",
+  capitulo: "Transplante renal",
+  tema: "Cristaloide balanceado versus soro fisiológico",
+  area: "Renal / Endócrino / Metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Em transplante renal, um anestesista insiste em usar exclusivamente grandes volumes de soro fisiológico 0,9% porque soluções balanceadas contêm potássio. Qual alternativa é mais correta?",
+  alternativas: {
+    A: "Soro fisiológico sempre reduz potássio sérico por diluição sem efeitos colaterais.",
+    B: "Grandes volumes de soro fisiológico podem causar acidose hiperclorêmica, que pode piorar potássio e função renal; soluções balanceadas com baixo potássio podem ser seguras conforme protocolo.",
+    C: "Ringer lactato é absolutamente contraindicado em todo transplantado renal por conter lactato.",
+    D: "Plasma-Lyte causa hipercalemia fatal previsível em todos os pacientes renais.",
+    E: "A escolha do cristaloide não influencia acidose nem rim."
+  },
+  resposta: "B",
+  comentario: "A antiga lógica era evitar qualquer potássio em solução para renal crônico. O problema é que grandes volumes de soro fisiológico podem gerar acidose hiperclorêmica, reduzindo pH e favorecendo deslocamento de potássio para o extracelular, além de possível impacto renal. Estudos em transplante renal e doença crítica têm favorecido uso criterioso de soluções balanceadas em muitos contextos. Não é para ignorar potássio, mas também não é para idolatrar cloreto. A resposta difícil reconhece o paradoxo: solução sem potássio pode piorar hipercalemia via acidose.",
+  frase_ouro: "No renal, medo de potássio não pode virar intoxicação por cloreto."
+},
+{
+  id: "tsa-ultra-669",
+  fonte: "Yao / Barash",
+  capitulo: "Nefropatia",
+  tema: "Uremia e sangramento",
+  area: "Hematologia / Coagulação",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente urêmico em diálise, plaquetas 180.000/mm³, razão normalizada internacional normal e tempo de tromboplastina parcial normal, apresenta sangramento difuso após acesso vascular. Qual mecanismo e tratamento são mais coerentes?",
+  alternativas: {
+    A: "Deficiência isolada de fator VIII; tratar apenas com crioprecipitado.",
+    B: "Disfunção plaquetária urêmica apesar de contagem normal; considerar diálise adequada, desmopressina, crioprecipitado ou estrogênios em contextos selecionados.",
+    C: "Trombocitopenia oculta; transfundir plaquetas sempre corrige definitivamente.",
+    D: "Hiperfibrinólise por excesso de plasmina renal; heparina é tratamento.",
+    E: "Coagulopatia inexistente, pois exames convencionais estão normais."
+  },
+  resposta: "B",
+  comentario: "Uremia prejudica adesão e agregação plaquetária, mesmo com contagem normal e exames plasmáticos normais. Isso aparece como sangramento mucoso, de punção e cirúrgico. Diálise pode melhorar, mas heparina da diálise também deve ser lembrada. Desmopressina aumenta liberação de fator de von Willebrand e pode melhorar função plaquetária temporariamente. Crioprecipitado e estrogênios têm papéis em situações específicas. A prova quer que você não confunda número de plaquetas com função plaquetária.",
+  frase_ouro: "Na uremia, a plaqueta está presente, mas trabalha de ressaca."
+},
+{
+  id: "tsa-ultra-670",
+  fonte: "Yao / Barash",
+  capitulo: "Nefropatia",
+  tema: "Opioides no renal crônico",
+  area: "Farmacologia",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com doença renal terminal recebe morfina em doses repetidas no pós-operatório e evolui com sonolência prolongada, miose e hipoventilação. Qual explicação é mais adequada?",
+  alternativas: {
+    A: "Morfina não produz metabólitos ativos e é completamente segura em insuficiência renal.",
+    B: "Metabólitos da morfina, especialmente glicuronídeos, podem acumular na insuficiência renal e prolongar efeitos respiratórios e neurológicos.",
+    C: "A insuficiência renal acelera eliminação de todos os opioides por diálise espontânea.",
+    D: "Fentanil tem metabólito ativo renal mais potente que morfina, por isso é sempre pior.",
+    E: "Naloxona é contraindicada em renal crônico."
+  },
+  resposta: "B",
+  comentario: "Morfina é metabolizada no fígado, mas seus metabólitos são eliminados pelo rim. O morfina-6-glicuronídeo tem atividade analgésica e depressora respiratória; na insuficiência renal pode acumular e prolongar sedação e hipoventilação. Isso não significa que morfina nunca possa ser usada, mas exige dose menor, intervalo maior e monitorização. Fentanil e remifentanil têm perfis mais previsíveis em muitos renais, embora cada caso exija cautela. Naloxona pode ser necessária, titulada para ventilação, lembrando que a recorrência pode ocorrer.",
+  frase_ouro: "No renal, quem prolonga a morfina muitas vezes é o metabólito, não a intenção do anestesista."
+},
+{
+  id: "tsa-ultra-671",
+  fonte: "Yao / Barash",
+  capitulo: "Transplante renal",
+  tema: "Imunossupressores",
+  area: "Gastro / Hepato / Transplantes",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente transplantado renal há 3 meses será submetido à apendicectomia. Usa tacrolimo, micofenolato e prednisona. Qual alternativa é mais correta?",
+  alternativas: {
+    A: "Imunossupressores devem ser suspensos todos no perioperatório para reduzir infecção de ferida.",
+    B: "Regimes imunossupressores devem ser interrompidos o mínimo possível; tacrolimo exige atenção a nefrotoxicidade, neurotoxicidade, hipertensão, hipercalemia e interações medicamentosas.",
+    C: "Prednisona crônica elimina risco de insuficiência adrenal porque já é corticoide.",
+    D: "Antibióticos macrolídeos e azólicos nunca interagem com tacrolimo.",
+    E: "Transplantado renal tem risco infeccioso igual ao paciente hígido após três meses."
+  },
+  resposta: "B",
+  comentario: "Transplantados dependem da continuidade da imunossupressão para evitar rejeição. Suspender de forma descoordenada pode ser catastrófico. Tacrolimo é nefrotóxico, pode causar hipertensão, hipercalemia, tremor, convulsão e tem metabolismo sujeito a interações, especialmente com inibidores de citocromo. Micofenolato aumenta risco infeccioso e hematológico. Corticoide crônico pode suprimir eixo adrenal; o fato de usar prednisona não elimina necessidade de avaliar cobertura de estresse. A pegadinha é achar que infecção se previne desligando imunossupressão como interruptor.",
+  frase_ouro: "No transplantado, esquecer imunossupressor pode trocar apendicite por rejeição."
+},
+{
+  id: "tsa-ultra-672",
+  fonte: "Yao / Barash",
+  capitulo: "Nefropatia",
+  tema: "Prevenção de lesão renal aguda",
+  area: "Renal / Endócrino / Metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente de 78 anos, diabético, com taxa de filtração glomerular estimada de 32 mL/min, será submetido à cirurgia vascular maior. Qual estratégia tem melhor racional para reduzir lesão renal aguda perioperatória?",
+  alternativas: {
+    A: "Dopamina em dose renal de rotina, pois aumenta desfechos renais comprovadamente.",
+    B: "Manter perfusão e pressão adequadas, evitar hipovolemia e sobrecarga, preferir cristaloide balanceado quando apropriado, evitar nefrotóxicos e monitorar débito/creatinina.",
+    C: "Usar amido hidroxietílico para expandir volume e proteger glomérulo.",
+    D: "Manter pressão arterial baixa para reduzir pressão intraglomerular durante toda cirurgia.",
+    E: "Dar furosemida profilática para transformar oligúria em proteção renal."
+  },
+  resposta: "B",
+  comentario: "Prevenção renal é chata porque não tem poção mágica. O rim quer perfusão adequada, oxigenação, pressão, volume sem excesso, evitar congestão venosa, evitar nefrotóxicos e tratar instabilidade. Dopamina renal não protege desfechos e pode causar arritmias. Amidos aumentam risco renal em pacientes críticos. Furosemida pode produzir urina sem melhorar filtração, mascarando hipoperfusão. Tanto hipovolemia quanto sobrecarga podem lesar rim: uma por baixo fluxo, outra por congestão venosa e pressão intersticial.",
+  frase_ouro: "Rim não se protege com dopamina simbólica; protege-se com perfusão real e menos veneno."
+},
+{
+  id: "tsa-ultra-673",
+  fonte: "Yao / Barash",
+  capitulo: "Doenças neuromusculares",
+  tema: "Miastenia gravis",
+  area: "Doenças neuromusculares",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Mulher de 36 anos com miastenia gravis generalizada será submetida à timectomia. Usa piridostigmina, tem fraqueza bulbar leve e capacidade vital reduzida. Qual alternativa é mais correta?",
+  alternativas: {
+    A: "Pacientes miastênicos são resistentes a bloqueadores neuromusculares não despolarizantes e necessitam doses altas.",
+    B: "São muito sensíveis a bloqueadores não despolarizantes; deve-se usar doses reduzidas, monitorização quantitativa e planejamento de ventilação pós-operatória.",
+    C: "Succinilcolina é sempre segura e previsível na miastenia porque há menos receptores nicotínicos.",
+    D: "Piridostigmina deve sempre ser suspensa por uma semana antes da cirurgia.",
+    E: "Fraqueza bulbar reduz risco de aspiração porque diminui reflexos de tosse."
+  },
+  resposta: "B",
+  comentario: "Miastenia gravis reduz número funcional de receptores nicotínicos na junção neuromuscular. Isso torna o paciente sensível a não despolarizantes, exigindo doses muito menores e monitorização objetiva. A resposta à succinilcolina pode ser imprevisível: resistência relativa por menos receptores e prolongamento se anticolinesterásicos inibirem metabolismo. Fraqueza bulbar aumenta risco de aspiração e insuficiência respiratória pós-operatória. A decisão sobre piridostigmina é individualizada; suspensão prolongada pode piorar força. Questão feita para punir decoreba simples de receptor.",
+  frase_ouro: "Na miastenia, uma dose comum de rocurônio pode virar anestesia de UTI."
+},
+{
+  id: "tsa-ultra-674",
+  fonte: "Yao / Barash",
+  capitulo: "Doenças neuromusculares",
+  tema: "Síndrome miastênica de Lambert-Eaton",
+  area: "Doenças neuromusculares",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Homem de 64 anos, tabagista, com carcinoma de pequenas células e fraqueza proximal que melhora discretamente com exercício será submetido à biópsia mediastinal. Suspeita-se síndrome miastênica de Lambert-Eaton. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "A doença acomete receptor pós-sináptico de acetilcolina exatamente como miastenia gravis.",
+    B: "Há comprometimento pré-sináptico de canais de cálcio, com redução da liberação de acetilcolina; pode haver sensibilidade aumentada a bloqueadores neuromusculares e disautonomia.",
+    C: "Bloqueadores neuromusculares são obrigatórios em dose alta porque há resistência universal.",
+    D: "A melhora com exercício exclui doença da junção neuromuscular.",
+    E: "A associação com câncer é rara e não deve ser investigada."
+  },
+  resposta: "B",
+  comentario: "Lambert-Eaton é doença pré-sináptica: anticorpos contra canais de cálcio dependentes de voltagem reduzem entrada de cálcio e liberação de acetilcolina. Diferente da miastenia, a força pode melhorar com repetição. Há associação forte com carcinoma de pequenas células. Disautonomia pode causar boca seca, hipotensão e alterações pupilares. A resposta a bloqueadores pode ser sensível e prolongada. O erro clássico é tratar como miastenia comum ou achar que melhora com exercício exclui diagnóstico.",
+  frase_ouro: "Lambert-Eaton falha antes da acetilcolina sair da prateleira."
+},
+{
+  id: "tsa-ultra-675",
+  fonte: "Yao / Barash",
+  capitulo: "Doenças neuromusculares",
+  tema: "Distrofia muscular de Duchenne",
+  area: "Doenças neuromusculares",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Menino de 9 anos com distrofia muscular de Duchenne será submetido à correção ortopédica. Qual plano anestésico reduz melhor o risco de complicação catastrófica relacionada ao músculo?",
+  alternativas: {
+    A: "Succinilcolina para intubação rápida e sevoflurano para manutenção, pois Duchenne é forma clássica de hipertermia maligna.",
+    B: "Evitar succinilcolina e preferir técnica sem halogenados quando possível, pelo risco de rabdomiólise, hipercalemia e parada, além de avaliar cardiomiopatia e função respiratória.",
+    C: "Usar halogenado em alta concentração para prevenir rabdomiólise por relaxamento muscular profundo.",
+    D: "Dantrolene profilático torna succinilcolina segura nesses pacientes.",
+    E: "A principal preocupação é apenas dificuldade de acesso venoso, sem risco cardíaco."
+  },
+  resposta: "B",
+  comentario: "Distrofias musculares têm membrana muscular frágil. Succinilcolina pode causar liberação maciça de potássio e parada. Halogenados podem se associar a rabdomiólise anestésica em Duchenne/Becker, quadro que pode lembrar hipertermia maligna, mas não é exatamente a mesma fisiopatologia clássica. Além disso, cardiomiopatia, arritmias e insuficiência respiratória são centrais. A técnica venosa total costuma ser considerada. O erro mortal é dizer 'é hipertermia maligna clássica, então basta dantrolene e sux está liberada'.",
+  frase_ouro: "Duchenne não perdoa succinilcolina: a membrana muscular rasga e o potássio cobra."
+},
+{
+  id: "tsa-ultra-676",
+  fonte: "Yao / Barash",
+  capitulo: "Doenças neuromusculares",
+  tema: "Distrofia miotônica",
+  area: "Doenças neuromusculares",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com distrofia miotônica tipo 1 será submetido à colecistectomia. Tem história de síncope, bloqueio atrioventricular de primeiro grau, sonolência diurna e disfagia. Qual alternativa é mais correta?",
+  alternativas: {
+    A: "Succinilcolina é ideal porque quebra a miotonia e facilita ventilação.",
+    B: "Deve-se evitar gatilhos de miotonia como succinilcolina, hipotermia e tremores; há risco de distúrbio de condução, aspiração e depressão respiratória prolongada.",
+    C: "A doença acomete apenas músculo esquelético distal, sem relevância cardíaca ou respiratória.",
+    D: "Neostigmina sempre melhora miotonia e deve ser usada profilaticamente.",
+    E: "Extubação profunda é preferível para evitar contração muscular voluntária."
+  },
+  resposta: "B",
+  comentario: "Distrofia miotônica é multissistêmica: miotonia, fraqueza respiratória, hipersensibilidade a sedativos, distúrbios de condução, cardiomiopatia, disfagia e aspiração. Succinilcolina pode desencadear contração miotônica intensa e dificultar ventilação/intubação. Hipotermia e tremores também precipitam miotonia. Anticolinesterásicos podem piorar miotonia em alguns contextos; reversão deve ser cuidadosamente planejada, preferindo evitar bloqueio quando possível ou usar alternativas. O pós-operatório é de risco respiratório. A pegadinha é pensar só em músculo e esquecer coração.",
+  frase_ouro: "Na distrofia miotônica, o problema não é só relaxar músculo; é não acordar arritmia e aspiração."
+},
+{
+  id: "tsa-ultra-677",
+  fonte: "Yao / Barash",
+  capitulo: "Doenças neuromusculares",
+  tema: "Guillain-Barré",
+  area: "Doenças neuromusculares",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com síndrome de Guillain-Barré há 3 semanas, tetraparesia em melhora e disautonomia, precisa de cirurgia para escara infectada. Qual alternativa é correta?",
+  alternativas: {
+    A: "Succinilcolina é segura porque a doença é desmielinizante e não altera receptores nicotínicos.",
+    B: "Succinilcolina deve ser evitada pelo risco de hipercalemia; há sensibilidade a bloqueadores não despolarizantes e risco de instabilidade autonômica.",
+    C: "Bloqueio neuraxial alto corrige disautonomia e é sempre a melhor técnica.",
+    D: "A recuperação motora clínica exclui risco ventilatório.",
+    E: "Vasopressores indiretos são sempre previsíveis porque terminações simpáticas estão preservadas."
+  },
+  resposta: "B",
+  comentario: "Guillain-Barré envolve desnervação funcional e pode induzir proliferação de receptores extrajuncionais, tornando succinilcolina perigosa por hipercalemia. Bloqueadores não despolarizantes podem ter efeito prolongado. Disautonomia pode causar hipertensão, hipotensão, bradicardia, taquiarritmia e resposta imprevisível a estímulos e fármacos. A melhora motora não garante função respiratória segura. Técnicas regionais podem ser consideradas, mas neuraxial em doença neurológica ativa exige ponderação, consentimento e documentação.",
+  frase_ouro: "Em Guillain-Barré, a pressão e o potássio podem ser menos previsíveis que a força aparente."
+},
+{
+  id: "tsa-ultra-678",
+  fonte: "Yao / Barash",
+  capitulo: "Doenças neuromusculares",
+  tema: "Esclerose lateral amiotrófica",
+  area: "Doenças neuromusculares",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com esclerose lateral amiotrófica, disfagia, capacidade vital reduzida e uso de ventilação não invasiva noturna será submetido à gastrostomia. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "Sedação profunda sem via aérea é segura porque a doença poupa musculatura respiratória até fase terminal.",
+    B: "Há risco de aspiração, hipoventilação e falência respiratória pós-operatória; succinilcolina deve ser evitada e bloqueio neuromuscular, se usado, deve ser mínimo e monitorizado.",
+    C: "Extubação profunda reduz risco de aspiração por diminuir tosse.",
+    D: "Opioides em dose alta são úteis porque aumentam resposta ventilatória ao gás carbônico.",
+    E: "A doença contraindica qualquer anestesia regional periférica."
+  },
+  resposta: "B",
+  comentario: "Esclerose lateral amiotrófica combina fraqueza progressiva, bulbar e respiratória. Disfagia aumenta risco de aspiração; capacidade vital baixa e ventilação não invasiva noturna indicam pouca reserva. Succinilcolina pode causar hipercalemia em doenças com desnervação. Bloqueadores não despolarizantes podem ter efeito prolongado. O plano deve minimizar depressão respiratória, preservar ventilação, considerar anestesia local/regional quando adequada e planejar suporte ventilatório pós-operatório. A pegadinha é fazer 'sedação simples' em paciente que não tem reserva para sedação simples.",
+  frase_ouro: "Na esclerose lateral amiotrófica, a sedação leve pode pesar toneladas no diafragma."
+},
+{
+  id: "tsa-ultra-679",
+  fonte: "Yao / Barash",
+  capitulo: "Canalopatias musculares",
+  tema: "Paralisia periódica",
+  area: "Doenças neuromusculares",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com paralisia periódica hipocalêmica familiar será submetido à tireoidectomia. Qual estratégia reduz risco de crise perioperatória?",
+  alternativas: {
+    A: "Administrar glicose e insulina profiláticas para deslocar potássio ao intracelular.",
+    B: "Evitar hipocalemia, jejum prolongado, hiperinsulinemia, hipotermia e estresse; monitorar potássio seriado e corrigir cuidadosamente.",
+    C: "Induzir alcalose respiratória profunda porque aumenta potássio sérico.",
+    D: "Usar diurético de alça profilático para reduzir risco de hipercalemia.",
+    E: "Ignorar potássio se o eletrocardiograma estiver normal."
+  },
+  resposta: "B",
+  comentario: "Na paralisia periódica hipocalêmica, crises são desencadeadas por queda de potássio, carboidrato/insulina, repouso após exercício, frio, estresse e alguns fármacos. A meta é estabilidade metabólica: evitar jejum prolongado, grandes cargas de glicose, hiperventilação alcalótica, hipotermia e corrigir potássio de forma controlada. A pegadinha é tratar como risco de hipercalemia e empurrar potássio para dentro da célula, justamente precipitando fraqueza. O eletrocardiograma normal não exclui risco de crise muscular.",
+  frase_ouro: "Na paralisia periódica hipocalêmica, a glicose inocente pode virar bloqueador neuromuscular metabólico."
+},
+{
+  id: "tsa-ultra-680",
+  fonte: "Yao / Barash",
+  capitulo: "Doenças metabólicas musculares",
+  tema: "Doença mitocondrial",
+  area: "Doenças neuromusculares",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Criança com doença mitocondrial conhecida será submetida a cirurgia ortopédica prolongada. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "Infusão prolongada de propofol em alta dose é ideal porque mitocôndrias não participam do metabolismo energético durante anestesia.",
+    B: "Evitar jejum prolongado, hipoglicemia, hipotermia, acidose e considerar cautela com infusão prolongada de propofol; monitorar lactato e metabolismo conforme gravidade.",
+    C: "Soluções com glicose são sempre proibidas porque causam acidose láctica inevitável.",
+    D: "Voláteis são obrigatoriamente contraindicados em toda doença mitocondrial.",
+    E: "Bloqueadores neuromusculares dispensam monitorização porque a junção neuromuscular é normal."
+  },
+  resposta: "B",
+  comentario: "Doenças mitocondriais reduzem reserva energética. Estresse cirúrgico, jejum, hipoglicemia, hipotermia, acidose e catabolismo podem descompensar. Propofol em bolus pode ser usado em muitos casos, mas infusões prolongadas e altas doses geram preocupação por interferência mitocondrial e risco de síndrome de infusão de propofol. Glicose não é automaticamente proibida; pode ser necessária para evitar catabolismo, com controle glicêmico. Voláteis exigem titulação, não dogma universal. A chave é evitar crise metabólica.",
+  frase_ouro: "Na doença mitocondrial, anestesia segura é economia de energia celular."
+},
+{
+  id: "tsa-ultra-681",
+  fonte: "Yao / Barash",
+  capitulo: "Doenças raras",
+  tema: "Mucopolissacaridose",
+  area: "Via aérea",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Criança com mucopolissacaridose será submetida a herniorrafia. Tem macroglossia, rigidez cervical, roncos intensos, valvopatia e hepatoesplenomegalia. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "Indução inalatória profunda e tentativa repetida de laringoscopia direta são seguras porque a doença poupa via aérea.",
+    B: "Planejar via aérea difícil com manutenção de ventilação espontânea até confirmar ventilabilidade, recursos avançados, equipe experiente e atenção a cardiopatia e coluna cervical.",
+    C: "Máscara laríngea sempre resolve porque a obstrução é exclusivamente nasal.",
+    D: "Relaxante muscular antes de avaliar ventilação melhora segurança por reduzir macroglossia.",
+    E: "A presença de valvopatia é irrelevante em cirurgia não cardíaca pediátrica."
+  },
+  resposta: "B",
+  comentario: "Mucopolissacaridoses causam depósito tecidual em língua, faringe, laringe e traqueia, além de rigidez cervical, instabilidade cervical, doença pulmonar restritiva/obstrutiva, valvopatia e hepatoesplenomegalia. Via aérea pode ser difícil para ventilar, intubar e até para acesso cirúrgico. O plano deve preservar ventilação espontânea até ter certeza, envolver equipamentos e pessoas certas, e considerar intubação acordada ou sedada em casos selecionados. A pegadinha é tratar como criança com amígdala grande. Não é.",
+  frase_ouro: "Na mucopolissacaridose, a via aérea difícil começa na língua e pode terminar na traqueia."
+},
+{
+  id: "tsa-ultra-682",
+  fonte: "Yao / Barash",
+  capitulo: "Endocrinologia perioperatória",
+  tema: "Feocromocitoma",
+  area: "Endócrino-metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com feocromocitoma será submetido à adrenalectomia. Está em uso de fenoxibenzamina e apresenta hipotensão ortostática leve. O residente sugere iniciar propranolol em dose alta antes de completar bloqueio alfa para controlar taquicardia. Qual alternativa é correta?",
+  alternativas: {
+    A: "Betabloqueio deve sempre preceder bloqueio alfa para evitar taquicardia reflexa.",
+    B: "Betabloqueio antes de bloqueio alfa adequado pode causar predomínio alfa-adrenérgico, vasoconstrição grave e crise hipertensiva.",
+    C: "Fenoxibenzamina aumenta resistência insulínica e causa hiperglicemia obrigatória.",
+    D: "Após retirada tumoral, hipertensão costuma piorar por liberação contínua de catecolaminas.",
+    E: "Vasodilatadores diretos são contraindicados durante manipulação tumoral."
+  },
+  resposta: "B",
+  comentario: "No feocromocitoma, preparação alfa vem antes de beta. Se bloquear beta primeiro, especialmente beta-2 vasodilatador, a catecolamina fica livre para agir em alfa, aumentando vasoconstrição e hipertensão. Fenoxibenzamina pode melhorar liberação de insulina ao reduzir efeito alfa-2 inibitório, podendo favorecer hipoglicemia após remoção tumoral. Durante manipulação, hipertensão pode exigir nitroprussiato, fentolamina, nicardipina ou outros fármacos tituláveis. Após ligadura venosa, o problema pode virar hipotensão por vasodilatação, hipovolemia relativa e queda abrupta de catecolaminas.",
+  frase_ouro: "No feocromocitoma, beta antes de alfa é fechar a válvula de escape e deixar a bomba subir."
+},
+{
+  id: "tsa-ultra-683",
+  fonte: "Yao / Barash",
+  capitulo: "Endocrinologia perioperatória",
+  tema: "Síndrome carcinoide",
+  area: "Endócrino-metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com tumor neuroendócrino metastático hepático, flushing, diarreia e lesão valvar direita será submetido à ressecção hepática. Durante manipulação tumoral apresenta hipotensão intensa, broncoespasmo e rubor. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "Tratar como anafilaxia isolada com adrenalina em bolus alto como única estratégia, pois octreotida é contraindicada.",
+    B: "Suspeitar crise carcinoide, administrar octreotida, evitar estímulos liberadores de mediadores, tratar broncoespasmo e hipotensão com cautela e suporte hemodinâmico.",
+    C: "Usar morfina e atracúrio em doses altas para bloquear liberação de serotonina.",
+    D: "A presença de metástase hepática reduz risco de crise porque o fígado metaboliza mediadores.",
+    E: "Lesão valvar direita exclui síndrome carcinoide ativa."
+  },
+  resposta: "B",
+  comentario: "Síndrome carcinoide ocorre frequentemente quando mediadores escapam do metabolismo hepático, especialmente com metástases. A crise pode ser precipitada por anestesia, manipulação tumoral, dor, ansiedade, hipotensão e fármacos que liberam histamina. Manifesta-se com hipotensão ou hipertensão, broncoespasmo, rubor e arritmias. Octreotida é peça central, mas não dispensa suporte. Valvopatia direita é clássica por exposição do lado direito a serotonina e outros mediadores antes da metabolização pulmonar. A pegadinha é tratar tudo como anafilaxia e esquecer octreotida.",
+  frase_ouro: "Na crise carcinoide, o tumor vira farmácia descontrolada; octreotida fecha o balcão."
+},
+{
+  id: "tsa-ultra-684",
+  fonte: "Yao / Barash",
+  capitulo: "Endocrinologia perioperatória",
+  tema: "Tempestade tireoidiana",
+  area: "Endócrino-metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Mulher com hipertireoidismo não tratado, submetida a cirurgia urgente, evolui no intraoperatório com hipertermia, taquicardia extrema, fibrilação atrial, hipertensão inicial, insuficiência cardíaca e agitação no despertar. Qual alternativa é mais correta?",
+  alternativas: {
+    A: "O diagnóstico depende de valor específico de hormônio tireoidiano; sem laboratório não se trata.",
+    B: "Tempestade tireoidiana é diagnóstico clínico e deve ser tratada com suporte, beta-bloqueio, tionamida, iodo após bloqueio da síntese, corticosteroide e tratamento do fator precipitante.",
+    C: "Iodo deve ser administrado antes da tionamida para estimular organificação e esgotar a tireoide.",
+    D: "Cetamina é o indutor ideal no hipertireoidismo porque reduz resposta simpática.",
+    E: "Hipertermia exclui tempestade tireoidiana e confirma hipertermia maligna."
+  },
+  resposta: "B",
+  comentario: "Tempestade tireoidiana é emergência clínica, não espera laboratório perfeito. O tratamento envolve suporte, controle de hiperatividade adrenérgica, antitireoidiano para bloquear síntese, iodo depois da tionamida para impedir liberação, corticosteroide para reduzir conversão periférica e tratar insuficiência adrenal relativa, além de resfriamento e controle do gatilho. Diferenciais incluem hipertermia maligna, feocromocitoma, sepse e anestesia superficial. Ketamina e fármacos simpatomiméticos podem ser ruins. A sequência tionamida antes de iodo é uma pegadinha muito TSA.",
+  frase_ouro: "Na tempestade tireoidiana, iodo antes da tionamida pode jogar lenha na tireoide."
+},
+{
+  id: "tsa-ultra-685",
+  fonte: "Yao / Barash",
+  capitulo: "Endocrinologia perioperatória",
+  tema: "Hipotireoidismo grave",
+  area: "Endócrino-metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com hipotireoidismo grave, sonolência, bradicardia, hiponatremia, hipoventilação e derrame pericárdico será submetido a cirurgia eletiva. Qual alternativa é correta?",
+  alternativas: {
+    A: "Prosseguir normalmente, pois hipotireoidismo reduz consumo de oxigênio e protege contra anestesia.",
+    B: "Cirurgia eletiva deve ser adiada para tratamento; se cirurgia for emergencial, usar doses reduzidas de anestésicos, suporte ventilatório, aquecimento cuidadoso e reposição hormonal/corticosteroide quando indicado.",
+    C: "A principal complicação é hipertermia maligna.",
+    D: "Opioides e benzodiazepínicos devem ser usados em doses altas porque o paciente é resistente a depressão respiratória.",
+    E: "Hiponatremia nessa situação deve ser corrigida rapidamente para normalidade antes da indução."
+  },
+  resposta: "B",
+  comentario: "Hipotireoidismo grave aumenta sensibilidade a sedativos, risco de hipoventilação, hipotermia, íleo, hiponatremia, bradicardia, insuficiência cardíaca e coma mixedematoso. Eletiva deve esperar otimização. Em emergência, deve-se reduzir doses, ventilar adequadamente, aquecer com cuidado, tratar hiponatremia sem correção rápida indevida e considerar reposição hormonal e corticosteroide antes de hormônio tireoidiano em casos graves, pelo risco de insuficiência adrenal concomitante. A pegadinha é achar que metabolismo baixo protege; na verdade, ele reduz reserva.",
+  frase_ouro: "Hipotireoidismo grave não deixa a anestesia mais segura; deixa o paciente sem margem."
+},
+{
+  id: "tsa-ultra-686",
+  fonte: "Yao / Barash",
+  capitulo: "Endocrinologia perioperatória",
+  tema: "Insuficiência adrenal",
+  area: "Endócrino-metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente em uso de prednisona 20 mg/dia há 8 meses será submetido à colectomia. Após indução, apresenta hipotensão refratária a volume e vasopressores usuais, hipoglicemia e hiponatremia. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "Insuficiência adrenal é improvável porque o paciente tomou prednisona no dia anterior.",
+    B: "Supressão do eixo hipotálamo-hipófise-adrenal pode causar resposta inadequada ao estresse; hidrocortisona deve ser administrada se houver suspeita forte e instabilidade.",
+    C: "Corticoide deve ser evitado no intraoperatório porque sempre causa infecção imediata.",
+    D: "A confirmação por cortisol sérico é obrigatória antes de tratamento em choque.",
+    E: "Hipoglicemia exclui insuficiência adrenal."
+  },
+  resposta: "B",
+  comentario: "Uso crônico de glicocorticoide pode suprimir o eixo adrenal. Em estresse cirúrgico, o paciente pode não produzir cortisol suficiente, levando a vasodilatação, hipotensão refratária, hipoglicemia, hiponatremia e choque. Em instabilidade, não se espera exame para tratar. Ao mesmo tempo, dose de estresse não deve ser aplicada indiscriminadamente a qualquer uso remoto mínimo, porque corticoide também tem efeitos adversos. A resposta correta é ponderada: risco por dose/duração/porte e tratamento imediato se crise provável.",
+  frase_ouro: "Hipotensão refratária em usuário crônico de corticoide pede hidrocortisona antes de heroísmo vasopressor."
+},
+{
+  id: "tsa-ultra-687",
+  fonte: "Yao / Barash",
+  capitulo: "Endocrinologia perioperatória",
+  tema: "Acromegalia",
+  area: "Via aérea",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente com acromegalia será submetido à ressecção transesfenoidal. Tem roncos, macroglossia, prognatismo, hipertensão, diabetes e cardiomiopatia hipertrófica. Qual alternativa representa melhor o planejamento?",
+  alternativas: {
+    A: "A via aérea é previsivelmente fácil porque a mandíbula é grande.",
+    B: "Há risco de ventilação e intubação difíceis, apneia do sono, cardiomiopatia, hipertensão e diabetes; deve-se planejar via aérea difícil e estabilidade hemodinâmica.",
+    C: "A macroglossia melhora vedação de máscara e reduz risco de obstrução.",
+    D: "Acromegalia não altera tecidos moles da laringe.",
+    E: "A intubação nasal às cegas é sempre a técnica preferida."
+  },
+  resposta: "B",
+  comentario: "Acromegalia causa crescimento de tecidos moles e ósseos: macroglossia, epiglote e laringe aumentadas, prognatismo, alteração de articulação temporomandibular e apneia do sono. A via aérea pode ser difícil para máscara e tubo. Além disso, há hipertensão, diabetes, cardiomiopatia, arritmias e doença valvar. Em cirurgia transesfenoidal, acesso nasal e risco de sangramento também contam. A pegadinha é achar que mandíbula grande ajuda; na prática, língua, laringe e tecidos moles podem derrotar a máscara.",
+  frase_ouro: "Na acromegalia, a mandíbula cresce, mas a dificuldade cresce junto."
+},
+{
+  id: "tsa-ultra-688",
+  fonte: "Yao / Barash",
+  capitulo: "Endocrinologia perioperatória",
+  tema: "Inibidor de SGLT2",
+  area: "Renal / Endócrino / Metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Paciente diabético tipo 2 em uso de empagliflozina chega para cirurgia eletiva de grande porte. Glicemia 146 mg/dL, mas relata náuseas e mal-estar. Gasometria mostra acidose metabólica com ânion gap aumentado e cetonas positivas. Qual alternativa é correta?",
+  alternativas: {
+    A: "Cetoacidose diabética é excluída porque a glicemia está abaixo de 250 mg/dL.",
+    B: "Inibidores de SGLT2 podem causar cetoacidose euglicêmica; cirurgia eletiva deve ser adiada e a acidose tratada.",
+    C: "A conduta é administrar apenas bicarbonato e prosseguir, pois glicemia está controlada.",
+    D: "Insulina é contraindicada porque a glicemia não está elevada.",
+    E: "Cetonas positivas são esperadas e benignas em qualquer jejum pré-operatório."
+  },
+  resposta: "B",
+  comentario: "Inibidores de SGLT2 aumentam glicosúria, reduzem glicemia e podem predispor a cetogênese, especialmente com jejum, estresse cirúrgico, desidratação ou redução de insulina. A cetoacidose pode ocorrer com glicemia normal ou moderadamente elevada, enganando quem usa glicose como único filtro diagnóstico. Cirurgia eletiva deve ser adiada se houver cetoacidose. O tratamento envolve hidratação, insulina, glicose conforme necessário, correção eletrolítica e suspensão do fármaco. Pegadinha moderna e muito boa: glicemia bonita com acidose feia.",
+  frase_ouro: "Com SGLT2, glicemia normal não absolve cetoacidose."
+},
+{
+  id: "tsa-ultra-689",
+  fonte: "Yao / Barash",
+  capitulo: "Endocrinologia perioperatória",
+  tema: "Diabetes insipidus no pós-hipófise",
+  area: "Renal / Endócrino / Metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Após cirurgia transesfenoidal, paciente apresenta diurese de 600 mL/h, sódio subindo de 140 para 150 mEq/L, osmolaridade urinária baixa e sede intensa. Qual diagnóstico e tratamento inicial são mais adequados?",
+  alternativas: {
+    A: "Síndrome de secreção inapropriada de hormônio antidiurético; restringir água imediatamente.",
+    B: "Diabetes insipidus central; repor água livre conforme déficit, monitorar sódio e considerar desmopressina se persistente ou sintomático.",
+    C: "Insuficiência renal aguda oligúrica; administrar furosemida.",
+    D: "Hiperglicemia osmótica obrigatória; insulina em bolus resolve mesmo com glicemia normal.",
+    E: "Achado fisiológico pós-operatório que não exige dosagem de sódio."
+  },
+  resposta: "B",
+  comentario: "Diabetes insipidus central após cirurgia hipofisária ocorre por deficiência de hormônio antidiurético. Produz poliúria com urina diluída, hipernatremia e sede se o paciente estiver consciente. O tratamento é água livre, monitorização frequente e desmopressina quando necessário. A pegadinha é confundir com síndrome de secreção inapropriada, que causa hiponatremia e urina inadequadamente concentrada. Também existe padrão trifásico após hipófise: diabetes insipidus, depois fase de secreção inapropriada, e possível diabetes insipidus permanente.",
+  frase_ouro: "Pós-hipófise com muita urina diluída e sódio subindo: pense em falta de hormônio antidiurético."
+},
+{
+  id: "tsa-ultra-690",
+  fonte: "Yao / Barash",
+  capitulo: "Endocrinologia perioperatória",
+  tema: "Síndrome de secreção inapropriada de hormônio antidiurético",
+  area: "Renal / Endócrino / Metabólico",
+  dificuldade: "Muito difícil - TSA Ultra",
+  pergunta: "Cinco dias após ressecção transesfenoidal, paciente retorna sonolento, com náuseas, sódio de 119 mEq/L, osmolaridade sérica baixa e urina concentrada. Qual alternativa é mais adequada?",
+  alternativas: {
+    A: "Trata-se de diabetes insipidus tardio; administrar desmopressina em dose alta.",
+    B: "O quadro sugere secreção inapropriada de hormônio antidiurético; a correção do sódio deve ser controlada, evitando elevação rápida que cause desmielinização osmótica.",
+    C: "Hiponatremia sintomática deve ser corrigida imediatamente para 140 mEq/L nas primeiras duas horas.",
+    D: "Urina concentrada exclui efeito de hormônio antidiurético.",
+    E: "Sódio baixo nesse contexto é sempre artefato laboratorial."
+  },
+  resposta: "B",
+  comentario: "Após cirurgia hipofisária, pode ocorrer secreção inapropriada de hormônio antidiurético, com retenção de água, hiponatremia, baixa osmolaridade sérica e urina inadequadamente concentrada. Sintomas neurológicos exigem tratamento, frequentemente com solução hipertônica em bolus controlado nos casos graves, mas a correção não deve ser excessiva. O risco de desmielinização osmótica aumenta com correção rápida, especialmente em hiponatremia crônica ou fatores de risco. A pegadinha é confundir com diabetes insipidus e dar desmopressina, piorando dramaticamente o sódio.",
+  frase_ouro: "Depois da hipófise, sódio baixo com urina concentrada não quer desmopressina; quer freio e cálculo."
+}
 ];
