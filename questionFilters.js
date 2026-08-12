@@ -1,10 +1,10 @@
 /*
-  TSA Hard Mode - filtro de banco v820
-  Remove do app as questões antigas marcadas como média/médio, difícil ou alta,
-  preservando as questões "Muito difícil" e "TSA Ultra".
+  TSA Hard Mode - filtro de banco v830
+  Limpeza funcional do banco: preserva apenas questões em nível realmente alto
+  ("Muito difícil" ou "TSA Ultra") e remove os blocos antigos fáceis/médios/difíceis.
 
-  Observação: este arquivo não precisa reescrever o questions.js. Ele muta o array
-  QUESTIONS em memória logo após o carregamento do banco, antes do app.js iniciar.
+  Este arquivo NÃO altera fisicamente questions.js. Ele muta o array QUESTIONS em memória
+  antes do app.js iniciar, evitando corromper o banco grande.
 */
 (function () {
   function normalizeText(value) {
@@ -15,22 +15,21 @@
       .trim();
   }
 
-  function shouldRemoveQuestion(question) {
+  function shouldKeepQuestion(question) {
     const difficulty = normalizeText(question && question.dificuldade);
+    const id = normalizeText(question && question.id);
+    const source = normalizeText(question && question.fonte);
 
-    if (!difficulty) return false;
+    // Mantém todo conteúdo novo explicitamente ultra/difícil.
+    if (difficulty.includes("ultra")) return true;
+    if (difficulty.includes("muito") && difficulty.includes("dificil")) return true;
 
-    // Preserva todo o material TSA Ultra / Muito difícil.
-    if (difficulty.includes("muito") || difficulty.includes("ultra")) return false;
+    // Rede de segurança para blocos novos que porventura tenham dificuldade mal preenchida.
+    if (id.startsWith("tsa-ultra")) return true;
+    if (id.startsWith("oral-ultra")) return true;
+    if (source.includes("prova tsa") && difficulty.includes("dificil")) return true;
 
-    // Remove os blocos antigos que estavam atrapalhando o estudo.
-    return (
-      difficulty.includes("medio") ||
-      difficulty.includes("media") ||
-      difficulty === "alta" ||
-      difficulty.includes("dificil") ||
-      difficulty.includes("dificuldade alta")
-    );
+    return false;
   }
 
   try {
@@ -49,7 +48,7 @@
     const originalTotal = source.length;
 
     for (let index = source.length - 1; index >= 0; index -= 1) {
-      if (shouldRemoveQuestion(source[index])) {
+      if (!shouldKeepQuestion(source[index])) {
         source.splice(index, 1);
       }
     }
@@ -59,10 +58,10 @@
       removed: originalTotal - source.length,
       remaining: source.length,
       originalTotal,
-      message: `${originalTotal - source.length} questões médias/difíceis antigas foram removidas desta sessão.`
+      message: `${originalTotal - source.length} questões antigas não-ultra foram removidas desta sessão.`
     };
 
-    console.info("TSA Hard Mode filtro v820:", window.TSA_FILTER_INFO);
+    console.info("TSA Hard Mode filtro v830:", window.TSA_FILTER_INFO);
   } catch (error) {
     console.warn("Erro ao aplicar filtro de questões:", error);
     window.TSA_FILTER_INFO = {
