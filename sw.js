@@ -1,13 +1,15 @@
-const CACHE_NAME = "tsa-hard-mode-cache-v810";
+const CACHE_NAME = "tsa-hard-mode-cache-v820";
 
 const FILES_TO_CACHE = [
   "./",
-  "./index.html?v=810",
-  "./style.css?v=810",
-  "./questions.js?v=810",
-  "./flashcards.js?v=810",
-  "./app.js?v=810",
-  "./manifest.json?v=810",
+  "./index.html?v=820",
+  "./style.css?v=820",
+  "./questions.js?v=820",
+  "./questionFilters.js?v=820",
+  "./flashcards.js?v=820",
+  "./studyModules.js?v=820",
+  "./app.js?v=820",
+  "./manifest.json?v=820",
   "./icon.svg"
 ];
 

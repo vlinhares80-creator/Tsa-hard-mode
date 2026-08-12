@@ -19,7 +19,8 @@ const screens = {
   quiz: document.getElementById("quiz-screen"),
   result: document.getElementById("result-screen"),
   stats: document.getElementById("stats-screen"),
-  oral: document.getElementById("oral-screen")
+  oral: document.getElementById("oral-screen"),
+  modules: document.getElementById("modules-screen")
 };
 
 const els = {
@@ -27,12 +28,14 @@ const els = {
   correctCount: document.getElementById("correct-count"),
   reviewCount: document.getElementById("review-count"),
   availableCount: document.getElementById("available-count"),
+  filterSummary: document.getElementById("filter-summary"),
 
   start10Btn: document.getElementById("start-10-btn"),
   start20Btn: document.getElementById("start-20-btn"),
   reviewBtn: document.getElementById("review-btn"),
   statsBtn: document.getElementById("stats-btn"),
   resetBtn: document.getElementById("reset-btn"),
+  modulesBtn: document.getElementById("modules-btn"),
 
   backHomeBtn: document.getElementById("back-home-btn"),
   quizProgress: document.getElementById("quiz-progress"),
@@ -66,7 +69,11 @@ const els = {
   difficultyStats: document.getElementById("difficulty-stats"),
   weakAreaStats: document.getElementById("weak-area-stats"),
 
-    oralBtn: document.getElementById("oral-btn"),
+  modulesBackBtn: document.getElementById("modules-back-btn"),
+  modulesList: document.getElementById("modules-list"),
+  moduleDetail: document.getElementById("module-detail"),
+
+  oralBtn: document.getElementById("oral-btn"),
   oralBackBtn: document.getElementById("oral-back-btn"),
   oralProgress: document.getElementById("oral-progress"),
   oralArea: document.getElementById("oral-area"),
@@ -86,6 +93,15 @@ const els = {
   oralShuffleBtn: document.getElementById("oral-shuffle-btn")
 };
 
+function escapeHtml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 function ensureQuestions() {
   if (!Array.isArray(window.QUESTIONS) && typeof QUESTIONS === "undefined") {
     alert("Banco de questões não encontrado. Verifique se questions.js foi carregado antes do app.js.");
@@ -100,6 +116,23 @@ function ensureQuestions() {
   }
 
   return source;
+}
+
+function ensureFlashcards() {
+  if (typeof FLASHCARDS === "undefined" || !Array.isArray(FLASHCARDS)) {
+    alert("Banco de flashcards não encontrado. Verifique se flashcards.js foi carregado antes do app.js.");
+    return [];
+  }
+
+  return FLASHCARDS;
+}
+
+function ensureStudyModules() {
+  if (typeof STUDY_MODULES === "undefined" || !Array.isArray(STUDY_MODULES)) {
+    return [];
+  }
+
+  return STUDY_MODULES;
 }
 
 function loadState() {
@@ -147,6 +180,10 @@ function normalizeText(value) {
     .replace(/[\u0300-\u036f]/g, "");
 }
 
+function getCurrentQuestionIds() {
+  return new Set(ensureQuestions().map((q) => q.id));
+}
+
 function getAvailableQuestions() {
   const questions = ensureQuestions();
 
@@ -165,35 +202,36 @@ function getReviewQuestions() {
 
 function updateDashboard() {
   const questions = ensureQuestions();
+  const currentIds = getCurrentQuestionIds();
   const available = getAvailableQuestions();
   const review = getReviewQuestions();
+  const correctedVisible = state.answeredCorrect.filter((id) => currentIds.has(id)).length;
 
-  els.totalQuestions.textContent = questions.length;
-  els.correctCount.textContent = state.answeredCorrect.length;
-  els.reviewCount.textContent = review.length;
-  els.availableCount.textContent = available.length;
+  if (els.totalQuestions) els.totalQuestions.textContent = questions.length;
+  if (els.correctCount) els.correctCount.textContent = correctedVisible;
+  if (els.reviewCount) els.reviewCount.textContent = review.length;
+  if (els.availableCount) els.availableCount.textContent = available.length;
 
-  els.reviewBtn.disabled = review.length === 0;
-  els.resultReviewBtn.disabled = review.length === 0;
+  if (els.reviewBtn) els.reviewBtn.disabled = review.length === 0;
+  if (els.resultReviewBtn) els.resultReviewBtn.disabled = review.length === 0;
+  if (els.start10Btn) els.start10Btn.disabled = available.length === 0;
+  if (els.start20Btn) els.start20Btn.disabled = available.length === 0;
 
-  els.start10Btn.disabled = available.length === 0;
-  els.start20Btn.disabled = available.length === 0;
+  if (els.filterSummary && window.TSA_FILTER_INFO && window.TSA_FILTER_INFO.removed > 0) {
+    els.filterSummary.textContent = window.TSA_FILTER_INFO.message;
+  }
 }
 
 function showScreen(name) {
   Object.values(screens).forEach((screen) => {
-    screen.classList.remove("active");
+    if (screen) screen.classList.remove("active");
   });
 
+  if (!screens[name]) return;
   screens[name].classList.add("active");
 
-  if (name === "home") {
-    updateDashboard();
-  }
-
-  if (name === "stats") {
-    renderStats();
-  }
+  if (name === "home") updateDashboard();
+  if (name === "stats") renderStats();
 }
 
 function startQuiz(count) {
@@ -246,17 +284,20 @@ function renderQuestion() {
   els.questionChapter.textContent = question.capitulo || "Capítulo";
   els.questionTheme.textContent = question.tema || "Tema";
   els.questionDifficulty.textContent = question.dificuldade || "média";
-  els.questionText.textContent = question.pergunta;
+  els.questionText.textContent = question.pergunta || "Pergunta não cadastrada.";
 
   els.answers.innerHTML = "";
 
   const letters = ["A", "B", "C", "D", "E"];
+  const alternatives = question.alternativas || {};
 
   letters.forEach((letter) => {
+    if (!Object.prototype.hasOwnProperty.call(alternatives, letter)) return;
+
     const button = document.createElement("button");
     button.className = "answer-btn";
     button.dataset.letter = letter;
-    button.innerHTML = `<strong>${letter})</strong> ${question.alternativas[letter]}`;
+    button.innerHTML = `<strong>${letter})</strong> ${escapeHtml(alternatives[letter])}`;
     button.addEventListener("click", () => answerQuestion(letter));
     els.answers.appendChild(button);
   });
@@ -276,13 +317,8 @@ function answerQuestion(selectedLetter) {
     const letter = button.dataset.letter;
     button.disabled = true;
 
-    if (letter === question.resposta) {
-      button.classList.add("correct");
-    }
-
-    if (letter === selectedLetter && !correct) {
-      button.classList.add("wrong");
-    }
+    if (letter === question.resposta) button.classList.add("correct");
+    if (letter === selectedLetter && !correct) button.classList.add("wrong");
   });
 
   if (correct) {
@@ -295,7 +331,7 @@ function answerQuestion(selectedLetter) {
   state.history.push({
     id: question.id,
     selected: selectedLetter,
-    correct: correct,
+    correct,
     mode: currentMode,
     date: new Date().toISOString()
   });
@@ -305,7 +341,7 @@ function answerQuestion(selectedLetter) {
   sessionResults.push({
     id: question.id,
     selected: selectedLetter,
-    correct: correct
+    correct
   });
 
   els.feedback.classList.remove("hidden");
@@ -348,7 +384,6 @@ function finishSession() {
   }
 
   els.resultMessage.textContent = message;
-
   showScreen("result");
 }
 
@@ -386,10 +421,11 @@ function getQuestionByIdMap() {
 }
 
 function getLatestAnswers() {
+  const currentIds = getCurrentQuestionIds();
   const latest = {};
 
   state.history.forEach((entry) => {
-    latest[entry.id] = entry;
+    if (currentIds.has(entry.id)) latest[entry.id] = entry;
   });
 
   return latest;
@@ -399,6 +435,7 @@ function getDifficultyGroup(question) {
   const diff = normalizeText(question.dificuldade);
 
   if (diff.includes("muito") && (diff.includes("dificil") || diff.includes("alta"))) return "Muito difícil";
+  if (diff.includes("ultra")) return "Muito difícil";
   if (diff.includes("facil")) return "Fácil";
   if (diff.includes("alta") || diff.includes("dificil")) return "Alta";
   return "Média";
@@ -408,232 +445,20 @@ function getAreaGroup(question) {
   if (question.area) return question.area;
 
   const text = normalizeText(`${question.capitulo || ""} ${question.tema || ""} ${question.pergunta || ""}`);
-  if (
-    text.includes("coronaria") ||
-    text.includes("cardi") ||
-    text.includes("valvar") ||
-    text.includes("aort") ||
-    text.includes("cec") ||
-    text.includes("balao") ||
-    text.includes("tamponamento") ||
-    text.includes("marcapasso") ||
-    text.includes("cdi") ||
-    text.includes("transplante cardiaco") ||
-    text.includes("hipertensao pulmonar") ||
-    text.includes("ventriculo direito") ||
-    text.includes("vasoplegia") ||
-    text.includes("nirs")
-  ) {
-    return "Cardiovascular";
-  }
 
-  if (
-    text.includes("via aerea") ||
-    text.includes("intubacao") ||
-    text.includes("laring") ||
-    text.includes("aspiracao") ||
-    text.includes("mascara laringea") ||
-    text.includes("traqueostomia") ||
-    text.includes("epiglotite") ||
-    text.includes("tumor laringeo") ||
-    text.includes("broncoscopia")
-  ) {
-    return "Via aérea";
-  }
-
-  if (
-    text.includes("respiratorio") ||
-    text.includes("torac") ||
-    text.includes("pulmon") ||
-    text.includes("dpoc") ||
-    text.includes("asma") ||
-    text.includes("sdra") ||
-    text.includes("ventilacao") ||
-    text.includes("pneumotorax") ||
-    text.includes("peep") ||
-    text.includes("shunt") ||
-    text.includes("olV".toLowerCase()) ||
-    text.includes("monopulmonar") ||
-    text.includes("capnografia") ||
-    text.includes("etco2")
-  ) {
-    return "Respiratório / Torácica";
-  }
-
-  if (
-    text.includes("neuro") ||
-    text.includes("cranio") ||
-    text.includes("cerebral") ||
-    text.includes("tce") ||
-    text.includes("aneurisma cerebral") ||
-    text.includes("pressao intracraniana") ||
-    text.includes("pic") ||
-    text.includes("medular") ||
-    text.includes("coluna") ||
-    text.includes("potenciais evocados") ||
-    text.includes("diabetes insipidus") ||
-    text.includes("siadh")
-  ) {
-    return "Neuroanestesia";
-  }
-
-  if (
-    text.includes("obstetric") ||
-    text.includes("gestante") ||
-    text.includes("cesarea") ||
-    text.includes("parto") ||
-    text.includes("pre-eclampsia") ||
-    text.includes("eclampsia") ||
-    text.includes("placenta") ||
-    text.includes("amnio") ||
-    text.includes("magnesio")
-  ) {
-    return "Obstetrícia";
-  }
-
-  if (
-    text.includes("pediatr") ||
-    text.includes("crianca") ||
-    text.includes("lactente") ||
-    text.includes("neonato") ||
-    text.includes("prematuro") ||
-    text.includes("tetralogia") ||
-    text.includes("fallot") ||
-    text.includes("cardiopatias congenitas")
-  ) {
-    return "Pediatria";
-  }
-
-  if (
-    text.includes("regional") ||
-    text.includes("raqui") ||
-    text.includes("peridural") ||
-    text.includes("bloqueio") ||
-    text.includes("anestesico local") ||
-    text.includes("toxicidade sistemica") ||
-    text.includes("last") ||
-    text.includes("dor aguda") ||
-    text.includes("dor cronica") ||
-    text.includes("analgesia") ||
-    text.includes("pca")
-  ) {
-    return "Regional / Dor";
-  }
-
-  if (
-    text.includes("farmacologia") ||
-    text.includes("propofol") ||
-    text.includes("etomidato") ||
-    text.includes("cetamina") ||
-    text.includes("opioide") ||
-    text.includes("remifentanil") ||
-    text.includes("succinilcolina") ||
-    text.includes("rocuronio") ||
-    text.includes("sugamadex") ||
-    text.includes("milrinona") ||
-    text.includes("dobutamina") ||
-    text.includes("noradrenalina") ||
-    text.includes("vasopressina") ||
-    text.includes("nitroglicerina") ||
-    text.includes("dexmedetomidina") ||
-    text.includes("benzodiazep")
-  ) {
-    return "Farmacologia";
-  }
-
-  if (
-    text.includes("renal") ||
-    text.includes("rim") ||
-    text.includes("hipercalemia") ||
-    text.includes("hipocalcemia") ||
-    text.includes("hiponatremia") ||
-    text.includes("diabetes") ||
-    text.includes("endocrino") ||
-    text.includes("tireo") ||
-    text.includes("adrenal") ||
-    text.includes("feocromocitoma") ||
-    text.includes("crise tireotoxica") ||
-    text.includes("acido-base") ||
-    text.includes("eletrolitos")
-  ) {
-    return "Renal / Endócrino / Metabólico";
-  }
-
-  if (
-    text.includes("hematologia") ||
-    text.includes("transfus") ||
-    text.includes("coagul") ||
-    text.includes("plaqueta") ||
-    text.includes("fibrinogenio") ||
-    text.includes("rotem") ||
-    text.includes("teg") ||
-    text.includes("heparina") ||
-    text.includes("protamina") ||
-    text.includes("anticoagul") ||
-    text.includes("anemia") ||
-    text.includes("sangramento")
-  ) {
-    return "Hematologia / Coagulação";
-  }
-
-  if (
-    text.includes("trauma") ||
-    text.includes("emergencia") ||
-    text.includes("choque") ||
-    text.includes("sepse") ||
-    text.includes("critico") ||
-    text.includes("parada") ||
-    text.includes("anafilaxia") ||
-    text.includes("hipertermia maligna") ||
-    text.includes("queimadura") ||
-    text.includes("lactato") ||
-    text.includes("svO2".toLowerCase()) ||
-    text.includes("delta pco2")
-  ) {
-    return "Emergências / Crítico";
-  }
-
-  if (
-    text.includes("hepatico") ||
-    text.includes("hepat") ||
-    text.includes("figado") ||
-    text.includes("cirrotico") ||
-    text.includes("gastro") ||
-    text.includes("transplante hepatico") ||
-    text.includes("transplante renal") ||
-    text.includes("abdome") ||
-    text.includes("obstrutivo")
-  ) {
-    return "Gastro / Hepato / Transplantes";
-  }
-
-  if (
-    text.includes("ambulatorial") ||
-    text.includes("remoto") ||
-    text.includes("ressonancia") ||
-    text.includes("tomografia") ||
-    text.includes("radiologia") ||
-    text.includes("endoscopia") ||
-    text.includes("oftalmo") ||
-    text.includes("otorrino") ||
-    text.includes("urologia") ||
-    text.includes("ortopedia") ||
-    text.includes("robotica") ||
-    text.includes("bariatrica") ||
-    text.includes("laparoscopica") ||
-    text.includes("laparoscopia")
-  ) {
-    return "Ambulatorial / Remoto / Especialidades";
-  }
-
-  if (
-    text.includes("geriatria") ||
-    text.includes("idoso") ||
-    text.includes("fragilidade") ||
-    text.includes("delirium")
-  ) {
-    return "Geriatria";
-  }
+  if (text.includes("cardi") || text.includes("coronaria") || text.includes("valvar") || text.includes("cec") || text.includes("marcapasso")) return "Cardiovascular";
+  if (text.includes("via aerea") || text.includes("intub") || text.includes("laring") || text.includes("aspiracao")) return "Via aérea";
+  if (text.includes("torac") || text.includes("pulmon") || text.includes("ventilacao") || text.includes("peep") || text.includes("olV".toLowerCase())) return "Respiratório / Torácica";
+  if (text.includes("neuro") || text.includes("cerebral") || text.includes("tce") || text.includes("pic")) return "Neuroanestesia";
+  if (text.includes("obstetric") || text.includes("gestante") || text.includes("cesarea") || text.includes("preeclampsia") || text.includes("magnesio")) return "Obstetrícia";
+  if (text.includes("pediatr") || text.includes("crianca") || text.includes("neonato") || text.includes("lactente")) return "Pediatria";
+  if (text.includes("raqui") || text.includes("peridural") || text.includes("bloqueio") || text.includes("anestesico local") || text.includes("dor")) return "Regional / Dor";
+  if (text.includes("propofol") || text.includes("opioide") || text.includes("rocuronio") || text.includes("farmacologia") || text.includes("sugamadex")) return "Farmacologia";
+  if (text.includes("renal") || text.includes("rim") || text.includes("hipercalemia") || text.includes("endocrino") || text.includes("tireo") || text.includes("adrenal")) return "Renal / Endócrino / Metabólico";
+  if (text.includes("transfus") || text.includes("coagul") || text.includes("plaqueta") || text.includes("rotem") || text.includes("fibrinogenio")) return "Hematologia / Coagulação";
+  if (text.includes("trauma") || text.includes("choque") || text.includes("sepse") || text.includes("parada") || text.includes("anafilaxia")) return "Emergências / Crítico";
+  if (text.includes("hep") || text.includes("figado") || text.includes("cirrot") || text.includes("transplante")) return "Gastro / Hepato / Transplantes";
+  if (text.includes("idoso") || text.includes("geriatria") || text.includes("fragilidade")) return "Geriatria";
 
   return "Outros";
 }
@@ -648,20 +473,14 @@ function createEmptyStats() {
 }
 
 function addToStats(statsObj, groupName, question, latestAnswer) {
-  if (!statsObj[groupName]) {
-    statsObj[groupName] = createEmptyStats();
-  }
+  if (!statsObj[groupName]) statsObj[groupName] = createEmptyStats();
 
   statsObj[groupName].total += 1;
 
   if (latestAnswer) {
     statsObj[groupName].answered += 1;
-
-    if (latestAnswer.correct) {
-      statsObj[groupName].correct += 1;
-    } else {
-      statsObj[groupName].wrong += 1;
-    }
+    if (latestAnswer.correct) statsObj[groupName].correct += 1;
+    else statsObj[groupName].wrong += 1;
   }
 }
 
@@ -678,16 +497,14 @@ function renderStatsRow(name, data) {
   return `
     <div class="stats-row">
       <div class="stats-row-header">
-        <strong>${name}</strong>
+        <strong>${escapeHtml(name)}</strong>
         <span>${data.answered > 0 ? pct + "%" : "—"}</span>
       </div>
-
       <div class="stats-row-sub">
         <span>Respondidas: ${answeredText}</span>
         <span>Acertos: ${data.correct}</span>
         <span>Erros: ${data.wrong}</span>
       </div>
-
       <div class="progress-bar">
         <div class="progress-fill" style="width: ${barWidth}%"></div>
       </div>
@@ -696,22 +513,20 @@ function renderStatsRow(name, data) {
 }
 
 function renderStatsList(container, statsObj, options = {}) {
+  if (!container) return;
+
   const minAnswered = options.minAnswered || 0;
   const sortMode = options.sortMode || "name";
 
   let entries = Object.entries(statsObj);
-
   entries = entries.filter(([, data]) => data.total > 0);
 
-  if (minAnswered > 0) {
-    entries = entries.filter(([, data]) => data.answered >= minAnswered);
-  }
+  if (minAnswered > 0) entries = entries.filter(([, data]) => data.answered >= minAnswered);
 
   if (sortMode === "weak") {
     entries.sort((a, b) => {
       const pctA = percent(a[1].correct, a[1].answered);
       const pctB = percent(b[1].correct, b[1].answered);
-
       if (pctA !== pctB) return pctA - pctB;
       return b[1].answered - a[1].answered;
     });
@@ -726,9 +541,7 @@ function renderStatsList(container, statsObj, options = {}) {
     return;
   }
 
-  container.innerHTML = entries
-    .map(([name, data]) => renderStatsRow(name, data))
-    .join("");
+  container.innerHTML = entries.map(([name, data]) => renderStatsRow(name, data)).join("");
 }
 
 function renderStats() {
@@ -737,13 +550,13 @@ function renderStats() {
 
   const areaStats = {};
   const difficultyStats = {
-  "Fácil": createEmptyStats(),
-  "Média": createEmptyStats(),
-  "Alta": createEmptyStats(),
-  "Muito difícil": createEmptyStats()
-};
+    "Fácil": createEmptyStats(),
+    "Média": createEmptyStats(),
+    "Alta": createEmptyStats(),
+    "Muito difícil": createEmptyStats()
+  };
 
-  let overall = createEmptyStats();
+  const overall = createEmptyStats();
   overall.total = questions.length;
 
   questions.forEach((question) => {
@@ -751,44 +564,22 @@ function renderStats() {
 
     if (latestAnswer) {
       overall.answered += 1;
-
-      if (latestAnswer.correct) {
-        overall.correct += 1;
-      } else {
-        overall.wrong += 1;
-      }
+      if (latestAnswer.correct) overall.correct += 1;
+      else overall.wrong += 1;
     }
 
-    const area = getAreaGroup(question);
-    const difficulty = getDifficultyGroup(question);
-
-    addToStats(areaStats, area, question, latestAnswer);
-    addToStats(difficultyStats, difficulty, question, latestAnswer);
+    addToStats(areaStats, getAreaGroup(question), question, latestAnswer);
+    addToStats(difficultyStats, getDifficultyGroup(question), question, latestAnswer);
   });
 
   const overallPct = percent(overall.correct, overall.answered);
 
   els.overallStats.innerHTML = `
     <div class="stats-grid">
-      <div class="stat-box">
-        <span class="stat-label">Respondidas</span>
-        <strong>${overall.answered}/${overall.total}</strong>
-      </div>
-
-      <div class="stat-box">
-        <span class="stat-label">Acertos</span>
-        <strong>${overall.correct}</strong>
-      </div>
-
-      <div class="stat-box">
-        <span class="stat-label">Erros</span>
-        <strong>${overall.wrong}</strong>
-      </div>
-
-      <div class="stat-box">
-        <span class="stat-label">Aproveitamento</span>
-        <strong>${overall.answered > 0 ? overallPct + "%" : "—"}</strong>
-      </div>
+      <div class="stat-box"><span class="stat-label">Respondidas</span><strong>${overall.answered}/${overall.total}</strong></div>
+      <div class="stat-box"><span class="stat-label">Acertos</span><strong>${overall.correct}</strong></div>
+      <div class="stat-box"><span class="stat-label">Erros</span><strong>${overall.wrong}</strong></div>
+      <div class="stat-box"><span class="stat-label">Aproveitamento</span><strong>${overall.answered > 0 ? overallPct + "%" : "—"}</strong></div>
     </div>
   `;
 
@@ -798,17 +589,84 @@ function renderStats() {
 }
 
 /* =========================
-   TREINAMENTO ORAL / FLASHCARDS
+   APOSTILAS / MÓDULOS
 ========================= */
 
-function ensureFlashcards() {
-  if (typeof FLASHCARDS === "undefined" || !Array.isArray(FLASHCARDS)) {
-    alert("Banco de flashcards não encontrado. Verifique se flashcards.js foi carregado antes do app.js.");
-    return [];
+function showModules() {
+  showScreen("modules");
+  renderModulesList();
+}
+
+function renderModulesList() {
+  const modules = ensureStudyModules();
+
+  if (!els.modulesList || !els.moduleDetail) return;
+
+  els.moduleDetail.classList.add("hidden");
+  els.modulesList.classList.remove("hidden");
+
+  if (modules.length === 0) {
+    els.modulesList.innerHTML = `<p class="muted">Nenhum módulo de estudo encontrado.</p>`;
+    return;
   }
 
-  return FLASHCARDS;
+  els.modulesList.innerHTML = modules.map((module) => {
+    return `
+      <button class="module-card" data-module-id="${escapeHtml(module.id)}">
+        <span class="module-area">${escapeHtml(module.area || "Módulo")}</span>
+        <strong>${escapeHtml(module.titulo)}</strong>
+        <small>${escapeHtml(module.tempo || "Revisão rápida")}</small>
+      </button>
+    `;
+  }).join("");
 }
+
+function renderModuleDetail(moduleId) {
+  const module = ensureStudyModules().find((item) => item.id === moduleId);
+  if (!module || !els.moduleDetail || !els.modulesList) return;
+
+  els.modulesList.classList.add("hidden");
+  els.moduleDetail.classList.remove("hidden");
+
+  const sectionList = (title, items, className = "module-list") => {
+    if (!Array.isArray(items) || items.length === 0) return "";
+    return `
+      <h3>${escapeHtml(title)}</h3>
+      <ul class="${className}">
+        ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+      </ul>
+    `;
+  };
+
+  const quickQuestions = Array.isArray(module.quickQuestions) ? module.quickQuestions : [];
+
+  els.moduleDetail.innerHTML = `
+    <button class="ghost-btn module-detail-back" data-module-back="true">← Voltar aos módulos</button>
+    <div class="module-detail-header">
+      <span class="module-area">${escapeHtml(module.area || "Módulo")}</span>
+      <h2>${escapeHtml(module.titulo)}</h2>
+      <p class="muted">${escapeHtml(module.tempo || "Revisão rápida")}</p>
+    </div>
+
+    ${sectionList("Resumo essencial", module.resumo)}
+    ${sectionList("Frases de ouro", module.frasesOuro, "module-list gold-list")}
+    ${sectionList("Pegadinhas de prova", module.pegadinhas, "module-list trap-list")}
+
+    <h3>Questões rápidas</h3>
+    <div class="quick-questions">
+      ${quickQuestions.map((item, index) => `
+        <details class="quick-question">
+          <summary>${index + 1}. ${escapeHtml(item.pergunta)}</summary>
+          <p>${escapeHtml(item.resposta)}</p>
+        </details>
+      `).join("")}
+    </div>
+  `;
+}
+
+/* =========================
+   TREINAMENTO ORAL / FLASHCARDS
+========================= */
 
 function startOralTraining() {
   const cards = ensureFlashcards();
@@ -828,46 +686,33 @@ function startOralTraining() {
 
 function renderOralCard() {
   const card = oralSession[oralIndex];
-
   if (!card) return;
 
   oralFlipped = false;
-els.oralCard.classList.remove("show-answer");
-els.oralFlipBtn.textContent = "Ver resposta";
+  els.oralCard.classList.remove("show-answer");
+  els.oralFlipBtn.textContent = "Ver resposta";
 
   els.oralProgress.textContent = `Caso ${oralIndex + 1} de ${oralSession.length}`;
   els.oralArea.textContent = card.area || "Treinamento oral";
   els.oralDifficulty.textContent = card.dificuldade || "muito difícil";
-
   els.oralTitle.textContent = card.titulo || "Caso oral";
   els.oralCase.textContent = card.caso || "";
   els.oralQuestion.textContent = card.pergunta || "";
 
-  els.oralAnswer.innerHTML = (card.respostaIdeal || [])
-    .map((item) => `<p>${item}</p>`)
-    .join("");
+  els.oralAnswer.innerHTML = (card.respostaIdeal || []).map((item) => `<p>${escapeHtml(item)}</p>`).join("");
+  els.oralRequired.innerHTML = (card.pontosObrigatorios || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+  els.oralErrors.innerHTML = (card.errosGraves || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
 
-  els.oralRequired.innerHTML = (card.pontosObrigatorios || [])
-    .map((item) => `<li>${item}</li>`)
-    .join("");
-
-  els.oralErrors.innerHTML = (card.errosGraves || [])
-    .map((item) => `<li>${item}</li>`)
-    .join("");
-
-  els.oralDeepening.innerHTML = (card.aprofundamento || [])
-    .map((item) => {
-      return `
-        <div class="oral-deep-item">
-          <strong>${item.pergunta}</strong>
-          <p>${item.resposta}</p>
-        </div>
-      `;
-    })
-    .join("");
+  els.oralDeepening.innerHTML = (card.aprofundamento || []).map((item) => {
+    return `
+      <div class="oral-deep-item">
+        <strong>${escapeHtml(item.pergunta)}</strong>
+        <p>${escapeHtml(item.resposta)}</p>
+      </div>
+    `;
+  }).join("");
 
   els.oralGold.textContent = card.fraseOuro || "";
-
   els.oralPrevBtn.disabled = oralIndex === 0;
   els.oralNextBtn.disabled = oralIndex === oralSession.length - 1;
 }
@@ -886,24 +731,19 @@ function flipOralCard() {
 
 function nextOralCard() {
   if (oralIndex >= oralSession.length - 1) return;
-
   oralIndex += 1;
-  els.oralFlipBtn.textContent = "Virar cartão";
   renderOralCard();
 }
 
 function prevOralCard() {
   if (oralIndex <= 0) return;
-
   oralIndex -= 1;
-  els.oralFlipBtn.textContent = "Virar cartão";
   renderOralCard();
 }
 
 function shuffleOralCards() {
   oralSession = shuffle(ensureFlashcards());
   oralIndex = 0;
-  els.oralFlipBtn.textContent = "Virar cartão";
   renderOralCard();
 }
 
@@ -912,90 +752,52 @@ function shuffleOralCards() {
 ========================= */
 
 function registerEvents() {
-  if (els.start10Btn) {
-    els.start10Btn.addEventListener("click", () => startQuiz(10));
+  if (els.start10Btn) els.start10Btn.addEventListener("click", () => startQuiz(10));
+  if (els.start20Btn) els.start20Btn.addEventListener("click", () => startQuiz(20));
+  if (els.reviewBtn) els.reviewBtn.addEventListener("click", startReview);
+  if (els.statsBtn) els.statsBtn.addEventListener("click", () => showScreen("stats"));
+  if (els.resetBtn) els.resetBtn.addEventListener("click", resetProgress);
+  if (els.modulesBtn) els.modulesBtn.addEventListener("click", showModules);
+
+  if (els.backHomeBtn) els.backHomeBtn.addEventListener("click", () => showScreen("home"));
+  if (els.nextBtn) els.nextBtn.addEventListener("click", nextQuestion);
+  if (els.finishBtn) els.finishBtn.addEventListener("click", finishSession);
+
+  if (els.new10Btn) els.new10Btn.addEventListener("click", () => startQuiz(10));
+  if (els.new20Btn) els.new20Btn.addEventListener("click", () => startQuiz(20));
+  if (els.resultReviewBtn) els.resultReviewBtn.addEventListener("click", startReview);
+  if (els.resultStatsBtn) els.resultStatsBtn.addEventListener("click", () => showScreen("stats"));
+  if (els.resultHomeBtn) els.resultHomeBtn.addEventListener("click", () => showScreen("home"));
+
+  if (els.statsBackBtn) els.statsBackBtn.addEventListener("click", () => showScreen("home"));
+
+  if (els.modulesBackBtn) els.modulesBackBtn.addEventListener("click", () => showScreen("home"));
+  if (els.modulesList) {
+    els.modulesList.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-module-id]");
+      if (!button) return;
+      renderModuleDetail(button.dataset.moduleId);
+    });
+  }
+  if (els.moduleDetail) {
+    els.moduleDetail.addEventListener("click", (event) => {
+      const backButton = event.target.closest("[data-module-back]");
+      if (!backButton) return;
+      renderModulesList();
+    });
   }
 
-  if (els.start20Btn) {
-    els.start20Btn.addEventListener("click", () => startQuiz(20));
-  }
-
-  if (els.reviewBtn) {
-    els.reviewBtn.addEventListener("click", startReview);
-  }
-
-  if (els.statsBtn) {
-    els.statsBtn.addEventListener("click", () => showScreen("stats"));
-  }
-
-  if (els.resetBtn) {
-    els.resetBtn.addEventListener("click", resetProgress);
-  }
-
-  if (els.backHomeBtn) {
-    els.backHomeBtn.addEventListener("click", () => showScreen("home"));
-  }
-
-  if (els.nextBtn) {
-    els.nextBtn.addEventListener("click", nextQuestion);
-  }
-
-  if (els.finishBtn) {
-    els.finishBtn.addEventListener("click", finishSession);
-  }
-
-  if (els.new10Btn) {
-    els.new10Btn.addEventListener("click", () => startQuiz(10));
-  }
-
-  if (els.new20Btn) {
-    els.new20Btn.addEventListener("click", () => startQuiz(20));
-  }
-
-  if (els.resultReviewBtn) {
-    els.resultReviewBtn.addEventListener("click", startReview);
-  }
-
-  if (els.resultStatsBtn) {
-    els.resultStatsBtn.addEventListener("click", () => showScreen("stats"));
-  }
-
-  if (els.resultHomeBtn) {
-    els.resultHomeBtn.addEventListener("click", () => showScreen("home"));
-  }
-
-  if (els.statsBackBtn) {
-    els.statsBackBtn.addEventListener("click", () => showScreen("home"));
-  }
-
-  if (els.oralBtn) {
-    els.oralBtn.addEventListener("click", startOralTraining);
-  }
-
-  if (els.oralBackBtn) {
-    els.oralBackBtn.addEventListener("click", () => showScreen("home"));
-  }
-
-  if (els.oralFlipBtn) {
-    els.oralFlipBtn.addEventListener("click", flipOralCard);
-  }
-
-  if (els.oralNextBtn) {
-    els.oralNextBtn.addEventListener("click", nextOralCard);
-  }
-
-  if (els.oralPrevBtn) {
-    els.oralPrevBtn.addEventListener("click", prevOralCard);
-  }
-
-  if (els.oralShuffleBtn) {
-    els.oralShuffleBtn.addEventListener("click", shuffleOralCards);
-  }
+  if (els.oralBtn) els.oralBtn.addEventListener("click", startOralTraining);
+  if (els.oralBackBtn) els.oralBackBtn.addEventListener("click", () => showScreen("home"));
+  if (els.oralFlipBtn) els.oralFlipBtn.addEventListener("click", flipOralCard);
+  if (els.oralNextBtn) els.oralNextBtn.addEventListener("click", nextOralCard);
+  if (els.oralPrevBtn) els.oralPrevBtn.addEventListener("click", prevOralCard);
+  if (els.oralShuffleBtn) els.oralShuffleBtn.addEventListener("click", shuffleOralCards);
 }
 
 function registerServiceWorker() {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js?v=703").catch((error) => {
+    navigator.serviceWorker.register("sw.js?v=820").catch((error) => {
       console.warn("Service worker não registrado:", error);
     });
   }
