@@ -72,6 +72,8 @@ const els = {
   modulesBackBtn: document.getElementById("modules-back-btn"),
   modulesList: document.getElementById("modules-list"),
   moduleDetail: document.getElementById("module-detail"),
+  exportCleanQuestionsBtn: document.getElementById("export-clean-questions-btn"),
+  exportCleanQuestionsStatus: document.getElementById("export-clean-questions-status"),
 
   oralBtn: document.getElementById("oral-btn"),
   oralBackBtn: document.getElementById("oral-back-btn"),
@@ -664,6 +666,38 @@ function renderModuleDetail(moduleId) {
   `;
 }
 
+
+function exportCleanQuestionsFile() {
+  const questions = ensureQuestions();
+
+  if (!Array.isArray(questions) || questions.length === 0) {
+    if (els.exportCleanQuestionsStatus) {
+      els.exportCleanQuestionsStatus.textContent = "Nenhuma questão disponível para exportar.";
+    }
+    return;
+  }
+
+  const sortedQuestions = [...questions].sort((a, b) => {
+    return String(a.id || "").localeCompare(String(b.id || ""), "pt-BR");
+  });
+
+  const content = `const QUESTIONS = ${JSON.stringify(sortedQuestions, null, 2)};\n`;
+  const blob = new Blob([content], { type: "text/javascript;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+
+  link.href = url;
+  link.download = "questions-clean-v840.js";
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
+
+  if (els.exportCleanQuestionsStatus) {
+    els.exportCleanQuestionsStatus.textContent = `Arquivo gerado com ${sortedQuestions.length} questões consolidadas. Para limpeza física, renomeie para questions.js e substitua o arquivo antigo no GitHub.`;
+  }
+}
+
 /* =========================
    TREINAMENTO ORAL / FLASHCARDS
 ========================= */
@@ -772,6 +806,7 @@ function registerEvents() {
   if (els.statsBackBtn) els.statsBackBtn.addEventListener("click", () => showScreen("home"));
 
   if (els.modulesBackBtn) els.modulesBackBtn.addEventListener("click", () => showScreen("home"));
+  if (els.exportCleanQuestionsBtn) els.exportCleanQuestionsBtn.addEventListener("click", exportCleanQuestionsFile);
   if (els.modulesList) {
     els.modulesList.addEventListener("click", (event) => {
       const button = event.target.closest("[data-module-id]");
@@ -797,7 +832,7 @@ function registerEvents() {
 
 function registerServiceWorker() {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js?v=820").catch((error) => {
+    navigator.serviceWorker.register("sw.js?v=840").catch((error) => {
       console.warn("Service worker não registrado:", error);
     });
   }

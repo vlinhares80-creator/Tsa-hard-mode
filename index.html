@@ -8,8 +8,8 @@
   <meta name="theme-color" content="#111827" />
   <meta name="description" content="QBank de anestesiologia." />
 
-  <link rel="manifest" href="manifest.json?v=830" />
-  <link rel="stylesheet" href="style.css?v=830" />
+  <link rel="manifest" href="manifest.json?v=840" />
+  <link rel="stylesheet" href="style.css?v=840" />
 </head>
 
 <body>
@@ -221,6 +221,16 @@
 
         <div id="modules-list" class="modules-grid"></div>
         <div id="module-detail" class="module-detail hidden"></div>
+
+        <div class="cleanup-box">
+          <h3>Limpeza física do banco</h3>
+          <p class="muted">
+            Quando quiser consolidar definitivamente o banco, exporte um <strong>questions.js</strong> já filtrado,
+            mantendo apenas questões de nível muito difícil/TSA Ultra e os extras adicionados.
+          </p>
+          <button class="secondary-btn" id="export-clean-questions-btn">Exportar questions.js limpo</button>
+          <p id="export-clean-questions-status" class="muted small-note"></p>
+        </div>
       </div>
     </section>
 
@@ -284,14 +294,15 @@
 
   <footer class="app-footer">
     <span>TSA Hard Mode</span>
-    <span>v830 • Criado por Vinícius Linhares</span>
+    <span>v840 • Criado por Vinícius Linhares</span>
   </footer>
 
-  <script src="questions.js?v=830"></script>
-  <script src="questionFilters.js?v=830"></script>
-  <script src="extraQuestions.js?v=830"></script>
-  <script src="flashcards.js?v=830"></script>
-  <script src="studyModules.js?v=830"></script>
-  <script src="app.js?v=830"></script>
+  <script src="questions.js?v=840"></script>
+  <script src="questionFilters.js?v=840"></script>
+  <script src="extraQuestions.js?v=840"></script>
+  <script src="extraQuestions2.js?v=840"></script>
+  <script src="flashcards.js?v=840"></script>
+  <script src="studyModules.js?v=840"></script>
+  <script src="app.js?v=840"></script>
 </body>
 </html>

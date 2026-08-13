@@ -412,5 +412,230 @@ const STUDY_MODULES = [
       "resposta": "Pelo risco de piora do metabolismo energético e síndrome de infusão de propofol em doses/durações altas."
     }
   ]
+},
+{
+  "id": "mod-seguranca-paciente-anestesia",
+  "titulo": "Segurança do paciente em anestesia",
+  "area": "Segurança do paciente",
+  "tempo": "10–14 min",
+  "resumo": [
+    "Segurança em anestesia depende de barreiras redundantes: avaliação pré-anestésica, checagem de equipamentos, identificação, alergias, antibiótico, via aérea e plano de crise.",
+    "Time-out não é ritual burocrático; é pausa ativa para confirmar paciente, procedimento, lateralidade, alergias, antibiótico e pontos críticos.",
+    "Eventos adversos exigem documentação, comunicação honesta e debriefing para aprendizado do sistema.",
+    "Erros de medicação e falhas de comunicação geralmente são falhas de sistema, não apenas falhas individuais."
+  ],
+  "frasesOuro": [
+    "Checklist bom é redundância inteligente.",
+    "Alergia não checada no time-out é anafilaxia anunciada.",
+    "Crise sem debriefing é simulação gratuita desperdiçada."
+  ],
+  "pegadinhas": [
+    "Achar que consentimento assinado autoriza prática insegura.",
+    "Tratar antibiótico profilático como assunto exclusivamente cirúrgico.",
+    "Omitir evento adverso por medo de judicialização.",
+    "Desligar alarmes para reduzir ruído."
+  ],
+  "quickQuestions": [
+    {
+      "pergunta": "Qual é a função real do time-out?",
+      "resposta": "Criar uma pausa ativa e compartilhada para confirmar dados críticos e antecipar riscos."
+    },
+    {
+      "pergunta": "Comunicar evento adverso equivale a assumir culpa?",
+      "resposta": "Não. É dever de transparência e cuidado; causalidade e responsabilidade são apuradas com dados."
+    },
+    {
+      "pergunta": "O que é cultura justa?",
+      "resposta": "Modelo que diferencia erro humano, comportamento de risco e negligência, buscando aprendizado sem caça às bruxas."
+    },
+    {
+      "pergunta": "Por que alergia deve ser checada mais de uma vez?",
+      "resposta": "Porque barreiras redundantes reduzem falhas de comunicação e erro de medicação."
+    },
+    {
+      "pergunta": "O que deve ocorrer após crise grave bem tratada?",
+      "resposta": "Debriefing, documentação, reposição de materiais e plano de seguimento do paciente."
+    }
+  ]
+},
+{
+  "id": "mod-nora-ressonancia-endoscopia",
+  "titulo": "Anestesia fora do centro cirúrgico",
+  "area": "Anestesia fora do centro cirúrgico",
+  "tempo": "10–15 min",
+  "resumo": [
+    "Ambientes remotos têm os mesmos riscos fisiológicos do centro cirúrgico, mas com menos acesso ao paciente, equipe reduzida e logística mais difícil.",
+    "Ressonância magnética exige equipamentos compatíveis e controle absoluto de objetos ferromagnéticos.",
+    "Endoscopia terapêutica em paciente com sangramento, obesidade, refluxo ou apneia pode exigir via aérea protegida em vez de sedação profunda.",
+    "Capnografia, oxigênio, aspiração, via aérea difícil, recuperação e plano de emergência precisam estar disponíveis antes de iniciar."
+  ],
+  "frasesOuro": [
+    "Fora do centro cirúrgico, o risco não diminui; a distância aumenta.",
+    "No ímã, cilindro comum vira projétil.",
+    "Propofol em endoscopia pode virar anestesia geral sem pedir autorização."
+  ],
+  "pegadinhas": [
+    "Fazer sedação profunda sem capnografia em paciente obeso/apneico.",
+    "Entrar na sala de ressonância com equipamento não compatível.",
+    "Achar que endoscopia terapêutica não precisa de plano de via aérea.",
+    "Deixar acesso venoso inacessível dentro do aparelho de imagem."
+  ],
+  "quickQuestions": [
+    {
+      "pergunta": "Qual risco físico clássico da ressonância?",
+      "resposta": "Efeito projétil de objetos ferromagnéticos."
+    },
+    {
+      "pergunta": "Qual monitor é especialmente útil em sedação profunda?",
+      "resposta": "Capnografia, por detectar hipoventilação antes da queda de saturação."
+    },
+    {
+      "pergunta": "Quando considerar intubação em endoscopia?",
+      "resposta": "Sangramento ativo, alto risco de aspiração, obstrução, apneia grave ou necessidade terapêutica prolongada."
+    },
+    {
+      "pergunta": "O que deve existir em NORA antes da sedação?",
+      "resposta": "Monitorização, oxigênio, aspiração, equipamentos de via aérea, drogas de emergência e recuperação segura."
+    },
+    {
+      "pergunta": "Por que acesso físico importa na ressonância?",
+      "resposta": "Porque o paciente fica distante e parcialmente inacessível durante o exame."
+    }
+  ]
+},
+{
+  "id": "mod-sustentabilidade-anestesia",
+  "titulo": "Sustentabilidade em anestesia",
+  "area": "Sustentabilidade",
+  "tempo": "8–12 min",
+  "resumo": [
+    "Anestésicos inalatórios e óxido nitroso contribuem para impacto ambiental; a redução de fluxos de gases frescos diminui consumo quando feita com monitorização adequada.",
+    "Baixo fluxo exige analisador de oxigênio, agente inalatório, capnografia, absorvedor funcional e conhecimento do aparelho.",
+    "Sustentabilidade não justifica reduzir segurança, monitorização ou reserva de oxigênio.",
+    "Evitar desflurano ou óxido nitroso sem indicação forte pode reduzir impacto ambiental sem piorar cuidado."
+  ],
+  "frasesOuro": [
+    "Sustentabilidade reduz desperdício, não segurança.",
+    "Baixo fluxo sem monitorização é economia perigosa.",
+    "Gás anestésico que não precisa ser usado não precisa chegar à atmosfera."
+  ],
+  "pegadinhas": [
+    "Confundir baixo fluxo com fluxo inseguro.",
+    "Usar absorvedor exaurido para economizar.",
+    "Desligar analisadores para reduzir consumo.",
+    "Manter desflurano por hábito quando alternativas são equivalentes."
+  ],
+  "quickQuestions": [
+    {
+      "pergunta": "Qual forma simples de reduzir consumo de halogenado?",
+      "resposta": "Reduzir fluxo de gases frescos quando seguro e monitorizado."
+    },
+    {
+      "pergunta": "Baixo fluxo exige qual monitorização?",
+      "resposta": "Oxigênio inspirado, agente inalatório, capnografia e funcionamento do absorvedor."
+    },
+    {
+      "pergunta": "Qual gás costuma ter impacto ambiental relevante e uso muitas vezes evitável?",
+      "resposta": "Óxido nitroso."
+    },
+    {
+      "pergunta": "Sustentabilidade permite reduzir fração de oxigênio abaixo do seguro?",
+      "resposta": "Não. Segurança do paciente vem primeiro."
+    },
+    {
+      "pergunta": "Qual é o erro de sustentabilidade mais perigoso?",
+      "resposta": "Economizar removendo barreiras de segurança."
+    }
+  ]
+},
+{
+  "id": "mod-hemoterapia-reacoes-transfusionais",
+  "titulo": "Hemoterapia e reações transfusionais",
+  "area": "Hematologia / Coagulação",
+  "tempo": "12–18 min",
+  "resumo": [
+    "Transfusão maciça exige hemostasia balanceada, cálcio, aquecimento e controle de fonte de sangramento.",
+    "TRALI e TACO causam hipoxemia após transfusão, mas diferem pela fisiologia: edema não cardiogênico versus sobrecarga hidrostática.",
+    "Reação hemolítica aguda deve ser suspeitada com febre, hipotensão, dor, hemoglobinúria e coagulação intravascular após transfusão incompatível.",
+    "Citrato pode causar hipocalcemia, piorando contratilidade, condução e coagulação."
+  ],
+  "frasesOuro": [
+    "Transfundir sem cálcio é abastecer o tanque com a ignição falhando.",
+    "TRALI é pulmão inflamado; TACO é volume demais.",
+    "Hemoterapia boa trata sangue e sistema, não só hemoglobina."
+  ],
+  "pegadinhas": [
+    "Confundir TACO com TRALI sem olhar pressão, balanço e resposta a diurético.",
+    "Esquecer reação hemolítica em hipotensão intraoperatória durante transfusão.",
+    "Achar que plasma sempre corrige qualquer sangramento.",
+    "Não aquecer paciente em transfusão maciça."
+  ],
+  "quickQuestions": [
+    {
+      "pergunta": "O que sugere TACO?",
+      "resposta": "Hipertensão, pressão venosa elevada, balanço positivo e melhora com diurético."
+    },
+    {
+      "pergunta": "O que sugere TRALI?",
+      "resposta": "Edema pulmonar não cardiogênico após transfusão, frequentemente com hipoxemia, febre ou hipotensão."
+    },
+    {
+      "pergunta": "Por que cálcio cai na transfusão maciça?",
+      "resposta": "Citrato dos hemocomponentes quela cálcio ionizado."
+    },
+    {
+      "pergunta": "Qual é a primeira conduta se suspeitar reação hemolítica?",
+      "resposta": "Suspender transfusão, manter acesso com solução adequada, suporte e investigação imediata."
+    },
+    {
+      "pergunta": "Por que aquecimento importa?",
+      "resposta": "Hipotermia piora coagulopatia, acidose e instabilidade."
+    }
+  ]
+},
+{
+  "id": "mod-via-aerea-extubacao-risco",
+  "titulo": "Extubação de risco e via aérea difícil",
+  "area": "Via aérea",
+  "tempo": "10–15 min",
+  "resumo": [
+    "Via aérea difícil não termina quando o tubo entra; extubação pode ser o momento mais perigoso.",
+    "Edema, sangramento, cirurgia oral/cervical, obesidade, apneia e intubação difícil prévia exigem plano de extubação.",
+    "Estratégias incluem adiar extubação, extubar acordado, usar trocador de tubo, preparar reintubação e escolher local adequado.",
+    "Extubação profunda é contraindicada em muitos cenários de aspiração, obstrução ou reintubação difícil."
+  ],
+  "frasesOuro": [
+    "Extubação difícil é intubação difícil ao contrário, com menos tempo para errar.",
+    "Tubo saindo precisa de plano tão bom quanto tubo entrando.",
+    "Pressa de sala não é critério de extubação."
+  ],
+  "pegadinhas": [
+    "Extubar porque ventilou bem durante cirurgia.",
+    "Extubação profunda em via aérea edemaciada.",
+    "Não ter plano de reintubação.",
+    "Ignorar sangramento ou edema cervical."
+  ],
+  "quickQuestions": [
+    {
+      "pergunta": "Quando considerar adiar extubação?",
+      "resposta": "Edema importante, sangramento, baixa reserva, reintubação difícil ou ventilação inadequada."
+    },
+    {
+      "pergunta": "Para que serve um trocador de tubo?",
+      "resposta": "Mantém acesso à via aérea para possível reintubação após extubação de risco."
+    },
+    {
+      "pergunta": "Extubação profunda é boa em via aérea difícil?",
+      "resposta": "Geralmente não, especialmente se houver aspiração, obstrução ou reintubação difícil."
+    },
+    {
+      "pergunta": "Quais cirurgias preocupam para extubação?",
+      "resposta": "Cabeça e pescoço, via aérea, oral, cervical, tireoide complicada e cirurgias com edema/sangramento."
+    },
+    {
+      "pergunta": "Qual o erro mais comum?",
+      "resposta": "Tratar extubação como fim automático da anestesia."
+    }
+  ]
 }
 ];

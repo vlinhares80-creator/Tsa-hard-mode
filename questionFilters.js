@@ -1,5 +1,5 @@
 /*
-  TSA Hard Mode - filtro de banco v830
+  TSA Hard Mode - filtro de banco v840
   Limpeza funcional do banco: preserva apenas questões em nível realmente alto
   ("Muito difícil" ou "TSA Ultra") e remove os blocos antigos fáceis/médios/difíceis.
 
@@ -61,7 +61,7 @@
       message: `${originalTotal - source.length} questões antigas não-ultra foram removidas desta sessão.`
     };
 
-    console.info("TSA Hard Mode filtro v830:", window.TSA_FILTER_INFO);
+    console.info("TSA Hard Mode filtro v840:", window.TSA_FILTER_INFO);
   } catch (error) {
     console.warn("Erro ao aplicar filtro de questões:", error);
     window.TSA_FILTER_INFO = {
